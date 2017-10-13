@@ -1,0 +1,257 @@
+[gd_scene load_steps=26 format=1]
+
+[ext_resource path="res://Sprites/Floor.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Stairs2/Top-Left-stairs2.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Stairs2/Top-Mid-stairs2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Stairs2/Top-Right-stairs2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Stairs2/Mid-Left-stairs2.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Stairs2/Mid-Mid-stairs2Bis.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Stairs2/Mid-Right-stairs2.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Wall/Bot-Left-Wall.png" type="Texture" id=8]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Sprites/Wall/Mid-Left-Wall.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Wall/Mid-Right-Wall copy.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Wall/Mid-Mid-Wall.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Wall/Bot-Mid-Wall.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Wall/Bot-Right-Wall.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/WoodenDoor/Bot-Left-WoodenDoor.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/WoodenDoor/Bot-Right-WoodenDoor.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/WoodenDoor/Mid-Left-WoodenDoor.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/WoodenDoor/Mid-Right-WoodenDoor.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/WoodenDoor/Top-Left-WoodenDoor.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/WoodenDoor/Top-Right-WoodenDoor.png" type="Texture" id=20]
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.0938, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.02856, 16.2213 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 13.3428, 14.9821 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="Scene1TileSet" type="Node"]
+
+[node name="Floor" type="Sprite" parent="."]
+
+transform/pos = Vector2( 502.945, 45.233 )
+texture = ExtResource( 1 )
+
+[node name="TopLeftStairs" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 502.067, 284.48 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TopLeftStairs"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 0.408666, 0, 0, 1.60413, -11.4991, -0.105373 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopLeftStairs/StaticBody2D"]
+
+transform/pos = Vector2( -11.4991, -0.105373 )
+transform/scale = Vector2( 0.408666, 1.60413 )
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 0
+
+[node name="TopMidStairs" type="Sprite" parent="."]
+
+transform/pos = Vector2( 546.533, 285.077 )
+texture = ExtResource( 3 )
+
+[node name="TopRightStairs" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 592.146, 282.633 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TopRightStairs"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 0.515641, 0, 0, 1, 11.8577, 0.397217 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopRightStairs/StaticBody2D"]
+
+transform/pos = Vector2( 11.8577, 0.397217 )
+transform/scale = Vector2( 0.515641, 1 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="MidLeftStairs" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 502.144, 329.033 )
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MidLeftStairs"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 0.428498, 0, 0, 1.62166, -11.9094, 0.0443784 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MidLeftStairs/StaticBody2D"]
+
+transform/pos = Vector2( -11.9094, 0.0443784 )
+transform/scale = Vector2( 0.428498, 1.62166 )
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="MidMidStairs" type="Sprite" parent="."]
+
+transform/pos = Vector2( 547.321, 329.056 )
+texture = ExtResource( 6 )
+
+[node name="MidRightStairs" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 593.761, 328.393 )
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MidRightStairs"]
+
+transform/pos = Vector2( 0.643921, -1.28787 )
+input/pickable = false
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 0.312369, 0, 0, 1.07412, 11.4298, 1.33292 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MidRightStairs/StaticBody2D"]
+
+transform/pos = Vector2( 11.4298, 1.33292 )
+transform/scale = Vector2( 0.312369, 1.07412 )
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="BotLeftWall" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 210, 310 )
+texture = ExtResource( 8 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="BotLeftWall"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1.6099, 0, 0, 1.61905, -0.0670635, 0.0382717 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BotLeftWall/StaticBody2D"]
+
+transform/pos = Vector2( -0.0670635, 0.0382717 )
+transform/scale = Vector2( 1.6099, 1.61905 )
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="MidLeftWall" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 210.957, 259.013 )
+texture = ExtResource( 10 )
+
+[node name="MidRightWall" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 320.101, 255.755 )
+texture = ExtResource( 11 )
+
+[node name="MidMidWall" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 264.714, 259.013 )
+texture = ExtResource( 12 )
+
+[node name="BotMidWall" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 264.714, 305.44 )
+texture = ExtResource( 13 )
+
+[node name="BotRightWall" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 321.73, 310.327 )
+texture = ExtResource( 14 )
+
+[node name="BotLeftDoor" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 222.909, 187.084 )
+texture = ExtResource( 15 )
+
+[node name="BotRightDoor" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 267.358, 187.748 )
+texture = ExtResource( 16 )
+
+[node name="MidLeftDoor" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 223.572, 139.982 )
+texture = ExtResource( 17 )
+
+[node name="MidRightDoor" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 268.022, 139.318 )
+texture = ExtResource( 18 )
+
+[node name="TopLeftDoor" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 223.572, 93.5422 )
+texture = ExtResource( 19 )
+
+[node name="TopRightDoor" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 267.358, 94.869 )
+texture = ExtResource( 20 )
+
+

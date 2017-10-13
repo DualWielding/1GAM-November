@@ -1,0 +1,13 @@
+{
+	"default": {
+		"text": "DEFAULT DEFAULT",
+		"options": [
+			{
+				"text": "DEFAULT DEFAULT A1",
+				"end": true,
+				"state change": "unchanged",
+				"next sequence": "none"
+			}
+		]
+	}
+}

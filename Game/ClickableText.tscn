@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://ClickableText.gd" type="Script" id=1]
+
+[node name="ClickableText" type="Label"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 380.0
+margin/top = 230.0
+margin/right = 420.0
+margin/bottom = 244.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script/script = ExtResource( 1 )
+
+[connection signal="mouse_enter" from="." to="." method="_on_ClickableText_mouse_enter"]
+
+[connection signal="mouse_exit" from="." to="." method="_on_ClickableText_mouse_exit"]
+
+
