@@ -43,10 +43,9 @@ func follow_up_dialog(option):
 		say(self, tr(sequences[sequence_name]["text"]), sequences[sequence_name]["options"])
 
 func stop_dialog(option):
-	emit_signal("stop_dialog")
-	
 	# Re-enable the character movement
 	Player.character.set_disabled_movement(false)
+	emit_signal("stop_dialog")
 	
 	if option["state change"] != "unchanged":
 		state = option["state change"]
@@ -55,9 +54,11 @@ func stop_dialog(option):
 # Thus enabling us to follow up with the next dialog line
 func say(body, text, options):
 	for option in options:
-		if option.has("card used") and !Player.has_card(option["card used"]):
+		# Remove a dialog option the player does not have the right tool
+		# or if he already used that option
+		if option.has("card used") and !Player.has_card(option["card used"])\
+		or !Player.is_unique_answer_up(option.text):
 			options.remove(options.find(option))
-			
 	
 	emit_signal("say", body, text, options)
 

@@ -22,6 +22,7 @@
 			{
 				"text": "FIRST DOOR GUARD FOLLOWUP A2",
 				"end": true,
+				"unique": true,
 				"state change": "unchanged",
 				"next sequence": "none"
 			}
