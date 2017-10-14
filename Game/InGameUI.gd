@@ -44,7 +44,7 @@ func show_dialog(body, text, options):
 	get_node("InteractionButton").hide()
 	
 	# Set the new speaker's text
-	body_text_window.set_text(text)
+	body_text_window.set_bbcode(text)
 	
 	# Remove old answers
 	clear_answers()

@@ -1,4 +1,4 @@
-extends Label
+extends RichTextLabel
 
 var hovered = false
 var option setget set_option, get_option
@@ -19,7 +19,7 @@ func _input(event):
 
 func set_option(opt):
 	option = opt
-	set_text(tr(option["text"]))
+	set_bbcode(tr(option["text"]))
 
 func get_option():
 	return option
