@@ -1,0 +1,54 @@
+{
+	"default": {
+		"text": "FIRST DOOR GUARD DEFAULT",
+		"options": [
+			{
+				"text": "FIRST DOOR GUARD DEFAULT A1",
+				"end": false,
+				"state change": "unchanged",
+				"next sequence": "followup"
+			}
+		]
+	},
+	"followup": {
+		"text": "FIRST DOOR GUARD FOLLOWUP",
+		"options": [
+			{
+				"text": "FIRST DOOR GUARD FOLLOWUP A1",
+				"end": false,
+				"state change": "unchanged",
+				"next sequence": "followup2"
+			},
+			{
+				"text": "FIRST DOOR GUARD FOLLOWUP A2",
+				"end": true,
+				"state change": "unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+	"followup2": {
+		"text": "FIRST DOOR GUARD FOLLOWUP2",
+		"options": [
+			{
+				"text": "FIRST DOOR GUARD FOLLOWUP2 A1",
+				"end": true,
+				"state change": "unchanged",
+				"next sequence": "exhort2",
+				"card used": "POUCH"
+			},
+			{
+				"text": "FIRST DOOR GUARD FOLLOWUP2 A2",
+				"end": true,
+				"state change": "unchanged",
+				"next sequence": "exhort2",
+				"card used": "TRUC"
+			},
+			{
+				"text": "FIRST DOOR GUARD FOLLOWUP2 A3",
+				"end": true,
+				"state change": "unchanged",
+				"next sequence": "exhort2"
+			}
+		]
+	}
