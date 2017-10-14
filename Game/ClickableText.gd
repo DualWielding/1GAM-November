@@ -15,6 +15,8 @@ func _input(event):
 	and event.pressed:
 		if option.has("card used"):
 			Player.remove_card(option["card used"])
+		if option.has("unique") and option.unique:
+			Player.used_unique_answer(option.text)
 		speaker.follow_up_dialog(option)
 
 func set_option(opt):

@@ -60,9 +60,9 @@ func show_dialog(body, text, options):
 
 func hide_dialog():
 	# Show the interaction button again
-	show_interaction_button()
 	clear_answers()
 	dialog_panel.hide()
+	show_interaction_button()
 
 func clear_answers():
 	for answer in answers_container.get_children():
