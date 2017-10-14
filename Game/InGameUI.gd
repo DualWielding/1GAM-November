@@ -3,8 +3,10 @@ extends Control
 onready var dialog_panel = get_node("DialogPanel")
 onready var answers_container = dialog_panel.get_node("AnswersContainer")
 onready var body_text_window = dialog_panel.get_node("BodyTextWindow")
+onready var hand = get_node("Hand")
 
 var clickable_label_class = preload("res://ClickableText.tscn")
+var ui_card_class = preload("res://UICard.tscn")
 
 func _ready():
 	Player.ui = self
@@ -12,6 +14,12 @@ func _ready():
 	# Connect to player
 	Player.character.connect("can_interact", self, "show_interaction_button")
 	Player.character.connect("cant_interact", self, "hide_interaction_button")
+	Player.connect("card_added", self, "add_card")
+	Player.connect("card_removed", self, "remove_card")
+	
+	# Add all the players' cards at the beginning
+	for card_name in Player.get_hand():
+		add_card(Player.get_hand()[card_name])
 	
 	# Connect the UI to every bodies in the scene
 	for body in get_tree().get_nodes_in_group("body"):
@@ -28,6 +36,8 @@ func _ready():
 	get_node("InteractionButton").get_popup().set_light_mask(get_node("InteractionButton").get_light_mask())
 	
 	set_process_input(true)
+
+###### DIALOGS ######
 
 func show_dialog(body, text, options):
 	# Hide the interaction button
@@ -80,3 +90,21 @@ func _on_InteractionButton_pressed():
 
 func send_start_interaction_message(id):
 	Player.character.interaction_possibilities[id].start_dialog()
+
+###### CARDS ######
+
+func add_card(card_data):
+	if card_data == null:
+		return false
+	
+	var card = ui_card_class.instance()
+	card.init_from_dic(card_data)
+	hand.add_child(card)
+	return true
+
+func remove_card(card):
+	for child in hand.get_children():
+		if card.unique_name == child.unique_name:
+			hand.remove_child(child)
+			return true
+	return false

@@ -13,6 +13,8 @@ func _input(event):
 	and event.type == InputEvent.MOUSE_BUTTON\
 	and event.button_index == BUTTON_LEFT\
 	and event.pressed:
+		if option.has("card used"):
+			Player.remove_card(option["card used"])
 		speaker.follow_up_dialog(option)
 
 func set_option(opt):

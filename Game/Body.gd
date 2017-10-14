@@ -54,6 +54,11 @@ func stop_dialog(option):
 # We need the body param in order to send the player's answer back to the body
 # Thus enabling us to follow up with the next dialog line
 func say(body, text, options):
+	for option in options:
+		if option.has("card used") and !Player.has_card(option["card used"]):
+			options.remove(options.find(option))
+			
+	
 	emit_signal("say", body, text, options)
 
 func set_name(name):
