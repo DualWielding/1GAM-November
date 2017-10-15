@@ -1,4 +1,8 @@
 id,en,fr
+$i,, 
+,,
+SUBMIT BUTTON,Submit,Envoyer
+,,
 DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n’a pas encore de dialogue écrit.
 DEFAULT DEFAULT A1,Okay.,Kk poulet
 ,,
@@ -9,7 +13,7 @@ FIRST UNKNOWN DEFAULT,Work in progress,"Mon pauvre ami ! Une chance que je vous 
 FIRST UNKNOWN DEFAULT A1,Work in progress,Réponse du joueur
 FIRST UNKNOWN ASK NAME,Work in progress,"Comment cela, qui suis-je ? Votre mémoire aurait-elle pu souffrir de cet effroyable aggression ? Vous souvenez vous au moins de votre nom, mon jeune ami ?"
 FIRST UNKNOWN ASK NAME A1,Work in progress,[Entrée du joueur]
-FIRST UNKNOWN EXHORT,Work in progress,"A la bonne heure ! Allons, debout, ce n'est pas le soir pour chanceler, si vous voyez où je veux en venir."
+FIRST UNKNOWN EXHORT,Work in progress,"Donc votre nom est %n ? A la bonne heure ! Allons, debout, ce n'est pas le soir pour chanceler, si vous voyez où je veux en venir."
 FIRST UNKNOWN EXHORT A1,,"Oui, je… je me souviens d'avoir à faire quelque chose de très important…"
 FIRST UNKNOWN EXHORT2,Work in progress,"Important ? Ahah ! C'est peu de le dire mon ami ! Allons, prenez l'air quelques minutes. Nous avons besoin de toutes vos capacités ce soir. "
 FIRST UNKNOWN EXHORT2 A1,…,. . .

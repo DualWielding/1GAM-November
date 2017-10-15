@@ -4,6 +4,9 @@ onready var dialog_panel = get_node("DialogPanel")
 onready var answers_container = dialog_panel.get_node("AnswersContainer")
 onready var body_text_window = dialog_panel.get_node("BodyTextWindow")
 onready var hand = get_node("Hand")
+onready var input_wrapper = get_node("InputWrapper")
+onready var input_field = input_wrapper.get_node("InputField")
+onready var submit_button = input_wrapper.get_node("Submit")
 
 var clickable_label_class = preload("res://ClickableText.tscn")
 var ui_card_class = preload("res://UICard.tscn")
@@ -35,11 +38,19 @@ func _ready():
 	get_node("InteractionButton").set_shortcut(sc)
 	get_node("InteractionButton").get_popup().set_light_mask(get_node("InteractionButton").get_light_mask())
 	
+	# Set the visible buttons text
+	submit_button.set_text(tr("SUBMIT BUTTON"))
+	
 	set_process_input(true)
 
 ###### DIALOGS ######
 
-func show_dialog(body, text, options):
+func show_dialog(body, unformatted_text, options):
+	# Remplace every %n in dialogs with the player name
+	var text = unformatted_text
+	if Player.get_name():
+		text = unformatted_text.replace("%n", Player.get_name())
+	
 	# Hide the interaction button
 	get_node("InteractionButton").hide()
 	
@@ -90,6 +101,20 @@ func _on_InteractionButton_pressed():
 
 func send_start_interaction_message(id):
 	Player.character.interaction_possibilities[id].start_dialog()
+
+###### PLAYER INPUTS ######
+
+func show_input():
+	input_wrapper.show()
+
+func hide_input():
+	input_wrapper.hide()
+
+func get_input_field():
+	return input_field
+
+func get_submit_button():
+	return submit_button
 
 ###### CARDS ######
 

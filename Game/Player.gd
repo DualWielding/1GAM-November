@@ -1,5 +1,6 @@
 extends Node
 
+var name setget set_name, get_name
 var character
 var ui
 
@@ -13,6 +14,12 @@ signal card_removed(card)
 func _ready():
 	add_card(Cards.get("DAGGER"))
 	add_card(Cards.get("POUCH"))
+
+func set_name(n):
+	name = n
+
+func get_name():
+	return name
 
 ###### DIALOGS ######
 

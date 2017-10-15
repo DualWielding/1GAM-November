@@ -21,7 +21,10 @@ func _input(event):
 
 func set_option(opt):
 	option = opt
-	set_bbcode(tr(option["text"]))
+	var text = tr(option.text)
+	if Player.get_name():
+		text = text.replace("%n", Player.get_name())
+	set_bbcode(text)
 
 func get_option():
 	return option

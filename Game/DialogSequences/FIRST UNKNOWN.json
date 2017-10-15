@@ -14,7 +14,7 @@
 		"text": "FIRST UNKNOWN ASK NAME",
 		"options": [
 			{
-				"text": "FIRST UNKNOWN ASK NAME A1",
+				"text": "$i",
 				"end": false,
 				"state change": "unchanged",
 				"next sequence": "exhort"
