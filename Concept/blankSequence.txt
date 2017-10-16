@@ -1,0 +1,11 @@
+	"d": {
+		"text":"",
+		"options": [
+			{
+				"text":"",
+				"end": ,
+				"state change":"",
+				"next sequence": "",
+			}
+		]
+	}

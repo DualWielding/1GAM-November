@@ -1,0 +1,58 @@
+id,en,fr
+$i,,
+,,
+SUBMIT BUTTON,Submit,Envoyer
+,,
+DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n’a pas encore de dialogue écrit.
+DEFAULT DEFAULT A1,Okay.,Kk poulet
+,,
+BASE BODY DEFAULT,"Hi, I’m a simple default body. You should override my dialog lines.",J’aime les chips.
+BASE BODY DEFAULT A1,Okay.,Cool.
+,,
+FIRST UNKNOWN DEFAULT,Work in progress,"Mon pauvre ami ! Une chance que je vous ai aperçu de l'autre bout de la rue ! Et ce bruit ! Un coup si violent sur le crâne, il aurait pu vous tuer ! Et ce garde qui reste là sans agir, il n'y a bien que [INSERER ELEMENT DE CARTE ICI] qui les fasse bouger ! Ah ! On peut dire que ce malandrin ne vous a pas raté. Dites-moi, comment vous sentez-vous ?"
+FIRST UNKNOWN DEFAULT A1,Work in progress,Réponse du joueur
+FIRST UNKNOWN ASK NAME,Work in progress,"Comment cela, qui suis-je ? Votre mémoire aurait-elle pu souffrir de cet effroyable aggression ? Vous souvenez vous au moins de votre nom, mon jeune ami ?"
+FIRST UNKNOWN ASK NAME A1,Work in progress,[Entrée du joueur]
+FIRST UNKNOWN EXHORT,Work in progress,"Donc votre nom est %n ? A la bonne heure ! Allons, debout, ce n'est pas le soir pour chanceler, si vous voyez où je veux en venir."
+FIRST UNKNOWN EXHORT A1,,"Oui, je… je me souviens d'avoir à faire quelque chose de très important…"
+FIRST UNKNOWN EXHORT2,Work in progress,"Important ? Ahah ! C'est peu de le dire mon ami ! Allons, prenez l'air quelques minutes. Nous avons besoin de toutes vos capacités ce soir."
+FIRST UNKNOWN EXHORT2 A1,…,. . .
+FIRST UNKNOWN END,Work in progress,N'oubliez pas que tout ce pays compte sur vous.
+FIRST UNKNOWN END A1,…,. . .
+,,
+FIRST DOOR GUARD DEFAULT,Work in progress,"Bonsoir Messire, votre invitation je vous prie."
+FIRST DOOR GUARD DEFAULT A1,Work in progress,Invitation ?
+FIRST DOOR GUARD FOLLOWUP,Work in progress,"C’est une réception privée, messire. Les invités"
+"doivent posséder une invitation pour passer ces portes.""",,
+FIRST DOOR GUARD FOLLOWUP A1,Work in progress,J'ai dû me faire voler la mienne il y a une minute de cela !
+FIRST DOOR GUARD FOLLOWUP A2,Work in progress,Item 3
+FIRST DOOR GUARD FOLLOWUP2,Work in progress,"Je suis désolé Messire, mais mes instructions sont très claires."
+"Personne ne passe ces portes sans une invitation. """,,
+FIRST DOOR GUARD FOLLOWUP2 A1,Work in progress,"BOURSE Allons, je suis sûr que nous pourrions nous arranger autrement"
+FIRST DOOR GUARD FOLLOWUP2 A2,Work in progress,Item 2
+FIRST DOOR GUARD FOLLOWUP2 A3,Work in progress,Item 3
+,,
+VITORI DEFAULT,,"Mon pauvre ami ! Comment allez vous ? Je viens de vous voir sauvagemment agressé par ce malandrin ! Ce craquement terrifiant, était-ce le bruit de gourdin de ce misérable contre votre tête ?"
+VITORI DEFAULT A1,,Que.. Comment ?
+VITORI DEFAULT A2,,Ourgh.. mon crâne..
+,,
+VITORI D1,,"Et ce garde, qui reste là sans agir ! Ah ! Les voilà bien plus réactifs dès lors qu'il s'agit d'aller parader devant de jeunes godelurettes !"
+VITORI D1 A1,,"Argh... par pitié, parlez moins fort !"
+,,
+VITORI D2,,"Oh, mille excuses ! Je m'emporte ! J'imagine qu'un homme de votre trempe a dû subir des coups plus terribles encore. Cependant, on peut dire que cette racaille ne vous a pas raté. Comment vous sentez vous, mon bon ami ?"
+VITORI D2 A1,,"Bien, je crois.. Qui êtes vous ?"
+VITORI D2 A2,,Diffile de croire que j'ai pu connaître pire... A qui ai-je l'honneur ?
+,,
+VITORI D3,,"Comment ça, qui suis-je ?! Je suis Valori, bien sûr ! Cepourrait-il que votre blessure ai pu vous faire perdre perdre la mémoire ? Vous souvenez vous au moins de votre nom ?"
+VITORI D3 A1,,
+,,
+VITORI D4,,"A la bonne heure ! Allons, debout ! (Il aide %n à se lever) Ce n'est pas le soir pour chanceler, vous avez du pain sur la planche. J'ai vu le voleur s'enfuir avec un objet, que vous a t-il dérobé ?"
+VITORI D4 A1,,Je... Je ne trouve plus ma dague.
+VITORI D4 A2,,Ma poudre... Il a dû la confondre avec ma bourse.
+VITORI D4 A3,,"Mon or, évidemment."
+,,
+VITORI D5,,"Fâcheux, mais l'essentiel est que vous alliez bien. La peste, je suis déjà en retard ! Vous me semblez bien pâle, tâchez de prendre un peu l'air avant de me rejoindre. Allons, courage mon ami ! N'oubliez pas que tout ce pays compte sur vous !"
+VITORI D5 A1,..,..
+,,
+VITORI D6,,..
+VITORI D6 A1,,"Mon crâne… la douleur est insupportable. La seule chose dont je parvienne à me souvenir, c’est qu’effectivement, une mission de la plus haute importance m’incombe ce soir… Mais tout m’échappe lorsque j’essaye de me remémorer comment et pourquoi. Bien, j’imagine qu’il n’y a pas de temps à perdre ! La mémoire me reviendra sûrement après une coupe ou deux."

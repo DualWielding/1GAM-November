@@ -1,0 +1,116 @@
+{
+	"default": {
+		"text": "VITORI DEFAULT",
+		"options": [
+			{
+				"text": "VITORI DEFAULT A1",
+				"end": false,
+				"state change": "unchanged",
+				"next sequence": "d1"
+			},
+			{
+				"text": "VITORI DEFAULT A2",
+				"end": true,
+				"state change": "unchanged",
+				"next sequence": "d1"
+			}
+		]
+	},
+	
+	"d1": {
+		"text": "VITORI D1",
+		"options" : [
+			{
+				"text":"VITORI D1 A1",
+				"end":false,
+				"state change":"unchanged",
+				"next sequence":"d2"
+			}
+
+		]
+	},
+
+	"d2": {
+		"text": "VITORI D2",
+		"options" : [
+			{
+				"text":"VITORI D2 A1",
+				"end":false,
+				"state change":"unchanged",
+				"next sequence":"d3"
+			},
+			{
+				"text":"VITORI D2 A2",
+				"end":false,
+				"state change":"unchanged",
+				"next sequence":"d3"
+			}
+
+		]
+	},
+
+	"d3": {
+		"text":"VITORI D3",
+		"options": [
+			{
+				"text":"$i",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			}
+		]
+	},
+
+	"d4": {
+		"text":"VITORI D4",
+		"options": [
+			{
+				"text":"VITORI D4 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5",
+				"card used": "dagger"
+
+			},
+			{
+				"text":"VITORI D4 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5",
+				"card used": "powder"
+			},
+			{
+				"text":"VITORI D4 A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5",
+				"card used": "goldpouch"
+			}
+		]
+	},
+
+	"d5": {
+		"text":"VITORI D5",
+		"options": [
+			{
+				"text":"VITORI D5 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6"
+			}
+		]
+	},
+
+	"d6": {
+		"text":"VITORI D6",
+		"options": [
+			{
+				"text":"VITORI D6 A1" ,
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	}
+
+} 
