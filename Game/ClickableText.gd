@@ -5,7 +5,6 @@ var option setget set_option, get_option
 var speaker setget set_speaker, get_speaker
 
 func _ready():
-	set_text(tr(option["text"]))
 	set_process_input(true)
 
 func _input(event):
@@ -19,6 +18,8 @@ func _input(event):
 			Player.add_card(option["card gained"])
 		if option.has("unique") and option.unique:
 			Player.used_unique_answer(option.text)
+		if option.has("state change") and option["state change"] != "unchanged":
+			speaker.state = option["state change"]
 		speaker.follow_up_dialog(option)
 
 func set_option(opt):
