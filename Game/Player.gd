@@ -13,7 +13,9 @@ signal card_removed(card)
 
 func _ready():
 	add_card(Cards.get("DAGGER"))
-	add_card(Cards.get("POUCH"))
+	add_card(Cards.get("GOLD POUCH"))
+	add_card(Cards.get("POWDER"))
+	add_card(Cards.get("LOVE LETTER"))
 
 func set_name(n):
 	name = n
@@ -37,8 +39,8 @@ func get_hand():
 func has_card(card_name):
 	return hand.has(card_name)
 
-func add_card(card):
-	hand[card.unique_name] = card
+func add_card(card_name):
+	hand[card_name] = Cards.get(card_name)
 
 func remove_card(card_unique_name):
 	hand.erase(card_unique_name)
