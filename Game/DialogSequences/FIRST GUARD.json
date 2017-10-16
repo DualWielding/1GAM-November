@@ -44,7 +44,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d3",
-				"card used": "goldpouch"
+				"card used": "GOLD POUCH"
 			},
 			{
 				"text":"GUARD D2 A2",
@@ -63,7 +63,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d11",
-				"card used": "sleepingwine"
+				"card used": "SLEEPING WINE"
 			}
 		]
 	},
@@ -166,7 +166,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d9",
-				"card used":"loveletter"
+				"card used":"LOVE LETTER"
 			},
 			{
 				"text":"GUARD D8 A2",
@@ -263,15 +263,15 @@
 				"end": true,
 				"state change":"neutralized",
 				"next sequence": "none",
-				"card used": "bottle"
+				"card used": "BOTTLE"
 			},
 			{
 				"text":"GUARD D13 A2",
 				"end": true,
 				"state change":"neutralized",
 				"next sequence": "none",
-				"card used": "dagger",
-				"card gained": "gard killed"
+				"card used": "DAGGER",
+				"card gained": "GUARD KILLED"
 			}
 		]
 	},
@@ -314,13 +314,13 @@
 				"end": true,
 				"state change":"neutralized",
 				"next sequence": "none",
-				"card gained": "guard corrupted"
+				"card gained": "GUARD CORRUPTED"
 			},
 			{
 				"text":"GUARD D15 A2",
 				"end": true,
 				"state change":"neutralized",
-				"next sequence": "guard corrupted"
+				"next sequence": "GUARD CORRUPTED"
 			}			
 		]
 	}

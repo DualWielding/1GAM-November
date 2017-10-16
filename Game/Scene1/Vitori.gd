@@ -35,13 +35,14 @@ func say(body, text, options):
 		Player.ui.show_input()
 		option_to_save = options[0]
 		Player.ui.get_submit_button().connect("pressed", self, "enter_player_name")
-	
-	for option in options:
-		# Remove a dialog option the player does not have the right tool
-		# or if he already used that option
-		if option.has("card used") and !Player.has_card(option["card used"])\
-		or !Player.is_unique_answer_up(option.text):
-			options.remove(options.find(option))
+		emit_signal("say", body, text, [])
+	else:
+		for option in options:
+			# Remove a dialog option the player does not have the right tool
+			# or if he already used that option
+			if option.has("card used") and !Player.has_card(option["card used"])\
+			or !Player.is_unique_answer_up(option.text):
+				options.remove(options.find(option))
 	
 	emit_signal("say", body, text, options)
 

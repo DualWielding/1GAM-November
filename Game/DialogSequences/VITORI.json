@@ -10,7 +10,7 @@
 			},
 			{
 				"text": "VITORI DEFAULT A2",
-				"end": true,
+				"end": false,
 				"state change": "unchanged",
 				"next sequence": "d1"
 			}
@@ -69,7 +69,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d5",
-				"card used": "dagger"
+				"card used": "DAGGER"
 
 			},
 			{
@@ -77,14 +77,14 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d5",
-				"card used": "powder"
+				"card used": "POWDER"
 			},
 			{
 				"text":"VITORI D4 A3",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d5",
-				"card used": "goldpouch"
+				"card used": "GOLD POUCH"
 			}
 		]
 	},

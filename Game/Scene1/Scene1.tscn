@@ -2,8 +2,8 @@
 
 [ext_resource path="res://TileSet1t.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
-[ext_resource path="res://Scene1/FirstDoorGuard.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scene1/FirstUnknown.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene1/FirstGuard.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scene1/Vitori.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene1/Bottle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=6]
 
@@ -129,9 +129,9 @@ shadow/item_mask = 1
 
 transform/pos = Vector2( 590, 240 )
 
-[node name="FirstUnknown" parent="." instance=ExtResource( 4 )]
+[node name="Vitori" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 30, 480 )
+transform/pos = Vector2( 40, 470 )
 
 [node name="Bottle" parent="." instance=ExtResource( 5 )]
 
