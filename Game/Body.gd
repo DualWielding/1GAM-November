@@ -56,7 +56,7 @@ func say(body, text, options):
 	for option in options:
 		# Remove a dialog option the player does not have the right tool
 		# or if he already used that option
-		if option.has("card used") and !Player.has_card(option["card used"])\
+		if (option.has("card used") and !Player.has_card(option["card used"]))\
 		or !Player.is_unique_answer_up(option.text):
 			options.remove(options.find(option))
 	

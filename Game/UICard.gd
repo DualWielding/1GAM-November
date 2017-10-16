@@ -6,7 +6,7 @@ var text = "Test"
 var img = preload("res://Sprites/Floor.png")
 
 func init_from_dic(dic):
-	name = dic.name
+	name = dic.unique_name.capitalize()
 	text = dic.text
 	img = dic.img
 	unique_name = dic.unique_name

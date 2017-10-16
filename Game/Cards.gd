@@ -18,7 +18,6 @@ func _ready():
 	
 	for card_name in cards:
 		cards[card_name].img = load(str("res://Sprites/Cards/", card_name.to_lower(), ".png"))
-		
 
 func get(card_unique_name):
 	if !cards.has(card_unique_name):
