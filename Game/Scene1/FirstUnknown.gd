@@ -6,8 +6,8 @@ func _ready():
 	walk_right()
 
 func init():
-	set_name("Unknown")
-	unique_name = "First Unknown"
+	set_name("Vitori")
+	unique_name = "Vitori"
 	base_looking_direction = "right"
 
 # To override in order to say stuff
