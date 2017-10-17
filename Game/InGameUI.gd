@@ -41,6 +41,12 @@ func _ready():
 	# Set the visible buttons text
 	submit_button.set_text(tr("SUBMIT BUTTON"))
 	
+	# Create the cards
+	for card in Player.hand:
+		var c = ui_card_class.instance()
+		c.init_from_dic(card)
+		hand.add_child(c)
+	
 	set_process_input(true)
 
 ###### DIALOGS ######
@@ -56,9 +62,6 @@ func show_dialog(body, unformatted_text, options):
 	
 	# Set the new speaker's text
 	body_text_window.set_bbcode(text)
-	
-	# Remove old answers
-	clear_answers()
 	
 	# Add new answers
 	for option in options:
