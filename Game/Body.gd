@@ -1,11 +1,12 @@
 extends Node2D
 
 var sequences = {}
-var state = "default"
+var state = "default" setget set_state, get_state
 var display_name setget set_name, get_name
 var unique_name = "Base body"
 
 signal say(body, text, options)
+signal state_change(old_state, new_state)
 signal stop_dialog
 
 func _ready():
@@ -16,6 +17,13 @@ func _ready():
 func init():
 	# Function to override in childs, instead of _ready
 	pass
+
+func set_state(new_state):
+	emit_signal("state_change", state, new_state)
+	state = new_state
+
+func get_state():
+	return state
 
 func load_sequences():
 	var path = "res://DialogSequences/" + unique_name.to_upper() + ".json"
