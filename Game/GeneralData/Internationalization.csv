@@ -30,14 +30,14 @@ VITORI D2,TODO,"Oh, mille excuses ! Je m'emporte ! J'imagine qu'un homme de votr
 VITORI D2 A1,TODO,"Bien, je crois. . . Qui êtes vous ?"
 VITORI D2 A2,TODO,Diffile de croire que j'ai pu connaître pire. . . A qui ai-je l'honneur ?
 ,,
-VITORI D3,TODO,"Comment ça, qui suis-je ?! Je suis Vitori, bien sûr ! Se pourrait-il que votre blessure ait pu vous faire perdre perdre la mémoire ? Vous souvenez-vous au moins de votre nom ?"
+VITORI D3,TODO,"Je suis votre ami Vitori, bien sûr ! Se pourrait-il que votre blessure ait pu vous faire perdre perdre la mémoire ? Vous souvenez-vous au moins de votre nom ?"
 ,,
 VITORI D4,TODO,"A la bonne heure ! Allons, debout ! [i](Vitori aide %n à se lever)[/i] Ce n'est pas le soir pour chanceler, vous avez du pain sur la planche. J'ai vu le voleur s'enfuir avec un objet, que vous a t-il dérobé ?"
 VITORI D4 A1,TODO,Je. . . Je ne trouve plus ma dague.
-VITORI D4 A2,TODO,Ma poudre. . . Il a dû la confondre avec ma bourse.
+VITORI D4 A2,TODO,Je. . . J'avais une petite dose de poudre. Il a dû la confondre avec ma bourse.
 VITORI D4 A3,TODO,"Mon or, évidemment."
 ,,
-VITORI D5,,"Fâcheux, mais l'essentiel est que vous alliez bien. [i](Vitori regarde sa montre)[/i] La peste, je suis déjà en retard ! Vous me semblez bien pâle, tâchez de prendre un peu l'air avant de me rejoindre. Allons, courage mon ami ! N'oubliez pas que tout ce pays compte sur vous !"
+VITORI D5,,"Fâcheux, mais l'essentiel est que vous alliez bien. [i](Vitori regarde sa montre)[/i] La peste, je suis déjà en retard ! Vous me semblez bien pâle, tâchez de prendre un peu l'air avant de me rejoindre. Allons, courage mon ami ! N'oubliez pas que tout ce pays compte sur vous ! [i](Il sort)[/i]"
 VITORI D5 A1,. . .,. . .
 ,,
 VITORI D6,. . .,. . .
