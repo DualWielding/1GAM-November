@@ -12,6 +12,7 @@ func _input(event):
 	and event.type == InputEvent.MOUSE_BUTTON\
 	and event.button_index == BUTTON_LEFT\
 	and event.pressed:
+		Player.ui.clear_answers()
 		if option.has("card used"):
 			Player.remove_card(option["card used"])
 		if option.has("card gained"):
@@ -27,6 +28,9 @@ func set_option(opt):
 	var text = tr(option.text)
 	if Player.get_name():
 		text = text.replace("%n", Player.get_name())
+	if opt.has("card used"):
+		# TODO Put the translation here and not the unique name
+		text = str("[", Cards.get(opt["card used"]).unique_name, "] ", text)
 	set_bbcode(text)
 
 func get_option():
