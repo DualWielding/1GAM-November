@@ -23,7 +23,8 @@ func stop_dialog(option):
 
 # Override the base say() function, in order to
 # enable the capture of the player's name
-func say(body, text, options):
+func say(body, text, opt):
+	var options = opt
 	# I really don't like this way of doing it
 	#But will do for now...
 	if options.size() == 1 and options[0].text == "$i":
