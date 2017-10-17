@@ -1,0 +1,31 @@
+{
+	"default": {
+		"text":"BOTTLE DEFAULT",
+		"options": [
+			{
+				"text":"BOTTLE DEFAULT A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained": "BOTTLE"
+			},
+			{
+				"text":"BOTTLE DEFAULT A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card used": "powder",
+				"card gained": "sleepingwine"
+			},
+			{
+				"text":"BOTTLE DEFAULT A3",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}			
+		]
+	}
+
+
+
+}
