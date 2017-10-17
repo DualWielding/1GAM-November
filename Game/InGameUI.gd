@@ -80,6 +80,8 @@ func show_interaction_button():
 	if !Player.character.is_disabled():
 		get_node("InteractionButton").show()
 
+###### INTERACTIONS ######
+
 func hide_interaction_button():
 	get_node("InteractionButton").hide()
 	get_node("InteractionButton").get_popup().hide()
@@ -88,13 +90,17 @@ func hide_interaction_button():
 func _on_InteractionButton_pressed():
 	var popup = get_node("InteractionButton").get_popup()
 	popup.clear()
-	for i in range(Player.character.interaction_possibilities.size()):
-		var body = Player.character.interaction_possibilities[i]
-		var b = Button.new()
-		popup.add_item(body.get_name(), i)
-		popup.connect("item_pressed", self, "send_start_interaction_message")
-	popup.show()
-	popup.set_global_pos(get_global_mouse_pos())
+	var size = Player.character.interaction_possibilities.size()
+	if size == 1:
+		send_start_interaction_message(0)
+	else:
+		for i in range():
+			var body = Player.character.interaction_possibilities[i]
+			var b = Button.new()
+			popup.add_item(body.get_name(), i)
+			popup.connect("item_pressed", self, "send_start_interaction_message")
+		popup.show()
+		popup.set_global_pos(get_global_mouse_pos())
 
 func send_start_interaction_message(id):
 	Player.character.interaction_possibilities[id].start_dialog()
