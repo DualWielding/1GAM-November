@@ -79,11 +79,11 @@ GUARD D7 A1,TODO,La peste sur vous et votre famille !
 GUARD D7 A2,TODO,"Je rentrerai, que vous le vouliez ou non !"
 ,,
 GUARD D8,TODO,"Je l'ignore, mais sans invita. . ."
-GUARD D8 A1,TODO,"[color=#4169E1][Lettre Galante] [i](lui agite devant le nez une lettre)[/i] Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
+GUARD D8 A1,TODO,"[color=#4169E1][Lettre Galante] [i](%n sort une lettre et l'agite devant le visage du garde)[/i] Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
 GUARD D8 A2,TODO,"Je fais parti des musiciens, triple buse ! Vous m'avez vu rentrer il y a à peine une heure de cela !"
 GUARD D8 A3,TODO,"Je ne suis rien de moins que celui qui ait organisé cette réception. Maintenant, si vous permettez. . ."
 ,,
-GUARD D9,TODO,"Vous n'êtes pas le premier nobliau a tenter de rentrer dans la demeure du DUC. Maintenant déguerpissez, avant que je ne termine ce que ce voleur à la tire a commencé."
+GUARD D9,TODO,"Vous n'êtes pas le premier nobliau a tenter de rentrer dans la demeure du [b]duc[/b]. Maintenant déguerpissez, avant que je ne termine ce que ce voleur a commencé."
 GUARD D9 A1,TODO,Je n'ai pas dit mon dernier mot.
 ,,
 GUARD D10,TODO,"Je. . . veuillez m'excuser, un moment d'inattention, sûrement. Passez une excellente soirée."
@@ -115,6 +115,32 @@ GUARD D15 A2,TODO,"Evidemment. Inutile, je présume, de vous souhaiter une bonne
 ,,
 GUARD D13-2,TODO,Que voulez-vous dire ?
 GUARD D13-2 A1,TODO,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
+,,
+PISSED GUARD D1,TODO,Encore vous ?
+PISSED GUARD D1 A1,TODO,"Ecoutez, je pense que nous sommes tous deux partis du mauvais pied. N'y a t-il pas un moyen de..."
+PISSED GUARD D1 A2,TODO,Je vous laisse encore une dernière chance de me laisser passer.
+PISSED GUARD D1 A3,TODO,N'y a t-il aucun moyen de vous faire entendre raison ?
+,,
+GUARD D16,TODO,Hors de ma vue !
+GUARD D16 A1,TODO,[color=red][dague] Je vous aurai prévenu. [i](%n se jette sur le garde et le poignarde)[/i][/color]
+GUARD D16 A2,TODO,[color=red][Bouteille] Il est dommage d'en arriver là. [i](%n lui fracasse la bouteille sur le crâne)[/i][/color]
+GUARD D16 A3,TODO,[color=red][Vin somnifère] Il est dommage d'en arriver là. [i](%n lui fracasse la bouteille sur le crâne)[/i][/color]
+,,
+GUARD D17,TODO,J'ai bien peur que ma patience ait atteint ses limites. Hors de ma vue !
+GUARD D17 A1,TODO,"Très bien, très bien !"
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
 BOTTLE DEFAULT A1,,[i](%n la prend)[/i]

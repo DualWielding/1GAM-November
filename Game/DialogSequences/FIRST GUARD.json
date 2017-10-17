@@ -322,7 +322,73 @@
 				"next sequence": "GUARD CORRUPTED"
 			}			
 		]
+	},
+
+		"pissed guard": {
+		"text":"PISSED GUARD D1",
+		"options": [
+			{
+				"text":"PISSED GUARD D1 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2",
+			},
+			{
+				"text":"PISSED guard D1 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d16"
+			},
+			{
+				"text":"PISSED GUARD D1 A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d17"
+			}
+		]
+	},
+
+	"d16": {
+		"text":"GUARD D16",
+		"options": [
+			{
+				"text":"GUARD D16 A1",
+				"end": true,
+				"state change":"neutralized",
+				"next sequence": "none",
+				"card used": "DAGGER"
+			},
+			{
+				"text":"GUARD D16 A2",
+				"end": true,
+				"state change":"neutralized",
+				"next sequence": "none",
+				"card used": "BOTTLE"
+			},
+			{
+				"text":"GUARD D16 A3",
+				"end": true,
+				"state change":"neutralized",
+				"next sequence": "none",
+				"card used": "SLEEPING WINE"
+			}
+		]
+	},
+
+	"d17": {
+		"text":"GUARD D17",
+		"options": [
+			{
+				"text":"GUARD D17 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
 	}
+
+
+
 
 
 
