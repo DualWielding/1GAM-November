@@ -1,5 +1,5 @@
 id,en,fr
-$i, , 
+$i,,
 ,,
 GOLD POUCH,Gold pouch,Bourse d'or
 POWDER,Powder,Poudre
@@ -10,7 +10,7 @@ GUARD KILLED,Guard killed,Garde tué
 GUARD CORRUPTED,Guard corrupted,Garde corrompu
 ,,
 ,,
-,, 
+,,
 SUBMIT BUTTON,Submit,Envoyer
 ,,
 DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n'a pas encore de dialogue écrit.
@@ -37,7 +37,7 @@ VITORI D4 A1,TODO,Je. . . Je ne trouve plus ma dague.
 VITORI D4 A2,TODO,Ma poudre. . . Il a dû la confondre avec ma bourse.
 VITORI D4 A3,TODO,"Mon or, évidemment."
 ,,
-VITORI D5,,"Fâcheux, mais l'essentiel est que vous alliez bien. La peste, je suis déjà en retard ! Vous me semblez bien pâle, tâchez de prendre un peu l'air avant de me rejoindre. Allons, courage mon ami ! N'oubliez pas que tout ce pays compte sur vous !"
+VITORI D5,,"Fâcheux, mais l'essentiel est que vous alliez bien. [i](Vitori regarde sa montre)[/i] La peste, je suis déjà en retard ! Vous me semblez bien pâle, tâchez de prendre un peu l'air avant de me rejoindre. Allons, courage mon ami ! N'oubliez pas que tout ce pays compte sur vous !"
 VITORI D5 A1,. . .,. . .
 ,,
 VITORI D6,. . .,. . .
@@ -46,17 +46,17 @@ VITORI D6 A1,TODO,"Mon crâne. . . la douleur est insupportable. La seule chose 
 ,,
 GUARD DEFAULT,TODO,"Bonsoir Messire, votre invitation je vous prie."
 GUARD DEFAULT A1,TODO,Invitation ?
-GUARD DEFAULT UNIQUE A1,TODO,Je n'en possède pas
+GUARD DEFAULT UNIQUE A1,TODO,Je n'en possède pas.
 ,,
 GUARD D1,TODO,"C’est une réception privée, messire. Les invités doivent posséder une invitation pour passer ces portes."
 GUARD D1 A1,TODO,J'ai dû me faire voler la mienne il y a une minute de cela !
-GUARD UNIQUE A2,TODO,(mentant) Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
+GUARD UNIQUE A2,TODO,[i](mentant)[/i Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
 ,,
 GUARD D2,TODO,"Je suis désolé Messire, mais les instructions du Duc sont très claires. Personne ne passe ces portes sans une invitation."
-GUARD D2 A1,TODO,"[BOURSE] Allons, je suis sûr que nous pourrions nous arranger autrement. (Agite devant le garde une petite bourse.)"
+GUARD D2 A1,TODO,"[color=green][BOURSE] Allons, je suis sûr que nous pourrions nous arranger autrement. [i](Agite devant le garde une petite bourse.)[/i][/color]"
 GUARD D2 A2,TODO,"Mais vous étiez là, vous avez assisté à mon aggression !"
 GUARD UNIQUE A3,TODO,"Savez vous au moins qui je suis, pour oser me parler de la sorte ?"
-GUARD D2 A4,TODO,"[Vin Somnifère]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte ?"
+GUARD D2 A4,TODO,"[color=blue][Vin Somnifère]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte? [/color]"
 ,,
 GUARD D3,TODO,"C’est très généreux de votre part Messire. Merci… Mais sans invitation, je ne peux vous faire rentrer."
 GUARD D3 A1,TODO,"Je vois. C'est dommage, cette bourse vous aurait permis de vous offrir quelque bon temps."
@@ -67,19 +67,19 @@ GUARD D4 A1,TODO,Qu. . . Comment ?! Mmh. . . Je vois.
 ,,
 GUARD D5,TODO,Je suis navré. Je ne peux rien pour vous.
 GUARD D5 A1,TODO,"C'est un scandale ! Nous n'en avons pas terminé, vous et moi."
-GUARD D5 A2,TODO,(pestant) Quel animal butté ! Laissez moi passer !
+GUARD D5 A2,TODO,[i](pestant)[/i] Quel animal butté ! Laissez moi passer !
 GUARD D5 A3,TODO,"Je passe, que vous le vouliez ou non !"
 ,,
 GUARD D6,TODO,"Messire, ne m'obligez pas à user de force."
-GUARD D6 A1,TODO,J'aimerai voir ça ! (force le passage)
-GUARD D6 A2,TODO,Vous n'oserez pas ! (force le passage)
+GUARD D6 A1,TODO,J'aimerai voir ça ! [i](force le passage)[/i]
+GUARD D6 A2,TODO,Vous n'oserez pas ! [i](force le passage)[/i]
 ,,
 GUARD D7,TODO,([i]repousse %n sans mal[/i])
 GUARD D7 A1,TODO,La peste sur vous et votre famille !
 GUARD D7 A2,TODO,"Je rentrerai, que vous le vouliez ou non !"
 ,,
 GUARD D8,TODO,"Je l'ignore, mais sans invita. . ."
-GUARD D8 A1,TODO,"[Lettre Galante] (lui agite devant le nez une lettre) Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence !"
+GUARD D8 A1,TODO,"[color=blue][Lettre Galante] [i](lui agite devant le nez une lettre)[/i] Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
 GUARD D8 A2,TODO,"Je fais parti des musiciens, triple buse ! Vous m'avez vu rentrer il y a à peine une heure de cela !"
 GUARD D8 A3,TODO,"Je ne suis rien de moins que celui qui ait organisé cette réception. Maintenant, si vous permettez. . ."
 ,,
@@ -92,7 +92,7 @@ GUARD D10 A1,TODO,A la bonne heure !
 GUARD D11,TODO,Vous ne devriez pas abuser de ma patien. . . bons dieux cette bouteille est plus vieille que moi !
 GUARD D11 A1,TODO,"Ahaha, alors à la votre !"
 ,,
-GUARD D12,TODO,Mmh. . . J'aurai cru qu'elle aurait. . . qu'elle aurait meilleur. . . G. . . goût. . . (le garde s'effondre)
+GUARD D12,TODO,Mmh. . . J'aurai cru qu'elle aurait. . . qu'elle aurait meilleur. . . G. . . goût. . . [i](le garde s'effondre)[/i]
 GUARD D12 A1,TODO,Efficace. J'espère tout de même que cette poudre n'était qu'un simple somnifère.
 ,,
 GUARD HAS GOLDPOUCH,TODO,"Bonsoir Messire, votre invitation je vous prie."
@@ -102,8 +102,8 @@ GUARD HAS GOLDPOUCH A3,TODO,"Ecoutez moi bien, si vous ne me rendez pas mon dû 
 ,,
 GUARD D13,TODO,Que voulez-vous dire ?
 ,,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
-GUARD D13 A1,TODO,[bouteille] Ce genre de conséquences ! (%n lui abbat la bouteille sur le crâne)
-GUARD D13 A2,TODO,"[Dague] (PlayerName se jete sur le garde et le poignarde) Je n'ai pas de temps à perdre ce soir, navré."
+GUARD D13 A1,TODO,[color=red][Bouteille] Ce genre de conséquences ! [i](%n lui abbat la bouteille sur le crâne)[/i][/color]
+GUARD D13 A2,TODO,"[color=red][Dague] [i](%n se jete sur le garde et le poignarde)[/i] Je n'ai pas de temps à perdre ce soir, navré.[/color]"
 ,,
 GUARD D14,TODO,"C'est vrai qu'avec cet argent, je pourrai enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses…"
 GUARD D14 A1,TODO,"Qu. . . Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
