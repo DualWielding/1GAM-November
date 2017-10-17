@@ -74,7 +74,7 @@ GUARD D6,TODO,"Messire, ne m'obligez pas à user de force."
 GUARD D6 A1,TODO,J'aimerai voir ça ! [i](force le passage)[/i]
 GUARD D6 A2,TODO,Vous n'oserez pas ! [i](force le passage)[/i]
 ,,
-GUARD D7,TODO,([i]repousse %n sans mal[/i])
+GUARD D7,TODO,"([i]%n essaye de passer, mais le garde le repousse d'une brutale bourrasque[/i])"
 GUARD D7 A1,TODO,La peste sur vous et votre famille !
 GUARD D7 A2,TODO,"Je rentrerai, que vous le vouliez ou non !"
 ,,
