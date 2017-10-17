@@ -56,7 +56,6 @@ func stop_dialog(option):
 # We need the body param in order to send the player's answer back to the body
 # Thus enabling us to follow up with the next dialog line
 func say(body, text, options):
-	print("lolz")
 	for option in options:
 		# Remove a dialog option the player does not have the right tool
 		# or if he already used that option

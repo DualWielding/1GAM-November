@@ -28,9 +28,9 @@ func set_option(opt):
 	var text = tr(option.text)
 	if Player.get_name():
 		text = text.replace("%n", Player.get_name())
+	# Show which card is used, if the option uses one
 	if opt.has("card used"):
-		# TODO Put the translation here and not the unique name
-		text = str("[", Cards.get(opt["card used"]).unique_name, "] ", text)
+		text = str("[", tr(Cards.get(opt["card used"]).unique_name), "] ", text)
 	set_bbcode(text)
 
 func get_option():

@@ -1,9 +1,19 @@
 id,en,fr
 $i, , 
+,,
+GOLD POUCH,Gold pouch,Bourse d'or
+POWDER,Powder,Poudre
+DAGGER,Dagger,Dague
+LOVE LETTER,Love letter,Lettre d'amour
+BOTTLE,Bottle,Bouteille
+GUARD KILLED,Guard killed,Garde tué
+GUARD CORRUPTED,Guard corrupted,Garde corrompu
+,,
+,,
 ,, 
 SUBMIT BUTTON,Submit,Envoyer
 ,,
-DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n’a pas encore de dialogue écrit.
+DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n'a pas encore de dialogue écrit.
 DEFAULT DEFAULT A1,Okay.,Kk poulet
 ,,
 BASE BODY DEFAULT,"Hi, I’m a simple default body. You should override my dialog lines.",J’aime les chips.
