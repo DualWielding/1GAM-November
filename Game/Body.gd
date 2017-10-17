@@ -86,6 +86,5 @@ func fade():
 	get_node("FadePlayer").connect("finished", self, "queue_free")
 
 func check_neutralized(old_state, new_state):
-	print(new_state)
 	if new_state == "neutralized":
 		fade()
