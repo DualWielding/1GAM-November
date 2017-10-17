@@ -86,7 +86,3 @@ func look_at(direction):
 		set_stand_to_base_left()
 	elif direction == "down":
 		set_stand_to_base_down()
-
-func fade():
-	get_node("FadePlayer").play("Fade")
-	get_node("FadePlayer").connect("finished", self, "queue_free")

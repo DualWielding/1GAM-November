@@ -10,6 +10,7 @@ signal state_change(old_state, new_state)
 signal stop_dialog
 
 func _ready():
+	connect("state_change", self, "check_neutralized")
 	add_to_group("body")
 	init()
 	load_sequences()
@@ -79,3 +80,12 @@ func set_name(name):
 
 func get_name():
 	return display_name
+
+func fade():
+	get_node("FadePlayer").play("Fade")
+	get_node("FadePlayer").connect("finished", self, "queue_free")
+
+func check_neutralized(old_state, new_state):
+	print(new_state)
+	if new_state == "neutralized":
+		fade()

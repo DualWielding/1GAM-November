@@ -5,14 +5,14 @@
 			{
 				"text":"BOTTLE DEFAULT A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"neutralized",
 				"next sequence": "none",
 				"card gained": "BOTTLE"
 			},
 			{
 				"text":"BOTTLE DEFAULT A2",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"neutralized",
 				"next sequence": "none",
 				"card used": "POWDER",
 				"card gained": "SLEEPING WINE"
