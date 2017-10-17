@@ -53,10 +53,10 @@ GUARD D1 A1,TODO,J'ai dû me faire voler la mienne il y a une minute de cela !
 GUARD UNIQUE A2,TODO,[i](mentant)[/i Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
 ,,
 GUARD D2,TODO,"Je suis désolé Messire, mais les instructions du Duc sont très claires. Personne ne passe ces portes sans une invitation."
-GUARD D2 A1,TODO,"[color=green][BOURSE] Allons, je suis sûr que nous pourrions nous arranger autrement. [i](Agite devant le garde une petite bourse.)[/i][/color]"
+GUARD D2 A1,TODO,"[color=green]Allons, je suis sûr que nous pourrions nous arranger autrement. [i](Agite devant le garde une petite bourse.)[/i][/color]"
 GUARD D2 A2,TODO,"Mais vous étiez là, vous avez assisté à mon aggression !"
 GUARD UNIQUE A3,TODO,"Savez vous au moins qui je suis, pour oser me parler de la sorte ?"
-GUARD D2 A4,TODO,"[color=blue][Vin Somnifère]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte? [/color]"
+GUARD D2 A4,TODO,"[color=blue]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte? [/color]"
 ,,
 GUARD D3,TODO,"C’est très généreux de votre part Messire. Merci… Mais sans invitation, je ne peux vous faire rentrer."
 GUARD D3 A1,TODO,"Je vois. C'est dommage, cette bourse vous aurait permis de vous offrir quelque bon temps."
@@ -102,8 +102,8 @@ GUARD HAS GOLDPOUCH A3,TODO,"Ecoutez moi bien, si vous ne me rendez pas mon dû 
 ,,
 GUARD D13,TODO,Que voulez-vous dire ?
 ,,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
-GUARD D13 A1,TODO,[color=red][Bouteille] Ce genre de conséquences ! [i](%n lui abbat la bouteille sur le crâne)[/i][/color]
-GUARD D13 A2,TODO,"[color=red][Dague] [i](%n se jete sur le garde et le poignarde)[/i] Je n'ai pas de temps à perdre ce soir, navré.[/color]"
+GUARD D13 A1,TODO,[color=red] Ce genre de conséquences ! [i](%n lui abbat la bouteille sur le crâne)[/i][/color]
+GUARD D13 A2,TODO,"[color=red][i](%n se jete sur le garde et le poignarde)[/i] Je n'ai pas de temps à perdre ce soir, navré.[/color]"
 ,,
 GUARD D14,TODO,"C'est vrai qu'avec cet argent, je pourrai enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses…"
 GUARD D14 A1,TODO,"Qu. . . Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
@@ -118,5 +118,5 @@ GUARD D13-2 A1,TODO,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela !
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
 BOTTLE DEFAULT A1,,[i](%n la prend)[/i]
-BOTTLE DEFAULT A2,,[color=blue][Poudre] Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
+BOTTLE DEFAULT A2,,[color=blue]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
 BOTTLE DEFAULT A3,,[i](%n la laisse là)[/i]
