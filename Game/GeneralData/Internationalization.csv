@@ -115,3 +115,8 @@ GUARD D15 A2,TODO,"Evidemment. Inutile, je présume, de vous souhaiter une bonne
 ,,
 GUARD D13-2,TODO,Que voulez-vous dire ?
 GUARD D13-2 A1,TODO,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
+,,
+BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
+BOTTLE DEFAULT A1,,[i](%n la prend)[/i]
+BOTTLE DEFAULT A2,,[color=blue][Poudre] Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
+BOTTLE DEFAULT A3,,[i](%n la laisse là)[/i]
