@@ -18,7 +18,6 @@ func init():
 # In order to prevent the player from moving
 func stop_dialog(option):
 	emit_signal("stop_dialog")
-	
 	walk_left()
 	fade()
 

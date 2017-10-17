@@ -136,3 +136,12 @@ func remove_card(card):
 			hand.remove_child(child)
 			return true
 	return false
+
+func _on_HandScaleButton_toggled( pressed ):
+	var b = get_node("HandScaleButton")
+	if pressed:
+		hand.set_scale(Vector2(0.3, 0.3))
+		b.set_text("v")
+	else:
+		hand.set_scale(Vector2(1, 1))
+		b.set_text("^")

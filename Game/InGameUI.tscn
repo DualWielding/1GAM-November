@@ -87,14 +87,32 @@ margin/bottom = 180.0
 custom_constants/separation = 15
 alignment = 0
 
-[node name="Hand" type="HBoxContainer" parent="."]
+[node name="HandScaleButton" type="Button" parent="."]
 
-visibility/light_mask = 0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
+margin/top = 0.0
+margin/right = 20.0
+margin/bottom = 20.0
+toggle_mode = true
+is_pressed = true
+enabled_focus_mode = 2
+shortcut = null
+text = "v"
+flat = false
+
+[node name="Hand" type="HBoxContainer" parent="."]
+
+visibility/light_mask = 0
+rect/scale = Vector2( 0.3, 0.3 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 0
+margin/left = 20.0
 margin/top = 0.0
 margin/right = 1020.0
 margin/bottom = 260.0
@@ -146,5 +164,7 @@ text = "Submit"
 flat = false
 
 [connection signal="pressed" from="InteractionButton" to="." method="_on_InteractionButton_pressed"]
+
+[connection signal="toggled" from="HandScaleButton" to="." method="_on_HandScaleButton_toggled"]
 
 
