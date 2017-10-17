@@ -1,5 +1,5 @@
 extends "res://Body.gd"
 
-func _ready():
+func _init():
 	set_name("Bottle")
-	unique_name = "Wine bottle"
+	unique_name = "Bottle"

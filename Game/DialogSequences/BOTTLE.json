@@ -14,8 +14,8 @@
 				"end": true,
 				"state change":"unchanged",
 				"next sequence": "none",
-				"card used": "powder",
-				"card gained": "sleepingwine"
+				"card used": "POWDER",
+				"card gained": "SLEEPING WINE"
 			},
 			{
 				"text":"BOTTLE DEFAULT A3",

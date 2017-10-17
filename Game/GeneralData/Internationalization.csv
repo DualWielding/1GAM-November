@@ -8,7 +8,7 @@ LOVE LETTER,Love letter,Lettre d'amour
 BOTTLE,Bottle,Bouteille
 GUARD KILLED,Guard killed,Garde tué
 GUARD CORRUPTED,Guard corrupted,Garde corrompu
-,,
+SLEEPING WINE,Sleeping wine,Vin soporifique
 ,,
 ,,
 SUBMIT BUTTON,Submit,Envoyer
@@ -50,7 +50,7 @@ GUARD DEFAULT UNIQUE A1,TODO,Je n'en possède pas.
 ,,
 GUARD D1,TODO,"C’est une réception privée, messire. Les invités doivent posséder une invitation pour passer ces portes."
 GUARD D1 A1,TODO,J'ai dû me faire voler la mienne il y a une minute de cela !
-GUARD UNIQUE A2,TODO,[i](mentant)[/i Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
+GUARD UNIQUE A2,TODO,[i](mentant)[/i] Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
 ,,
 GUARD D2,TODO,"Je suis désolé Messire, mais les instructions du Duc sont très claires. Personne ne passe ces portes sans une invitation."
 GUARD D2 A1,TODO,"[color=green]Allons, je suis sûr que nous pourrions nous arranger autrement. [i](Agite devant le garde une petite bourse.)[/i][/color]"
