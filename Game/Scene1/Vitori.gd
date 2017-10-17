@@ -19,16 +19,12 @@ func init():
 func stop_dialog(option):
 	emit_signal("stop_dialog")
 	
-	if option["state change"] != "unchanged":
-		state = option["state change"]
-	
 	walk_left()
 	fade()
 
 # Override the base say() function, in order to
 # enable the capture of the player's name
 func say(body, text, options):
-	
 	# I really don't like this way of doing it
 	#But will do for now...
 	if options.size() == 1 and options[0].text == "$i":
@@ -43,8 +39,7 @@ func say(body, text, options):
 			if option.has("card used") and !Player.has_card(option["card used"])\
 			or !Player.is_unique_answer_up(option.text):
 				options.remove(options.find(option))
-	
-	emit_signal("say", body, text, options)
+		emit_signal("say", body, text, options)
 
 func enter_player_name():
 	var name = Player.ui.get_input_field().get_text()

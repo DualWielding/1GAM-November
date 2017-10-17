@@ -36,6 +36,9 @@ func start_dialog():
 	say(self, tr(sequences[state]["text"]), sequences[state]["options"])
 
 func follow_up_dialog(option):
+	if option["state change"] != "unchanged":
+		state = option["state change"]
+	
 	if option["end"]:
 		stop_dialog(option)
 	else:
@@ -53,6 +56,7 @@ func stop_dialog(option):
 # We need the body param in order to send the player's answer back to the body
 # Thus enabling us to follow up with the next dialog line
 func say(body, text, options):
+	print("lolz")
 	for option in options:
 		# Remove a dialog option the player does not have the right tool
 		# or if he already used that option
