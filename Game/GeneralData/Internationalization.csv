@@ -8,7 +8,7 @@ LOVE LETTER,Love letter,Lettre d'amour
 BOTTLE,Bottle,Bouteille
 GUARD KILLED,Guard killed,Garde tué
 GUARD CORRUPTED,Guard corrupted,Garde corrompu
-SLEEPING WINE,Sleeping wine,Vin soporifique
+,,
 ,,
 ,,
 SUBMIT BUTTON,Submit,Envoyer
@@ -56,7 +56,7 @@ GUARD D2,TODO,"Je suis désolé Messire, mais les instructions du Duc sont très
 GUARD D2 A1,TODO,"[color=green]Allons, je suis sûr que nous pourrions nous arranger autrement. [i](Agite devant le garde une petite bourse.)[/i][/color]"
 GUARD D2 A2,TODO,"Mais vous étiez là, vous avez assisté à mon aggression !"
 GUARD UNIQUE A3,TODO,"Savez vous au moins qui je suis, pour oser me parler de la sorte ?"
-GUARD D2 A4,TODO,"[color=blue]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte? [/color]"
+GUARD D2 A4,TODO,"[color=#4169E1]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte? [/color]"
 ,,
 GUARD D3,TODO,"C’est très généreux de votre part Messire. Merci… Mais sans invitation, je ne peux vous faire rentrer."
 GUARD D3 A1,TODO,"Je vois. C'est dommage, cette bourse vous aurait permis de vous offrir quelque bon temps."
@@ -79,7 +79,7 @@ GUARD D7 A1,TODO,La peste sur vous et votre famille !
 GUARD D7 A2,TODO,"Je rentrerai, que vous le vouliez ou non !"
 ,,
 GUARD D8,TODO,"Je l'ignore, mais sans invita. . ."
-GUARD D8 A1,TODO,"[color=blue][Lettre Galante] [i](lui agite devant le nez une lettre)[/i] Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
+GUARD D8 A1,TODO,"[color=#4169E1][Lettre Galante] [i](lui agite devant le nez une lettre)[/i] Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
 GUARD D8 A2,TODO,"Je fais parti des musiciens, triple buse ! Vous m'avez vu rentrer il y a à peine une heure de cela !"
 GUARD D8 A3,TODO,"Je ne suis rien de moins que celui qui ait organisé cette réception. Maintenant, si vous permettez. . ."
 ,,
@@ -118,5 +118,5 @@ GUARD D13-2 A1,TODO,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela !
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
 BOTTLE DEFAULT A1,,[i](%n la prend)[/i]
-BOTTLE DEFAULT A2,,[color=blue]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
+BOTTLE DEFAULT A2,,[color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
 BOTTLE DEFAULT A3,,[i](%n la laisse là)[/i]
