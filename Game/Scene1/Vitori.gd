@@ -10,42 +10,12 @@ func init():
 	unique_name = "Vitori"
 	base_looking_direction = "right"
 
-# To override in order to say stuff
-#func start_dialog():
-#	pass
-
 # Override the base stop_dialog function
 # In order to prevent the player from moving
 func stop_dialog(option):
 	emit_signal("stop_dialog")
 	walk_left()
 	fade()
-
-# Override the base say() function, in order to
-# enable the capture of the player's name
-func say(body, text, opt):
-	var options = opt
-	# I really don't like this way of doing it
-	#But will do for now...
-	if options.size() == 1 and options[0].text == "$i":
-		Player.ui.show_input()
-		option_to_save = options[0]
-		Player.ui.get_submit_button().connect("pressed", self, "enter_player_name")
-		emit_signal("say", body, text, [])
-	else:
-		for option in options:
-			# Remove a dialog option the player does not have the right tool
-			# or if he already used that option
-			if option.has("card used") and !Player.has_card(option["card used"])\
-			or !Player.is_unique_answer_up(option.text):
-				options.remove(options.find(option))
-		emit_signal("say", body, text, options)
-
-func enter_player_name():
-	var name = Player.ui.get_input_field().get_text()
-	Player.set_name(name)
-	Player.ui.hide_input()
-	follow_up_dialog(option_to_save)
 
 func fade():
 	get_node("FadePlayer").play("Fade")

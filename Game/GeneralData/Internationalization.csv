@@ -11,8 +11,17 @@ GUARD CORRUPTED,Guard corrupted,Garde corrompu
 SLEEPING WINE,Sleeping wine,Vin soporifique
 ,,
 ,,
-SUBMIT BUTTON,Submit,Envoyer
+SUBMIT BUTTON,"Yes, that’s it !","Oui, c’est ça !"
+INPUT TAB NAME,My name is. . .,Je m'appelle. . .
 INPUT PLACEHOLDER,Name,Nom
+INTERACTION BUTTON,E to interact,E pour interagir
+DIALOG PANEL MAIN,Text,Texte
+DIALOG PANEL ANSWER,Answer,Réponse
+,,
+,,
+INTERACTION BUTTON TOOLTIP,TODO,"Lancer une interaction, si disponible."
+HAND SCALE BUTTON TOOLTIP,TODO,Augmenter ou diminuer la taille des cartes.
+,,
 ,,
 DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n'a pas encore de dialogue écrit.
 DEFAULT DEFAULT A1,Okay.,Kk poulet
