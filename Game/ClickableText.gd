@@ -12,6 +12,11 @@ func _input(event):
 	and event.type == InputEvent.MOUSE_BUTTON\
 	and event.button_index == BUTTON_LEFT\
 	and event.pressed:
+		#TODO better than this !
+		# To add the answer to the dialog richText
+		get_parent().get_parent().get_node("SpeakerText").append_bbcode(str("[i]", Player.get_name(), "[/i]\n\n"))
+		get_parent().get_parent().get_node("SpeakerText").append_bbcode(str(tr(option.text), "\n\n"))
+		
 		Player.ui.clear_answers()
 		if option.has("card used"):
 			Player.remove_card(option["card used"])

@@ -1,24 +1,18 @@
-extends TabContainer
+extends Panel
 
 var clickable_label_class = preload("res://ClickableText.tscn")
-var answer_tabs = []
-onready var main_tab = get_node("MainTab")
+onready var speaker_text = get_node("SpeakerText")
+onready var answers_container = get_node("AnswersContainer")
+onready var slide_button = get_node("SlideButton")
 
 var current_speaker
 var current_options
 
 func _ready():
-	main_tab.set_name(tr("DIALOG PANEL MAIN"))
-	main_tab.connect("finished", self, "add_answers")
+	adjust_size()
+	connect("resized", self, "adjust_size")
 	
-	# Init tabs
-	var count = 1
-	for option in range(6):
-		var cl = clickable_label_class.instance()
-		cl.set_name(str(tr("DIALOG PANEL ANSWER"), " ", count))
-		cl.add_to_group("dialog option")
-		answer_tabs.append(cl)
-		count += 1
+	speaker_text.connect("finished", self, "add_answers")
 
 func set_dialog(body, unformatted_text, options):
 	# Add body and options as instance var, in order to connect them
@@ -32,9 +26,13 @@ func set_dialog(body, unformatted_text, options):
 		text = unformatted_text.replace("%n", Player.get_name())
 	
 	# Set the new speaker's text
-	main_tab.write_text(text)
+	speaker_text.append_bbcode(str("[i]", body.get_name(), "[/i]\n\n"))
+	speaker_text.write_text(text)
 
 func add_answers():
+	if answers_container.get_child_count() > 0:
+		return
+	
 	if current_options.size() == 1 and current_options[0].text == "$i":
 		var container = VBoxContainer.new()
 		container.set_name(tr("INPUT TAB NAME"))
@@ -45,20 +43,21 @@ func add_answers():
 		bu.set_h_size_flags(0)
 		bu.set_text(tr("SUBMIT BUTTON"))
 		bu.connect("pressed", self, "set_player_name", [container])
-		add_child(container)
+		answers_container.add_child(container)
 		container.add_child(te)
 		container.add_child(bu)
 	else:
 		# Add new answers
 		var count = 0
 		for option in current_options:
-			var cl = answer_tabs[count]
+			var cl = clickable_label_class.instance()
+			cl.add_to_group("dialog option")
 			cl.set_speaker(current_speaker)
 			cl.set_option(option)
-			add_child(cl)
+			answers_container.add_child(cl)
 			count += 1
 	
-	set_current_tab(0)
+	adjust_answers()
 
 func set_player_name(container):
 	var text_edit_node = container.get_node("NameInput")
@@ -66,10 +65,44 @@ func set_player_name(container):
 	Player.set_name(name)
 	remove_child(container)
 	container.queue_free()
+	
+	#TODO better than this !
+	# To add the answer to the dialog richText
+	speaker_text.append_bbcode(str("[i]", Player.get_name(), "[/i]\n\n"))
+	speaker_text.append_bbcode(str(". . . ", Player.get_name(), ", mon nom est ", Player.get_name(), ".", "\n\n"))
+	
 	current_speaker.follow_up_dialog(current_options[0])
 	clear_answers()
 
 func clear_answers():
-	main_tab.clear()
 	for answer in get_tree().get_nodes_in_group("dialog option"):
-		remove_child(answer)
+		answers_container.remove_child(answer)
+		answer.queue_free()
+
+###### APPARENCE #######
+
+func adjust_size():
+	var size = OS.get_window_size()
+	set_size(Vector2(size.x/3 + slide_button.get_size().x, size.y))
+	speaker_text.set_size(Vector2(size.x/3, size.y/2))
+	answers_container.set_size(Vector2(size.x/3, size.y/2))
+	answers_container.set_pos(Vector2(0, size.y/2))
+	adjust_answers()
+
+func adjust_answers():
+	var size = OS.get_window_size()
+	var child_numbers = answers_container.get_child_count()
+	var child_idx = 0
+	for child in answers_container.get_children():
+		child.set_size(Vector2(size.x/3, (size.y/2)/child_numbers ))
+		child.set_pos(Vector2(0, (size.y/2)/child_numbers * child_idx))
+		child_idx += 1
+
+func _on_SlideButton_toggled( pressed ):
+	var b = slide_button
+	if pressed:
+		get_node("AnimationPlayer").play("Slide_left")
+		b.set_text(">")
+	else:
+		get_node("AnimationPlayer").play_backwards("Slide_left")
+		b.set_text("<")

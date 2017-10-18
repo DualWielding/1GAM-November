@@ -1,6 +1,6 @@
 extends Node
 
-var name setget set_name, get_name
+var name = tr("STARTING PLAYER NAME") setget set_name, get_name
 var character
 var ui
 
