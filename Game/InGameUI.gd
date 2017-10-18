@@ -1,4 +1,4 @@
-extends Control
+extends CanvasLayer
 
 onready var interaction_button = get_node("InteractionButton")
 onready var hand_scale_button = get_node("HandScaleButton")
