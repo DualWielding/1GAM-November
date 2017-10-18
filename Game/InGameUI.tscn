@@ -21,7 +21,6 @@ script/script = ExtResource( 1 )
 
 [node name="InteractionButton" type="MenuButton" parent="."]
 
-visibility/visible = false
 visibility/light_mask = 2
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -41,7 +40,6 @@ items = [  ]
 
 [node name="DialogPanel" type="Panel" parent="."]
 
-visibility/visible = false
 visibility/light_mask = 0
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -121,7 +119,6 @@ alignment = 0
 
 [node name="InputWrapper" type="HBoxContainer" parent="."]
 
-visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
@@ -140,7 +137,7 @@ size_flags/horizontal = 3
 size_flags/vertical = 3
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 99.0
+margin/right = 144.0
 margin/bottom = 30.0
 placeholder/alpha = 0.6
 focus_mode = 2
@@ -153,14 +150,13 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 103.0
+margin/left = 148.0
 margin/top = 0.0
 margin/right = 160.0
 margin/bottom = 30.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Submit"
 flat = false
 
 [connection signal="pressed" from="InteractionButton" to="." method="_on_InteractionButton_pressed"]

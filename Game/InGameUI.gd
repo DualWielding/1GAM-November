@@ -41,6 +41,9 @@ func _ready():
 	# Set the visible buttons text
 	submit_button.set_text(tr("SUBMIT BUTTON"))
 	
+	# # Set the input placeholder
+	get_node("InputWrapper/InputField").set_placeholder(tr("INPUT PLACEHOLDER"))
+	
 	set_process_input(true)
 
 ###### DIALOGS ######
