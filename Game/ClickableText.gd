@@ -22,6 +22,7 @@ func _input(event):
 		if option.has("state change") and option["state change"] != "unchanged":
 			speaker.set_state(option["state change"])
 		speaker.follow_up_dialog(option)
+		_on_ClickableText_mouse_exit()
 
 func set_option(opt):
 	option = opt

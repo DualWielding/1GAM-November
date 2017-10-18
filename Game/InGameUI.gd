@@ -1,14 +1,13 @@
 extends Control
 
+onready var interaction_button = get_node("InteractionButton")
+onready var hand_scale_button = get_node("HandScaleButton")
 onready var dialog_panel = get_node("DialogPanel")
-onready var answers_container = dialog_panel.get_node("AnswersContainer")
-onready var body_text_window = dialog_panel.get_node("BodyTextWindow")
 onready var hand = get_node("Hand")
 onready var input_wrapper = get_node("InputWrapper")
 onready var input_field = input_wrapper.get_node("InputField")
 onready var submit_button = input_wrapper.get_node("Submit")
 
-var clickable_label_class = preload("res://ClickableText.tscn")
 var ui_card_class = preload("res://UICard.tscn")
 
 func _ready():
@@ -35,63 +34,47 @@ func _ready():
 	hotkey.scancode = KEY_E
 	var sc = ShortCut.new()
 	sc.set_shortcut(hotkey)
-	get_node("InteractionButton").set_shortcut(sc)
-	get_node("InteractionButton").get_popup().set_light_mask(get_node("InteractionButton").get_light_mask())
+	interaction_button.set_shortcut(sc)
+	interaction_button.get_popup().set_light_mask(interaction_button.get_light_mask())
 	
-	# Set the visible buttons text
-	submit_button.set_text(tr("SUBMIT BUTTON"))
 	
-	# # Set the input placeholder
-	get_node("InputWrapper/InputField").set_placeholder(tr("INPUT PLACEHOLDER"))
+	# # Set the translations
+	interaction_button.set_tooltip(tr("INTERACTION BUTTON TOOLTIP"))
+	interaction_button.set_text(tr("INTERACTION BUTTON"))
+	hand_scale_button.set_tooltip(tr("HAND SCALE BUTTON TOOLTIP"))
 	
 	set_process_input(true)
 
 ###### DIALOGS ######
 
 func show_dialog(body, unformatted_text, options):
-	# Remplace every %n in dialogs with the player name
-	var text = unformatted_text
-	if Player.get_name():
-		text = unformatted_text.replace("%n", Player.get_name())
-	
 	# Hide the interaction button
-	get_node("InteractionButton").hide()
-	
-	# Set the new speaker's text
-	body_text_window.set_bbcode(text)
-	
-	# Add new answers
-	for option in options:
-		var cl = clickable_label_class.instance()
-		cl.add_to_group("dialog option")
-		cl.set_speaker(body)
-		cl.set_option(option)
-		answers_container.add_child(cl)
+	hide_interaction_button()
+	dialog_panel.set_dialog(body, unformatted_text, options)
 	dialog_panel.show()
 
 func hide_dialog():
 	# Show the interaction button again
-	clear_answers()
+	dialog_panel.clear_answers()
 	dialog_panel.hide()
 	show_interaction_button()
 
 func clear_answers():
-	for answer in answers_container.get_children():
-		answer.queue_free()
-
-func show_interaction_button():
-	if !Player.character.is_disabled():
-		get_node("InteractionButton").show()
+	dialog_panel.clear_answers()
 
 ###### INTERACTIONS ######
 
+func show_interaction_button():
+	if !Player.character.is_disabled():
+		interaction_button.set_disabled(false)
+
 func hide_interaction_button():
-	get_node("InteractionButton").hide()
-	get_node("InteractionButton").get_popup().hide()
-	get_node("InteractionButton").get_popup().clear()
+	interaction_button.set_disabled(true)
+	interaction_button.get_popup().hide()
+	interaction_button.get_popup().clear()
 
 func _on_InteractionButton_pressed():
-	var popup = get_node("InteractionButton").get_popup()
+	var popup = interaction_button.get_popup()
 	popup.clear()
 	var size = Player.character.interaction_possibilities.size()
 	if size == 1:
@@ -141,7 +124,7 @@ func remove_card(card):
 	return false
 
 func _on_HandScaleButton_toggled( pressed ):
-	var b = get_node("HandScaleButton")
+	var b = hand_scale_button
 	if pressed:
 		hand.set_scale(Vector2(0.3, 0.3))
 		b.set_text("v")
