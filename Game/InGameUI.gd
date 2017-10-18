@@ -41,7 +41,6 @@ func _ready():
 	# # Set the translations
 	interaction_button.set_tooltip(tr("INTERACTION BUTTON TOOLTIP"))
 	interaction_button.set_text(tr("INTERACTION BUTTON"))
-	hand_scale_button.set_tooltip(tr("HAND SCALE BUTTON TOOLTIP"))
 	
 	set_process_input(true)
 
@@ -122,12 +121,3 @@ func remove_card(card):
 			hand.remove_child(child)
 			return true
 	return false
-
-func _on_HandScaleButton_toggled( pressed ):
-	var b = hand_scale_button
-	if pressed:
-		hand.set_scale(Vector2(0.3, 0.3))
-		b.set_text("v")
-	else:
-		hand.set_scale(Vector2(1, 1))
-		b.set_text("^")
