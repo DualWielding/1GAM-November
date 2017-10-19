@@ -111,7 +111,7 @@
 				"text":"GUARD D5 A2",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d6"
+				"next sequence": "d3"
 			},
 			{
 				"text":"GUARD D5 A3",
@@ -130,13 +130,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d7"
-			},
-			{
-				"text":"GUARD D6 A2",
-				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d7"
-			}			
+			},		
 		]
 	},
 
@@ -146,8 +140,8 @@
 			{
 				"text":"GUARD D7 A1",
 				"end": true,
-				"state change":"unchanged",
-				"next sequence": "pissed"
+				"state change":"pissed",
+				"next sequence": "none"
 			},
 		]
 	},
@@ -318,7 +312,7 @@
 		]
 	},
 
-		"pissed": {
+	"pissed": {
 		"text":"PISSED GUARD D1",
 		"options": [
 			{
@@ -328,7 +322,7 @@
 				"next sequence": "d2",
 			},
 			{
-				"text":"PISSED guard D1 A2",
+				"text":"PISSED GUARD D1 A2",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d16"
