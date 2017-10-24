@@ -14,6 +14,7 @@ func init():
 # In order to prevent the player from moving
 func stop_dialog(option):
 	Player.character.set_disabled_movement(false)
+	emit_signal("stop_dialog")
 	walk_left()
 	fade()
 
@@ -22,7 +23,6 @@ func fade():
 	get_node("FadePlayer").connect("finished", self, "end_scene")
 
 func end_scene():
-	emit_signal("stop_dialog")
 	queue_free()
 
 func _on_InteractionArea_area_enter( area ):
