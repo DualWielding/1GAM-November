@@ -5,6 +5,7 @@ var character
 var ui
 
 var hand = {} setget get_hand
+var max_cards = 4
 
 var unique_answers_used = {}
 
@@ -38,6 +39,10 @@ func get_hand():
 
 func has_card(card_name):
 	return hand.has(card_name)
+
+func check_cards_number():
+	if hand.keys().size() > max_cards:
+		ui.show_discard_screen(hand.keys().size() - max_cards)
 
 func add_card(card_unique_name):
 	hand[card_unique_name] = Cards.get(card_unique_name)
