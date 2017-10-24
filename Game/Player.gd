@@ -46,7 +46,6 @@ func has_card(card_name):
 	return hand.has(card_name) || important_hand.has(card_name)
 
 func check_cards_number():
-	print(hand.keys())
 	if hand.values().size() > max_cards:
 		ui.show_discard_screen(hand.keys().size() - max_cards)
 

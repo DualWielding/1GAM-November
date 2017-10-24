@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://UI/ClickableText.gd" type="Script" id=1]
+
+[node name="ClickableText" type="Button"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 340.0
+margin/top = 110.0
+margin/right = 660.0
+margin/bottom = 189.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+script/script = ExtResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 8.0
+margin/top = 6.0
+margin/right = 308.0
+margin/bottom = 70.0
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[connection signal="pressed" from="." to="." method="_on_ClickableText_pressed"]
+
+

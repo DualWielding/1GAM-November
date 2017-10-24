@@ -89,7 +89,7 @@ func _on_InteractionButton_pressed():
 	if size == 1:
 		send_start_interaction_message(0)
 	else:
-		for i in range():
+		for i in range(size):
 			var body = Player.character.interaction_possibilities[i]
 			var b = Button.new()
 			popup.add_item(body.get_name(), i)
@@ -127,11 +127,7 @@ func lower_card(card):
 		if card.unique_name == child.unique_name:
 			child.lower()
 
-func add_important_card(card_data):
-	print("DATAAA:", card_data)
-
 func add_card(card_data):
-	print(card_data)
 	if card_data == null:
 		return false
 	

@@ -30,7 +30,7 @@ func write_text(text, speed = 0.07):
 	finished = false
 	base_speed = speed
 	current_index = 0
-	full_text = text
+	full_text = text.replace("%n", Player.get_name())
 	t.set_wait_time(base_speed)
 	t.start()
 

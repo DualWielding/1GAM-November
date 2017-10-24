@@ -1,6 +1,6 @@
 extends Panel
 
-var clickable_label_class = preload("res://ClickableText.tscn")
+var clickable_label_class = preload("res://UI/ClickableText.tscn")
 onready var speaker_text = get_node("SpeakerText")
 onready var answers_container = get_node("AnswersContainer")
 onready var slide_button = get_node("SlideButton")
@@ -9,8 +9,8 @@ var current_speaker
 var current_options
 
 func _ready():
-	adjust_size()
-	connect("resized", self, "adjust_size")
+#	adjust_size()
+#	connect("resized", self, "adjust_size")
 	
 	speaker_text.connect("finished", self, "add_answers")
 
@@ -27,7 +27,7 @@ func set_dialog(body, unformatted_text, options):
 	
 	# Set the new speaker's text
 	speaker_text.append_bbcode(str("[i]", body.get_name(), "[/i]\n\n"))
-	speaker_text.write_text(text)
+	speaker_text.write_text(text) # Should fill the thing...
 
 func add_answers():
 	if answers_container.get_child_count() > 0:
@@ -52,9 +52,9 @@ func add_answers():
 		for option in current_options:
 			var cl = clickable_label_class.instance()
 			cl.add_to_group("dialog option")
+			answers_container.add_child(cl)
 			cl.set_speaker(current_speaker)
 			cl.set_option(option)
-			answers_container.add_child(cl)
 			count += 1
 	
 	adjust_answers()
@@ -81,28 +81,30 @@ func clear_answers():
 
 ###### APPARENCE #######
 
-func adjust_size():
-	var size = OS.get_window_size()
-	set_size(Vector2(size.x/3 + slide_button.get_size().x, size.y))
-	speaker_text.set_size(Vector2(size.x/3, size.y/2))
-	answers_container.set_size(Vector2(size.x/3, size.y/2))
-	answers_container.set_pos(Vector2(0, size.y/2))
-	adjust_answers()
+#func adjust_size():
+#	var size = OS.get_window_size()
+#	set_size(Vector2(size.x/3 + slide_button.get_size().x, size.y))
+#	speaker_text.set_size(Vector2(size.x/3, size.y/2))
+#	answers_container.set_size(Vector2(size.x/3, size.y/2))
+#	answers_container.set_pos(Vector2(0, size.y/2))
+#	adjust_answers()
 
 func adjust_answers():
-	var size = OS.get_window_size()
-	var child_numbers = answers_container.get_child_count()
-	var child_idx = 0
-	for child in answers_container.get_children():
-		child.set_size(Vector2(size.x/3, (size.y/2)/child_numbers ))
-		child.set_pos(Vector2(0, (size.y/2)/child_numbers * child_idx))
-		child_idx += 1
+	answers_container.set_size(Vector2(answers_container.get_size().x, (answers_container.get_children()[0].get_size().y) * answers_container.get_child_count()))
+#	var size = OS.get_window_size()
+#	var child_numbers = answers_container.get_child_count()
+#	var child_idx = 0
+#	for child in answers_container.get_children():
+#		var dir = Vector2(0, -1)
+#		dir = dir.rotated(-0.79 * child_idx)
+#		child.set_global_pos(Vector2(OS.get_window_size().x/3, OS.get_window_size().y/2) + Vector2(290, 290) * dir)
+#		child_idx += 1
 
-func _on_SlideButton_toggled( pressed ):
-	var b = slide_button
-	if pressed:
-		get_node("AnimationPlayer").play("Slide_left")
-		b.set_text(">")
-	else:
-		get_node("AnimationPlayer").play_backwards("Slide_left")
-		b.set_text("<")
+#func _on_SlideButton_toggled( pressed ):
+#	var b = slide_button
+#	if pressed:
+#		get_node("AnimationPlayer").play("Slide_left")
+#		b.set_text(">")
+#	else:
+#		get_node("AnimationPlayer").play_backwards("Slide_left")
+#		b.set_text("<")
