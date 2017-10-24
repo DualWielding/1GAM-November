@@ -6,6 +6,7 @@ var name = "Test"
 var unique_name = "Test"
 var text = "Test"
 var img = preload("res://Sprites/Floor.png")
+var important = false
 
 var selectable = false setget set_selectable, is_selectable
 var selected = false setget set_selected, is_selected
@@ -23,9 +24,14 @@ func init_from_dic(dic):
 	text = dic.text
 	img = dic.img
 	unique_name = dic.unique_name
+	if dic.has("important") and dic.important:
+		important = true
+		add_to_group("ui_important_card")
+	else:
+		add_to_group("ui_normal_card")
+	add_to_group("ui_card")
 
 func _ready():
-	add_to_group("ui_card")
 	get_node("VirginCard/Name").set_text(name)
 	get_node("VirginCard/Picture").set_texture(img)
 	get_node("VirginCard/Text").set_text(text)

@@ -13,7 +13,7 @@ func init():
 # Override the base stop_dialog function
 # In order to prevent the player from moving
 func stop_dialog(option):
-	emit_signal("stop_dialog")
+	Player.character.set_disabled_movement(false)
 	walk_left()
 	fade()
 
@@ -22,7 +22,7 @@ func fade():
 	get_node("FadePlayer").connect("finished", self, "end_scene")
 
 func end_scene():
-	Player.character.set_disabled_movement(false)
+	emit_signal("stop_dialog")
 	queue_free()
 
 func _on_InteractionArea_area_enter( area ):
