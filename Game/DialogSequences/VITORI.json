@@ -34,30 +34,41 @@
 		"text": "VITORI D2",
 		"options" : [
 			{
-				"text":"VITORI D2 A1",
+				"text":"$i",
 				"end":false,
 				"state change":"unchanged",
 				"next sequence":"d3"
-			},
-			{
-				"text":"VITORI D2 A2",
-				"end":false,
-				"state change":"unchanged",
-				"next sequence":"d3"
-			}
-
-		]
+			}]
 	},
 
 	"d3": {
 		"text":"VITORI D3",
 		"options": [
 			{
-				"text":"$i",
+				"text":"VITORI D3 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d4"
+				"next sequence": "d4",
+				"card used" :[{
+					"name": "DAGGER"
+					},
+					{
+					"name": "POWDER"
+					}]
+			},
+			{
+				"text":"VITORI D3 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4",
+				"card used" :[{
+					"name": "DAGGER"
+					},
+					{
+					"name": "GOLD POUCH"
+					}]
 			}
+
 		]
 	},
 
@@ -68,23 +79,7 @@
 				"text":"VITORI D4 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d5",
-				"card used": "DAGGER"
-
-			},
-			{
-				"text":"VITORI D4 A2",
-				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d5",
-				"card used": "POWDER"
-			},
-			{
-				"text":"VITORI D4 A3",
-				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d5",
-				"card used": "GOLD POUCH"
+				"next sequence": "d5"
 			}
 		]
 	},
@@ -93,7 +88,13 @@
 		"text":"VITORI D5",
 		"options": [
 			{
-				"text":"VITORI D5 A1",
+				"text":" VITORI D5 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6"
+			},
+			{
+				"text":"VITORI D5 A2",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d6"
@@ -105,12 +106,87 @@
 		"text":"VITORI D6",
 		"options": [
 			{
-				"text":"VITORI D6 A1" ,
+				"text":"VITORI D6 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d7",
+				"card gained": [{
+					"name":"CESNI OWN YOU"
+					},{
+					"name": "STROZI IS CESNI LOVER"
+				}]
+			}
+		]
+	},
+
+	"d7": {
+		"text":"VITORI D7",
+		"options": [
+			{
+				"text":"VITORI D7 A1",
+				"end":false,
+				"state change":"unchanged",
+				"next sequence": "d8",
+				"card gained":[{
+					"name":"AUGURIE IS WORKING WITH VITORI"
+					},{
+					"name": "PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE"
+					}] 
+			}
+		]
+	},
+
+	"d8": {
+		"text":"VITORI D8",
+		"options": [
+			{
+				"text":"VITORI D8 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d9",
+
+				"card gained":[{
+					"name":"MISSING FINGER OF RUFFIO EXPLAINATION"
+					},{
+					"name": "ALMA PET KIDNAPPED"
+					}]
+			}
+		]
+	},
+
+	"d9": {
+		"text":"VITORI D9",
+		"options": [
+			{
+				"text":"VITORI D9 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d10"
+			}
+		]
+	},
+
+	"d10": {
+		"text":"VITORI D10",
+		"options": [
+			{
+				"text":"VITORI D10 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d11"
+			}
+		]
+	},
+
+	"d11": {
+		"text":"VITORI D11",
+		"options": [
+			{
+				"text":"VITORI D11 A1",
 				"end": true,
 				"state change":"unchanged",
 				"next sequence": "none"
 			}
 		]
 	}
-
-} 
+}

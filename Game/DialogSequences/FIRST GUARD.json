@@ -146,13 +146,7 @@
 			{
 				"text":"GUARD D7 A1",
 				"end": true,
-				"state change":"unchanged",
-				"next sequence": "none"
-			},
-			{
-				"text":"GUARD D7 A2",
-				"end": true,
-				"state change":"unchanged",
+				"state change":"pissed",
 				"next sequence": "none"
 			}
 		]
@@ -188,7 +182,7 @@
 			{
 				"text":"GUARD D9 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"pissed",
 				"next sequence": "none"
 			}
 		]
