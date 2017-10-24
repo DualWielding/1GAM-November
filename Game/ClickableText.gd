@@ -21,7 +21,11 @@ func _input(event):
 		if option.has("card used"):
 			Player.remove_card(option["card used"])
 		if option.has("card gained"):
-			Player.add_card(option["card gained"])
+			if typeof(option["card gained"]) == TYPE_STRING:
+				Player.add_card(option["card gained"])
+			elif typeof(option["card gained"]) == TYPE_ARRAY:
+				for card in option["card gained"]:
+					Player.add_card(card)
 		if option.has("unique") and option.unique:
 			Player.used_unique_answer(option.text)
 		if option.has("state change") and option["state change"] != "unchanged":
