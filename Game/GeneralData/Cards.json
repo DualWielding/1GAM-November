@@ -7,7 +7,8 @@
 	"DAGGER": {
 		"unique_name": "DAGGER",
 		"name": "To be added in translation",
-		"text": "To be added in translation"
+		"text": "To be added in translation",
+		"important": true
 	},
 	"POWDER": {
 		"unique_name": "POWDER",
