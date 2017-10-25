@@ -177,11 +177,13 @@ func show_discard_screen(number):
 	cards_to_discard_number = number
 	bring_cards_up()
 	discard_button.show()
+	discard_label.show()
 	Player.character.set_disabled_movement(true)
 
 func hide_discard_screen():
 	lower_cards()
 	discard_button.hide()
+	discard_label.show()
 	Player.character.set_disabled_movement(false)
 
 func _on_DiscardButton_pressed():
