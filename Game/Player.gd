@@ -1,10 +1,12 @@
 extends Node
 
-var name setget set_name, get_name
+var name = tr("STARTING PLAYER NAME") setget set_name, get_name
 var character
 var ui
 
 var hand = {} setget get_hand
+var important_hand = {} setget get_important_hand
+var max_cards = 4
 
 var unique_answers_used = {}
 
@@ -12,6 +14,7 @@ signal card_added(card)
 signal card_removed(card)
 
 func _ready():
+	# /!\ These cards are not added via signal, but directly in the UI _ready func
 	add_card("DAGGER")
 	add_card("GOLD POUCH")
 	add_card("POWDER")
@@ -36,13 +39,28 @@ func is_unique_answer_up(untranslated_text):
 func get_hand():
 	return hand
 
+func get_important_hand():
+	return important_hand
+
 func has_card(card_name):
-	return hand.has(card_name)
+	return hand.has(card_name) || important_hand.has(card_name)
+
+func check_cards_number():
+	if hand.values().size() > max_cards:
+		ui.show_discard_screen(hand.keys().size() - max_cards)
 
 func add_card(card_unique_name):
-	hand[card_unique_name] = Cards.get(card_unique_name)
-	emit_signal("card_added", Cards.get(card_unique_name))
+	var card = Cards.get(card_unique_name)
+	
+	if card.has("important") and card.important:
+		important_hand[card_unique_name] = card
+	else:
+		hand[card_unique_name] = card
+	emit_signal("card_added", card)
 
 func remove_card(card_unique_name):
-	hand.erase(card_unique_name)
 	emit_signal("card_removed", Cards.get(card_unique_name))
+	if hand.has(card_unique_name):
+		hand.erase(card_unique_name)
+	elif important_hand.has(card_unique_name):
+		important_hand.erase(card_unique_name)

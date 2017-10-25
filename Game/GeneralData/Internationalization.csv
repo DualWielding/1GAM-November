@@ -8,20 +8,10 @@ LOVE LETTER,Love letter,Lettre d'amour
 BOTTLE,Bottle,Bouteille
 GUARD KILLED,Guard killed,Garde tué
 GUARD CORRUPTED,Guard corrupted,Garde corrompu
-SLEEPING WINE,Sleeping wine,Vin soporifique
 ,,
 ,,
-SUBMIT BUTTON,"Yes, that’s it !","Oui, c’est ça !"
-INPUT TAB NAME,My name is. . .,Je m'appelle. . .
-INPUT PLACEHOLDER,Name,Nom
-INTERACTION BUTTON,E to interact,E pour interagir
-DIALOG PANEL MAIN,Text,Texte
-DIALOG PANEL ANSWER,Answer,Réponse
 ,,
-,,
-INTERACTION BUTTON TOOLTIP,TODO,"Lancer une interaction, si disponible."
-HAND SCALE BUTTON TOOLTIP,TODO,Augmenter ou diminuer la taille des cartes.
-,,
+SUBMIT BUTTON,Submit,Envoyer
 ,,
 DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n'a pas encore de dialogue écrit.
 DEFAULT DEFAULT A1,Okay.,Kk poulet
@@ -76,8 +66,8 @@ GUARD D4,TODO,"Je ne vois pas de quelle bourse vous voulez parler, Messire."
 GUARD D4 A1,TODO,Qu. . . Comment ?! Mmh. . . Je vois.
 ,,
 GUARD D5,TODO,Je suis navré. Je ne peux rien pour vous.
-GUARD D5 A1,TODO,"C'est un scandale ! Nous n'en avons pas terminé, vous et moi."
-GUARD D5 A2,TODO,[i](pestant)[/i] Quel animal butté ! Laissez moi passer !
+GUARD D5 A1,TODO,"C'est un scandale ! Je reviendrai, nous n'en avons pas terminé, vous et moi."
+GUARD D5 A2,TODO,[Bourse] Je suis sûr que quelques florins pourraient changer cet état de fait.
 GUARD D5 A3,TODO,"Je passe, que vous le vouliez ou non !"
 ,,
 GUARD D6,TODO,"Messire, ne m'obligez pas à user de force."

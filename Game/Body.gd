@@ -57,10 +57,10 @@ func follow_up_dialog(option):
 func stop_dialog(option):
 	# Re-enable the character movement
 	Player.character.set_disabled_movement(false)
-	emit_signal("stop_dialog")
 	
 	if option["state change"] != "unchanged":
 		state = option["state change"]
+	emit_signal("stop_dialog")
 
 # We need the body param in order to send the player's answer back to the body
 # Thus enabling us to follow up with the next dialog line

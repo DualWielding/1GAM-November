@@ -1,14 +1,19 @@
-extends Control
+extends CanvasLayer
 
 onready var interaction_button = get_node("InteractionButton")
-onready var hand_scale_button = get_node("HandScaleButton")
 onready var dialog_panel = get_node("DialogPanel")
+onready var important_hand = get_node("ImportantHand")
 onready var hand = get_node("Hand")
 onready var input_wrapper = get_node("InputWrapper")
 onready var input_field = input_wrapper.get_node("InputField")
 onready var submit_button = input_wrapper.get_node("Submit")
+onready var discard_button = get_node("DiscardButton")
+onready var discard_label = get_node("DiscardLabel")
 
-var ui_card_class = preload("res://UICard.tscn")
+var ui_card_class = preload("res://UI/UICard.tscn")
+
+var cards_to_discard_number = 0
+var cards_to_discard = []
 
 func _ready():
 	Player.ui = self
@@ -22,6 +27,9 @@ func _ready():
 	# Add all the players' cards at the beginning
 	for card_name in Player.get_hand():
 		add_card(Player.get_hand()[card_name])
+	
+	for card_name in Player.get_important_hand():
+		add_card(Player.get_important_hand()[card_name])
 	
 	# Connect the UI to every bodies in the scene
 	for body in get_tree().get_nodes_in_group("body"):
@@ -41,7 +49,8 @@ func _ready():
 	# # Set the translations
 	interaction_button.set_tooltip(tr("INTERACTION BUTTON TOOLTIP"))
 	interaction_button.set_text(tr("INTERACTION BUTTON"))
-	hand_scale_button.set_tooltip(tr("HAND SCALE BUTTON TOOLTIP"))
+	discard_button.set_text(tr("DISCARD BUTTON"))
+	
 	
 	set_process_input(true)
 
@@ -80,7 +89,7 @@ func _on_InteractionButton_pressed():
 	if size == 1:
 		send_start_interaction_message(0)
 	else:
-		for i in range():
+		for i in range(size):
 			var body = Player.character.interaction_possibilities[i]
 			var b = Button.new()
 			popup.add_item(body.get_name(), i)
@@ -107,27 +116,85 @@ func get_submit_button():
 
 ###### CARDS ######
 
+func bring_card_up(card):
+	# ui_card means important AND normal cards
+	for child in get_tree().get_nodes_in_group("ui_card"):
+		if card.unique_name == child.unique_name:
+			child.bring_up()
+
+func lower_card(card):
+	for child in get_tree().get_nodes_in_group("ui_card"):
+		if card.unique_name == child.unique_name:
+			child.lower()
+
 func add_card(card_data):
 	if card_data == null:
 		return false
 	
 	var card = ui_card_class.instance()
 	card.init_from_dic(card_data)
-	hand.add_child(card)
+	
+	if card.important:
+		important_hand.add_child(card)
+	else:
+		hand.add_child(card)
 	return true
 
 func remove_card(card):
-	for child in hand.get_children():
+	for child in get_tree().get_nodes_in_group("ui_card"):
 		if card.unique_name == child.unique_name:
-			hand.remove_child(child)
+			child.get_parent().remove_child(child)
 			return true
 	return false
 
-func _on_HandScaleButton_toggled( pressed ):
-	var b = hand_scale_button
-	if pressed:
-		hand.set_scale(Vector2(0.3, 0.3))
-		b.set_text("v")
-	else:
-		hand.set_scale(Vector2(1, 1))
-		b.set_text("^")
+	### NORMAL ###
+
+# ATM only useful for discarding, so it's only taking normal cards into account
+func bring_cards_up():
+	hand.get_node("AnimationPlayer").play("bring_up")
+	for child in get_tree().get_nodes_in_group("ui_normal_card"): 
+		child.set_selectable(true)
+
+# ATM only useful for discarding, so it's only taking normal cards into account
+func lower_cards():
+	hand.get_node("AnimationPlayer").play_backwards("bring_up")
+	for child in get_tree().get_nodes_in_group("ui_normal_card"):
+		child.set_selectable(false)
+		child.set_selected(false)
+
+	### DISCARD ###
+
+func add_to_discard_stash(card):
+	cards_to_discard.append(card)
+	cards_to_discard_number -= 1
+
+func remove_from_discard_stash(card):
+	cards_to_discard.remove(cards_to_discard.find(card))
+	cards_to_discard_number += 1
+
+func show_discard_screen(number):
+	discard_label.set_text(tr("DISCARD TEXT"))
+	cards_to_discard_number = number
+	bring_cards_up()
+	discard_button.show()
+	Player.character.set_disabled_movement(true)
+
+func hide_discard_screen():
+	lower_cards()
+	discard_button.hide()
+	Player.character.set_disabled_movement(false)
+
+func _on_DiscardButton_pressed():
+	for card in cards_to_discard:
+		Player.remove_card(card.unique_name)
+	if cards_to_discard_number == 0:
+		hide_discard_screen()
+
+
+
+# Test for discarding
+#func _on_Button_toggled( pressed ):
+#	if pressed:
+#		show_discard_screen(2)
+#	else:
+#		hide_discard_screen()

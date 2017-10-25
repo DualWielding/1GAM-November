@@ -1,0 +1,144 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://UI/UICard.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Cards/card.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "bring_up"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -50, -500 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect/scale")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.5, 1.5 ) ]
+}
+
+[node name="UICard" type="Control"]
+
+visibility/light_mask = 0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 47.0
+margin/bottom = 40.0
+script/script = ExtResource( 1 )
+
+[node name="Aura" type="TextureFrame" parent="."]
+
+visibility/visible = false
+rect/scale = Vector2( 0.6, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -50.0
+margin/top = -40.0
+margin/right = 450.0
+margin/bottom = 460.0
+texture = ExtResource( 2 )
+modulate = Color( 0.976563, 0.1297, 0.903785, 1 )
+stretch_mode = 0
+
+[node name="VirginCard" type="TextureButton" parent="."]
+
+visibility/light_mask = 0
+rect/rotation = 180.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 200.0
+margin/top = 250.0
+margin/right = 400.0
+margin/bottom = 500.0
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="Picture" type="TextureFrame" parent="VirginCard"]
+
+visibility/light_mask = 0
+rect/rotation = 180.0
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 190.0
+margin/top = 220.0
+margin/right = 370.0
+margin/bottom = 340.0
+stretch_mode = 0
+
+[node name="Text" type="RichTextLabel" parent="VirginCard"]
+
+visibility/light_mask = 0
+rect/rotation = 180.0
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 190.0
+margin/top = 90.0
+margin/right = 370.0
+margin/bottom = 170.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="Name" type="Label" parent="VirginCard"]
+
+visibility/light_mask = 0
+rect/rotation = 180.0
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 190.0
+margin/top = 240.0
+margin/right = 370.0
+margin/bottom = 270.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/bring_up = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[connection signal="toggled" from="VirginCard" to="." method="_on_VirginCard_toggled"]
+
+
