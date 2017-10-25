@@ -78,7 +78,7 @@
 		"text":"VITORI D5",
 		"options": [
 			{
-				"text":" VITORI D5 A1",
+				"text":"VITORI D5 A1",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d6"
