@@ -183,7 +183,7 @@ func show_discard_screen(number):
 func hide_discard_screen():
 	lower_cards()
 	discard_button.hide()
-	discard_label.show()
+	discard_label.hide()
 	Player.character.set_disabled_movement(false)
 
 func _on_DiscardButton_pressed():

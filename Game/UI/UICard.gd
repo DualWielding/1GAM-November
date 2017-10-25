@@ -27,6 +27,7 @@ func init_from_dic(dic):
 	if dic.has("important") and dic.important:
 		important = true
 		add_to_group("ui_important_card")
+		get_node("VirginCard").set_modulate(Color("#9013d0"))
 	else:
 		add_to_group("ui_normal_card")
 	add_to_group("ui_card")
