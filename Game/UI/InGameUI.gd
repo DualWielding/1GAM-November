@@ -193,7 +193,6 @@ func _on_DiscardButton_pressed():
 		hide_discard_screen()
 
 
-
 # Test for discarding
 #func _on_Button_toggled( pressed ):
 #	if pressed:
