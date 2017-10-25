@@ -8,40 +8,126 @@ LOVE LETTER,Love letter,Lettre d'amour
 BOTTLE,Bottle,Bouteille
 GUARD KILLED,Guard killed,Garde tué
 GUARD CORRUPTED,Guard corrupted,Garde corrompu
+CESNI OWN YOU,Cesni own,Cesni vous est redevable
+STROZI IS CESNI LOVER,bla,Strozi est l'amant de Cesni
+AUGURIE IS WORKING WITH VITORI,ble,Augurie travaille avec Vitori
+PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,bli,La présence de Sire Philippe dépend de son traitement
+EXPLAINATION OF RUFFIO MISSING FINGER,blou,Explication du doigt manquant de Ruffio
+ALMA PET KIDNAPPED,bleaurgh,L'animal d'Alma a été enlevé.
 ,,
 ,,
 ,,
-SUBMIT BUTTON,Submit,Envoyer
 ,,
-DEFAULT DEFAULT,"I’m the default line text, meaning this char has no dialog yet.",Je suis la ligne de dialogue par défaut. Ce qui veut dire que ce personnage n'a pas encore de dialogue écrit.
-DEFAULT DEFAULT A1,Okay.,Kk poulet
 ,,
-BASE BODY DEFAULT,"Hi, I’m a simple default body. You should override my dialog lines.",J’aime les chips.
-BASE BODY DEFAULT A1,Okay.,Cool.
 ,,
-VITORI DEFAULT,TODO,"Mon pauvre ami ! Comment allez vous ? Je viens de vous voir sauvagemment agressé par ce malandrin ! Ce craquement terrifiant, était-ce le bruit de gourdin de ce misérable contre votre tête ?"
-VITORI DEFAULT A1,TODO,Que. . . Comment ?
-VITORI DEFAULT A2,TODO,Ourgh. . . mon crâne. . .
 ,,
-VITORI D1,TODO,"Et ce garde, qui reste là sans agir ! Ah ! Les voilà bien plus réactifs dès lors qu'il s'agit d'aller parader devant de jeunes godelurettes !"
-VITORI D1 A1,TODO,"Argh. . . par pitié, parlez moins fort !"
 ,,
-VITORI D2,TODO,"Oh, mille excuses ! Je m'emporte ! J'imagine qu'un homme de votre trempe a dû subir des coups plus terribles encore. Cependant, on peut dire que cette racaille ne vous a pas raté. Comment vous sentez vous, mon bon ami ?"
-VITORI D2 A1,TODO,"Bien, je crois. . . Qui êtes vous ?"
-VITORI D2 A2,TODO,Diffile de croire que j'ai pu connaître pire. . . A qui ai-je l'honneur ?
 ,,
-VITORI D3,TODO,"Je suis votre ami Vitori, bien sûr ! Se pourrait-il que votre blessure ait pu vous faire perdre perdre la mémoire ? Vous souvenez-vous au moins de votre nom ?"
 ,,
-VITORI D4,TODO,"A la bonne heure ! Allons, debout ! [i](Vitori aide %n à se lever)[/i] Ce n'est pas le soir pour chanceler, vous avez du pain sur la planche. J'ai vu le voleur s'enfuir avec un objet, que vous a t-il dérobé ?"
-VITORI D4 A1,TODO,Je. . . Je ne trouve plus ma dague.
-VITORI D4 A2,TODO,Je. . . J'avais une petite dose de poudre. Il a dû la confondre avec ma bourse.
-VITORI D4 A3,TODO,"Mon or, évidemment."
 ,,
-VITORI D5,,"Fâcheux, mais l'essentiel est que vous alliez bien. [i](Vitori regarde sa montre)[/i] La peste, je suis déjà en retard ! Vous me semblez bien pâle, tâchez de prendre un peu l'air avant de me rejoindre. Allons, courage mon ami ! N'oubliez pas que tout ce pays compte sur vous ! [i](Il sort)[/i]"
-VITORI D5 A1,. . .,. . .
 ,,
-VITORI D6,. . .,. . .
-VITORI D6 A1,TODO,"Mon crâne. . . la douleur est insupportable. La seule chose dont je parvienne à me souvenir, c'est qu'effectivement, une mission de la plus haute importance m'incombe ce soir. . . Mais tout m'échappe lorsque j'essaye de me remémorer comment et pourquoi. Bien, j'imagine qu'il n'y a pas de temps à perdre ! La mémoire me reviendra sûrement après une coupe ou deux."
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+VITORI DEFAULT,,Mon pauvre ami ! Je viens de vous voir sauvagemment agressé par ce malandrin ! Il a manqué de vous fracasser le crâne !
+VITORI DEFAULT A1,,... Que.. comment ?
+VITORI DEFAULT A2,,Ourgh... mon crâne...
+,,
+VITORI D1,,"Et ce garde, qui reste là sans agir ! Ah ! les voilà bien plus réactifs dès lors qu'il s'agit d'aller parader devant de jeunes godelurettes !"
+VITORI D1 A1,,"Argh... par pitié, qui que vous soyez, parlez moins fort !"
+,,
+VITORI D2,,"Comment ça, qui suis-je ?! Vous ne vous souvenez plus de votre bon ami Vitori ?! Ce pourrait-il que votre mémoire souffre de votre blessure ? Vous souvenez vous au moins de votre nom ?"
+VITORI D2 A1,,//////// $i
+,,
+VITORI D3,,"A la bonne heure ! Allons, debout ! Ce n'est pas le soir pour chanceler, vous avez du pain sur la planche. Ce voleur de malheur vous a t-il au moins laissé de quoi effectuer votre mission ?"
+VITORI D3 A1,,Ma dague. Elle a disparu. Et mon somnifère avec... Il a dû le confondre avec ma bourse.
+VITORI D3 A2,,"Ce qui avait le plus de valeur, ma dague et mon or."
+,,
+VITORI D4,,"Fâcheux, mais l'essentiel est que vous soyez opérationnel. Bien, je n'ai pas eu le temps lors de notre dernière réunion de m'entretenir en privé avec vous, mais voici ce que je sais et qui pourrait vous être utile."
+VITORI D4 A1,,Je... j'ai bien peur d'avoir l'esprit un peu confus pour le moment.
+,,
+VITORI D5,,"Je suis désolé mon ami, mais le temps presse et les invités risquent de se poser des questions s'ils nous voient discuter ensemble, vous connaissez ma réputation. Bien, Ecoutez attentivement."
+VITORI D5 A1,,Je...
+VITORI D5 A2,,Mais...
+,,
+VITORI D6,,"Votre intuition était la bonne : Strozi est bien l'amant de Dame Cesni, et je suis parvenu à le faire inviter ce soir. Vous pourriez utiliser cela pour la contraindre à enfin vous rendre la faveur qu'elle vous doit !"
+VITORI D6 A1,,Qui sont...
+,,
+VITORI D7,,"...Grâce à notre agent Augurie, Sire Philippe sera comme prévu indisposé ce soir. Subtilisez son traitement et nous serons débarrassés de sa vigilance paranoïaque."
+VITORI D7 A1,,"Attendez, j'ignore..."
+,,
+VITORI D8,,"Laissez moi finir : voici le collier de l'animal de la Comptesse d'Alma. Il a couté un doigt à Ruffio, mais nous sommes dorénavant en mesure de la contraindre au silence."
+VITORI D8 A1,,
+,,
+VITORI D9,,"[i](Vitori regarde sa montre)[/i] La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
+VITORI D9 A1,,Mon crâne... La douleur est insupportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez vous répéter plus lentement ?
+,,
+VITORI D10,,"[i](soucieux)[/i] Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. (pose une main sur %n) A tout à l'heure, mon ami."
+VITORI D10 A1,,"Faisons comme cela, oui..."
+,,
+VITORI D11,,[i](sort)[/i]
+VITORI D11 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'un coupe de vin m'aidera à me remettre les idées en place."
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
 ,,
 ,,
 GUARD DEFAULT,TODO,"Bonsoir Messire, votre invitation je vous prie."
@@ -143,6 +229,10 @@ GUARD D17 A1,TODO,"Très bien, très bien !"
 ,,
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
-BOTTLE DEFAULT A1,,[i](%n la prend)[/i]
+BOTTLE DEFAULT A1,,[i](s'en saisit)[/i]
 BOTTLE DEFAULT A2,,[color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
-BOTTLE DEFAULT A3,,[i](%n la laisse là)[/i]
+BOTTLE DEFAULT A3,,[i](La laisse sur le rebord)[/i]
+,,
+DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de là où %n s'est réveillé."
+DAGGER DEFAULT A1,,"Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i](Se baisse et la ramasse)[/i]"
+DAGGER DEFAULT A2,,Ma dague... Peut être est-elle mieux ici pour l'instant. [i](Passe son chemin)[/i]
