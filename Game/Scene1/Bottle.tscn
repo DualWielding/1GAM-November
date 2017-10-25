@@ -4,7 +4,7 @@
 [ext_resource path="res://Scene1/Bottle.gd" type="Script" id=2]
 [ext_resource path="res://Sprites/bottle.png" type="Texture" id=3]
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 17.6299
@@ -32,7 +32,7 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" parent="."]
 
 transform/scale = Vector2( 0.5, 0.5 )
-shape = SubResource( 4 )
+shape = SubResource( 1 )
 
 [node name="LightOccluder2D" parent="."]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://TileSet1t.tres" type="TileSet" id=1]
 [ext_resource path="res://Scene1/Door.tscn" type="PackedScene" id=2]
@@ -6,9 +6,8 @@
 [ext_resource path="res://Scene1/Vitori.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene1/FirstGuard.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scene1/Bottle.tscn" type="PackedScene" id=6]
-[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=7]
-
-
+[ext_resource path="res://Scene1/Dagger.tscn" type="PackedScene" id=7]
+[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -42,6 +41,7 @@ tile_data = IntArray( -327685, 4, -327684, 2, -327683, 2, -327682, 2, -327681, 2
 
 [node name="InvisibleWalls" type="StaticBody2D" parent="."]
 
+editor/display_folded = true
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 28.1923, -150, 390 )
@@ -145,7 +145,12 @@ transform/pos = Vector2( 590, 240 )
 
 transform/pos = Vector2( 270, 290 )
 
-[node name="PlayerCharacter" parent="." instance=ExtResource( 7 )]
+[node name="Dagger" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 720, 380 )
+transform/rot = -70.0
+
+[node name="PlayerCharacter" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 260, 510 )
 
