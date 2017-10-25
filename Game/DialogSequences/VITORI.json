@@ -49,24 +49,14 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d4",
-				"card used" :[{
-					"name": "DAGGER"
-					},
-					{
-					"name": "POWDER"
-					}]
+				"card used" :["DAGGER","POWDER"]
 			},
 			{
 				"text":"VITORI D3 A2",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d4",
-				"card used" :[{
-					"name": "DAGGER"
-					},
-					{
-					"name": "GOLD POUCH"
-					}]
+				"card used" :["DAGGER","GOLD POUCH"]
 			}
 
 		]
@@ -110,11 +100,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d7",
-				"card gained": [{
-					"name":"CESNI OWN YOU"
-					},{
-					"name": "STROZI IS CESNI LOVER"
-				}]
+				"card gained": ["CESNI OWN YOU","STROZI IS CESNI LOVER"]
 			}
 		]
 	},
@@ -127,11 +113,7 @@
 				"end":false,
 				"state change":"unchanged",
 				"next sequence": "d8",
-				"card gained":[{
-					"name":"AUGURIE IS WORKING WITH VITORI"
-					},{
-					"name": "PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE"
-					}] 
+				"card gained":["AUGURIE IS WORKING WITH VITORI","PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE"] 
 			}
 		]
 	},
@@ -145,11 +127,7 @@
 				"state change":"unchanged",
 				"next sequence": "d9",
 
-				"card gained":[{
-					"name":"MISSING FINGER OF RUFFIO EXPLAINATION"
-					},{
-					"name": "ALMA PET KIDNAPPED"
-					}]
+				"card gained":["MISSING FINGER OF RUFFIO EXPLAINATION","ALMA PET KIDNAPPED"]
 			}
 		]
 	},
