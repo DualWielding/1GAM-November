@@ -1,0 +1,19 @@
+{
+	"dagger default": {
+		"text":"DAGGER DEFAULT",
+		"options": [
+			{
+				"text":"DAGGER DEFAULT A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+			},
+			{
+				"text":"DAGGER DEFAULT A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence":"none"
+			}
+		]
+	}
+}
