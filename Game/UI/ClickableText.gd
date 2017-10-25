@@ -15,7 +15,12 @@ func set_option(opt):
 		text = text.replace("%n", Player.get_name())
 	# Show which card is used, if the option uses one
 	if opt.has("card used"):
-		text = str("[", tr(Cards.get(opt["card used"]).unique_name), "] ", text)
+		if typeof(option["card used"]) == TYPE_STRING:
+			text = str("[", tr(Cards.get(opt["card used"]).unique_name), "] ", text)
+		elif typeof(option["card used"]) == TYPE_ARRAY:
+			for card in option["card used"]:
+				text = str("[", tr(Cards.get(card).unique_name), "] ", text)
+		
 	rich_text.set_bbcode(text)
 
 func get_option():
@@ -33,7 +38,11 @@ func _on_ClickableText_pressed():
 	
 	Player.ui.clear_answers()
 	if option.has("card used"):
-		Player.remove_card(option["card used"])
+		if typeof(option["card used"]) == TYPE_STRING:
+			Player.remove_card(option["card used"])
+		elif typeof(option["card used"]) == TYPE_ARRAY:
+			for card in option["card used"]:
+				Player.remove_card(card)
 	if option.has("card gained"):
 		if typeof(option["card gained"]) == TYPE_STRING:
 			Player.add_card(option["card gained"])
