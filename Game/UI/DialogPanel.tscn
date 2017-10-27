@@ -21,17 +21,7 @@ tracks/0/keys = {
 "times": FloatArray( 0, 1 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 0 ), Vector2( -330, 0 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("SlideButton:rect/pos")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 352, 240 ), Vector2( 354, 240 ) ]
+"values": [ Vector2( 0, 0 ), Vector2( -306, 0 ) ]
 }
 
 [node name="DialogPanel" type="Panel"]
@@ -40,9 +30,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.0
+margin/left = -306.0
 margin/top = 0.0
-margin/right = 302.0
+margin/right = 26.0
 margin/bottom = 601.0
 script/script = ExtResource( 1 )
 
@@ -73,9 +63,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 306.0
+margin/left = 335.0
 margin/top = 3.0
-margin/right = 652.0
+margin/right = 681.0
 margin/bottom = 595.0
 custom_constants/separation = 10
 alignment = 0
@@ -93,20 +83,21 @@ autoplay = ""
 
 [node name="SlideButton" type="Button" parent="."]
 
-visibility/visible = false
 rect/scale = Vector2( 0.7, 0.7 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 352.0
-margin/top = 240.0
-margin/right = 372.0
-margin/bottom = 370.0
-toggle_mode = true
+margin/left = 311.0
+margin/top = 233.0
+margin/right = 331.0
+margin/bottom = 363.0
+toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "<"
 flat = false
+
+[connection signal="pressed" from="SlideButton" to="." method="_on_SlideButton_pressed"]
 
 

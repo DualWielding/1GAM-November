@@ -5,6 +5,9 @@ var interaction_possibilities = []
 signal can_interact
 signal cant_interact
 
+signal disabled
+signal enabled
+
 # Player is disabled at the start of the adventure
 var disabled_movement = true setget set_disabled_movement, is_disabled
 
@@ -50,7 +53,10 @@ func _input(event):
 
 func set_disabled_movement(boolean):
 	if boolean:
+		emit_signal("disabled")
 		stop_walking()
+	else:
+		emit_signal("enabled")
 	disabled_movement = boolean
 
 func is_disabled():

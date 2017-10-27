@@ -7,8 +7,9 @@ onready var hand = get_node("Hand")
 onready var input_wrapper = get_node("InputWrapper")
 onready var input_field = input_wrapper.get_node("InputField")
 onready var submit_button = input_wrapper.get_node("Submit")
-onready var discard_button = get_node("DiscardButton")
-onready var discard_label = get_node("DiscardLabel")
+onready var discard_panel = get_node("DiscardPanel")
+onready var discard_button = discard_panel.get_node("DiscardButton")
+onready var discard_label = discard_panel.get_node("DiscardLabel")
 
 var ui_card_class = preload("res://UI/UICard.tscn")
 
@@ -60,12 +61,14 @@ func show_dialog(body, unformatted_text, options):
 	# Hide the interaction button
 	hide_interaction_button()
 	dialog_panel.set_dialog(body, unformatted_text, options)
-	dialog_panel.show()
+	dialog_panel.show_panel()
+	dialog_panel.disable_toggling()
 
 func hide_dialog():
 	# Show the interaction button again
 	dialog_panel.clear_answers()
-	dialog_panel.hide()
+	dialog_panel.hide_panel()
+	dialog_panel.enable_toggling()
 	show_interaction_button()
 
 func clear_answers():
@@ -176,14 +179,12 @@ func show_discard_screen(number):
 	discard_label.set_text(tr("DISCARD TEXT"))
 	cards_to_discard_number = number
 	bring_cards_up()
-	discard_button.show()
-	discard_label.show()
+	discard_panel.show()
 	Player.character.set_disabled_movement(true)
 
 func hide_discard_screen():
 	lower_cards()
-	discard_button.hide()
-	discard_label.hide()
+	discard_panel.hide()
 	Player.character.set_disabled_movement(false)
 
 func _on_DiscardButton_pressed():
