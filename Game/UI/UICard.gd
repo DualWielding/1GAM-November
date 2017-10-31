@@ -9,12 +9,15 @@ var img = preload("res://Sprites/Floor.png")
 var important = false
 
 var _hovered = false
-var _up = false
+var _up = false setget set_up, is_up
+var _recto = true
 
 var selectable = false setget set_selectable, is_selectable
 var selected = false setget set_selected, is_selected
 
 onready var aura = get_node("Wrapper/Aura")
+onready var recto = get_node("Wrapper/VirginCard/Recto")
+onready var verso = get_node("Wrapper/VirginCard/Verso")
 
 onready var ap = get_node("AnimationPlayer")
 
@@ -36,9 +39,12 @@ func init_from_dic(dic):
 	add_to_group("ui_card")
 
 func _ready():
-	get_node("Wrapper/VirginCard/Name").set_text(name)
-	get_node("Wrapper/VirginCard/Picture").set_texture(img)
-	get_node("Wrapper/VirginCard/Text").set_text(text)
+	get_node("Wrapper/VirginCard/Recto/Name").set_text(name)
+	get_node("Wrapper/VirginCard/Recto/Picture").set_texture(img)
+	get_node("Wrapper/VirginCard/Verso/Text").set_text(text)
+	
+	verso.hide()
+	recto.show()
 	
 	set_process_input(true)
 
@@ -47,10 +53,11 @@ func _input(event):
 	and event.type == InputEvent.MOUSE_BUTTON\
 	and event.button_index == BUTTON_RIGHT\
 	and event.pressed:
-		if _up:
-			lower()
-		else:
-			bring_up()
+		if _up or selectable:
+			if _recto:
+				view_verso()
+			else:
+				view_recto()
 
 ##### SELECTION #####
 
@@ -64,13 +71,18 @@ func is_selectable():
 	return selectable
 
 func set_selected(boolean):
+	# Set the card as selected
 	if boolean:
-		aura.show()
-		Player.ui.add_to_discard_stash(initial_card)
+		if Player.ui.add_to_discard_stash(initial_card): # Selection worked
+			aura.show()
+			selected = boolean
+		else: # Selection failed (no more card to select)
+			# reset the button status
+			get_node("Wrapper/VirginCard").set_pressed(false)
 	else:
 		aura.hide()
 		Player.ui.remove_from_discard_stash(initial_card)
-	selected = boolean
+		selected = boolean
 
 func is_selected():
 	return selected
@@ -90,12 +102,31 @@ func lower():
 		_up = false
 		_hovered = false
 
+func set_up(boolean):
+	_up = boolean
+
+func is_up():
+	return _up
+
+func view_recto():
+	ap.play_backwards("turn")
+	_recto = true
+
+func view_verso():
+	ap.play("turn")
+	_recto = false
+
 func _on_VirginCard_toggled( pressed ):
-	if Player.ui.cards_to_discard_number == 0 and pressed:
-		get_node("Wrapper/VirginCard").set_pressed(false)
-		return
+#	if Player.ui.cards_to_discard_number == 0 and pressed:
+#		get_node("Wrapper/VirginCard").set_pressed(false)
+#		return
 	if is_selectable():
 		set_selected(pressed)
+	else:
+		if _up:
+			lower()
+		else:
+			bring_up()
 
 func _on_VirginCard_mouse_enter():
 	_hovered = true

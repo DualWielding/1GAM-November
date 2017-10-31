@@ -154,9 +154,11 @@ func remove_card(card):
 
 # ATM only useful for discarding, so it's only taking normal cards into account
 func bring_cards_up():
-	hand.get_node("AnimationPlayer").play("bring_up")
 	for child in get_tree().get_nodes_in_group("ui_normal_card"): 
+		if child.is_up():
+			child.lower()
 		child.set_selectable(true)
+	hand.get_node("AnimationPlayer").play("bring_up")
 
 # ATM only useful for discarding, so it's only taking normal cards into account
 func lower_cards():
@@ -168,8 +170,12 @@ func lower_cards():
 	### DISCARD ###
 
 func add_to_discard_stash(card):
-	cards_to_discard.append(card)
-	cards_to_discard_number -= 1
+	if cards_to_discard_number > 0:
+		cards_to_discard.append(card)
+		cards_to_discard_number -= 1
+		return true
+	else:
+		return false
 
 func remove_from_discard_stash(card):
 	cards_to_discard.remove(cards_to_discard.find(card))
