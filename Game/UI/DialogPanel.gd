@@ -1,23 +1,18 @@
 extends Panel
 
-var clickable_label_class = preload("res://UI/ClickableText.tscn")
-onready var speaker_text = get_node("SpeakerText")
+onready var script_container = get_node("ScrollContainer/ScriptContainer")
 onready var answers_container = get_node("AnswersContainer")
 onready var slide_button = get_node("SlideButton")
 
 var _hidden_panel = true
+var current_length = 0
+var _original_x_size = 0
 
 var current_speaker
 var current_options
 
-func _ready():
-#	Player.character.connect("disabled", slide_button, "hide")
-#	Player.character.connect("disabled", self, "show_panel")
-#	Player.character.connect("enabled", slide_button, "show")
-#	Player.character.connect("enabled", selide_button, "hide_panel")
-	
-#	hide_panel()
-	speaker_text.connect("finished", self, "add_answers")
+var rich_text_writer_class = preload("res://UI/RichTextWriter.tscn")
+var clickable_label_class = preload("res://UI/ClickableText.tscn")
 
 func set_dialog(body, unformatted_text, options):
 	# Add body and options as instance var, in order to connect them
@@ -25,14 +20,31 @@ func set_dialog(body, unformatted_text, options):
 	current_speaker = body
 	current_options = options
 	
-	# Remplace every %n in dialogs with the player name
-	var text = unformatted_text
-	if Player.get_name():
-		text = unformatted_text.replace("%n", Player.get_name())
+	# Fade the name of the speaker in
+	add_text(str("[center][i]", body.get_name(), "[/i][/center]"), "fade")
 	
-	# Set the new speaker's text
-	speaker_text.append_bbcode(str("[i]", body.get_name(), "[/i]\n\n"))
-	speaker_text.write_text(text) # Should fill the thing...
+	# Write the speaker's dialog
+	var rtw = add_text(unformatted_text, "write")
+	rtw.connect("finished", self, "add_answers")
+
+func add_text(text, method="fade", is_stage_direction = false, is_name = false):
+	script_container.set_size(get_node("ScrollContainer").get_size()) # seems we need that
+	var wrapper = Control.new()
+	var rtw = rich_text_writer_class.instance()
+	rtw.set_text_up(text, method)
+#	rtw.set_pos(Vector2(0, current_length))
+	
+	if _original_x_size == 0:
+		_original_x_size = script_container.get_size().x
+	
+	rtw.set_custom_minimum_size(Vector2(_original_x_size, 20 + (rtw.get_text().length() / 40) * 20))
+	wrapper.set_custom_minimum_size(rtw.get_custom_minimum_size())
+	wrapper.add_child(rtw)
+	script_container.add_child(wrapper)
+#	current_length += rtw.get_size().y + 20
+	
+#	print(script_container.get_size().y)
+	return rtw
 
 func add_answers():
 	if answers_container.get_child_count() > 0:
@@ -71,10 +83,9 @@ func set_player_name(container):
 	remove_child(container)
 	container.queue_free()
 	
-	#TODO better than this !
 	# To add the answer to the dialog richText
-	speaker_text.append_bbcode(str("[i]", Player.get_name(), "[/i]\n\n"))
-	speaker_text.append_bbcode(str(". . . ", Player.get_name(), ", mon nom est ", Player.get_name(), ".", "\n\n"))
+	add_text(str("[i]", Player.get_name(), "[/i]"), "fade")
+	add_text(str(". . . ", Player.get_name(), ", mon nom est ", Player.get_name(), "."), "fade")
 	
 	current_speaker.follow_up_dialog(current_options[0])
 	clear_answers()
@@ -112,3 +123,15 @@ func _on_SlideButton_pressed():
 		hide_panel()
 	else:
 		show_panel()
+
+func _on_ScriptContainer_minimum_size_changed():
+	var t = Timer.new()
+	t.set_one_shot(true)
+	t.set_wait_time(0.1)
+	t.connect("timeout", self, "auto_scroll_down")
+	add_child(t)
+	t.start()
+
+func auto_scroll_down():
+	var vscroll = get_node("ScrollContainer")
+	vscroll.set_v_scroll(script_container.get_size().y)

@@ -37,8 +37,8 @@ func get_speaker():
 	return speaker
 
 func _on_ClickableText_pressed():
-	get_parent().get_parent().get_node("SpeakerText").append_bbcode(str("[i]", Player.get_name(), "[/i]\n\n"))
-	get_parent().get_parent().get_node("SpeakerText").append_bbcode(str(text, "\n\n"))
+	Player.ui.dialog_panel.add_text(str("[center][i]", Player.get_name(), "[/i][/center]"), "fade")
+	Player.ui.dialog_panel.add_text(text, "fade")
 	
 	Player.ui.clear_answers()
 	if option.has("card used"):
