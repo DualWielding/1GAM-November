@@ -21,16 +21,24 @@ func set_dialog(body, unformatted_text, options):
 	current_options = options
 	
 	# Fade the name of the speaker in
-	add_text(str("[center][i]", body.get_name(), "[/i][/center]"), "fade")
+	add_text(str("[center][i]", body.get_name(), "[/i][/center]"), "fade", false ,true)
 	
 	# Write the speaker's dialog
 	var rtw = add_text(unformatted_text, "write")
 	rtw.connect("finished", self, "add_answers")
 
-func add_text(text, method="fade", is_stage_direction = false, is_name = false):
+func add_text(unformatted_text, method="fade", is_stage_direction = false, is_name = false):
+	var text = unformatted_text
+	
 	script_container.set_size(get_node("ScrollContainer").get_size()) # seems we need that
 	var wrapper = Control.new()
 	var rtw = rich_text_writer_class.instance()
+	
+	if !is_stage_direction and !is_name: # Meaning it's plain text !
+		text = str("    ", text)
+		if text.length() > 40 :
+			text = str("[fill]", text, "[/fill]")
+	
 	rtw.set_text_up(text, method)
 #	rtw.set_pos(Vector2(0, current_length))
 	
@@ -84,7 +92,7 @@ func set_player_name(container):
 	container.queue_free()
 	
 	# To add the answer to the dialog richText
-	add_text(str("[i]", Player.get_name(), "[/i]"), "fade")
+	add_text(str("[center][i]", Player.get_name(), "[/i][/center]"), "fade")
 	add_text(str(". . . ", Player.get_name(), ", mon nom est ", Player.get_name(), "."), "fade")
 	
 	current_speaker.follow_up_dialog(current_options[0])

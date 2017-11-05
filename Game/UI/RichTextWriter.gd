@@ -47,8 +47,6 @@ func _write_text(speed = 0.025):
 	show()
 
 func _write():
-	set_visible_characters(current_index)
-#	set_bbcode(full_text.left(current_index))
 	if current_index == full_text.length():
 		_finish()
 	elif full_text[current_index] == "." or full_text[current_index] == "!" or full_text[current_index] == "?":
@@ -57,6 +55,8 @@ func _write():
 		t.set_wait_time(0.2)
 	else:
 		t.set_wait_time(base_speed)
+	if current_index > 5:
+		set_visible_characters(current_index - 5)
 	current_index += 1
 
 func set_text_up(text, method):
