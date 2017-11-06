@@ -5,8 +5,9 @@
 			{
 				"text":"DAGGER DEFAULT A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"neutralized",
 				"next sequence": "none",
+				"card gained": "DAGGER"
 			},
 			{
 				"text":"DAGGER DEFAULT A2",
