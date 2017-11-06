@@ -61,8 +61,9 @@ func show_dialog(body, unformatted_text, options):
 	# Hide the interaction button
 	hide_interaction_button()
 	dialog_panel.set_dialog(body, unformatted_text, options)
-	dialog_panel.show_panel()
-	dialog_panel.disable_toggling()
+	# This two next are now handled by set_dialog func
+#	dialog_panel.show_panel()
+#	dialog_panel.disable_toggling()
 
 func hide_dialog():
 	# Show the interaction button again

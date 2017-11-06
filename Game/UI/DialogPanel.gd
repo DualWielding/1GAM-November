@@ -3,6 +3,7 @@ extends Panel
 onready var script_container = get_node("ScrollContainer/ScriptContainer")
 onready var answers_container = get_node("AnswersContainer")
 onready var slide_button = get_node("SlideButton")
+onready var ap = get_node("AnimationPlayer")
 
 var _hidden_panel = true
 var current_length = 0
@@ -20,6 +21,14 @@ func set_dialog(body, unformatted_text, options):
 	current_speaker = body
 	current_options = options
 	
+	if _hidden_panel:
+		show_panel()
+		ap.connect("finished", self, "set_dialog_part_2", [body, unformatted_text, options], CONNECT_ONESHOT)
+	else:
+		set_dialog_part_2(body, unformatted_text, options)
+
+# We need that "part2" in order to defer the dialog setting if needed
+func set_dialog_part_2(body, unformatted_text, options):
 	# Fade the name of the speaker in
 	add_text(str("[center][i]", body.get_name(), "[/i][/center]"), "fade", false ,true)
 	
@@ -117,13 +126,13 @@ func disable_toggling():
 func hide_panel():
 	if not _hidden_panel:
 		_hidden_panel = true
-		get_node("AnimationPlayer").play("Slide_left")
+		ap.play("Slide_left")
 		slide_button.set_text(">")
 
 func show_panel():
 	if _hidden_panel:
 		_hidden_panel = false
-		get_node("AnimationPlayer").play_backwards("Slide_left")
+		ap.play_backwards("Slide_left")
 		slide_button.set_text("<")
 
 func _on_SlideButton_pressed():
