@@ -1,8 +1,12 @@
 extends RichTextLabel
 
 var t = Timer.new()
-var current_index
+
+var _current_visible_text_idx = 0
+var _current_real_text_idx = 0
+
 var full_text
+var clean_text
 var method = "fade"
 var base_speed
 var hovered = false setget set_hovered, is_hovered
@@ -41,28 +45,60 @@ func _write_text(speed = 0.025):
 	finished = false
 	base_speed = speed
 	set_visible_characters(0)
-	current_index = 0
+	_current_real_text_idx = 0
+	_current_visible_text_idx = 0
 	t.set_wait_time(base_speed)
 	t.start()
 	show()
 
 func _write():
-	if current_index == full_text.length():
+	if _current_real_text_idx >= full_text.length():
 		_finish()
-	elif full_text[current_index] == "." or full_text[current_index] == "!" or full_text[current_index] == "?":
+		return
+	
+	var char = full_text[_current_real_text_idx]
+	
+	if char == "[":
+		while full_text[_current_real_text_idx] != "]":
+			_current_real_text_idx += 1
+		_current_real_text_idx == 1 # for the "]"
+		
+		while full_text[_current_real_text_idx] !=  "[":
+			_current_real_text_idx += 1
+			_current_visible_text_idx += 1
+		
+		while full_text[_current_real_text_idx] != "]":
+			_current_real_text_idx += 1
+		_current_real_text_idx += 1 # for "]"
+		
+	elif char == "." or char == "!" or char == "?":
 		t.set_wait_time(0.5)
-	elif full_text[current_index] == "," or full_text[current_index] == "!" or full_text[current_index] == "?":
+	elif char == "," or char == "!" or char == "?":
 		t.set_wait_time(0.2)
 	else:
 		t.set_wait_time(base_speed)
-	if current_index > 5:
-		set_visible_characters(current_index - 5)
-	current_index += 1
+	set_visible_characters(_current_visible_text_idx)
+	_current_real_text_idx += 1
+	_current_visible_text_idx += 1
 
 func set_text_up(text, method):
 	full_text = text.replace("%n", Player.get_name())
 	set_bbcode(full_text)
+#	clean_text = get_raw_text()
 	self.method = method
+
+#func get_raw_text():
+#	var raw_text = ""
+#	var ignoring = false
+#	for i in range(full_text.length()):
+#		if full_text[i] == "[":
+#			ignoring = true
+#		elif i != 0 and full_text[i-1] == "]":
+#			ignoring = false
+#		
+#		if !ignoring:
+#			raw_text = str(raw_text, full_text[i])
+#	return raw_text
 
 func _finish():
 	set_visible_characters(-1)
