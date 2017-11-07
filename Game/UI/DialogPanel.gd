@@ -68,6 +68,9 @@ func add_answers():
 	if answers_container.get_child_count() > 0:
 		return
 	
+	if current_options.size() == 0:
+		return
+	
 	if current_options.size() == 1 and current_options[0].text == "$i":
 		var container = VBoxContainer.new()
 		container.set_name(tr("INPUT TAB NAME"))

@@ -42,7 +42,7 @@ func start_dialog():
 	# Stop the player's movement while interacting
 	Player.character.set_disabled_movement(true)
 	
-	say(self, tr(sequences[state]["text"]), sequences[state]["options"])
+	say(tr(sequences[state]["text"]), sequences[state]["options"])
 
 func follow_up_dialog(option):
 	if option["state change"] != "unchanged":
@@ -52,7 +52,7 @@ func follow_up_dialog(option):
 		stop_dialog(option)
 	else:
 		var sequence_name = option["next sequence"]
-		say(self, tr(sequences[sequence_name]["text"]), sequences[sequence_name]["options"])
+		say(tr(sequences[sequence_name]["text"]), sequences[sequence_name]["options"])
 
 func stop_dialog(option):
 	# Re-enable the character movement
@@ -62,9 +62,7 @@ func stop_dialog(option):
 		state = option["state change"]
 	emit_signal("stop_dialog")
 
-# We need the body param in order to send the player's answer back to the body
-# Thus enabling us to follow up with the next dialog line
-func say(body, text, opt):
+func say(text, opt):
 	var options = opt
 	for option in options:
 		# Remove a dialog option the player does not have the right tool
@@ -78,7 +76,9 @@ func say(body, text, opt):
 				if !Player.has_card(card):
 					options.remove(options.find(option))
 	
-	emit_signal("say", body, text, options)
+	# We need the body param in order to send the player's answer back to the body
+	# Thus enabling us to follow up with the next dialog line
+	emit_signal("say", self, text, options)
 
 func set_name(name):
 	display_name = name

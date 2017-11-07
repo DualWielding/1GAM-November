@@ -28,16 +28,9 @@ script/script = ExtResource( 2 )
 
 frame = 19
 
-[node name="FadePlayer" type="AnimationPlayer" parent="."]
+[node name="FadePlayer" parent="."]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
 anims/Fade = SubResource( 1 )
-playback/active = true
-playback/speed = 1.0
-blend_times = [  ]
-autoplay = ""
 
 [connection signal="area_enter" from="InteractionArea" to="." method="_on_InteractionArea_area_enter"]
 

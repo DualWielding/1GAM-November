@@ -201,6 +201,17 @@ func _on_DiscardButton_pressed():
 		hide_discard_screen()
 
 
+func hide():
+	interaction_button.hide()
+	hand.hide()
+	important_hand.hide()
+	dialog_panel.hide()
+
+func show():
+	interaction_button.show()
+	hand.show()
+	important_hand.show()
+	dialog_panel.show()
 # Test for discarding
 #func _on_Button_toggled( pressed ):
 #	if pressed:

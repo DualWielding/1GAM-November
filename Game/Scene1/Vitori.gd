@@ -1,8 +1,6 @@
 extends "res://NPC.gd"
 
-var option_to_save
-
-func _ready():
+func start():
 	walk_right()
 
 func init():
@@ -30,3 +28,4 @@ func _on_InteractionArea_area_enter( area ):
 	if body == Player.character:
 		stop_walking()
 		start_dialog()
+		Player.character.stand_up()

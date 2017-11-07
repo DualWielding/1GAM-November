@@ -24,6 +24,14 @@ func _fixed_process(delta):
 	elif current_direction == "left":
 		move(Vector2(-100, 0) * delta)
 
+######## HURT ########
+
+func collapse():
+	animator.play("Hurt")
+
+func stand_up():
+	animator.play_backward("Hurt")
+
 ######## WALKING ########
 
 func walk_up():
@@ -86,3 +94,8 @@ func look_at(direction):
 		set_stand_to_base_left()
 	elif direction == "down":
 		set_stand_to_base_down()
+
+func crouch():
+	get_node("Sprite").hide()
+	get_node("HurtSprite").set_frame(2)
+	get_node("HurtSprite").show()

@@ -16,7 +16,7 @@ func _ready():
 	Player.character = self
 
 func init():
-	base_looking_direction = "down"
+	base_looking_direction = "left"
 
 func handle_multiple_walking_keys_pressed():
 	if Input.is_action_pressed("char_up"):
@@ -49,7 +49,18 @@ func _input(event):
 	or event.is_action_released("char_down"):
 		handle_multiple_walking_keys_pressed()
 
+######## HURT ########
+
+func collapse():
+	animator.play("Hurt")
+	set_disabled_movement(true)
+
+func stand_up():
+	animator.play_backwards("Hurt")
+	animator.connect("finished", self, "set_disable_movement", [false], CONNECT_ONESHOT)
+
 ######## MOVEMENT ########
+
 
 func set_disabled_movement(boolean):
 	if boolean:
