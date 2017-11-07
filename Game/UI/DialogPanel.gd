@@ -8,6 +8,7 @@ onready var ap = get_node("AnimationPlayer")
 var _hidden_panel = true
 var current_length = 0
 var _original_x_size = 0
+var _line_length = 45
 
 var current_speaker
 var current_options
@@ -45,8 +46,8 @@ func add_text(unformatted_text, method="fade", is_stage_direction = false, is_na
 	
 	if !is_stage_direction and !is_name: # Meaning it's plain text !
 		text = str("    ", text)
-		if text.length() > 40 :
-			text = str("[fill]", text, "[/fill]")
+#		if text.length() > _line_length :
+#			text = str("[fill]", text, "[/fill]")
 	
 	rtw.set_text_up(text, method)
 #	rtw.set_pos(Vector2(0, current_length))
@@ -54,7 +55,7 @@ func add_text(unformatted_text, method="fade", is_stage_direction = false, is_na
 	if _original_x_size == 0:
 		_original_x_size = script_container.get_size().x
 	
-	rtw.set_custom_minimum_size(Vector2(_original_x_size, 20 + (rtw.get_text().length() / 40) * 20))
+	rtw.set_custom_minimum_size(Vector2(_original_x_size, _line_length/2 + (rtw.get_text().length() / _line_length) * _line_length/2))
 	wrapper.set_custom_minimum_size(rtw.get_custom_minimum_size())
 	wrapper.add_child(rtw)
 	script_container.add_child(wrapper)
