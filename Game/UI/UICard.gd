@@ -94,13 +94,13 @@ func bring_up():
 	if !selectable:
 		ap.play("bring_up")
 		_up = true
-		_hovered = false
+#		_hovered = false
 
 func lower():
 	if !selectable:
 		ap.play_backwards("bring_up")
 		_up = false
-		_hovered = false
+#		_hovered = false
 
 func set_up(boolean):
 	_up = boolean
@@ -117,9 +117,6 @@ func view_verso():
 	_recto = false
 
 func _on_VirginCard_toggled( pressed ):
-#	if Player.ui.cards_to_discard_number == 0 and pressed:
-#		get_node("Wrapper/VirginCard").set_pressed(false)
-#		return
 	if is_selectable():
 		set_selected(pressed)
 	else:

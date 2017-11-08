@@ -61,7 +61,6 @@ func stand_up():
 
 ######## MOVEMENT ########
 
-
 func set_disabled_movement(boolean):
 	if boolean:
 		emit_signal("disabled")

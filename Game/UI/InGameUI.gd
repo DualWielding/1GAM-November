@@ -37,6 +37,7 @@ func _ready():
 	for body in get_tree().get_nodes_in_group("body"):
 		body.connect("say", self, "show_dialog")
 		body.connect("stop_dialog", self, "hide_dialog")
+		body.connect("stop_dialog", Player, "check_cards_number")
 	
 	# Assign the shortcut "E" to the interaction action
 	var hotkey = InputEvent()
