@@ -158,10 +158,10 @@ GUARD D5 A3,TODO,"Je passe, que vous le vouliez ou non !"
 ,,
 GUARD D6,TODO,"Messire, ne m'obligez pas à user de force."
 GUARD D6 A1,TODO,J'aimerai voir ça ! [i](force le passage)[/i]
-GUARD D6 A2,TODO,Vous n'oserez pas ! [i](force le passage)[/i]
+GUARD D6 A2,TODO,"Très bien, très bien ! Nous n'aurons pas besoin d'en arriver là."
 ,,
 GUARD D7,TODO,"([i]%n essaye de passer, mais le garde le repousse d'une brutale bourrasque[/i])"
-GUARD D7 A1,TODO,La peste sur vous et votre famille !
+GUARD D7 A1,TODO,Mmfh ! Nous n'en resterons pas là !
 GUARD D7 A2,TODO,"Je rentrerai, que vous le vouliez ou non !"
 ,,
 GUARD D8,TODO,"Je l'ignore, mais sans invita. . ."
@@ -191,7 +191,7 @@ GUARD D13,TODO,Que voulez-vous dire ?
 GUARD D13 A1,TODO,[color=red] Ce genre de conséquences ! [i](%n lui abbat la bouteille sur le crâne)[/i][/color]
 GUARD D13 A2,TODO,"[color=red][i](%n se jete sur le garde et le poignarde)[/i] Je n'ai pas de temps à perdre ce soir, navré.[/color]"
 ,,
-GUARD D14,TODO,"C'est vrai qu'avec cet argent, je pourrai enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses…"
+GUARD D14,TODO,"Ou bien je pourrai enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses..."
 GUARD D14 A1,TODO,"Qu. . . Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
 GUARD D14 A2,TODO,"Je connais Misty. Croyez moi mon brave, elle vaut jusqu'au moindre florin. Mais elle est souvent occupée. . . Vous feriez mieux de ne pas trainer !"
 ,,
