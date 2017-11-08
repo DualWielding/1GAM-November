@@ -27,6 +27,5 @@ func start_vitoris_scene():
 	vitori.walk_right()
 
 func show_title_screen():
-	Player.ui.hide()
 	title_screen.show()
 	title_screen.ap.connect("finished", bandit, "_flee", [false], CONNECT_ONESHOT)

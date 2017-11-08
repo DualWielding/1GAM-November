@@ -14,15 +14,10 @@ func _on_InteractionArea_area_enter( area ):
 	var body = area.get_parent()
 	if body == Player.character:
 		stop_walking()
-#		say(tr("BANDIT DEFAULT"), [])
-#		get_parent().show_title_screen()
-#		_t.set_wait_time(6)
-#		_t.set_one_shot(true)
-#		_t.connect("timeout", self, "_flee", [false])
-#		_t.start()
-		Player.character.collapse()
+		slash_left()
+		animator.connect("finished", Player.character, "collapse", [], CONNECT_ONESHOT)
+		animator.connect("finished", get_parent(), "show_title_screen", [], CONNECT_ONESHOT)
 		Player.character.animator.connect("finished", self, "crouch", [], CONNECT_ONESHOT)
-		Player.character.animator.connect("finished", get_parent(), "show_title_screen", [], CONNECT_ONESHOT)
 
 func _flee(dagger_dropped):
 	Player.ui.dialog_panel.hide_panel()

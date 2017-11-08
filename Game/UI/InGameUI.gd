@@ -18,6 +18,7 @@ var cards_to_discard = []
 
 func _ready():
 	Player.ui = self
+	hide()
 	
 	# Connect to player
 	Player.character.connect("can_interact", self, "show_interaction_button")
