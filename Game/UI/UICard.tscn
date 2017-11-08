@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://UI/UICard.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Cards/Animated_card.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Cards/animation_recto_carte_normale.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Cards/animation_verso_carte_normale.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
 
@@ -38,44 +39,44 @@ length = 1.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("Wrapper/VirginCard/Sprite:transform/scale")
+tracks/0/path = NodePath("Wrapper/VirginCard/Recto/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.5, 1 ),
-"transitions": FloatArray( 1, 1, 1 ),
+"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 1, 1 ), Vector2( -1, 1 ), Vector2( 1, 1 ) ]
+"values": [ 0, 1, 2, 3, 4, 5 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Wrapper/VirginCard/Sprite:frame")
+tracks/1/path = NodePath("Wrapper/VirginCard/Recto:visibility/visible")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3, 4, 5, 3, 3, 2, 1, 0 ]
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ true, false, false ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Wrapper/VirginCard/Recto:visibility/visible")
+tracks/2/path = NodePath("Wrapper/VirginCard/Verso:visibility/visible")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
 "times": FloatArray( 0, 0.5, 1 ),
 "transitions": FloatArray( 1, 1, 1 ),
 "update": 0,
-"values": [ true, false, false ]
+"values": [ false, true, true ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Wrapper/VirginCard/Verso:visibility/visible")
+tracks/3/path = NodePath("Wrapper/VirginCard/Verso/Sprite:frame")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0, 0.5, 1 ),
-"transitions": FloatArray( 1, 1, 1 ),
-"update": 0,
-"values": [ false, true, true ]
+"times": FloatArray( 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 4, 3, 2, 1, 0 ]
 }
 
 [node name="UICard" type="Control"]
@@ -136,15 +137,8 @@ shortcut = null
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Sprite" type="Sprite" parent="Wrapper/VirginCard"]
-
-transform/pos = Vector2( 100, 120 )
-texture = ExtResource( 3 )
-hframes = 6
-
 [node name="Recto" type="Container" parent="Wrapper/VirginCard"]
 
-visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -185,8 +179,16 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="Sprite" type="Sprite" parent="Wrapper/VirginCard/Recto"]
+
+transform/pos = Vector2( -60, -90 )
+transform/scale = Vector2( 1, -1 )
+texture = ExtResource( 3 )
+hframes = 6
+
 [node name="Verso" type="Container" parent="Wrapper/VirginCard"]
 
+visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -195,6 +197,14 @@ margin/left = 160.0
 margin/top = 210.0
 margin/right = 200.0
 margin/bottom = 250.0
+
+[node name="Sprite" type="Sprite" parent="Wrapper/VirginCard/Verso"]
+
+transform/pos = Vector2( -60, -90 )
+transform/scale = Vector2( -1, -1 )
+texture = ExtResource( 4 )
+hframes = 6
+frame = 5
 
 [node name="Text" type="RichTextLabel" parent="Wrapper/VirginCard/Verso"]
 

@@ -12,6 +12,7 @@ onready var discard_button = discard_panel.get_node("DiscardButton")
 onready var discard_label = discard_panel.get_node("DiscardLabel")
 
 var ui_card_class = preload("res://UI/UICard.tscn")
+var ui_important_card_class = preload("res://UI/UIImportantCard.tscn")
 
 var cards_to_discard_number = 0
 var cards_to_discard = []
@@ -137,12 +138,15 @@ func add_card(card_data):
 	if card_data == null:
 		return false
 	
-	var card = ui_card_class.instance()
-	card.init_from_dic(card_data)
+	var card
 	
-	if card.important:
+	if card_data.has("important") and card_data.important:
+		card = ui_important_card_class.instance()
+		card.init_from_dic(card_data)
 		important_hand.add_child(card)
 	else:
+		card = ui_card_class.instance()
+		card.init_from_dic(card_data)
 		hand.add_child(card)
 	return true
 

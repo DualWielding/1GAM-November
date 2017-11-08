@@ -143,10 +143,11 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 80.0
-margin/top = 550.0
-margin/right = 390.0
-margin/bottom = 850.0
+margin/left = 8.0
+margin/top = 553.0
+margin/right = 318.0
+margin/bottom = 853.0
+custom_constants/separation = 100
 alignment = 0
 
 [node name="Hand" type="GridContainer" parent="."]
