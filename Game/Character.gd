@@ -1,6 +1,8 @@
 extends "res://Body.gd"
 
 onready var sprite = get_node("Sprite")
+onready var hurt_sprite = get_node("HurtSprite")
+onready var hit_sprite = get_node("HitSprite")
 onready var lo_face = get_node("LightOccluderFace")
 onready var lo_left = get_node("LightOccluderLeft")
 onready var lo_right = get_node("LightOccluderRight")
@@ -59,27 +61,42 @@ func stop_walking():
 	current_direction = null
 	animator.stop_all()
 
+######## HITTING ########
+
+func slash_left():
+	animator.play("Slash_left")
+
+
 ######## STANDING ########
 
+func set_stand_sprites():
+	sprite.show()
+	hit_sprite.hide()
+	hurt_sprite.hide()
+
 func set_stand_to_base_up():
+	set_stand_sprites()
 	lo_face.show()
 	lo_left.hide()
 	lo_right.hide()
 	sprite.set_frame(0)
 
 func set_stand_to_base_left():
+	set_stand_sprites()
 	lo_face.hide()
 	lo_left.show()
 	lo_right.hide()
 	sprite.set_frame(9)
 
 func set_stand_to_base_down():
+	set_stand_sprites()
 	lo_face.show()
 	lo_left.hide()
 	lo_right.hide()
 	sprite.set_frame(18)
 
 func set_stand_to_base_right():
+	set_stand_sprites()
 	lo_face.hide()
 	lo_left.hide()
 	lo_right.show()
@@ -96,6 +113,7 @@ func look_at(direction):
 		set_stand_to_base_down()
 
 func crouch():
-	get_node("Sprite").hide()
-	get_node("HurtSprite").set_frame(2)
-	get_node("HurtSprite").show()
+	sprite.hide()
+	hit_sprite.hide()
+	hurt_sprite.set_frame(2)
+	hurt_sprite.show()
