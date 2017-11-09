@@ -1,0 +1,172 @@
+{
+	"alma default": {
+		"text":"ALMA DEFAULT",
+		"options": [
+			{
+				"text":"ALMA DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d1"
+			},
+			{
+				"text":"ALMA DEFAULT A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"d1": {
+		"text":"ALMA D1",
+		"options": [
+			{
+				"text":"ALMA D1 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			},
+			{
+				"text":"ALMA D1 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"ALMA D2",
+		"options": [
+			{
+				"text":"ALMA D2 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			},
+			{
+				"text":"ALMA D2 A2",
+				"end": false,
+				"state change":"no more protected",
+				"next sequence": "d4",
+				"card used" : "GUARD KILLED"
+			}
+		]
+	},
+
+	"d3": {
+		"text":"ALMA D3",
+		"options": [
+			{
+				"text":"ALMA D3 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"d4": {
+		"text":"ALMA D4",
+		"options": [
+			{
+				"text":"ALMA D4 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8"
+			}
+		]
+	}
+
+
+	"alma no more protected": {
+		"text":"ALMA D5",
+		"options": [
+			{
+				"text":"ALMA NO MORE PROTECTED A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6"
+			},
+			{
+				"text":"ALMA NO MORE PROTECTED A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			},
+		]
+	},
+
+	"d6": {
+		"text":"ALMA D6",
+		"options": [
+			{
+				"text":"ALMA D6 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d7",
+			}
+		]
+	},
+
+	"d7": {
+		"text":"ALMA D7",
+		"options": [
+			{
+				"text":"ALMA D7 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8"
+			}
+		]
+	},
+
+	"d8": {
+		"text":"ALMA D8",
+		"options": [
+			{
+				"text":"ALMA D8 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d9"
+			}
+		]
+	},
+
+	"d9": {
+		"text":"ALMA D9",
+		"options": [
+			{
+				"text":"ALMA D9 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained" : "COMPLOTIST QUEST"
+			},
+			{
+				"text":"ALMA D9 A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained" : "COMPLOTIST QUEST"
+			}
+		]
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
