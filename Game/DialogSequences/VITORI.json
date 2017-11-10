@@ -149,18 +149,6 @@
 		"options": [
 			{
 				"text":"VITORI D10 A1",
-				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d11"
-			}
-		]
-	},
-
-	"d11": {
-		"text":"VITORI D11",
-		"options": [
-			{
-				"text":"VITORI D11 A1",
 				"end": true,
 				"state change":"unchanged",
 				"next sequence": "none"
