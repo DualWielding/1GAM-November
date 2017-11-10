@@ -37,8 +37,8 @@ func get_speaker():
 	return speaker
 
 func _on_ClickableText_pressed():
-	Player.ui.dialog_panel.add_text(str("[center][i]", Player.get_name(), "[/i][/center]"), "fade")
-	Player.ui.dialog_panel.add_text(text, "fade")
+	Player.ui.dialog_panel.add_text(str("[center][i]", Player.get_name().to_upper(), "[/i][/center]"), "fade_fast", true)
+	Player.ui.dialog_panel.add_text(text, "fade_fast", true)
 	
 	Player.ui.clear_answers()
 	if option.has("card used"):

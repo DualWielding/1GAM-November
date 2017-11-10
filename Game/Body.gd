@@ -43,6 +43,8 @@ func start_dialog():
 	Player.character.set_disabled_movement(true)
 	
 	say(tr(sequences[state]["text"]), sequences[state]["options"])
+	
+	Player.ui.dialog_panel.disable_toggling()
 
 func follow_up_dialog(option):
 	if option["state change"] != "unchanged":
@@ -61,6 +63,8 @@ func stop_dialog(option):
 	if option["state change"] != "unchanged":
 		state = option["state change"]
 	emit_signal("stop_dialog")
+	
+	Player.ui.dialog_panel.enable_toggling()
 
 func say(text, opt):
 	var options = opt

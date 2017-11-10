@@ -1,5 +1,7 @@
 extends RichTextLabel
 
+onready var ap = get_node("AnimationPlayer")
+
 var t = Timer.new()
 
 var _current_visible_text_idx = 0
@@ -12,36 +14,42 @@ var base_speed
 var hovered = false setget set_hovered, is_hovered
 
 var finished = true
+
 signal finished
 
 func _ready():
-	hide()
 	connect("mouse_enter", self, "set_hovered", [true])
 	connect("mouse_exit", self, "set_hovered", [false])
 	t.connect("timeout", self, "_write")
 	add_child(t)
 	set_process_input(true)
-	
+	start()
+
+func start():
 	if method == "fade":
-		_fade_text()
+		_fade_text(false)
+	elif method == "fade_fast":
+		_fade_text(true)
 	else: # method == "write"
 		_write_text()
+	show()
 
 func _input(event):
 	if hovered\
-	and !finished\
 	and event.type == InputEvent.MOUSE_BUTTON\
 	and event.button_index == BUTTON_LEFT\
 	and event.pressed:
-		_finish()
+		get_parent().get_parent().show_last()
 
-func _fade_text():
-	var ap = get_node("AnimationPlayer")
-	ap.play("fade_in")
-	ap.connect("finished", self, "_finish")
-	show()
+func _fade_text(fast):
+	if fast:
+		ap.play("fade_in", -1, 2)
+	else:
+		ap.play("fade_in")
+	ap.connect("finished", self, "finish")
 
 func _write_text(speed = 0.025):
+	ap.play("fade_in", -1 , 50)
 	finished = false
 	base_speed = speed
 	set_visible_characters(0)
@@ -49,11 +57,10 @@ func _write_text(speed = 0.025):
 	_current_visible_text_idx = 0
 	t.set_wait_time(base_speed)
 	t.start()
-	show()
 
 func _write():
 	if _current_real_text_idx >= full_text.length():
-		_finish()
+		finish()
 		return
 	
 	var char = full_text[_current_real_text_idx]
@@ -86,21 +93,9 @@ func set_text_up(text, method):
 	set_bbcode(full_text)
 #	clean_text = get_raw_text()
 	self.method = method
+	hide()
 
-#func get_raw_text():
-#	var raw_text = ""
-#	var ignoring = false
-#	for i in range(full_text.length()):
-#		if full_text[i] == "[":
-#			ignoring = true
-#		elif i != 0 and full_text[i-1] == "]":
-#			ignoring = false
-#		
-#		if !ignoring:
-#			raw_text = str(raw_text, full_text[i])
-#	return raw_text
-
-func _finish():
+func finish():
 	set_visible_characters(-1)
 	finished = true
 	emit_signal("finished")

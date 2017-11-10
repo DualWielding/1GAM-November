@@ -8,11 +8,12 @@ onready var dagger = get_node("Dagger")
 onready var title_screen = get_node("TitleScreen")
 
 func _ready():
-	bandit.connect("scene_over", self, "intro_pause", [], CONNECT_ONESHOT)
-	bandit.walk_left()
+#	bandit.connect("scene_over", self, "intro_pause", [], CONNECT_ONESHOT)
+#	bandit.walk_left()
+	intro_pause() # TEST
 
 func intro_pause():
-	Player.ui.show()
+#	Player.ui.show() AFTER TEST PUT IT BACK
 	var t = Timer.new()
 	t.set_wait_time(0.7)
 	add_child(t)
@@ -22,6 +23,7 @@ func intro_pause():
 	t.start()
 
 func start_vitoris_scene():
+	Player.ui.show() # TEST 
 	vitori.get_node("FadePlayer").play_backwards("Fade")
 	vitori.show()
 	vitori.walk_right()

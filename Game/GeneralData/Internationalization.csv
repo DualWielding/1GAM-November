@@ -14,7 +14,7 @@ AUGURIE IS WORKING WITH VITORI,ble,Augurie travaille avec Vitori
 PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,bli,La présence de Sire Philippe dépend de son traitement
 EXPLAINATION OF RUFFIO MISSING FINGER,blou,Explication du doigt manquant de Ruffio
 ALMA PET KIDNAPPED,bleaurgh,L'animal d'Alma a été enlevé.
-,,
+COMPLOTIST QUEST,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
 ,,
 ,,
 ,,
@@ -74,7 +74,7 @@ VITORI D3,,"A la bonne heure ! Allons, debout ! Ce n'est pas le soir pour chance
 VITORI D3 A1,,Ma dague. Elle a disparu. Et mon somnifère avec... Il a dû le confondre avec ma bourse.
 VITORI D3 A2,,"Ce qui avait le plus de valeur, ma dague et mon or."
 ,,
-VITORI D4,,"Fâcheux, mais l'essentiel est que vous soyez opérationnel. Bien, je n'ai pas eu le temps lors de notre dernière réunion de m'entretenir en privé avec vous, mais voici ce que je sais et qui pourrait vous être utile."
+VITORI D4,,"Fâcheux, mais l'essentiel est que vous soyez opérationnel. Bien, je n'ai pas eu le temps lors de notre dernière réunion de m'entretenir en privé avec vous, mais voici ce que je sais et qui pourrait vous être utile..."
 VITORI D4 A1,,Je... j'ai bien peur d'avoir l'esprit un peu confus pour le moment.
 ,,
 VITORI D5,,"Je suis désolé mon ami, mais le temps presse et les invités risquent de se poser des questions s'ils nous voient discuter ensemble, vous connaissez ma réputation. Bien, Ecoutez attentivement."
@@ -82,21 +82,21 @@ VITORI D5 A1,,Je...
 VITORI D5 A2,,Mais...
 ,,
 VITORI D6,,"Votre intuition était la bonne : Strozi est bien l'amant de Dame Cesni, et je suis parvenu à le faire inviter ce soir. Vous pourriez utiliser cela pour la contraindre à enfin vous rendre la faveur qu'elle vous doit !"
-VITORI D6 A1,,Qui sont...
+VITORI D6 A1,,Comment cela...
 ,,
 VITORI D7,,"...Grâce à notre agent Augurie, Sire Philippe sera comme prévu indisposé ce soir. Subtilisez son traitement et nous serons débarrassés de sa vigilance paranoïaque."
 VITORI D7 A1,,"Attendez, j'ignore..."
 ,,
-VITORI D8,,"Laissez moi finir : voici le collier de l'animal de la Comptesse d'Alma. Il a couté un doigt à Ruffio, mais nous sommes dorénavant en mesure de la contraindre au silence."
+VITORI D8,,"Laissez moi finir : voici le collier de l'animal de la Comptesse d'Alma. Il a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure de la contraindre au silence."
 VITORI D8 A1,,Argh... Ma tête...
 ,,
-VITORI D9,,"[i](Vitori regarde sa montre)[/i] La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
+VITORI D9,,"[i]Il regarde sa montre[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
 VITORI D9 A1,,Mon crâne... La douleur est insupportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez vous répéter plus lentement ?
 ,,
-VITORI D10,,"[i](soucieux)[/i] Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. (pose une main sur %n) A tout à l'heure, mon ami."
+VITORI D10,,"[i]Soucieux[/i] Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i][right]Il pose une main sur l'épaule de %n.[/right][/i] A tout à l'heure, mon ami."
 VITORI D10 A1,,"Faisons comme cela, oui..."
 ,,
-VITORI D11,,[i](sort)[/i]
+VITORI D11,,[i]Il sort[/i]
 VITORI D11 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'un coupe de vin m'aidera à me remettre les idées en place."
 ,,
 ,,
@@ -214,6 +214,64 @@ GUARD D16 A3,TODO,[color=red][Vin somnifère] Il est dommage d'en arriver là. [
 ,,
 GUARD D17,TODO,J'ai bien peur que ma patience ait atteint ses limites. Hors de ma vue !
 GUARD D17 A1,TODO,"Très bien, très bien !"
+,,
+,,
+,,
+,,
+,,
+ALMA DEFAULT,,"[i](Visiblement très anxieuse)[/i] Bon... bonsoir Messire. Je vous prie de m'excusez, je ne me sens pas d'humeur à entretenir la conversation."
+ALMA DEFAULT A1, ,Vous n'avez pas l'air de beaucoup vous amuser... Un problème ?
+ALMA DEFAULT A2,,"Je ne vous importune pas plus longtemps alors, bonne soirée."
+,,
+ALMA D1,,"Non, aucun. Mais si vous continuez à m'importuner, je hurle ! Et vous vous expliquerez avec Sire Philippe ! Pour votre gouverne, c'est le Capitaine de la garde, alors si j'étais vous..."
+ALMA D1 A1,,Vous n'aurez pas besoin d'en arriver là. Voyez : je m'en vais !
+ALMA D1 A2,,"Et moi si j'étais vous, je m'écouterais quelques minutes si vous voulez revoir votre précieuse bestiole en vie."
+,,
+ALMA D2,,"[i](Parlant tout bas)[/i] Alors c'est vous le monstre qui avez enlevé Sporco ! Vous n'êtes qu'un...qu'un..! Jamais je n'accepterai de céder à vos menaces ! Et si je ne craignais pas autant pour mon pauvre Sporco, je vous aurai dénoncé au Capitaine depuis longtemps !"
+ALMA D2 A1,,"Si vous croyez que cet homme puisse quoi que ce soit pour vous, vous vous trompez."
+ALMA D2 A2,,"[garde éliminé] J'ai tué sans sourciller un garde un peu trop buté en rentrant, et vous croyez que c'est un vieillard qui m'empêchera de m'en prendre à vous ?"
+,,
+ALMA D3,,"Dans ce cas, vous n'aurez rien contre le fait que je hurle à plein poumons. Si vous voulez bien m'excuser. [i]Elle fait mine de prendre une grande inspiration[/i]"
+ALMA D3 A1,,Ca suffit ! Gardez votre souffle ! Je vais revenir. Ne faites rien de stupide si vous tenez à retrouver votre animal en un seul morceau.
+,,
+ALMA D4,,Je... Je ne vous crois pas !
+ALMA D4 A1,,"[Ruffio missing finger explained]Votre bestiole a mutilé mon ami, là bas. Il me semblerait juste de lui rendre l'appareil. Une patte, une oreille... Sa langue, peut être ?"
+,,
+ALMA NO MORE PROTECTED,,"Je vous prie de m'excuser, mais je n'ai aucune envie de m'entretenir avec vous. Bonne soirée."
+ALMA NO MORE PROTECTED A1, ,"[Alma protegée par Philippe] Nous allons discuter, maintenant. Que vous le vouliez ou non."
+ALMA NO MORE PROTECTED A2,,Bonne soirée.
+,,
+ALMA D6,,Vous n'oserez pas vous en prendre à moi en présence de...
+ALMA D6 A1,,"Non, en effet. Mais comme Sire Philippe nous a faussé compagnie, vous allez m'écouter, petite peste !"
+,,
+ALMA D7,,[i]Couine[/i]
+ALMA D7 A1,,Il me faut une arme. Mais les gardes fouillent systématiquement les hommes avant qu'ils n'accèdent à la salle de réception. Alors voici ce que vous allez faire...
+,,
+ALMA D8,,Mon pauvre Sporco... Non ! Je... Je vous écoute !
+ALMA D8 A1,,"Vous allez récupérer l'arme de cet homme [i](désigne Ruffio)[/i], rentrer dans la salle de réception et vous me la remettrez une fois à l'intérieur. Est-ce clair ?"
+,,
+ALMA D9,,"Oui.. Oui mais je vous en prie, ne faites pas de mal à ce pauvre Sporco !"
+ALMA D9 A1,,"Faites ce que je vous dis, ne vous faites pas prendre et tout ira bien pour vous deux. Attendez moi à l'intérieur avec l'arme."
+ALMA D9 A2,,"La santé de votre bestiole ne dépend que de vous, Comtesse. Rendez-vous à l'intérieur."
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
 ,,
 ,,
 ,,
