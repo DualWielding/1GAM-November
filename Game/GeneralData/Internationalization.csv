@@ -74,7 +74,7 @@ VITORI D3,,"A la bonne heure ! Allons, debout ! Ce n'est pas le soir pour chance
 VITORI D3 A1,,Ma dague. Elle a disparu. Et mon somnifère avec... Il a dû le confondre avec ma bourse.
 VITORI D3 A2,,"Ce qui avait le plus de valeur, ma dague et mon or."
 ,,
-VITORI D4,,"Fâcheux, mais l'essentiel est que vous soyez opérationnel. Bien, je n'ai pas eu le temps lors de notre dernière réunion de m'entretenir en privé avec vous, mais voici ce que je sais et qui pourrait vous être utile..."
+VITORI D4,,"Fâcheux, mais l'essentiel est que vous alliez bien. Bien, je n'ai pas eu le temps lors de notre dernière réunion de m'entretenir en privé avec vous, mais voici ce que je sais et qui pourrait vous être utile..."
 VITORI D4 A1,,Je... j'ai bien peur d'avoir l'esprit un peu confus pour le moment.
 ,,
 VITORI D5,,"Je suis désolé mon ami, mais le temps presse et les invités risquent de se poser des questions s'ils nous voient discuter ensemble, vous connaissez ma réputation. Bien, Ecoutez attentivement."
@@ -90,14 +90,14 @@ VITORI D7 A1,,"Attendez, j'ignore..."
 VITORI D8,,"Laissez moi finir : voici le collier de l'animal de la Comptesse d'Alma. Il a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure de la contraindre au silence."
 VITORI D8 A1,,Argh... Ma tête...
 ,,
-VITORI D9,,"[i]Il regarde sa montre[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
+VITORI D9,,"[i]regardant sa montre.[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
 VITORI D9 A1,,Mon crâne... La douleur est insupportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez vous répéter plus lentement ?
 ,,
-VITORI D10,,"[i]Soucieux[/i] Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i][right]Il pose une main sur l'épaule de %n.[/right][/i] A tout à l'heure, mon ami."
-VITORI D10 A1,,"Faisons comme cela, oui..."
+VITORI D10,,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] A tout à l'heure, mon ami.[i]Il sort[/i]"
+VITORI D10 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'un coupe de vin m'aidera à me remettre les idées en place."
 ,,
-VITORI D11,,[i]Il sort[/i]
-VITORI D11 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'un coupe de vin m'aidera à me remettre les idées en place."
+,,
+,,
 ,,
 ,,
 ,,
@@ -136,49 +136,49 @@ GUARD DEFAULT UNIQUE A1,TODO,Je n'en possède pas.
 ,,
 GUARD D1,TODO,"C’est une réception privée, messire. Les invités doivent posséder une invitation pour passer ces portes."
 GUARD D1 A1,TODO,J'ai dû me faire voler la mienne il y a une minute de cela !
-GUARD UNIQUE A2,TODO,[i](mentant)[/i] Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
+GUARD UNIQUE A2,TODO,[i]mentant.[/i] Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
 ,,
 GUARD D2,TODO,"Je suis désolé Messire, mais les instructions du Duc sont très claires. Personne ne passe ces portes sans une invitation."
-GUARD D2 A1,TODO,"[color=green]Allons, je suis sûr que nous pourrions nous arranger autrement. [i](Agite devant le garde une petite bourse.)[/i][/color]"
+GUARD D2 A1,TODO,"[color=green]Allons, je suis sûr que nous pourrions nous arranger autrement.[/color][i]Il agite une bourse devant le garde.[/i]"
 GUARD D2 A2,TODO,"Mais vous étiez là, vous avez assisté à mon aggression !"
 GUARD UNIQUE A3,TODO,"Savez vous au moins qui je suis, pour oser me parler de la sorte ?"
-GUARD D2 A4,TODO,"[color=#4169E1]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte? [/color]"
+GUARD D2 A4,TODO,"[color=#4169E1]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte ?[/color]"
 ,,
 GUARD D3,TODO,"C’est très généreux de votre part Messire. Merci… Mais sans invitation, je ne peux vous faire rentrer."
 GUARD D3 A1,TODO,"Je vois. C'est dommage, cette bourse vous aurait permis de vous offrir quelque bon temps."
 GUARD D3 A2,TODO,"Incroyable d'être borné à ce point. Bien, rendez moi ma bourse."
 ,,
 GUARD D4,TODO,"Je ne vois pas de quelle bourse vous voulez parler, Messire."
-GUARD D4 A1,TODO,Qu. . . Comment ?! Mmh. . . Je vois.
+GUARD D4 A1,TODO,Qu... Comment ?! Mmh... Je vois.
 ,,
 GUARD D5,TODO,Je suis navré. Je ne peux rien pour vous.
 GUARD D5 A1,TODO,"C'est un scandale ! Je reviendrai, nous n'en avons pas terminé, vous et moi."
-GUARD D5 A2,TODO,[Bourse] Je suis sûr que quelques florins pourraient changer cet état de fait.
+GUARD D5 A2,TODO,Je suis sûr que quelques florins pourraient changer cet état de fait.
 GUARD D5 A3,TODO,"Je passe, que vous le vouliez ou non !"
 ,,
 GUARD D6,TODO,"Messire, ne m'obligez pas à user de force."
-GUARD D6 A1,TODO,J'aimerai voir ça ! [i](force le passage)[/i]
+GUARD D6 A1,TODO,J'aimerai voir ça ! [i]Il force le passage.[/i]
 GUARD D6 A2,TODO,"Très bien, très bien ! Nous n'aurons pas besoin d'en arriver là."
 ,,
-GUARD D7,TODO,"([i]%n essaye de passer, mais le garde le repousse d'une brutale bourrasque[/i])"
+GUARD D7,TODO,[i]sèchement.[/i]Je vous déconseille de recommencer ceci.
 GUARD D7 A1,TODO,Mmfh ! Nous n'en resterons pas là !
 GUARD D7 A2,TODO,"Je rentrerai, que vous le vouliez ou non !"
 ,,
 GUARD D8,TODO,"Je l'ignore, mais sans invita. . ."
-GUARD D8 A1,TODO,"[color=#4169E1][Lettre Galante] [i](%n sort une lettre et l'agite devant le visage du garde)[/i] Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
+GUARD D8 A1,TODO,"[i]Il sort une lettre et l'agite devant le visage du garde.[/i][color=#4169E1]Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
 GUARD D8 A2,TODO,"Je fais parti des musiciens, triple buse ! Vous m'avez vu rentrer il y a à peine une heure de cela !"
 GUARD D8 A3,TODO,"Je ne suis rien de moins que celui qui ait organisé cette réception. Maintenant, si vous permettez. . ."
 ,,
-GUARD D9,TODO,"Vous n'êtes pas le premier nobliau a tenter de rentrer dans la demeure du [b]duc[/b]. Maintenant déguerpissez, avant que je ne termine ce que ce voleur a commencé."
+GUARD D9,TODO,"Vous n'êtes pas le premier nobliau a tenter de rentrer dans la demeure du duc. Maintenant déguerpissez, avant que je ne termine ce que ce voleur a commencé."
 GUARD D9 A1,TODO,Je n'ai pas dit mon dernier mot.
 ,,
-GUARD D10,TODO,"Je. . . veuillez m'excuser, un moment d'inattention, sûrement. Passez une excellente soirée."
+GUARD D10,TODO,"Je... veuillez m'excuser, un moment d'inattention, sûrement. Passez une excellente soirée."
 GUARD D10 A1,TODO,A la bonne heure !
 ,,
-GUARD D11,TODO,Vous ne devriez pas abuser de ma patien. . . bons dieux cette bouteille est plus vieille que moi !
+GUARD D11,TODO,Vous ne devriez pas abuser de ma patien... bons dieux cette bouteille est plus vieille que moi !
 GUARD D11 A1,TODO,"Ahaha, alors à la votre !"
 ,,
-GUARD D12,TODO,Mmh. . . J'aurai cru qu'elle aurait. . . qu'elle aurait meilleur. . . G. . . goût. . . [i](le garde s'effondre)[/i]
+GUARD D12,TODO,Mmh... J'aurai cru qu'elle aurait... qu'elle aurait meilleur... G... goût... [i]Il s'effondre.[/i]
 GUARD D12 A1,TODO,Efficace. J'espère tout de même que cette poudre n'était qu'un simple somnifère.
 ,,
 GUARD HAS GOLDPOUCH,TODO,"Bonsoir Messire, votre invitation je vous prie."
@@ -188,14 +188,14 @@ GUARD HAS GOLDPOUCH A3,TODO,"Ecoutez moi bien, si vous ne me rendez pas mon dû 
 ,,
 GUARD D13,TODO,Que voulez-vous dire ?
 ,,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
-GUARD D13 A1,TODO,[color=red] Ce genre de conséquences ! [i](%n lui abbat la bouteille sur le crâne)[/i][/color]
-GUARD D13 A2,TODO,"[color=red][i](%n se jete sur le garde et le poignarde)[/i] Je n'ai pas de temps à perdre ce soir, navré.[/color]"
+GUARD D13 A1,TODO,[color=red]Ce genre de conséquences ![/color] [i]Il lui abbat la bouteille sur le crâne[/i]
+GUARD D13 A2,TODO,"[i]Il se jete sur le garde et le poignarde.[/i][color=red]Je n'ai pas de temps à perdre ce soir, navré.[/color]"
 ,,
 GUARD D14,TODO,"Ou bien je pourrai enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses..."
-GUARD D14 A1,TODO,"Qu. . . Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
-GUARD D14 A2,TODO,"Je connais Misty. Croyez moi mon brave, elle vaut jusqu'au moindre florin. Mais elle est souvent occupée. . . Vous feriez mieux de ne pas trainer !"
+GUARD D14 A1,TODO,"Qu... Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
+GUARD D14 A2,TODO,"Je connais Misty. Croyez moi mon brave, elle vaut jusqu'au moindre florin. Mais elle est souvent occupée... Vous feriez mieux de ne pas trainer !"
 ,,
-GUARD D15,TODO,"Mmh. . . Soit. Mais ne dites rien au capitaine. Ou je saurai vous retrouver en dehors du service, tout messire que vous êtes !"
+GUARD D15,TODO,"Mmh... Soit. Mais ne dites rien au capitaine. Ou je saurai vous retrouver en dehors du service, tout messire que vous êtes !"
 GUARD D15 A1,TODO,Comptez sur mon silence.
 GUARD D15 A2,TODO,"Evidemment. Inutile, je présume, de vous souhaiter une bonne soirée."
 ,,
@@ -208,9 +208,9 @@ PISSED GUARD D1 A2,TODO,Je vous laisse encore une dernière chance de me laisser
 PISSED GUARD D1 A3,TODO,N'y a t-il aucun moyen de vous faire entendre raison ?
 ,,
 GUARD D16,TODO,Hors de ma vue !
-GUARD D16 A1,TODO,[color=red][dague] Je vous aurai prévenu. [i](%n se jette sur le garde et le poignarde)[/i][/color]
-GUARD D16 A2,TODO,[color=red][Bouteille] Il est dommage d'en arriver là. [i](%n lui fracasse la bouteille sur le crâne)[/i][/color]
-GUARD D16 A3,TODO,[color=red][Vin somnifère] Il est dommage d'en arriver là. [i](%n lui fracasse la bouteille sur le crâne)[/i][/color]
+GUARD D16 A1,TODO,[color=red]Je vous aurai prévenu.[/color][i]Il se jette sur le garde et le poignarde.[/i]
+GUARD D16 A2,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
+GUARD D16 A3,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
 ,,
 GUARD D17,TODO,J'ai bien peur que ma patience ait atteint ses limites. Hors de ma vue !
 GUARD D17 A1,TODO,"Très bien, très bien !"

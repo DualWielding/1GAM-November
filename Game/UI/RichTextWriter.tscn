@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=1]
 
-[ext_resource path="res://Fonts/font_classic.fnt" type="BitmapFont" id=1]
-[ext_resource path="res://Fonts/font_bold_italic.fnt" type="BitmapFont" id=2]
-[ext_resource path="res://Fonts/font_italic.fnt" type="BitmapFont" id=3]
-[ext_resource path="res://Fonts/font_bold.fnt" type="BitmapFont" id=4]
+[ext_resource path="res://Fonts/palatino-regular.fnt" type="BitmapFont" id=1]
+[ext_resource path="res://Fonts/palatino-bold-italic.fnt" type="BitmapFont" id=2]
+[ext_resource path="res://Fonts/palatino-italic.fnt" type="BitmapFont" id=3]
+[ext_resource path="res://Fonts/palatinobold.fnt" type="BitmapFont" id=4]
 [ext_resource path="res://UI/RichTextWriter.gd" type="Script" id=5]
 
 [sub_resource type="Animation" id=1]
