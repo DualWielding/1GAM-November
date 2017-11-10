@@ -98,13 +98,13 @@ func hide_panel():
 	if not _hidden_panel:
 		_hidden_panel = true
 		ap.play("Slide_left")
-		slide_button.set_text(">")
+#		slide_button.set_text(">")
 
 func show_panel():
 	if _hidden_panel:
 		_hidden_panel = false
 		ap.play_backwards("Slide_left")
-		slide_button.set_text("<")
+#		slide_button.set_text("<")
 
 func _on_SlideButton_pressed():
 	if not _hidden_panel:

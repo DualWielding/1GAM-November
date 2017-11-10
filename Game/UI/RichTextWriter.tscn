@@ -20,7 +20,7 @@ tracks/0/keys = {
 "times": FloatArray( 0, 1 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
 }
 
 [node name="RichTextWriter" type="RichTextLabel"]
@@ -39,7 +39,7 @@ custom_fonts/bold_italics_font = ExtResource( 2 )
 custom_fonts/italics_font = ExtResource( 3 )
 custom_fonts/bold_font = ExtResource( 4 )
 custom_fonts/normal_font = ExtResource( 1 )
-custom_colors/default_color = Color( 1, 1, 1, 0 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode/enabled = true
 bbcode/bbcode = "Blabla"
 visible_characters = -1
