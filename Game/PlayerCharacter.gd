@@ -92,3 +92,11 @@ func _on_InteractionArea_area_enter( area ):
 func _on_InteractionArea_area_exit( area ):
 	var body = area.get_parent()
 	remove_interaction_possibility(body)
+
+
+
+
+
+
+func get_name():
+	return Player.get_name()

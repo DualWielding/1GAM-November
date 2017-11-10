@@ -6,13 +6,25 @@ onready var label = get_node("Label")
 var option setget set_option, get_option
 var speaker setget set_speaker, get_speaker
 
+var full_text
 var text
 
 func set_option(opt):
 	option = opt
+	full_text = tr(option.text)
 	text = tr(option.text)
+	
 	if Player.get_name():
 		text = text.replace("%n", Player.get_name())
+	
+	var idx = 0
+	while idx < text.length():
+		if text[idx] == "[" and text[idx + 1] == "i" and text[idx + 2] == "]":
+			while text[idx] != "/" or text[idx + 1] != "i" or text[idx + 2] != "]":
+				text.erase(idx, 1)
+			text.erase(idx, 3)
+		idx += 1
+	
 	# Show which card is used, if the option uses one
 	if opt.has("card used"):
 		if typeof(option["card used"]) == TYPE_STRING:
@@ -37,8 +49,7 @@ func get_speaker():
 	return speaker
 
 func _on_ClickableText_pressed():
-	Player.ui.dialog_panel.add_text(str("[center][i]", Player.get_name().to_upper(), "[/i][/center]"), "fade_fast", true)
-	Player.ui.dialog_panel.add_text(text, "fade_fast", true)
+	Player.ui.dialog_panel.script_container.set_dialog(Player.character, full_text, [], true)
 	
 	Player.ui.clear_answers()
 	if option.has("card used"):

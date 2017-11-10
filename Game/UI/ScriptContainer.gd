@@ -48,7 +48,7 @@ func _add_first_text():
 	
 	get_parent().start_scrolling()
 
-func set_dialog(body, unformatted_text, options):
+func _parse_text(unformatted_text):
 	var text_parts = []
 	var current_part = 0
 	var current_char = 0
@@ -78,7 +78,11 @@ func set_dialog(body, unformatted_text, options):
 			text_parts[current_part].text = str(text_parts[current_part].text, unformatted_text[current_char])
 			current_char += 1
 	
-	current_part = 0
+	return text_parts
+
+func set_dialog(body, unformatted_text, options, player_speaking=false):
+	var text_parts = _parse_text(unformatted_text)
+	var current_part = 0
 	# Fade the name of the speaker in
 	if text_parts[0].stage_direction:
 		add_text_to_buffer(str("[center][i]", body.get_name().to_upper(), ", ", text_parts[0].text.to_lower(), "[/i][/center]"), "fade_fast")
@@ -86,16 +90,18 @@ func set_dialog(body, unformatted_text, options):
 	else:
 		add_text_to_buffer(str("[center][i]", body.get_name().to_upper(), "[/i][/center]"), "fade_fast")
 	
-	var rtw
-	
 	while current_part < text_parts.size():
 		if text_parts[current_part].stage_direction:
+			add_text_to_buffer(str("[right]", text_parts[current_part].text, "[right]"), "fade")
+		elif player_speaking:
 			add_text_to_buffer(text_parts[current_part].text, "fade")
 		else:
 			add_text_to_buffer(text_parts[current_part].text, "write")
 		current_part += 1
 	
-	buffer[buffer.size() -1].get_children()[0].connect("finished", Player.ui.dialog_panel, "add_answers")
+	if !player_speaking:
+		buffer[buffer.size() -1].get_children()[0].connect("finished", Player.ui.dialog_panel, "add_answers")
+	
 	display_texts()
 
 func show_last():
