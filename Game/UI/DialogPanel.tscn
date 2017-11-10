@@ -73,7 +73,7 @@ tracks/0/keys = {
 "times": FloatArray( 0, 1 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 10 ), Vector2( -300, 10 ) ]
+"values": [ Vector2( 0, 1 ), Vector2( -300, 1 ) ]
 }
 
 [node name="DialogPanel" type="Panel"]
@@ -83,10 +83,10 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = SubResource( 3 )
-margin/left = -299.0
-margin/top = 4.0
-margin/right = 65.0
-margin/bottom = 538.0
+margin/left = -300.0
+margin/top = 1.0
+margin/right = 64.0
+margin/bottom = 535.0
 script/script = ExtResource( 3 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
