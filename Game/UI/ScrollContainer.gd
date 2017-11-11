@@ -21,7 +21,7 @@ func _unhandled_input(event):
 		script_container.show_last()
 
 func auto_scroll_down():
-	set_v_scroll(get_v_scroll() + 6)
+	set_v_scroll(get_v_scroll() + 500) #6
 	if _last_scroll_tick == get_v_scroll():
 		_scroll_timer.stop()
 	_last_scroll_tick = get_v_scroll()

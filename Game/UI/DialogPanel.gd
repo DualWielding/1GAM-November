@@ -72,8 +72,7 @@ func set_player_name(container):
 	container.queue_free()
 	
 	# To add the answer to the dialog richText
-	add_text(str("[center][i]", Player.get_name().to_upper(), "[/i][/center]"), "fade_fast", true)
-	add_text(str("...", Player.get_name(), ", mon nom est ", Player.get_name(), "."), "fade", true)
+	script_container.set_dialog(Player.character, str("...", Player.get_name(), ", mon nom est ", Player.get_name(), "."), [], true)
 	
 	current_speaker.follow_up_dialog(current_options[0])
 	clear_answers()

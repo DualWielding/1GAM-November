@@ -33,15 +33,16 @@ func add_text_to_buffer(unformatted_text, method="fade", show_now=false):
 
 func display_texts():
 	var count = 0
-	while count < buffer.size():
+	while count < buffer.size() - 1:
 		buffer[count].get_children()[0].connect("finished", self, "_add_first_text", [], CONNECT_ONESHOT)
 		count += 1
 	_add_first_text()
 
 func _add_first_text():
-	if buffer.size() == 0:
+	if buffer.size() == 0 or (get_child_count() > 0 and !get_children()[get_child_count() - 1].get_children()[0].is_finished()):
 		return
 	
+	print(buffer[0].get_children()[0].full_text)
 	var rtw = buffer[0]
 	add_child(buffer[0])
 	buffer.pop_front()

@@ -13,7 +13,7 @@ var method = "fade"
 var base_speed
 var hovered = false setget set_hovered, is_hovered
 
-var finished = true
+var finished = false setget is_finished
 
 signal finished
 
@@ -94,6 +94,9 @@ func set_text_up(text, method):
 #	clean_text = get_raw_text()
 	self.method = method
 	hide()
+
+func is_finished():
+	return finished
 
 func finish():
 	set_visible_characters(-1)
