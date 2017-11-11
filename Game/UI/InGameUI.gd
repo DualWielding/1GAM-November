@@ -29,10 +29,10 @@ func _ready():
 	
 	# Add all the players' cards at the beginning
 	for card_name in Player.get_hand():
-		add_card(Player.get_hand()[card_name])
+		add_card(Player.get_hand()[card_name], false)
 	
 	for card_name in Player.get_important_hand():
-		add_card(Player.get_important_hand()[card_name])
+		add_card(Player.get_important_hand()[card_name], false)
 	
 	# Connect the UI to every bodies in the scene
 	for body in get_tree().get_nodes_in_group("body"):
@@ -134,7 +134,7 @@ func lower_card(card):
 		if card.unique_name == child.unique_name:
 			child.lower()
 
-func add_card(card_data):
+func add_card(card_data, animated=true):
 	if card_data == null:
 		return false
 	
@@ -144,16 +144,18 @@ func add_card(card_data):
 		card = ui_important_card_class.instance()
 		card.init_from_dic(card_data)
 		important_hand.add_child(card)
+		card.show_card(animated)
 	else:
 		card = ui_card_class.instance()
 		card.init_from_dic(card_data)
 		hand.add_child(card)
+		card.show_card()
 	return true
 
-func remove_card(card):
+func remove_card(card, animated=true):
 	for child in get_tree().get_nodes_in_group("ui_card"):
 		if card.unique_name == child.unique_name:
-			child.get_parent().remove_child(child)
+			child.discard(animated)
 			return true
 	return false
 

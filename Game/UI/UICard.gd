@@ -43,8 +43,7 @@ func _ready():
 	get_node("Wrapper/VirginCard/Recto/Picture").set_texture(img)
 	get_node("Wrapper/VirginCard/Verso/Text").set_text(text)
 	
-	verso.hide()
-	recto.show()
+	hide()
 	
 	set_process_input(true)
 
@@ -58,6 +57,24 @@ func _input(event):
 				view_verso()
 			else:
 				view_recto()
+
+func discard(animated=true):
+	if animated:
+		animate_discard()
+		ap.connect("finished", self, "queue_free", [], CONNECT_ONESHOT)
+	else:
+		queue_free()
+
+func show_card(animate=true, recto=true):
+	if animate:
+		animate_add()
+	if recto:
+		self.recto.show()
+		verso.hide()
+	else:
+		verso.show()
+		self.recto.hide()
+	show()
 
 ##### SELECTION #####
 
@@ -90,17 +107,22 @@ func is_selected():
 
 ##### ANIMATIONS #####
 
+func animate_add():
+	_up = true
+	ap.play("animate_add", -1, 0.8)
+
+func animate_discard():
+	ap.play_backwards("animate_add")
+
 func bring_up():
 	if !selectable:
 		ap.play("bring_up")
 		_up = true
-#		_hovered = false
 
 func lower():
 	if !selectable:
 		ap.play_backwards("bring_up")
 		_up = false
-#		_hovered = false
 
 func set_up(boolean):
 	_up = boolean
