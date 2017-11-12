@@ -34,8 +34,8 @@ func _flee(dagger_dropped):
 	_t.start()
 
 func _drop_dagger():
-	stop_walking()
-	crouch()
+#	stop_walking()
+#	crouch()
 	get_parent().dagger.set_pos(get_pos() + Vector2(0, 40))
 	get_parent().dagger.show()
 	_t.set_wait_time(0.3)
