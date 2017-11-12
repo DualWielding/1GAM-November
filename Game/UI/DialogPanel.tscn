@@ -1,13 +1,12 @@
-[gd_scene load_steps=15 format=1]
+[gd_scene load_steps=16 format=1]
 
 [ext_resource path="res://Sprites/book-page-no-effect.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/palatino-regular.fnt" type="BitmapFont" id=2]
 [ext_resource path="res://UI/DialogPanel.gd" type="Script" id=3]
-[ext_resource path="res://Sprites/test-scrollbar.png" type="Texture" id=4]
-[ext_resource path="res://UI/ScrollContainer.gd" type="Script" id=5]
-[ext_resource path="res://UI/ScriptContainer.gd" type="Script" id=6]
-[ext_resource path="res://Sprites/bookmark-animation.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/book-page-effects.png" type="Texture" id=8]
+[ext_resource path="res://UI/ScrollContainer.gd" type="Script" id=4]
+[ext_resource path="res://UI/ScriptContainer.gd" type="Script" id=5]
+[ext_resource path="res://Sprites/bookmark-animation.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/book-page-effects.png" type="Texture" id=7]
 
 [sub_resource type="StyleBoxTexture" id=1]
 
@@ -33,35 +32,57 @@ Panel/styles/panel = SubResource( 1 )
 Panel/styles/panelf = null
 Panel/styles/panelnc = null
 
-[sub_resource type="StyleBoxTexture" id=3]
+[sub_resource type="StyleBoxFlat" id=9]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
-texture = ExtResource( 4 )
-margin/left = 0.0
-margin/right = 0.0
-margin/top = 0.0
-margin/bottom = 0.0
-expand_margin/left = 0.0
-expand_margin/right = 0.0
-expand_margin/top = 0.0
-expand_margin/bottom = 0.0
-draw_center = true
+bg_color = Color( 0.0980392, 0, 0, 1 )
+light_color = Color( 0.780392, 0.721569, 0.470588, 1 )
+dark_color = Color( 0.792157, 0.678431, 0.427451, 1 )
+border_size = 2
+border_blend = false
+draw_bg = true
 
-[sub_resource type="Theme" id=4]
+[sub_resource type="StyleBoxFlat" id=10]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+bg_color = Color( 0.211765, 0, 0, 1 )
+light_color = Color( 0.780392, 0.721569, 0.470588, 1 )
+dark_color = Color( 0.792157, 0.678431, 0.427451, 1 )
+border_size = 0
+border_blend = true
+draw_bg = true
+
+[sub_resource type="StyleBoxFlat" id=11]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+bg_color = Color( 0.598699, 0.601563, 0.234985, 1 )
+light_color = Color( 0.8, 0.8, 0.8, 1 )
+dark_color = Color( 0.8, 0.8, 0.8, 1 )
+border_size = 0
+border_blend = true
+draw_bg = true
+
+[sub_resource type="Theme" id=6]
 
 VScrollBar/icons/decrement = null
 VScrollBar/icons/decrement_hilite = null
 VScrollBar/icons/increment = null
 VScrollBar/icons/increment_hilite = null
-VScrollBar/styles/grabber = null
-VScrollBar/styles/grabber_hilite = null
-VScrollBar/styles/scroll = SubResource( 3 )
+VScrollBar/styles/grabber = SubResource( 9 )
+VScrollBar/styles/grabber_hilite = SubResource( 10 )
+VScrollBar/styles/scroll = SubResource( 11 )
 VScrollBar/styles/scroll_focus = null
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=7]
 
 length = 1.0
 loop = false
@@ -77,9 +98,8 @@ tracks/0/keys = {
 "values": [ Vector2( -2, 1 ), Vector2( -377, 1 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=8]
 
-resource/name = "slide_right"
 length = 0.5
 loop = false
 step = 0.1
@@ -113,14 +133,14 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-theme/theme = SubResource( 4 )
+theme/theme = SubResource( 6 )
 margin/left = 48.0
 margin/top = 31.0
 margin/right = 323.0
-margin/bottom = 466.0
+margin/bottom = 472.0
 scroll/horizontal = false
 scroll/vertical = true
-script/script = ExtResource( 5 )
+script/script = ExtResource( 4 )
 
 [node name="ScriptContainer" type="VBoxContainer" parent="ScrollContainer"]
 
@@ -134,7 +154,7 @@ margin/right = 0.0
 margin/bottom = 0.0
 custom_constants/separation = 5
 alignment = 0
-script/script = ExtResource( 6 )
+script/script = ExtResource( 5 )
 
 [node name="AnswersContainer" type="VBoxContainer" parent="."]
 
@@ -154,7 +174,7 @@ alignment = 0
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/Slide_left = SubResource( 5 )
+anims/Slide_left = SubResource( 7 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -167,9 +187,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 338.0
+margin/left = 340.0
 margin/top = 93.0
-margin/right = 448.0
+margin/right = 450.0
 margin/bottom = 193.0
 toggle_mode = false
 enabled_focus_mode = 2
@@ -180,7 +200,7 @@ params/stretch_mode = 0
 [node name="Sprite" type="Sprite" parent="SlideButton"]
 
 transform/pos = Vector2( 52.8573, 54.2859 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 hframes = 6
 frame = 5
 
@@ -189,7 +209,7 @@ frame = 5
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/slide_right = SubResource( 6 )
+anims/slide_right = SubResource( 8 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -206,7 +226,7 @@ margin/left = -9.0
 margin/top = -3.0
 margin/right = 966.0
 margin/bottom = 1066.0
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 stretch_mode = 0
 
 [connection signal="pressed" from="SlideButton" to="." method="_on_SlideButton_pressed"]
