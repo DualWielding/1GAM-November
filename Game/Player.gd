@@ -15,7 +15,7 @@ signal card_removed(card, animated)
 
 func _ready():
 	# /!\ These cards are not added via signal, but directly in the UI _ready func
-#	add_card("DAGGER", false)
+	add_card("DAGGER", false)
 	add_card("GOLD POUCH", false)
 	add_card("POWDER", false)
 	add_card("LOVE LETTER", false)
