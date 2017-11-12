@@ -43,7 +43,6 @@ func get_important_hand():
 	return important_hand
 
 func has_card(card_name):
-	print(card_name, ', ', hand.has(card_name) || important_hand.has(card_name))
 	return hand.has(card_name) || important_hand.has(card_name)
 
 func check_cards_number():

@@ -54,9 +54,6 @@ func follow_up_dialog(option):
 		stop_dialog(option)
 	else:
 		var sequence_name = option["next sequence"]
-		for option in sequences[sequence_name]["options"]:
-			if option.has("card used") and option["card used"] == "DAGGER":
-				print("DAGGER IN : ", option)
 		say(tr(sequences[sequence_name]["text"]), sequences[sequence_name]["options"])
 
 func stop_dialog(option):
@@ -74,8 +71,6 @@ func say(text, opt):
 	var options = opt
 	
 	for option in options:
-		if option.has("card used") and option["card used"] == "DAGGER":
-			print("DAGGER IN")
 		# Remove a dialog option the player does not have the right tool
 		# or if he already used that option
 		if !Player.is_unique_answer_up(option.text):
