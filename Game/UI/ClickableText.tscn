@@ -8,6 +8,7 @@
 
 [node name="ClickableText" type="Button"]
 
+rect/min_size = Vector2( 0, 65 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 3
@@ -15,7 +16,7 @@ size_flags/vertical = 3
 margin/left = 340.0
 margin/top = 110.0
 margin/right = 660.0
-margin/bottom = 189.0
+margin/bottom = 173.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -31,14 +32,14 @@ size_flags/vertical = 1
 margin/left = 8.0
 margin/top = 6.0
 margin/right = 308.0
-margin/bottom = 70.0
+margin/bottom = 55.0
 custom_fonts/mono_font = ExtResource( 2 )
 custom_fonts/bold_italics_font = ExtResource( 3 )
 custom_fonts/italics_font = ExtResource( 4 )
 custom_fonts/bold_font = ExtResource( 5 )
 custom_fonts/normal_font = ExtResource( 2 )
 bbcode/enabled = true
-bbcode/bbcode = ""
+bbcode/bbcode = "dazdzadzad"
 visible_characters = -1
 percent_visible = 1.0
 

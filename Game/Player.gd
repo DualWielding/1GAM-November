@@ -15,7 +15,7 @@ signal card_removed(card, animated)
 
 func _ready():
 	# /!\ These cards are not added via signal, but directly in the UI _ready func
-	add_card("DAGGER", false)
+#	add_card("DAGGER", false)
 	add_card("GOLD POUCH", false)
 	add_card("POWDER", false)
 	add_card("LOVE LETTER", false)
@@ -43,11 +43,16 @@ func get_important_hand():
 	return important_hand
 
 func has_card(card_name):
+	print(card_name, ', ', hand.has(card_name) || important_hand.has(card_name))
 	return hand.has(card_name) || important_hand.has(card_name)
 
 func check_cards_number():
 	if hand.values().size() > max_cards:
-		ui.show_discard_screen(hand.keys().size() - max_cards)
+		var last_card = ui.hand.get_children()[ui.hand.get_child_count() - 1]
+		if last_card.ap.is_playing():
+			last_card.ap.connect("finished", ui, "show_discard_screen", [hand.keys().size() - max_cards], CONNECT_ONESHOT)
+		else:
+			ui.show_discard_screen(hand.keys().size() - max_cards)
 
 func add_card(card_unique_name, animated=true):
 	var card = Cards.get(card_unique_name)

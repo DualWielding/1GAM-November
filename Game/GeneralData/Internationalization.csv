@@ -94,7 +94,7 @@ VITORI D9,,"[i]regardant sa montre.[/i]La peste ! Me voilà déjà en retard ! E
 VITORI D9 A1,,Mon crâne... La douleur est insupportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez vous répéter plus lentement ?
 ,,
 VITORI D10,,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] A tout à l'heure, mon ami.[i]Il sort[/i]"
-VITORI D10 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'un coupe de vin m'aidera à me remettre les idées en place."
+VITORI D10 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
 ,,
 ,,
 ,,
@@ -188,8 +188,8 @@ GUARD HAS GOLDPOUCH A3,TODO,"Ecoutez moi bien, si vous ne me rendez pas mon dû 
 ,,
 GUARD D13,TODO,Que voulez-vous dire ?
 ,,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
-GUARD D13 A1,TODO,[color=red]Ce genre de conséquences ![/color] [i]Il lui abbat la bouteille sur le crâne[/i]
-GUARD D13 A2,TODO,"[i]Il se jete sur le garde et le poignarde.[/i][color=red]Je n'ai pas de temps à perdre ce soir, navré.[/color]"
+GUARD D13 A1,TODO,[color=red]Ce genre de conséquences ![/color][i]Il lui abbat la bouteille sur le crâne[/i]
+GUARD D13 A2,TODO,"[color=red]Je n'ai pas de temps à perdre ce soir, navré.[/color][i]Il se jete sur le garde et le poignarde.[/i]"
 ,,
 GUARD D14,TODO,"Ou bien je pourrai enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses..."
 GUARD D14 A1,TODO,"Qu... Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
@@ -287,10 +287,10 @@ ALMA D9 A2,,"La santé de votre bestiole ne dépend que de vous, Comtesse. Rende
 ,,
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
-BOTTLE DEFAULT A1,,[i](s'en saisit)[/i]
-BOTTLE DEFAULT A2,,[color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
-BOTTLE DEFAULT A3,,[i](La laisse sur le rebord)[/i]
+BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
+BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
+BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
 DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de là où %n s'est réveillé."
-DAGGER DEFAULT A1,,"Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i](Se baisse et la ramasse)[/i]"
-DAGGER DEFAULT A2,,Ma dague... Peut être est-elle mieux ici pour l'instant. [i](Passe son chemin)[/i]
+DAGGER DEFAULT A1,,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
+DAGGER DEFAULT A2,,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"

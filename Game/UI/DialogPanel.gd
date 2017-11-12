@@ -88,9 +88,11 @@ func adjust_answers():
 	answers_container.set_size(Vector2(answers_container.get_size().x, (answers_container.get_children()[0].get_size().y) * answers_container.get_child_count()))
 
 func enable_toggling():
+	slide_button.get_node("AnimationPlayer").play("slide_right")
 	slide_button.set_disabled(false)
 
 func disable_toggling():
+	slide_button.get_node("AnimationPlayer").play_backwards("slide_right")
 	slide_button.set_disabled(true)
 
 func hide_panel():

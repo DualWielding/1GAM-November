@@ -22,7 +22,7 @@ func add_text_to_buffer(unformatted_text, method="fade", show_now=false):
 	if _original_x_size == 0:
 		_original_x_size = get_size().x
 	
-	rtw.set_custom_minimum_size(Vector2(_original_x_size, _line_length + (rtw.get_text().length() / _line_length) * (_line_length/1.5)))
+	rtw.set_custom_minimum_size(Vector2(_original_x_size, _line_length + 10 + (rtw.get_text().length() / _line_length) * (_line_length/1.5)))
 	wrapper.set_custom_minimum_size(rtw.get_custom_minimum_size())
 	wrapper.add_child(rtw)
 	
@@ -42,7 +42,6 @@ func _add_first_text():
 	if buffer.size() == 0 or (get_child_count() > 0 and !get_children()[get_child_count() - 1].get_children()[0].is_finished()):
 		return
 	
-	print(buffer[0].get_children()[0].full_text)
 	var rtw = buffer[0]
 	add_child(buffer[0])
 	buffer.pop_front()

@@ -34,10 +34,10 @@ func set_option(opt):
 				text = str("[", tr(Cards.get(card).unique_name), "] ", text)
 		
 	rich_text.set_bbcode(text)
-	if text.length() > 200:
-		var size = Vector2(get_size().x, get_size().y * 2)
-		set_size(size)
-		rich_text.set_size(size)
+	if text.length() > 60:
+		var size = Vector2(get_size().x, get_size().y * (1 + (text.length() / 60.0) / 2.0))
+		set_custom_minimum_size(size)
+		rich_text.set_custom_minimum_size(size)
 
 func get_option():
 	return option

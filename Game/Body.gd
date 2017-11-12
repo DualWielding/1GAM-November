@@ -54,6 +54,9 @@ func follow_up_dialog(option):
 		stop_dialog(option)
 	else:
 		var sequence_name = option["next sequence"]
+		for option in sequences[sequence_name]["options"]:
+			if option.has("card used") and option["card used"] == "DAGGER":
+				print("DAGGER IN : ", option)
 		say(tr(sequences[sequence_name]["text"]), sequences[sequence_name]["options"])
 
 func stop_dialog(option):
@@ -67,18 +70,25 @@ func stop_dialog(option):
 	Player.ui.dialog_panel.enable_toggling()
 
 func say(text, opt):
+	var to_remove = []
 	var options = opt
+	
 	for option in options:
+		if option.has("card used") and option["card used"] == "DAGGER":
+			print("DAGGER IN")
 		# Remove a dialog option the player does not have the right tool
 		# or if he already used that option
 		if !Player.is_unique_answer_up(option.text):
-			options.remove(options.find(option))
+			to_remove.append(option)
 		elif option.has("card used") and typeof(option["card used"]) == TYPE_STRING and !Player.has_card(option["card used"]):
-			options.remove(options.find(option))
+			to_remove.append(option)
 		elif option.has("card used") and typeof(option["card used"]) == TYPE_ARRAY:
 			for card in option["card used"]:
 				if !Player.has_card(card):
-					options.remove(options.find(option))
+					to_remove.append(option)
+	
+	for option in to_remove:
+		options.remove(options.find(option))
 	
 	# We need the body param in order to send the player's answer back to the body
 	# Thus enabling us to follow up with the next dialog line
