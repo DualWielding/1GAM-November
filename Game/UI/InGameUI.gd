@@ -191,7 +191,7 @@ func remove_from_discard_stash(card):
 	cards_to_discard_number += 1
 
 func show_discard_screen(number):
-	discard_label.set_text(tr("DISCARD TEXT"))
+	discard_label.set_text(tr("DISCARD TEXT").replace("%number", str(number)))
 	cards_to_discard_number = number
 	bring_cards_up()
 	discard_panel.show()
@@ -207,7 +207,8 @@ func _on_DiscardButton_pressed():
 		Player.remove_card(card.unique_name)
 	if cards_to_discard_number == 0:
 		hide_discard_screen()
-
+		
+	discard_label.set_text(tr("DISCARD TEXT").replace("%number", str(cards_to_discard_number)))
 
 func hide():
 	interaction_button.hide()

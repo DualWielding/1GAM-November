@@ -67,8 +67,13 @@ func add_answers():
 func set_player_name(container):
 	var text_edit_node = container.get_node("NameInput")
 	var name = text_edit_node.get_text()
+	
+	if name.length() < 3:
+		text_edit_node.set_text("")
+		text_edit_node.set_placeholder(tr("INVALID NAME PLACEHOLDER"))
+		return
+	
 	Player.set_name(name)
-	remove_child(container)
 	container.queue_free()
 	
 	# To add the answer to the dialog richText
