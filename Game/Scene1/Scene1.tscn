@@ -140,6 +140,7 @@ shadow/item_mask = 1
 
 [node name="Vitori" parent="." instance=ExtResource( 5 )]
 
+visibility/visible = false
 transform/pos = Vector2( 10, 510 )
 
 [node name="FirstDoorGuard" parent="." instance=ExtResource( 6 )]
