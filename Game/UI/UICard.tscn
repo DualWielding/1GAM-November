@@ -151,7 +151,7 @@ margin/top = -40.0
 margin/right = 450.0
 margin/bottom = 460.0
 texture = ExtResource( 2 )
-modulate = Color( 0.976563, 0.1297, 0.903785, 1 )
+modulate = Color( 0.386719, 0, 0, 1 )
 stretch_mode = 0
 
 [node name="VirginCard" type="TextureButton" parent="Wrapper"]

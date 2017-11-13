@@ -194,7 +194,7 @@ func show_discard_screen(number):
 	discard_label.set_text(tr("DISCARD TEXT").replace("%number", str(number)))
 	cards_to_discard_number = number
 	bring_cards_up()
-	discard_panel.show()
+	hand.get_node("AnimationPlayer").connect("finished", discard_panel, "show", [], CONNECT_ONESHOT)
 	Player.character.set_disabled_movement(true)
 
 func hide_discard_screen():

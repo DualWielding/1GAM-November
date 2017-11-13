@@ -16,6 +16,7 @@ var current_options
 
 var rich_text_writer_class = preload("res://UI/RichTextWriter.tscn")
 var clickable_label_class = preload("res://UI/ClickableText.tscn")
+var input_box_class = preload("res://UI/InputBox.tscn")
 
 func set_dialog(body, unformatted_text, options):
 	# Add body and options as instance var, in order to connect them
@@ -41,18 +42,14 @@ func add_answers():
 		return
 	
 	if current_options.size() == 1 and current_options[0].text == "$i":
-		var container = VBoxContainer.new()
-		container.set_name(tr("INPUT TAB NAME"))
-		var te = LineEdit.new()
-		te.set_name("NameInput")
-		te.set_placeholder(tr("INPUT PLACEHOLDER"))
-		var bu = Button.new()
-		bu.set_h_size_flags(0)
-		bu.set_text(tr("SUBMIT BUTTON"))
-		bu.connect("pressed", self, "set_player_name", [container])
+		var container = input_box_class.instance()
 		answers_container.add_child(container)
-		container.add_child(te)
-		container.add_child(bu)
+		container.set_name(tr("INPUT TAB NAME"))
+		container.text_edit.set_placeholder(tr("INPUT PLACEHOLDER"))
+		var bu = container.button
+		bu.set_h_size_flags(0)
+		bu.set_text(str("  ", tr("SUBMIT BUTTON"), "  "))
+		bu.connect("pressed", self, "set_player_name", [container])
 	else:
 		# Add new answers
 		for option in current_options:
@@ -65,7 +62,7 @@ func add_answers():
 	adjust_answers()
 
 func set_player_name(container):
-	var text_edit_node = container.get_node("NameInput")
+	var text_edit_node = container.text_edit
 	var name = text_edit_node.get_text()
 	
 	if name.length() < 3:
