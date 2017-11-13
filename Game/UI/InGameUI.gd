@@ -103,7 +103,7 @@ func _on_InteractionButton_pressed():
 			popup.add_item(body.get_name(), i)
 			popup.connect("item_pressed", self, "send_start_interaction_message")
 		popup.show()
-		popup.set_global_pos(get_global_mouse_pos())
+		popup.set_global_pos(OS.get_window_size()/2)
 
 func send_start_interaction_message(id):
 	Player.character.interaction_possibilities[id].start_dialog()
