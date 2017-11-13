@@ -18,6 +18,7 @@ var cards_to_discard_number = 0
 var cards_to_discard = []
 
 func _ready():
+	Input.set_custom_mouse_cursor(load("res://Sprites/Cursor.png"))
 	Player.ui = self
 	hide()
 	
