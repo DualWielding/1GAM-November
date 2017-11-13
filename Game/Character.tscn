@@ -731,9 +731,10 @@ tracks/0/keys = {
 
 [node name="Character" type="KinematicBody2D"]
 
+transform/scale = Vector2( 1.2, 1.2 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 0.625376, 0, 0, 0.639924, 0.0171118, 11.4538 )
+shapes/0/transform = Matrix32( 0.65, 0, 0, 0.65, 0.0171118, 11.4538 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -827,7 +828,7 @@ frame = 6
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 transform/pos = Vector2( 0.0171118, 11.4538 )
-transform/scale = Vector2( 0.625376, 0.639924 )
+transform/scale = Vector2( 0.65, 0.65 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
