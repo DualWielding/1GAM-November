@@ -80,6 +80,8 @@ func set_stand_to_base_up():
 	lo_left.hide()
 	lo_right.hide()
 	sprite.set_frame(0)
+	for child in sprite.get_children():
+		child.set_frame(0)
 
 func set_stand_to_base_left():
 	set_stand_sprites()
@@ -87,6 +89,8 @@ func set_stand_to_base_left():
 	lo_left.show()
 	lo_right.hide()
 	sprite.set_frame(9)
+	for child in sprite.get_children():
+		child.set_frame(9)
 
 func set_stand_to_base_down():
 	set_stand_sprites()
@@ -94,6 +98,8 @@ func set_stand_to_base_down():
 	lo_left.hide()
 	lo_right.hide()
 	sprite.set_frame(18)
+	for child in sprite.get_children():
+		child.set_frame(18)
 
 func set_stand_to_base_right():
 	set_stand_sprites()
@@ -101,6 +107,8 @@ func set_stand_to_base_right():
 	lo_left.hide()
 	lo_right.show()
 	sprite.set_frame(27)
+	for child in sprite.get_children():
+		child.set_frame(27)
 
 func look_at(direction):
 	if direction == "up":
