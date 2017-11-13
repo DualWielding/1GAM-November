@@ -38,14 +38,14 @@ COMPLOTIST QUEST,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
 ,,
 ,,
 ,,
+BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
+BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
+BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
+BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de là où %n s'est réveillé."
+DAGGER DEFAULT A1,,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
+DAGGER DEFAULT A2,,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
 ,,
 ,,
 ,,
@@ -267,38 +267,77 @@ ALMA D9 A2,,"La santé de votre bestiole ne dépend que de vous, Comtesse. Rende
 ,,
 ,,
 ,,
+STROZI DEFAULT,,"[i], se tourne vers %n[/i] "
+STROZI DEFAULT A1,,"Bien le bonsoir, messire."
+,,
+STROZI D1 ,,"Le bonsoir, la réception est-elle à votre convenance ?"
+STROZI D1 A1,,"Parfaite, je vous remercie. Est-ce vous qui l'organisez ?"
+,,
+STROZI D2,,"Non, je la constate, impuissant, engloutir l'argent de la ville... [i](tend une main vers %n)[/i]Sire Strozi, comptable du Duc. Votre visage m'est familier, êtes vous un habitué du palais ?"
+STROZI D2 A1,,A vous de me le dire. Mes maux de têtes me tuent et mes souvenirs semblent vouloir s'acharner à fuir mon esprit.
+,,
+STROZI D3 ,,"Au prix des bouteilles que vous et les autres invités engloutissent, je veux bien vous croire."
+STROZI D3 A1,,"[STROZI IS CESNI LOVER]Mmh. Cela dit, le vin n'est pas la seule chose qui impacte le budget de la ville, n'est-ce pas ?"
+,,
+STROZI D4,,Qu'être vous en train d'insinuer ?
+STROZI D4 A1,,"Allons, qui n'a jamais abusé de sa position pour se faciliter quelques conquêtes ?"
+,,
+STROZI D5,,"Allons, qui n'a jamais abusé de sa position pour se faciliter quelques conquêtes ?"
+STROZI D5 A1,,Il est osé de manquer de respect à un homme tenté de révéler une si touchante histoire d'amour. Pensez-vous que le mari de Dame Cesni sera aussi touché que j'ai pu l'être ?
+,,
+STROZI D6,,Je vois. A combien estimez vous votre silence ?
+STROZI D6 A1,,Nous n'aurons pas à arriver à ces extrêmités. Contentez- vous de me confier ce que vous savez sur un complot qui se tramerait.
+,,
+STROZI D7,,"Vous prêtez crédit à ces rumeurs ridicules ? Eh bien, les bruits de boudoir s'accorderaient pour dire qu'un coup d'état se fomenterait. Des anarchistes assoifés de sang lassés par la politique du Duc."
+STROZI D7 A1,,Qui est à la tête de ce complot ?
+,,
+STROZI D8,,"Il n'y a PAS de complot. Mais ces racontars parlent d'un nobliau de basse exctraction envieux du Duc et outré de sa façon de gouverner, qu'il juge tyrannique. Etes-vous sûr de vous sentir bien ?"
+STROZI D8 A1,,"Je... Oui, ce n'est rien."
+,,
+STROZI D9,,Est-ce que cela suffira à m'assurer de votre discrétion ?
+STROZI D9 A1,,"Oui, ne vous en faites pas pour cela."
+STROZI D9 A2,,"Rassurez-vous, vos cachoteries ne regardent que vous."
 ,,
 ,,
+WAITER DEFAULT,,Puis-je vous proposer un rafrâichissment ?
+WAITER DEFAULT A1,,"[NEED A DRINK] Un verre, je vous prie."
+WAITER DEFAULT A2,,"Non, merci."
+,,
+WAITER D1,,"Tout de suite, Messire. Si je puis me permettre, Messire, vous devriez garder à l'oeil l'individu au doigt manquant. Il n'apparaît pas sur la liste des invités."
+WAITER D1 A1,,Je vous demande pardon ? Nous connaissons nous ?
+,,
+WAITER D2,,"[i], échangeant un clin d'oeil complice[/i] Bien sûr que non Messire. Mais sachez que Sire Philippe attend le nom du complotiste pour nous donner le signal. Bonne soirée, messire. [i] il sort.[/i]"
+WAITER D2 A1,,Comment ? Attendez !
 ,,
 ,,
+RUFFIO DEFAULT ,,"Que fais tu là ? Nous ne devrions pas nous parler, va t-en !"
+RUFFIO DEFAULT A1,,[WAITER STRANGE REACTION] Connais tu le serveur qui vient de partir ?
+RUFFIO DEFAULT A2,,"Ca va, je m'en vais !"
+,,
+RUFFIO D1,,"Non, mais il ne m'a pas quitté des yeux. Peut être devrais je aller le surveiller."
+RUFFIO D1 A1,,Depuis quand connais tu Sire Vitori ?
+,,
+RUFFIO D2,,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'aie confié la mission à toi... Toi qui débarque parmis nous, et qui parvient à convaincre notre meneur de te confier l'élimination du Tyran... Je garde un oeil sur toi aussi, évidemment."
+RUFFIO D2 A1,,Ce qui veut dire Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
+,,
+RUFFIO D3,,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
+RUFFIO D3 A1,,"Bonne soirée, Ruffio."
 ,,
 ,,
+SIRE PHILIPPE DEFAULT,,"Bien le bonsoir, jeune Sire."
+SIRE PHILIPPE DEFAULT A1,,"[VITORI IS THE HEAD COMPLOTIST] Vous êtes Sire Philippe, le Capitaine de la garde ?"
 ,,
+SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, %n ?"
+SIRE PHILIPPE D1 A1,,Pardonnez mon étrangeté... Sachez néanmoins que j'ai le nom de celui qui est à la tête du complot.
 ,,
+SIRE PHILIPPE D2,,Vous avez réussi ? Dites le moi sans plus attendre !
+SIRE PHILIPPE D2 A1,,Vitori. C'est lui l'instigateur.
 ,,
+SIRE PHILIPPE D3,,La vermine ! Très bien : Augurie va s'assurer que tout le monde soit réuni sur la Terrasse. C'est à ce moment que je donnerai l'ordre à mes hommes de se saisir des traitres.
+SIRE PHILIPPE D3 A1,,Et si certains parviennent à s'échapper ?
 ,,
+SIRE PHILIPPE D4,,"Leur tête pensante tranchée, le complot s'effondrera de lui même. Bon travail. Je dois avouer que j'avais tort de ne pas vous faire confiance."
+SIRE PHILIPPE D4 A1,,Et maintenant ?
 ,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
-BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
-BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
-BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
-,,
-DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de là où %n s'est réveillé."
-DAGGER DEFAULT A1,,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
-DAGGER DEFAULT A2,,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
+SIRE PHILIPPE D5,,[donne la liste des choses à faire dans l'acte 3]
+SIRE PHILIPPE D5 A1,,Ce sera fait.
