@@ -35,7 +35,7 @@ frame = 10
 
 texture = ExtResource( 5 )
 frame = 10
-modulate = Color( 0.445313, 0.031311, 0.031311, 1 )
+modulate = Color( 0.410156, 0.0224304, 0.0224304, 1 )
 
 [node name="Legs" parent="Sprite"]
 
@@ -51,13 +51,17 @@ frame = 10
 
 frame = 10
 
+[node name="CollisionShape2D" parent="."]
+
+visibility/visible = false
+
 [node name="LightOccluderFace" parent="."]
 
 visibility/visible = false
 
-[node name="LightOccluderLeft" parent="."]
+[node name="InteractionArea" parent="."]
 
-visibility/visible = true
+visibility/visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 

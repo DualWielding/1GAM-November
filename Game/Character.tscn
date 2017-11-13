@@ -731,7 +731,7 @@ tracks/0/keys = {
 
 [node name="Character" type="KinematicBody2D"]
 
-transform/scale = Vector2( 1.2, 1.2 )
+transform/scale = Vector2( 1.1, 1.1 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 0.65, 0, 0, 0.65, 0.0171118, 11.4538 )
