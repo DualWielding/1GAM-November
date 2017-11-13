@@ -1,6 +1,15 @@
 id,en,fr
 $i,,
 ,,
+INPUT PLACEHOLDER,My name is...,Je m'apelle...
+SUBMIT BUTTON,This is my name !,"Oui, c'est mon nom !"
+INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
+DISCARD BUTTON,Discard,Défausser
+INTERACTION BUTTON,Interact,Interagir
+DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes surnuméraires.
+,,
+,,
+,,
 GOLD POUCH,Gold pouch,Bourse d'or
 POWDER,Powder,Poudre
 DAGGER,Dagger,Dague
@@ -57,7 +66,6 @@ COMPLOTIST QUEST,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
 ,,
 ,,
 ,,
-BANDIT DEFAULT,,[i]Il avance vers %n et lui assène un coup de matraque sur la tête. Il le fouille avant de s'enfuir.[/i]
 ,,
 ,,
 VITORI DEFAULT,,Mon pauvre ami ! Je viens de vous voir sauvagemment agressé par ce malandrin ! Il a manqué de vous fracasser le crâne !
@@ -96,13 +104,13 @@ VITORI D9 A1,,Mon crâne... La douleur est insupportable ! Mes souvenirs semblen
 VITORI D10,,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] A tout à l'heure, mon ami.[i]Il sort[/i]"
 VITORI D10 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
 ,,
+VITORI SCENE2DEFAULT,,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?"
+VITORI SCENE2DEFAULT A1,,"[HEAD COMPLOTIST DESCRIPTION] Mes souvenirs s'acharnent à rester flous. Dites moi, Vitori, auriez vous l'obligeance de me rappeler qui est à l'initiative du plan de ce soir ?"
+VITORI SCENE2DEFAULT A2,,"Pas tout à fait. A vrai dire, j'ai bien l'impression que mon mal empire... Je ne vous ennuie pas plus."
 ,,
 ,,
-,,
-,,
-,,
-,,
-,,
+VITORI D11,,"[i], riant aux éclats.[/i] A l'initiative du plan ? Allons, vous vous moquez ? Allez demander un verre au serveur, cela vous fera le plus grand bien, et vous évitera de parler de si grave sujet en public !"
+VITORI D11 A1,,Vous avez surement raison...
 ,,
 ,,
 ,,
