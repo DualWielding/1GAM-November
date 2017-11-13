@@ -1,0 +1,126 @@
+{
+
+		"strozi default": {
+		"text":"STROZI DEFAULT",
+		"options": [
+			{
+				"text":"STROZI DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d1"
+			}
+		]
+	},
+
+	"d1": {
+		"text":"STROZI D1",
+		"options": [
+			{
+				"text":"STROZI D1 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"STROZI D2",
+		"options": [
+			{
+				"text":"STROZI D2 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			}
+		]
+	},
+
+	"d3": {
+		"text":"STROZI D3",
+		"options": [
+			{
+				"text":"STROZI D3 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4",
+				"card gained" : "STROZI IS CESNI LOVER"
+			}
+		]
+	},
+
+	"d4": {
+		"text":"STROZI D4",
+		"options": [
+			{
+				"text":"STROZI D4 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5"
+			}
+		]
+	},
+
+	"d5": {
+		"text":"STROZI D5",
+		"options": [
+			{
+				"text":"STROZI D5 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6"
+			}
+		]
+	},
+
+	"d6": {
+		"text":"STROZI D6",
+		"options": [
+			{
+				"text":"STROZI D6 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d7"
+			}
+		]
+	},
+
+	"d7": {
+		"text":"STROZI D7",
+		"options": [
+			{
+				"text":"STROZI D7 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8"
+			}
+		]
+	},
+
+	"d8": {
+		"text":"STROZI D8",
+		"options": [
+			{
+				"text":"STROZI D8 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d9",
+				"card gained" : "COMPLOTIST HEAD DESCRIPTION"
+			}
+		]
+	},
+
+	"d9": {
+		"text":"STROZI D9",
+		"options": [
+			{
+				"text":"STROZI D9 A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	}
+
+
+}
