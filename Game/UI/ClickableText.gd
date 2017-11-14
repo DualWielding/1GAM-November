@@ -27,9 +27,10 @@ func set_option(opt):
 			for card in option["card used"]:
 				used_text = str("[", tr(Cards.get(card).unique_name), "] ", used_text)
 	
+	# Remove stage-directions
 	var idx = 0
 	while idx < used_text.length():
-		if used_text[idx] == "[" and (used_text[idx + 1] == "i" or used_text[idx + 1] == "b") and used_text[idx + 2] == "]":
+		if used_text[idx] == "[" and used_text[idx + 1] == "i" and used_text[idx + 2] == "]":
 			while used_text[idx] != "/" or used_text[idx + 1] != "i" or used_text[idx + 2] != "]":
 				used_text.erase(idx, 1)
 			used_text.erase(idx, 3)
@@ -37,9 +38,12 @@ func set_option(opt):
 	
 	text_alone = used_text
 	
+	# Remove the colors tags
 	idx = 0
 	while  idx < text_alone.length():
-		if text_alone[idx] == "[" and (text_alone[idx + 1] == "c" or text_alone[idx + 1] == "/") and (text_alone[idx + 2] == "o" or text_alone[idx + 2] == "c"):
+		if text_alone[idx] == "["\
+		and (text_alone[idx + 1] == "c" or text_alone[idx + 1] == "/")\
+		and (text_alone[idx + 2] == "o" or text_alone[idx + 2] == "c"):
 			while text_alone[idx] != "]":
 				text_alone.erase(idx, 1)
 			text_alone.erase(idx, 1)
@@ -51,9 +55,15 @@ func set_option(opt):
 		var size = Vector2(get_size().x, get_size().y * (1 + (text_alone.length() / 60.0) / 2.0))
 		set_custom_minimum_size(size)
 		rich_text.set_custom_minimum_size(size)
-		set_theme(load("res://UI/Style/Theme-Buttons-fat.tres"))
-	else:
+	
+	if text_alone.length() < 80:
 		set_theme(load("res://UI/Style/Theme-Buttons-little.tres"))
+	elif text_alone.length() < 160:
+		set_theme(load("res://UI/Style/Theme-Buttons-medium.tres"))
+	elif text_alone.length() < 250:
+		set_theme(load("res://UI/Style/Theme-Buttons-big.tres"))
+	else:
+		set_theme(load("res://UI/Style/Theme-Buttons-fat.tres"))
 
 func get_option():
 	return option

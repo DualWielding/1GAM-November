@@ -1,6 +1,6 @@
 [gd_resource type="StyleBoxTexture" load_steps=2 format=1]
 
-[ext_resource path="res://Sprites/UI/Scroll-button-fat-disabled.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/UI/Scroll-button-medium-clicked.png" type="Texture" id=1]
 
 [resource]
 
