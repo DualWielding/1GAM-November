@@ -1,0 +1,79 @@
+{
+
+		"sire philippe default": {
+		"text":"SIRE PHILIPPE DEFAULT",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d1",
+				"card used": "VITORI IS THE HEAD COMPLOTIST"
+			}
+		]
+	},
+
+		"d1": {
+		"text":"SIRE PHILIPPE D1",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D1 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"SIRE PHILIPPE D2",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D2 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			}
+		]
+	},
+
+	"d3": {
+		"text":"SIRE PHILIPPE",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D3 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			}
+		]
+	},
+
+	"d4": {
+		"text":"SIRE PHILIPPE D4",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D4 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5"
+			}
+		]
+	},
+
+	"d5": {
+		"text":"SIRE PHILIPPE D5",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D5 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+
+
+
+
+}

@@ -65,7 +65,7 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
-	"MISSING FINGER OF RUFFIO EXPLAINATION": {
+	"EXPLAINATION OF RUFFIO MISSING FINGER": {
 		"unique_name": "MISSING FINGER OF RUFFIO EXPLAINATION",
 		"name": "To be added in translation",
 		"text": "To be added in translation"
@@ -75,4 +75,27 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
+	"HEAD COMPLOTIST DESCRIPTION": {
+		"unique_name": "HEAD COMPLOTIST DESCRIPTION",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+		},
+	"NEED A DRINK": {
+		"unique_name": "NEED A DRINK",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+		},
+	"WAITER STRANGE REACTION": {
+		"unique_name": "WAITER STRANGE REACTION",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"VITORI IS THE HEAD COMPLOTIST": {
+		"unique_name": "VITORI IS THE HEAD COMPLOTIST",
+		"name": "To be added in translation",
+		"text": "To be added in translation",
+		"important": true
+	}
+
+
 }

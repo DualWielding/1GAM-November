@@ -5,7 +5,7 @@
 				"text":"",
 				"end": ,
 				"state change":"",
-				"next sequence": "",
+				"next sequence": ""
 			}
 		]
 	}
