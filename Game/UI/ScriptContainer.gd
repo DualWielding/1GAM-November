@@ -29,16 +29,16 @@ func add_text_to_buffer(unformatted_text, method="fade", show_now=false):
 	buffer.append(wrapper)
 	
 	if show_now:
-		_add_first_text()
+		_show_first_text()
 
 func display_texts():
 	var count = 0
 	while count < buffer.size() - 1:
-		buffer[count].get_children()[0].connect("finished", self, "_add_first_text", [], CONNECT_ONESHOT)
+		buffer[count].get_children()[0].connect("finished", self, "_show_first_text", [], CONNECT_ONESHOT)
 		count += 1
-	_add_first_text()
+	_show_first_text()
 
-func _add_first_text():
+func _show_first_text():
 	if buffer.size() == 0 or (get_child_count() > 0 and !get_children()[get_child_count() - 1].get_children()[0].is_finished()):
 		return
 	
@@ -111,3 +111,9 @@ func show_last():
 	var last_child = get_children()[get_child_count() - 1].get_children()[0] # wrapper
 	if !last_child.finished:
 		last_child.finish()
+
+func get_last_dialog_section_idx():
+	if buffer.size() == 0:
+		return -1
+	else:
+		return buffer[buffer.size() - 1]
