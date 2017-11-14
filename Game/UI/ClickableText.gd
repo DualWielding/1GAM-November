@@ -7,37 +7,63 @@ var option setget set_option, get_option
 var speaker setget set_speaker, get_speaker
 
 var full_text
-var text
+var text_alone
+var used_text
 
 func set_option(opt):
 	option = opt
 	full_text = tr(option.text)
-	text = tr(option.text)
+	used_text = tr(option.text)
+	text_alone
 	
 	if Player.get_name():
-		text = text.replace("%n", Player.get_name())
+		used_text = used_text.replace("%n", Player.get_name())
 	
-	var idx = 0
-	while idx < text.length():
-		if text[idx] == "[" and text[idx + 1] == "i" and text[idx + 2] == "]":
-			while text[idx] != "/" or text[idx + 1] != "i" or text[idx + 2] != "]":
-				text.erase(idx, 1)
-			text.erase(idx, 3)
-		idx += 1
-	
-	# Show which card is used, if the option uses one
+		# Show which card is used, if the option uses one
 	if opt.has("card used"):
 		if typeof(option["card used"]) == TYPE_STRING:
-			text = str("[", tr(Cards.get(opt["card used"]).unique_name), "] ", text)
+			used_text = str("[", tr(Cards.get(opt["card used"]).unique_name), "] ", used_text)
 		elif typeof(option["card used"]) == TYPE_ARRAY:
 			for card in option["card used"]:
-				text = str("[", tr(Cards.get(card).unique_name), "] ", text)
-		
-	rich_text.set_bbcode(text)
-	if text.length() > 60:
-		var size = Vector2(get_size().x, get_size().y * (1 + (text.length() / 60.0) / 2.0))
+				used_text = str("[", tr(Cards.get(card).unique_name), "] ", used_text)
+	
+	# Remove stage-directions
+	var idx = 0
+	while idx < used_text.length():
+		if used_text[idx] == "[" and used_text[idx + 1] == "i" and used_text[idx + 2] == "]":
+			while used_text[idx] != "/" or used_text[idx + 1] != "i" or used_text[idx + 2] != "]":
+				used_text.erase(idx, 1)
+			used_text.erase(idx, 3)
+		idx += 1
+	
+	text_alone = used_text
+	
+	# Remove the colors tags
+	idx = 0
+	while  idx < text_alone.length():
+		if text_alone[idx] == "["\
+		and (text_alone[idx + 1] == "c" or text_alone[idx + 1] == "/")\
+		and (text_alone[idx + 2] == "o" or text_alone[idx + 2] == "c"):
+			while text_alone[idx] != "]":
+				text_alone.erase(idx, 1)
+			text_alone.erase(idx, 1)
+		idx += 1
+	
+	rich_text.set_bbcode(used_text)
+
+	if text_alone.length() > 60:
+		var size = Vector2(get_size().x, get_size().y * (1 + (text_alone.length() / 60.0) / 2.0))
 		set_custom_minimum_size(size)
 		rich_text.set_custom_minimum_size(size)
+	
+	if text_alone.length() < 80:
+		set_theme(load("res://UI/Style/Theme-Buttons-little.tres"))
+	elif text_alone.length() < 160:
+		set_theme(load("res://UI/Style/Theme-Buttons-medium.tres"))
+	elif text_alone.length() < 250:
+		set_theme(load("res://UI/Style/Theme-Buttons-big.tres"))
+	else:
+		set_theme(load("res://UI/Style/Theme-Buttons-fat.tres"))
 
 func get_option():
 	return option

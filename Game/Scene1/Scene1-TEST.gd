@@ -23,10 +23,9 @@ func intro_pause():
 
 func start_vitoris_scene():
 	Player.ui.show() # TEST 
-	Player.character.set_disabled_movement(false)
-#	vitori.get_node("FadePlayer").play_backwards("Fade")
-#	vitori.show()
-#	vitori.walk_right()
+	vitori.get_node("FadePlayer").play_backwards("Fade")
+	vitori.show()
+	vitori.walk_right()
 
 func show_title_screen():
 	title_screen.show()
