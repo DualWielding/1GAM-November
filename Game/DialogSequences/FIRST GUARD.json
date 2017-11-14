@@ -111,8 +111,7 @@
 				"text":"GUARD D5 A2",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d3",
-				"card used" : "GOLDPOUCH"
+				"next sequence": "d3"
 			},
 			{
 				"text":"GUARD D5 A3",

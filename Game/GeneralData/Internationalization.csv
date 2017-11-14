@@ -1,12 +1,11 @@
 id,en,fr
 $i,,
 ,,
-INPUT PLACEHOLDER,My name is...,Je m'appelle...
+INPUT PLACEHOLDER,My name is...,Je m'apelle...
 SUBMIT BUTTON,This is my name !,"Oui, c'est mon nom !"
 INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
 DISCARD BUTTON,Discard,Défausser
 INTERACTION BUTTON,Interact,Interagir
-INTERACTION BUTTON TOOLTIP,Press E to interact,Appuyez sur E pour interagir
 DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes surnuméraires.
 ,,
 ,,
@@ -24,11 +23,11 @@ AUGURIE IS WORKING WITH VITORI,ble,Augurie travaille avec Vitori
 PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,bli,La présence de Sire Philippe dépend de son traitement
 EXPLAINATION OF RUFFIO MISSING FINGER,blou,Explication du doigt manquant de Ruffio
 ALMA PET KIDNAPPED,bleaurgh,L'animal d'Alma a été enlevé.
-ALMA IS WAITING INSIDE,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
-HEAD COMPLOTIST DESCRIPTION,,
-NEED A DRINK,,
-WAITER STRANGE REACTION,,
-VITORI IS THE HEAD COMPLOTIST,,
+COMPLOTIST QUEST,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
+,,
+,,
+,,
+,,
 ,,
 ,,
 ,,
@@ -41,7 +40,7 @@ VITORI IS THE HEAD COMPLOTIST,,
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
 BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
-BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes. [i]%n verse une poudre dans la bouteille et s'en saisit[/i][/color]
+BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
 BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
 DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de là où %n s'est réveillé."
@@ -311,24 +310,24 @@ WAITER D2,,"[i], échangeant un clin d'oeil complice[/i] Bien sûr que non Messi
 WAITER D2 A1,,Comment ? Attendez !
 ,,
 ,,
-RUFFIO SCENE2DEFAULT ,,"Que fais tu là ? Nous ne devrions pas nous parler, va t-en !"
-RUFFIO SCENE2DEFAULT A1,,[WAITER STRANGE REACTION] Connais tu le serveur qui vient de partir ?
-RUFFIO SCENE2DEFAULT A2,,"Ca va, je m'en vais !"
+RUFFIO DEFAULT ,,"Que fais tu là ? Nous ne devrions pas nous parler, va t-en !"
+RUFFIO DEFAULT A1,,[WAITER STRANGE REACTION] Connais tu le serveur qui vient de partir ?
+RUFFIO DEFAULT A2,,"Ca va, je m'en vais !"
 ,,
-RUFFIO D5,,"Non, mais il ne m'a pas quitté des yeux. Peut être devrais je aller le surveiller."
-RUFFIO D5 A1,,Depuis quand connais tu Sire Vitori ?
+RUFFIO D1,,"Non, mais il ne m'a pas quitté des yeux. Peut être devrais je aller le surveiller."
+RUFFIO D1 A1,,Depuis quand connais tu Sire Vitori ?
 ,,
-RUFFIO D6,,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'aie confié la mission à toi... Toi qui débarque parmis nous, et qui parvient à convaincre notre meneur de te confier l'élimination du Tyran... Je garde un oeil sur toi aussi, évidemment."
-RUFFIO D6 A1,,Ce qui veut dire Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
+RUFFIO D2,,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'aie confié la mission à toi... Toi qui débarque parmis nous, et qui parvient à convaincre notre meneur de te confier l'élimination du Tyran... Je garde un oeil sur toi aussi, évidemment."
+RUFFIO D2 A1,,Ce qui veut dire Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
 ,,
-RUFFIO D7,,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
-RUFFIO D7 A1,,"Bonne soirée, Ruffio."
+RUFFIO D3,,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
+RUFFIO D3 A1,,"Bonne soirée, Ruffio."
 ,,
 ,,
 SIRE PHILIPPE DEFAULT,,"Bien le bonsoir, jeune Sire."
 SIRE PHILIPPE DEFAULT A1,,"[VITORI IS THE HEAD COMPLOTIST] Vous êtes Sire Philippe, le Capitaine de la garde ?"
 ,,
-SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, jeune %n ?"
+SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, %n ?"
 SIRE PHILIPPE D1 A1,,Pardonnez mon étrangeté... Sachez néanmoins que j'ai le nom de celui qui est à la tête du complot.
 ,,
 SIRE PHILIPPE D2,,Vous avez réussi ? Dites le moi sans plus attendre !
