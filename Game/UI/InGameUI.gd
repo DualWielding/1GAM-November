@@ -94,15 +94,15 @@ func _on_InteractionButton_pressed():
 	var popup = interaction_button.get_popup()
 	popup.clear()
 	var size = Player.character.interaction_possibilities.size()
-#	if size == 1:
-#		send_start_interaction_message(0)
-#	else:
-	for i in range(size):
-		var body = Player.character.interaction_possibilities[i]
-		popup.add_item(body.get_name(), i)
-		popup.connect("item_pressed", self, "send_start_interaction_message")
-	popup.show()
-	popup.set_pos(get_viewport().get_mouse_pos() + Vector2(-10, -10))
+	if size == 1:
+		send_start_interaction_message(0)
+	else:
+		for i in range(size):
+			var body = Player.character.interaction_possibilities[i]
+			popup.add_item(body.get_name(), i)
+			popup.connect("item_pressed", self, "send_start_interaction_message")
+		popup.show()
+		popup.set_pos(get_viewport().get_mouse_pos() + Vector2(-10, -10))
 
 func send_start_interaction_message(id):
 	Player.character.interaction_possibilities[id].start_dialog()
