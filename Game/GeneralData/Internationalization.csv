@@ -1,11 +1,12 @@
 id,en,fr
 $i,,
 ,,
-INPUT PLACEHOLDER,My name is...,Je m'apelle...
+INPUT PLACEHOLDER,My name is...,Je m'appelle...
 SUBMIT BUTTON,This is my name !,"Oui, c'est mon nom !"
 INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
 DISCARD BUTTON,Discard,Défausser
 INTERACTION BUTTON,Interact,Interagir
+INTERACTION BUTTON TOOLTIP,Press E to interact,Appuyez sur E pour interagir
 DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes surnuméraires.
 ,,
 ,,
@@ -23,14 +24,14 @@ AUGURIE IS WORKING WITH VITORI,ble,Augurie travaille avec Vitori
 PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,bli,La présence de Sire Philippe dépend de son traitement
 EXPLAINATION OF RUFFIO MISSING FINGER,blou,Explication du doigt manquant de Ruffio
 ALMA PET KIDNAPPED,bleaurgh,L'animal d'Alma a été enlevé.
-COMPLOTIST QUEST,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+ALMA IS WAITING INSIDE,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
+HEAD COMPLOTIST DESCRIPTION,,A
+NEED A DRINK,,A
+WAITER STRANGE REACTION,,A
+VITORI IS THE HEAD COMPLOTIST,,A
+PHILIPPE SUFFERS FROM GOUTTE,,A
+A SURPRISE IS PLANNED,,A
+DIVERSION,,A
 ,,
 ,,
 ,,
@@ -40,28 +41,28 @@ COMPLOTIST QUEST,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
 BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
-BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des opportunités. [i](%n verse une poudre dans la bouteille et s'en saisit)[/i][/color]
+BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes. [i]%n verse une poudre dans la bouteille et s'en saisit[/i][/color]
 BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
 DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de là où %n s'est réveillé."
 DAGGER DEFAULT A1,,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
 DAGGER DEFAULT A2,,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
 ,,
+MEDECINE DEFAULT,,"Devant vous trône une fiole en verre et non loin, une pipette. Probablement le traitement du vieil homme."
+MEDECINE DEFAULT A1,,"Pardonnez monsieur, ceci est à vous ?"
 ,,
+MEDECINE D1,,Eh bien oui. En quoi cela vous intéresse t-il ?
+MEDECINE D1 A1,,[Sire Philippe souffre de la Goutte] J'ai eu un parent autrefois qui prenait ce genre de traitement.
+MEDECINE D1 A2,,"Simple curiosité, la bonne soirée, messire."
 ,,
+MEDECINE D2,,"""Autrefois"" ?! Que lui est-il arrivé ?"
+MEDECINE D2 A1,,"L'apothicaire lui avait prescrit ce genre de traitement, et lui avait ordonné beaucoup de repos. La Goutte. Cette maladie ne pardonne pas."
 ,,
+MEDECINE D3,,"La Goutte vous dites ? Oui, mon médecin aussi m'a déconseillé de veiller. Mais je..."
+MEDECINE D3 A1,,"Le pauvre n'a pas tenu l'hiver, il était militaire. Ah, comme ce vieil oncle me manque, aujourd'hui. Vous devriez prendre soin de vous, Messire."
 ,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+MEDECINE D4,,"Eh bien.. M..merci. Je ne me sens pas très bien... Pardonnez moi, je vais aller m'allonger à l'intérieur quelques moments."
+MEDECINE D4 A1,,"Oh, faites, faites !"
 ,,
 ,,
 ,,
@@ -309,25 +310,61 @@ WAITER D1 A1,,Je vous demande pardon ? Nous connaissons nous ?
 WAITER D2,,"[i], échangeant un clin d'oeil complice[/i] Bien sûr que non Messire. Mais sachez que Sire Philippe attend le nom du complotiste pour nous donner le signal. Bonne soirée, messire. [i] il sort.[/i]"
 WAITER D2 A1,,Comment ? Attendez !
 ,,
+RUFFIO DEFAULT,,"Pas trop tôt. Le Seigneur Vitori est passé il y a plusieurs minutes de cela. Je t'ai vu discuter longtemps avec ce garde, je peux savoir ce que tu tramais ?"
+RUFFIO DEFAULT A1,,Rien de bien important. A qui ai-je l'honneur ?
 ,,
-RUFFIO DEFAULT ,,"Que fais tu là ? Nous ne devrions pas nous parler, va t-en !"
-RUFFIO DEFAULT A1,,[WAITER STRANGE REACTION] Connais tu le serveur qui vient de partir ?
-RUFFIO DEFAULT A2,,"Ca va, je m'en vais !"
+RUFFIO D1,,"Tu ne te souviens plus du bon Ruffio ? Eh bien quoi, lui voler la vedette ne t'as pas suffit ? Il faudrait que tu le dépossèdes de son nom en sus !"
+RUFFIO D1 A1,,Ruffio ? Alors c'est toi qui t'es chargé d'enlever cet animal ?
 ,,
-RUFFIO D1,,"Non, mais il ne m'a pas quitté des yeux. Peut être devrais je aller le surveiller."
-RUFFIO D1 A1,,Depuis quand connais tu Sire Vitori ?
+RUFFIO D2,,"Cette saloperie m'a bequeté le doigt sans crier gare. Mais tu me connais. Oeil pour oeil... Je te passe les détails, mais la petite comptesse devrait être disposée à obéïr au moindre de tes désirs."
+RUFFIO D2 A1,,"Oh... Eh bien parfait, je suppose."
 ,,
-RUFFIO D2,,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'aie confié la mission à toi... Toi qui débarque parmis nous, et qui parvient à convaincre notre meneur de te confier l'élimination du Tyran... Je garde un oeil sur toi aussi, évidemment."
-RUFFIO D2 A1,,Ce qui veut dire Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
+RUFFIO D3,,"Alors c'est le grand soir, hein ? Assassiner le Duc, ce privilège me revenait. Mais il a fallu que tu te tordes et que tu rampes autour du Seigneur Vitori et de son maître jusqu'à le convaincre de t'attribuer la mission, hein ? A croire que la flatterie est une chose naturelle pour toi."
+RUFFIO D3 A1,,[i]A part lui [/i] Assassi... Diantre ! Des bribes de souvenirs me reviennent... A propos d'un plan... Mais impossible de les fixer. La peste ! Je suis en train de me mettre dans un pétrin que je me suis moi-même concocté !
 ,,
-RUFFIO D3,,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
-RUFFIO D3 A1,,"Bonne soirée, Ruffio."
+RUFFIO D4,,"Allez suis-moi, ceux que tu cherches sont sur la terasse.Puisque mes méthodes vous paraissent trop ""expéditives"", il va falloir que tu te courbes devant quelques nobles, si tu veux créer l'occasion de te débarasser du Duc en toute tranquillité. Mais si je comprends bien, te courber devant les autres, c'est un peu ta spécialité, hein ?"
+RUFFIO D4 A1,,J'ai peur de comprendre ce que tu sous-entend Ruffio. Gare à ne pas abuser de mon état.
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+RUFFIO SCENE2DEFAULT ,,"Que fais tu là ? Nous ne devrions pas nous parler, va t-en !"
+RUFFIO SCENE2DEFAULT A1,,[WAITER STRANGE REACTION] Connais tu le serveur qui vient de partir ?
+RUFFIO SCENE2DEFAULT A2,,"Ca va, je m'en vais !"
+,,
+RUFFIO D5,,"Non, mais il ne m'a pas quitté des yeux. Peut être devrais je aller le surveiller."
+RUFFIO D5 A1,,Depuis quand connais tu Sire Vitori ?
+,,
+RUFFIO D6,,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'aie confié la mission à toi... Toi qui débarque parmis nous, et qui parvient à convaincre notre meneur de te confier l'élimination du Tyran... Je garde un oeil sur toi aussi, évidemment."
+RUFFIO D6 A1,,Ce qui veut dire Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
+,,
+RUFFIO D7,,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
+RUFFIO D7 A1,,"Bonne soirée, Ruffio."
 ,,
 ,,
 SIRE PHILIPPE DEFAULT,,"Bien le bonsoir, jeune Sire."
 SIRE PHILIPPE DEFAULT A1,,"[VITORI IS THE HEAD COMPLOTIST] Vous êtes Sire Philippe, le Capitaine de la garde ?"
 ,,
-SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, %n ?"
+SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, jeune %n ?"
 SIRE PHILIPPE D1 A1,,Pardonnez mon étrangeté... Sachez néanmoins que j'ai le nom de celui qui est à la tête du complot.
 ,,
 SIRE PHILIPPE D2,,Vous avez réussi ? Dites le moi sans plus attendre !
@@ -341,3 +378,58 @@ SIRE PHILIPPE D4 A1,,Et maintenant ?
 ,,
 SIRE PHILIPPE D5,,[donne la liste des choses à faire dans l'acte 3]
 SIRE PHILIPPE D5 A1,,Ce sera fait.
+,,
+,,
+CLAUDIO DEFAULT,,"Mmh, le Capitaine n'a pas l'air dans son assiette, ce soir."
+CLAUDIO DEFAULT A1,,Le Capitaine ?
+,,
+CLAUDIO D1,,"Oui, Sire Philippe. Le vieil homme à l'allure martial, assis là bas. Le mal qui l'afflige est bien triste."
+CLAUDIO D1 A1,,Que lui arrive t-il ?
+,,
+CLAUDIO D2,,"Le pauvre souffre de Goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses, pour un militaire, quelle tragédie."
+CLAUDIO D2 A1,,Mmh... En effet. Bonne soirée.
+,,
+,,
+GIULIA DEFAULT,,"J'ai entendu certaines personnes parler d'une surprise pour les invités ce soir, comme c'est excitant !"
+GIULIA DEFAULT A1,,Une surprise ?
+,,
+GIULIA D1,,"Comme je vous dis ! Dame Augurie est en charge des festivités, nul doute qu'elle en sait un peu plus. Mais ne me dites rien ! Je ne voudrais pas gâcher mon plaisir !"
+GIULIA D1 A1,,Comme vous voudrez.
+,,
+,,
+AUGURIE DEFAULT,,Mmh ? Je peux vous aider ?
+AUGURIE DEFAULT A1,,"[surprise !!!] Certaines rumeurs font état d'une surprise pour le Duc, êtes vous au courant ?"
+AUGURIE DEFAULT A2,,Euh... Une bien belle soirée n'est ce pas ?
+,,
+AUGURIE D1,,"Euh... Eh bien oui. [i](Plus bas)[/i] Mais qu'est ce qu'il te prend ? Nous ne sommes pas censés nous parler ! Le feu d'artifice aura lieu comme prévu, à ton signal. Maintenant, déguerpis !"
+AUGURIE D1 A1,,Pourquoi devrions nous nous éviter ?
+AUGURIE D1 A2,,Pourquoi un feu d'artifice ?
+AUGURIE D1 A3,,Quel est le signal qui lancera le feu d'artifice ?
+,,
+AUGURIE D2,,"Parce que tu as du travail, idiot ! Sire Philippe attend toujours le nom de celui qui est à la tête du complot. Alors sois attentif."
+AUGURIE D2 A1,,Quel est le signal qui lancera le feu d'artifice ?
+AUGURIE D2 A2,,Pourquoi un feu d'artifice ?
+AUGURIE D2 A3,,"Je le serai, compte sur moi."
+,,
+AUGURIE D3,,"Bien, maintenant que tu es rassuré, du balais ! Nous risquons gros à discuter ainsi. [i](Plus haut)[/i] J'ignore ce que vous espériez, mais je ne suis pas intéressée Messire ! Bonne soirée."
+AUGURIE D3 A1,,"Bien, bonne soirée !"
+,,
+AUGURIE D4,,"Parce que c'est une raison suffisante pour rassembler tous les invités sur la Terasse. Enfin, c'est ce que tu asprésumé."
+AUGURIE D4 A1,,"Oh ? Je... j'ai quelques soucis avec ma mémoire ce soir. Quel est le signal, déjà ?"
+AUGURIE D4 A2,,"Je... Je le savais, je m'assurais que tout était au point, voilà tout. Et pourquoi devons nous éviter ?"
+AUGURIE D4 A3,,Je vois...
+,,
+AUGURIE D5,,"Comme TU me l'as expliqué plusieurs fois, tu es sensé me proposer un verre, et moi t'éconduire. Ce sera la signal pour commencer à rassembler les invités. A moins que cela ait encore changé."
+AUGURIE D5 A1,,"Non, non. Cela me paraît parfait."
+AUGURIE D5 A2,,"Non, parfait. Mais pourquoi un feu d'artifice, déjà ?"
+AUGURIE D5 A3,,"Non, c'est très bien. Mais pourquoi devrions nous nous éviter, déjà ?"
+,,
+AUGURIE D6,,"[i](Froide)[/i] Magnifique, en effet. Veuillez m'excuser."
+AUGURIE D6 A1,,Je... vous...Bonne soirée.
+,,
+AUGURIE WAITING SIGNAL,,"Encore vous, Messire ?"
+AUGURIE WAITING SIGNAL A1,,"Non, rien."
+AUGURIE WAITING SIGNAL A2,,"[signal] Puis-je vous offrir un verre, très chère ?"
+,,
+AUGURIE D7,,Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
+AUGURIE D7 A1,,"Hum ! Je pense que cela suffit. Bonne soirée, madame."

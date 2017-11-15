@@ -1,0 +1,175 @@
+{
+
+	"augurie default": {
+		"text":"AUGURIE DEFAULT",
+		"options": [
+			{
+				"text":"AUGURIE DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d1",
+				"card used":"A SURPRISE IS PLANNED"
+			},
+			{
+				"text":"AUGURIE D1 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6"
+			}
+		]
+	},
+
+	"d1": {
+		"text":"AUGURIE D1 ",
+		"options": [
+			{
+				"text":"AUGURIE D1 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			},
+			{
+				"text":"AUGURIE D1 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			},
+			{
+				"text":"AUGURIE D1 A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"AUGURIE D2",
+		"options": [
+			{
+				"text":"AUGURIE D2 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5"
+			},
+			{
+				"text":"AUGURIE D2 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			},
+			{
+				"text":"AUGURIE D2 A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			}
+		]
+	},
+
+	"d3": {
+		"text":"AUGURIE D3",
+		"options": [
+			{
+				"text":"AUGURIE D3 A1",
+				"end": true,
+				"state change":"waiting signal",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"d4": {
+		"text":"AUGURIE D4",
+		"options": [
+			{
+				"text":"AUGURIE D4 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5"
+			},
+			{
+				"text":"AUGURIE D4 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			},
+			{
+				"text":"AUGURIE D4 A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			}
+		]
+	},
+
+	"d5": {
+		"text":"AUGURIE D5",
+		"options": [
+			{
+				"text":"AUGURIE D5 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			},
+			{
+				"text":"AUGURIE D5 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			},
+			{
+				"text":"AUGURIE D5 A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d6": {
+		"text":"AUGURIE D6",
+		"options": [
+			{
+				"text":"AUGURIE D6 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"waiting signal": {
+		"text":"AUGURIE WAITING SIGNAL",
+		"options": [
+			{
+				"text":"AUGURIE WAITING SIGNAL A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			},
+			{
+				"text":"AUGURIE WAITING SIGNAL A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d7"
+			}
+		]
+	},
+
+	"d7": {
+		"text":"AUGURIE D7",
+		"options": [
+			{
+				"text":"AUGURIE D7 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained" : "DIVERSION"
+			}
+		]
+	}
+
+
+
+}
