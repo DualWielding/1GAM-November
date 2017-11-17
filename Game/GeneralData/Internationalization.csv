@@ -20,7 +20,7 @@ GUARD KILLED,Guard killed,Garde tué
 GUARD CORRUPTED,Guard corrupted,Garde corrompu
 CESNI OWN YOU,Cesni own,Cesni vous est redevable
 STROZI IS CESNI LOVER,bla,Strozi est l'amant de Cesni
-AUGURIE IS WORKING WITH VITORI,ble,Augurie travaille avec Vitori
+,,
 PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,bli,La présence de Sire Philippe dépend de son traitement
 EXPLAINATION OF RUFFIO MISSING FINGER,blou,Explication du doigt manquant de Ruffio
 ALMA PET KIDNAPPED,bleaurgh,L'animal d'Alma a été enlevé.
@@ -93,7 +93,7 @@ VITORI D5 A2,,Mais...
 VITORI D6,,"Votre intuition était la bonne : Strozi est bien l'amant de Dame Cesni, et je suis parvenu à le faire inviter ce soir. Vous pourriez utiliser cela pour la contraindre à enfin vous rendre la faveur qu'elle vous doit !"
 VITORI D6 A1,,Comment cela...
 ,,
-VITORI D7,,"...Grâce à notre agent Augurie, Sire Philippe sera comme prévu indisposé ce soir. Subtilisez son traitement et nous serons débarrassés de sa vigilance paranoïaque."
+VITORI D7,,"...Grâce à notre agent, Sire Philippe sera comme prévu indisposé ce soir. Subtilisez son traitement et nous serons débarrassés de sa vigilance paranoïaque."
 VITORI D7 A1,,"Attendez, j'ignore..."
 ,,
 VITORI D8,,"Laissez moi finir : voici le collier de l'animal de la Comptesse d'Alma. Il a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure de la contraindre au silence."
@@ -196,7 +196,7 @@ GUARD HAS GOLDPOUCH A2,TODO,"Est ce vraiment ce que vous espériez devenir ? Un 
 GUARD HAS GOLDPOUCH A3,TODO,"Ecoutez moi bien, si vous ne me rendez pas mon dû dans la minute, vous vous exposez à de graves conséquences !"
 ,,
 GUARD D13,TODO,Que voulez-vous dire ?
-,,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
+GUARD D13 A3,TODO,Je... Je n'hésiterai pas à en référer à votre supérieur une fois que je serai à intérieur ! Car croyez-moi : je rentrerai !
 GUARD D13 A1,TODO,[color=red]Ce genre de conséquences ![/color][i]Il lui abbat la bouteille sur le crâne[/i]
 GUARD D13 A2,TODO,"[color=red]Je n'ai pas de temps à perdre ce soir, navré.[/color][i]Il se jete sur le garde et le poignarde.[/i]"
 ,,
