@@ -265,6 +265,12 @@
 				"next sequence": "none",
 				"card used": "DAGGER",
 				"card gained": "GUARD KILLED"
+			},
+			{
+				"text":"GUARD D13 A3",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
 			}
 		]
 	},
