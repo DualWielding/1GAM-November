@@ -32,7 +32,7 @@ VITORI IS THE HEAD COMPLOTIST,,A
 PHILIPPE SUFFERS FROM GOUTTE,,A
 A SURPRISE IS PLANNED,,A
 DIVERSION,,A
-,,
+ALMA IS READY TO STRIKE,,
 ,,
 ,,
 ,,
@@ -254,18 +254,22 @@ ALMA D6,,Vous n'oserez pas vous en prendre à moi en présence de...
 ALMA D6 A1,,"Non, en effet. Mais comme Sire Philippe nous a faussé compagnie, vous allez m'écouter, petite peste !"
 ,,
 ALMA D7,,[i]Couine[/i]
-ALMA D7 A1,,Il me faut une arme. Mais les gardes fouillent systématiquement les hommes avant qu'ils n'accèdent à la salle de réception. Alors voici ce que vous allez faire...
+ALMA D7 A1,,Il me faut une arme. Mais les gardes vont fouiller les hommes avant qu'ils n'accèdent à la salle de réception en présence du Duc. Alors voici ce que vous allez faire...
 ,,
 ALMA D8,,Mon pauvre Sporco... Non ! Je... Je vous écoute !
 ALMA D8 A1,,"Vous allez récupérer l'arme de cet homme [i](désigne Ruffio)[/i], rentrer dans la salle de réception et vous me la remettrez une fois à l'intérieur. Est-ce clair ?"
 ,,
-ALMA D9,,"Oui.. Oui mais je vous en prie, ne faites pas de mal à ce pauvre Sporco !"
-ALMA D9 A1,,"Faites ce que je vous dis, ne vous faites pas prendre et tout ira bien pour vous deux. Attendez moi à l'intérieur avec l'arme."
-ALMA D9 A2,,"La santé de votre bestiole ne dépend que de vous, Comtesse. Rendez-vous à l'intérieur."
+ALMA D9,,Oui.. Oui mais qu'attendez vous de moi ensuite ?
+ALMA D9 A1,,"Vous vous tiendrez prête à frapper, à mon signal. Attendez moi à l'intérieur avec l'arme."
 ,,
+ALMA D10,,Blesser le Duc ?! Mais vous avez perdu la raison ?!
+ALMA D10 A1,,"Baissez le ton ! C'est cela, ou retrouver votre Sporco en pièce, avec l'assurance qu'il aura souffert mille mort avant de rendre son dernier souffle. A vous de voir, Comtesse !"
 ,,
+ALMA D11,,Mais je...
+ALMA D11 A1,,"Rassurez vous : vous n'aurez pas à payer les conséquences de votre geste... En revanche, si vous refusez, il est probable que mon ami brûlera de s'entretenir avec vous... Une fois qu'il en aura fini avec Sporco."
 ,,
-,,
+ALMA D12,,"[i], couinant une nouvelle fois, puis sort.[/i]"
+ALMA D12 A1,,"Cette violence, cette froideur dans mes propos... Mes souvenirs ont beau m'échapper, je sais que je n'y suis pas inconnu. Qui étais-je, avant ce soir ?"
 ,,
 ,,
 STROZI DEFAULT,,"[i], se tourne vers %n[/i] "
