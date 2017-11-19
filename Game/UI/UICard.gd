@@ -108,7 +108,6 @@ func is_selected():
 ##### ANIMATIONS #####
 
 func animate_add():
-	print("name : ", name, ", unqiue name : ", unique_name)
 	ap.play("animate_add", -1, 0.8)
 
 func animate_discard():

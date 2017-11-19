@@ -28,12 +28,7 @@ func _ready():
 	Player.connect("card_added", self, "add_card")
 	Player.connect("card_removed", self, "remove_card")
 	
-	# Add all the players' cards at the beginning
-	for card_name in Player.get_hand():
-		add_card(Player.get_hand()[card_name], false)
-	
-	for card_name in Player.get_important_hand():
-		add_card(Player.get_important_hand()[card_name], false)
+	Player.add_base_cards()
 	
 	# Connect the UI to every bodies in the scene
 	for body in get_tree().get_nodes_in_group("body"):

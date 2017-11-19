@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://UI/UICard.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Cards/animation_recto_carte_normale.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Cards/animation_verso_carte_normale.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Cards/gold pouch text.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Cards/cesni owns you name.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Cards/animation_verso_carte_normale.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Cards/gold pouch text.png" type="Texture" id=6]
 
 [sub_resource type="Animation" id=1]
 
@@ -134,6 +135,26 @@ tracks/5/keys = {
 "update": 1,
 "values": [ 5, 4, 3, 2, 1, 0 ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("Wrapper/VirginCard/Recto/Name:frame")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 4, 3, 2, 1, 0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Wrapper/VirginCard/Recto/Image:frame")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = {
+"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
 
 [node name="UICard" type="Control"]
 
@@ -184,9 +205,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 200.0
-margin/top = 320.0
+margin/top = 250.0
 margin/right = 400.0
-margin/bottom = 640.0
+margin/bottom = 570.0
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -204,10 +225,6 @@ margin/top = 240.0
 margin/right = 200.0
 margin/bottom = 280.0
 
-[node name="Name" type="Sprite" parent="Wrapper/VirginCard/Recto"]
-
-visibility/light_mask = 0
-
 [node name="Sprite" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
 transform/pos = Vector2( -60, -90 )
@@ -216,6 +233,21 @@ texture = ExtResource( 3 )
 hframes = 6
 
 [node name="Image" type="Sprite" parent="Wrapper/VirginCard/Recto"]
+
+transform/pos = Vector2( -61, -110 )
+flip_h = true
+flip_v = true
+hframes = 6
+
+[node name="Name" type="Sprite" parent="Wrapper/VirginCard/Recto"]
+
+visibility/light_mask = 0
+transform/pos = Vector2( -61, -90 )
+texture = ExtResource( 4 )
+flip_h = true
+flip_v = true
+hframes = 6
+frame = 5
 
 [node name="Verso" type="Container" parent="Wrapper/VirginCard"]
 
@@ -233,7 +265,7 @@ margin/bottom = 280.0
 
 transform/pos = Vector2( -60, -90 )
 transform/rot = 180.0
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 hframes = 6
 frame = 5
 
@@ -241,7 +273,7 @@ frame = 5
 
 transform/pos = Vector2( -60, -90 )
 transform/rot = 180.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 hframes = 6
 frame = 5
 

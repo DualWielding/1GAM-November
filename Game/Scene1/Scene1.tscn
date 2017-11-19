@@ -30,7 +30,7 @@ extents = Vector2( 870, 10 )
 [sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
-extents = Vector2( 141.49, 7.01831 )
+extents = Vector2( 158.451, 7.01831 )
 
 [sub_resource type="RectangleShape2D" id=5]
 
@@ -98,7 +98,6 @@ __meta__ = {
 
 [node name="InvisibleWalls" type="StaticBody2D" parent="."]
 
-editor/display_folded = true
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 28.1923, -150, 390 )
