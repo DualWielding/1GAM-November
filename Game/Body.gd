@@ -4,6 +4,7 @@ var sequences = {}
 var state = "default" setget set_state, get_state
 var display_name setget set_name, get_name
 var unique_name = "Base body"
+var is_object = true
 
 signal say(body, text, options)
 signal state_change(old_state, new_state)
@@ -98,6 +99,10 @@ func get_name():
 func fade():
 	get_node("FadePlayer").play("Fade")
 	get_node("FadePlayer").connect("finished", self, "queue_free")
+
+func fade_in():
+	show()
+	get_node("FadePlayer").play_backwards("Fade")
 
 func check_neutralized(old_state, new_state):
 	if new_state == "neutralized":

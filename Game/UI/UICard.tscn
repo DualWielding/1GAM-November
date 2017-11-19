@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://UI/UICard.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Cards/animation_recto_carte_normale.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Cards/animation_verso_carte_normale.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Cards/gold pouch text.png" type="Texture" id=5]
 
 [sub_resource type="Animation" id=1]
 
@@ -104,10 +105,30 @@ tracks/2/keys = {
 "values": [ false, true, true ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Wrapper/VirginCard/Verso/Sprite:frame")
+tracks/3/path = NodePath("Wrapper/VirginCard/Verso/Sprite:visibility/visible")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
+"times": FloatArray( 0.5, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ true, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Wrapper/VirginCard/Verso/Sprite:frame")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": FloatArray( 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 4, 3, 2, 1, 0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Wrapper/VirginCard/Verso/Text:frame")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = {
 "times": FloatArray( 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
 "transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
@@ -163,9 +184,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 200.0
-margin/top = 250.0
+margin/top = 320.0
 margin/right = 400.0
-margin/bottom = 500.0
+margin/bottom = 640.0
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -178,41 +199,14 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 160.0
-margin/top = 210.0
-margin/right = 199.0
-margin/bottom = 250.0
+margin/left = 161.0
+margin/top = 240.0
+margin/right = 200.0
+margin/bottom = 280.0
 
-[node name="Picture" type="TextureFrame" parent="Wrapper/VirginCard/Recto"]
-
-visibility/light_mask = 0
-rect/rotation = 180.0
-focus/ignore_mouse = true
-focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 30.0
-margin/top = 10.0
-margin/right = 210.0
-margin/bottom = 219.0
-stretch_mode = 0
-
-[node name="Name" type="Label" parent="Wrapper/VirginCard/Recto"]
+[node name="Name" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
 visibility/light_mask = 0
-rect/rotation = 180.0
-focus/ignore_mouse = true
-focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 30.0
-margin/top = 30.0
-margin/right = 210.0
-margin/bottom = 59.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 [node name="Sprite" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
@@ -220,6 +214,8 @@ transform/pos = Vector2( -60, -90 )
 transform/scale = Vector2( 1, -1 )
 texture = ExtResource( 3 )
 hframes = 6
+
+[node name="Image" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
 [node name="Verso" type="Container" parent="Wrapper/VirginCard"]
 
@@ -229,35 +225,25 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 160.0
-margin/top = 210.0
+margin/top = 240.0
 margin/right = 200.0
-margin/bottom = 250.0
+margin/bottom = 280.0
 
 [node name="Sprite" type="Sprite" parent="Wrapper/VirginCard/Verso"]
 
 transform/pos = Vector2( -60, -90 )
-transform/scale = Vector2( -1, -1 )
+transform/rot = 180.0
 texture = ExtResource( 4 )
 hframes = 6
 frame = 5
 
-[node name="Text" type="RichTextLabel" parent="Wrapper/VirginCard/Verso"]
+[node name="Text" type="Sprite" parent="Wrapper/VirginCard/Verso"]
 
-visibility/light_mask = 0
-rect/rotation = 180.0
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 30.0
-margin/top = 30.0
-margin/right = 210.0
-margin/bottom = 260.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-bbcode/enabled = false
-bbcode/bbcode = ""
-visible_characters = -1
-percent_visible = 1.0
+transform/pos = Vector2( -60, -90 )
+transform/rot = 180.0
+texture = ExtResource( 5 )
+hframes = 6
+frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 

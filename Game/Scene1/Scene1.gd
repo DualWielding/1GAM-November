@@ -8,8 +8,11 @@ onready var dagger = get_node("Dagger")
 onready var title_screen = get_node("TitleScreen")
 
 func _ready():
+#	bandit.stop_walking()
+#	player.set_disabled_movement(false)
+	player.walk_right()
 	bandit.connect("scene_over", self, "intro_pause", [], CONNECT_ONESHOT)
-	bandit.walk_left()
+	bandit.walk_right()
 
 func intro_pause():
 	Player.ui.show()
@@ -28,4 +31,3 @@ func start_vitoris_scene():
 
 func show_title_screen():
 	title_screen.show()
-	title_screen.ap.connect("finished", bandit, "_flee", [false], CONNECT_ONESHOT)

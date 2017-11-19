@@ -40,6 +40,7 @@ func _ready():
 		body.connect("say", self, "show_dialog")
 		body.connect("stop_dialog", self, "hide_dialog")
 		body.connect("stop_dialog", Player, "check_cards_number")
+		body.connect("stop_dialog", dialog_panel, "reset_current_options")
 	
 	# Assign the shortcut "E" to the interaction action
 	var hotkey = InputEvent()

@@ -26,9 +26,9 @@ func init_from_dic(dic):
 	# such as add_card or remove_card of the UI, which get their parameters from dialogs
 	initial_card = dic
 	
-	name = tr(dic.unique_name)
-	text = dic.text
+	name = dic.name
 	img = dic.img
+	text = dic.text
 	unique_name = dic.unique_name
 	if dic.has("important") and dic.important:
 		important = true
@@ -39,9 +39,9 @@ func init_from_dic(dic):
 	add_to_group("ui_card")
 
 func _ready():
-	get_node("Wrapper/VirginCard/Recto/Name").set_text(name)
-	get_node("Wrapper/VirginCard/Recto/Picture").set_texture(img)
-	get_node("Wrapper/VirginCard/Verso/Text").set_text(text)
+	get_node("Wrapper/VirginCard/Recto/Name").set_texture(name)
+	get_node("Wrapper/VirginCard/Recto/Image").set_texture(img)
+	get_node("Wrapper/VirginCard/Verso/Text").set_texture(text)
 	
 	hide()
 	
@@ -108,6 +108,7 @@ func is_selected():
 ##### ANIMATIONS #####
 
 func animate_add():
+	print("name : ", name, ", unqiue name : ", unique_name)
 	ap.play("animate_add", -1, 0.8)
 
 func animate_discard():

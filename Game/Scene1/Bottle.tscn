@@ -19,7 +19,7 @@ polygon = Vector2Array( -3.14566, 4.82588, 2.88313, 4.95061, 2.92471, -1.36923, 
 
 custom_solver_bias = 0.0
 radius = 10.0
-height = 32.376
+height = 31.4465
 
 [node name="Bottle" instance=ExtResource( 1 )]
 
@@ -38,10 +38,17 @@ shape = SubResource( 1 )
 
 occluder = SubResource( 2 )
 
+[node name="InteractionArea" parent="."]
+
+transform/pos = Vector2( 0.941051, -6.98021 )
+transform/scale = Vector2( 0.97773, 4.45736 )
+
 [node name="CollisionShape2D" parent="InteractionArea"]
 
 transform/scale = Vector2( 1.22211, 1 )
 shape = SubResource( 3 )
 trigger = true
+
+[connection signal="area_enter" from="InteractionArea" to="." method="_on_InteractionArea_area_enter"]
 
 
