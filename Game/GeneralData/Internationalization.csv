@@ -11,20 +11,21 @@ DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes surn
 ,,
 ,,
 ,,
+,,
 GOLD POUCH,Gold pouch,Bourse d'or
 POWDER,Powder,Poudre
 DAGGER,Dagger,Dague
-LOVE LETTER,Love letter,Lettre d'amour
-BOTTLE,Bottle,Bouteille
-GUARD KILLED,Guard killed,Garde tué
-GUARD CORRUPTED,Guard corrupted,Garde corrompu
-CESNI OWN YOU,Cesni own,Cesni vous est redevable
-STROZI IS CESNI LOVER,bla,Strozi est l'amant de Cesni
+LOVE LETTER,Letter,Lettre
+BOTTLE,Wine,Vin
+GUARD KILLED,Death,Mort
+GUARD CORRUPTED,Corruption,Corruption
+CESNI OWN YOU,Debt,Dette
+STROZI IS CESNI LOVER,Adultery,Adultère
 ,,
-PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,bli,La présence de Sire Philippe dépend de son traitement
-EXPLAINATION OF RUFFIO MISSING FINGER,blou,Explication du doigt manquant de Ruffio
-ALMA PET KIDNAPPED,bleaurgh,L'animal d'Alma a été enlevé.
-ALMA IS WAITING INSIDE,zblouaaarfglglg,Alma attend à l'intérieur avec une arme
+PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,Medicine,Remède
+EXPLAINATION OF RUFFIO MISSING FINGER,Mutilation,Mutilation
+ALMA PET KIDNAPPED,Abduction,Rapt
+ALMA IS WAITING INSIDE,Accessary,Complice
 HEAD COMPLOTIST DESCRIPTION,,A
 NEED A DRINK,,A
 WAITER STRANGE REACTION,,A
@@ -33,7 +34,7 @@ PHILIPPE SUFFERS FROM GOUTTE,,A
 A SURPRISE IS PLANNED,,A
 DIVERSION,,A
 ALMA IS READY TO STRIKE,,
-,,
+SIR PHILIPPE SUFFERS FROM GOUTTE,,
 ,,
 ,,
 ,,
@@ -44,7 +45,7 @@ BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se 
 BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes. [i]%n verse une poudre dans la bouteille et s'en saisit[/i][/color]
 BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
-DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de là où %n s'est réveillé."
+DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de l'endroit où vous vous êtes éveillé."
 DAGGER DEFAULT A1,,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
 DAGGER DEFAULT A2,,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
 ,,
