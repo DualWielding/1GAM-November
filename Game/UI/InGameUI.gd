@@ -50,7 +50,7 @@ func _ready():
 	# # Set the translations
 	interaction_button.set_tooltip(tr("INTERACTION BUTTON TOOLTIP"))
 	interaction_button.set_text(tr("INTERACTION BUTTON"))
-	discard_button.set_text(tr("DISCARD BUTTON"))
+#	discard_button.set_text(tr("DISCARD BUTTON"))
 	
 	
 	set_process_input(true)
@@ -187,7 +187,13 @@ func remove_from_discard_stash(card):
 	cards_to_discard_number += 1
 
 func show_discard_screen(number):
-	discard_label.set_text(tr("DISCARD TEXT").replace("%number", str(number)))
+
+	var text = tr("DISCARD TEXT").replace("%number", str(number))
+	if number == 1:
+		text = text.replace("cartes", "carte")
+		text = text.replace("surnuméraires", "surnuméraire")
+	
+	discard_label.set_text(text)
 	cards_to_discard_number = number
 	bring_cards_up()
 	hand.get_node("AnimationPlayer").connect("finished", discard_panel, "show", [], CONNECT_ONESHOT)

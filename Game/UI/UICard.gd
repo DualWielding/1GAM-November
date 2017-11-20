@@ -5,7 +5,7 @@ var initial_card
 var name = "Test"
 var unique_name = "Test"
 var text = "Test"
-var img = preload("res://Sprites/Floor.png")
+var img
 var important = false
 
 var _hovered = false
