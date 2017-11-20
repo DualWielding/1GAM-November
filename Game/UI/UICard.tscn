@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://UI/UICard.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Cards/animation_recto_carte_normale.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Cards/cesni owns you name.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Cards/animation_verso_carte_normale.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Cards/gold pouch text.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Cards/animation_recto_carte_speciale.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Cards/strozi is cesni lover img.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Cards/cesni owns you name.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Cards/animation_verso_carte_normale.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Cards/gold pouch text.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
 
@@ -153,7 +154,7 @@ tracks/7/keys = {
 "times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
 "transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 1, 2, 3, 4, 5 ]
+"values": [ 5, 4, 3, 2, 1, 0 ]
 }
 
 [node name="UICard" type="Control"]
@@ -234,16 +235,18 @@ hframes = 6
 
 [node name="Image" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
-transform/pos = Vector2( -61, -110 )
+transform/pos = Vector2( -61, -80 )
+texture = ExtResource( 4 )
 flip_h = true
 flip_v = true
 hframes = 6
+frame = 5
 
 [node name="Name" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
 visibility/light_mask = 0
 transform/pos = Vector2( -61, -90 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 flip_h = true
 flip_v = true
 hframes = 6
@@ -265,7 +268,7 @@ margin/bottom = 280.0
 
 transform/pos = Vector2( -60, -90 )
 transform/rot = 180.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 hframes = 6
 frame = 5
 
@@ -273,7 +276,7 @@ frame = 5
 
 transform/pos = Vector2( -60, -90 )
 transform/rot = 180.0
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 hframes = 6
 frame = 5
 
