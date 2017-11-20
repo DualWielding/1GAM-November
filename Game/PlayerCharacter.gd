@@ -9,7 +9,7 @@ signal disabled
 signal enabled
 
 # Player is disabled at the start of the adventure
-var disabled_movement = true setget set_disabled_movement, is_disabled
+var disabled_movement = false setget set_disabled_movement, is_disabled
 
 func _ready():
 	set_process_input(true)
