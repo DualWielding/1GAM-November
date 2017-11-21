@@ -13,35 +13,35 @@ polygon = Vector2Array( -1, -18, 2, -18, 2, -16, 1, 33, 4, 35, 4, 38, 2, 41, -2,
 
 [node name="Floor" type="Sprite" parent="."]
 
-transform/pos = Vector2( 510, 40 )
+transform/pos = Vector2( 386, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 992, 800, 32, 32 )
 
 [node name="FloorShade" type="Sprite" parent="."]
 
-transform/pos = Vector2( 510, 80 )
+transform/pos = Vector2( 386, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 896, 768, 32, 32 )
 
 [node name="Floor 2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 550, 40 )
+transform/pos = Vector2( 426, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 832, 736, 32, 32 )
 
 [node name="BrickWall - Top - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 250, 320 )
+transform/pos = Vector2( 726, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 608, 832, 32, 32 )
 
 [node name="BrickWall - Top - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 290, 320 )
+transform/pos = Vector2( 766, 26 )
 texture = ExtResource( 1 )
 flip_h = true
 region = true
@@ -49,21 +49,21 @@ region_rect = Rect2( 640, 832, 32, 32 )
 
 [node name="BrickWall - Top - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 330, 320 )
+transform/pos = Vector2( 806, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 702, 832, 32, 32 )
 
 [node name="BrickWall - Mid - Left" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 250, 360 )
+transform/pos = Vector2( 726, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 608, 864, 32, 32 )
 
 [node name="BrickWall - Mid - Mid" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 290, 360 )
+transform/pos = Vector2( 766, 66 )
 texture = ExtResource( 1 )
 flip_h = true
 region = true
@@ -71,77 +71,77 @@ region_rect = Rect2( 672, 832, 32, 32 )
 
 [node name="BrickWall - Mid - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 330, 360 )
+transform/pos = Vector2( 806, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 704, 864, 32, 32 )
 
 [node name="BrickWall - Bot - Left" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 250, 400 )
+transform/pos = Vector2( 726, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 608, 896, 32, 32 )
 
 [node name="BrickWall - Bot - Mid" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 290, 400 )
+transform/pos = Vector2( 766, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 736, 896, 32, 32 )
 
 [node name="BrickWall - Bot - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 330, 400 )
+transform/pos = Vector2( 806, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 704, 896, 32, 32 )
 
 [node name="SoftWall - Mid - Left" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 250, 440 )
+transform/pos = Vector2( 726, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 608, 926, 32, 32 )
 
 [node name="SoftWall - Mid - Mid" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 290, 440 )
+transform/pos = Vector2( 766, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 704, 768, 32, 32 )
 
 [node name="SoftWall - Mid - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 330, 440 )
+transform/pos = Vector2( 806, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 704, 926, 32, 32 )
 
 [node name="SoftWall - Bot - Left" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 250, 480 )
+transform/pos = Vector2( 726, 186 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 640, 800, 32, 32 )
 
 [node name="SoftWall - Bot - Mid" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 290, 480 )
+transform/pos = Vector2( 766, 186 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 672, 800, 32, 32 )
 
 [node name="SoftWall - Bot - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 330, 480 )
+transform/pos = Vector2( 806, 186 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 704, 800, 32, 32 )
 
 [node name="Stairs - Top - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 500, 440 )
+transform/pos = Vector2( 506, 26 )
 texture = ExtResource( 1 )
 flip_h = true
 region = true
@@ -149,218 +149,217 @@ region_rect = Rect2( 448, 320, 32, 32 )
 
 [node name="Stairs - Top - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 460, 440 )
+transform/pos = Vector2( 466, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 417, 320, 32, 32 )
 
 [node name="Stairs - Top - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 540, 440 )
+transform/pos = Vector2( 546, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 479, 320, 32, 32 )
 
 [node name="Door - Top - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 170, 150 )
+transform/pos = Vector2( 26, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 832, 800, 32, 32 )
 
 [node name="Door - Top - MidLeft1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 210, 150 )
+transform/pos = Vector2( 66, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 864, 864, 32, 32 )
 
 [node name="Door - Top - MidLeft2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 250, 150 )
+transform/pos = Vector2( 106, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 896, 864, 32, 32 )
 
 [node name="Door - Top - MidRight2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 290, 150 )
+transform/pos = Vector2( 146, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 864, 928, 32, 32 )
 
 [node name="Door - Top - MidRight1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 330, 150 )
+transform/pos = Vector2( 186, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 896, 928, 32, 32 )
 
 [node name="Door - Top - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 370, 150 )
+transform/pos = Vector2( 226, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 928, 800, 32, 32 )
 
 [node name="Door - TopMid - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 170, 190 )
+transform/pos = Vector2( 26, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 832, 832, 32, 32 )
 
 [node name="Door - TopMid - MidLeft1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 210, 190 )
+transform/pos = Vector2( 66, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 864, 896, 32, 32 )
 
 [node name="Door - TopMid - MidRight1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 330, 190 )
+transform/pos = Vector2( 186, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 896, 960, 32, 32 )
 
 [node name="Door - TopMid - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 370, 190 )
+transform/pos = Vector2( 226, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 928, 832, 32, 32 )
 
 [node name="Door - Mid  - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 250, 190 )
+transform/pos = Vector2( 106, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 896, 992, 32, 32 )
 
 [node name="Door - BotMid - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 170, 230 )
+transform/pos = Vector2( 26, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 832, 864, 32, 32 )
 
 [node name="Door - BotMid - MidLeft1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 210, 230 )
+transform/pos = Vector2( 66, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 864, 992, 32, 32 )
 
 [node name="Door - BotMid - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 370, 230 )
+transform/pos = Vector2( 226, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 928, 864, 32, 32 )
 
 [node name="Door - Bot - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 170, 270 )
+transform/pos = Vector2( 26, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 832, 896, 32, 32 )
 
 [node name="Door - Bot - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 370, 270 )
+transform/pos = Vector2( 226, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 928, 896, 32, 32 )
 
 [node name="Window - Top - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 406, 196 )
+transform/pos = Vector2( 266, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 736, 768, 32, 32 )
 
 [node name="Window - Top - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 446, 196 )
+transform/pos = Vector2( 306, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 768, 768, 32, 32 )
 
 [node name="Window - Top - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 486, 196 )
+transform/pos = Vector2( 346, 26 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 800, 768, 32, 32 )
 
 [node name="Window - Mid - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 406, 236 )
+transform/pos = Vector2( 266, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 736, 800, 32, 32 )
 
 [node name="Window - Mid - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 446, 236 )
+transform/pos = Vector2( 306, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 768, 800, 32, 32 )
 
 [node name="Window - Mid - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 486, 236 )
+transform/pos = Vector2( 346, 66 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 800, 800, 32, 32 )
 
 [node name="Window - Bot - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 406, 276 )
+transform/pos = Vector2( 266, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 736, 832, 32, 32 )
 
 [node name="Window - Bot - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 446, 276 )
+transform/pos = Vector2( 306, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 768, 832, 32, 32 )
 
 [node name="Window - Bot - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 486, 276 )
+transform/pos = Vector2( 346, 106 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 800, 832, 32, 32 )
 
 [node name="Window - Botbot - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 406, 316 )
+transform/pos = Vector2( 266, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 736, 864, 32, 32 )
 
 [node name="Window - Botbot - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 446, 316 )
+transform/pos = Vector2( 306, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 768, 864, 32, 32 )
 
 [node name="Window - Botbot - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 486, 316 )
+transform/pos = Vector2( 346, 146 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 800, 864, 32, 32 )
 
 [node name="Light - 1" type="Sprite" parent="."]
 
-editor/display_folded = true
-transform/pos = Vector2( 570, 280 )
+transform/pos = Vector2( 582, 118 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 960, 704, 64, 96 )
@@ -372,63 +371,63 @@ light_mask = 1
 
 [node name="Drapery1 - Top" type="Sprite" parent="."]
 
-transform/pos = Vector2( 630, 280 )
+transform/pos = Vector2( 636, 86 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 608, 640, 32, 32 )
 
 [node name="Drapery1 - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 630, 320 )
+transform/pos = Vector2( 636, 126 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 608, 672, 32, 32 )
 
 [node name="Drapery1 - Bot" type="Sprite" parent="."]
 
-transform/pos = Vector2( 630, 360 )
+transform/pos = Vector2( 636, 166 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 608, 704, 32, 32 )
 
 [node name="Drapery2 - Top" type="Sprite" parent="."]
 
-transform/pos = Vector2( 676, 276 )
+transform/pos = Vector2( 676, 86 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 640, 640, 32, 32 )
 
 [node name="Drapery2 - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 676, 316 )
+transform/pos = Vector2( 676, 126 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 640, 672, 32, 32 )
 
 [node name="Drapery2 - Bot" type="Sprite" parent="."]
 
-transform/pos = Vector2( 676, 356 )
+transform/pos = Vector2( 676, 166 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 640, 704, 32, 32 )
 
 [node name="Fence - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 630, 220 )
+transform/pos = Vector2( 386, 126 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 576, 512, 32, 64 )
 
 [node name="Fence - End" type="Sprite" parent="."]
 
-transform/pos = Vector2( 660, 220 )
+transform/pos = Vector2( 430, 128 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 640, 512, 32, 64 )
 
 [node name="Fence - Portal" type="Sprite" parent="."]
 
-transform/pos = Vector2( 710, 200 )
+transform/pos = Vector2( 500, 108 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 672, 512, 96, 96 )

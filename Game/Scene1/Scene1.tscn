@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=1]
+[gd_scene load_steps=18 format=1]
 
 [ext_resource path="res://Scene1/Scene1.gd" type="Script" id=1]
 [ext_resource path="res://Scene1/TileSet1t.tres" type="TileSet" id=2]
@@ -36,6 +36,11 @@ extents = Vector2( 158.451, 7.01831 )
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.36768, 7.01831 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 4.47278, 10.0345 )
 
 [node name="Scene1" type="Node2D"]
 
@@ -84,10 +89,27 @@ margin/right = 1206.0
 margin/bottom = 694.0
 color = Color( 0.192157, 0.129412, 0.141176, 0.54098 )
 
+[node name="LightTileMap" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell/size = Vector2( 32, 32 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 589838, 49, 589844, 49 )
+
 [node name="InvisibleWalls" type="StaticBody2D" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 28.1923, -150, 390 )
@@ -116,6 +138,12 @@ shapes/7/trigger = false
 shapes/8/shape = SubResource( 5 )
 shapes/8/transform = Matrix32( 0.283642, 0, 0, 5.03432, 446.237, 492.509 )
 shapes/8/trigger = false
+shapes/9/shape = SubResource( 6 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 479.85, 367.277 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 6 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 671.603, 367.133 )
+shapes/10/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -194,6 +222,20 @@ shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 8
 
+[node name="CollisionShape2D 3" type="CollisionShape2D" parent="InvisibleWalls"]
+
+transform/pos = Vector2( 479.85, 367.277 )
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 9
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="InvisibleWalls"]
+
+transform/pos = Vector2( 671.603, 367.133 )
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 10
+
 [node name="Door" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 573.242, 301.491 )
@@ -214,7 +256,6 @@ transform/pos = Vector2( -13.4517, 558.42 )
 
 [node name="Bandit" parent="." instance=ExtResource( 9 )]
 
-visibility/visible = false
 transform/pos = Vector2( -90.8303, 555.955 )
 
 [node name="TileMap 2" type="TileMap" parent="."]
@@ -233,7 +274,7 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 327693, 53, 327702, 50, 393229, 54, 393238, 51, 458765, 54, 458774, 51, 524301, 55, 524310, 52, 589838, 49, 589844, 49, 851963, 56, 851964, 56, 851965, 56, 851966, 56, 851967, 56, 786432, 56, 786433, 56, 786434, 56, 786435, 56, 786436, 56, 786437, 56, 786438, 56, 786439, 56, 786440, 56, 786441, 56, 786442, 56, 786443, 56, 786444, 56, 786445, 56, 786446, 90, 786453, 56, 786454, 56, 786455, 56, 786456, 56, 786457, 56, 786458, 56, 786459, 56, 786460, 56, 786461, 56, 786462, 56, 786463, 56, 786464, 56, 786465, 56, 786466, 56, 786467, 56, 786468, 56, 851982, 57, 851984, 58, 851989, 57, 917518, 56, 917519, 56, 917523, 56, 917524, 56, 917525, 57 )
+tile_data = IntArray( 327693, 53, 327702, 50, 393229, 54, 393238, 51, 458765, 54, 458774, 51, 524301, 55, 524310, 52, 851963, 56, 851964, 56, 851965, 56, 851966, 56, 851967, 56, 786432, 56, 786433, 56, 786434, 56, 786435, 56, 786436, 56, 786437, 56, 786438, 56, 786439, 56, 786440, 56, 786441, 56, 786442, 56, 786443, 56, 786444, 56, 786445, 56, 786446, 57, 786453, 56, 786454, 56, 786455, 56, 786456, 56, 786457, 56, 786458, 56, 786459, 56, 786460, 56, 786461, 56, 786462, 56, 786463, 56, 786464, 56, 786465, 56, 786466, 56, 786467, 56, 786468, 56, 851982, 57, 851984, 58, 851989, 57, 917518, 56, 917519, 56, 917523, 56, 917524, 56, 917525, 57 )
 __meta__ = {
 "_edit_lock_": true
 }
