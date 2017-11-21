@@ -1,24 +1,28 @@
 id,en,fr
 $i,,
 ,,
-STARTING PLAYER NAME,Unknown,Un inconnu
+STARTING PLAYER NAME,Unknown,Vous
 INPUT PLACEHOLDER,My name is...,Je m'appelle...
 SUBMIT BUTTON,This is my name !,"Oui, c'est mon nom !"
 INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
 DISCARD BUTTON,Discard,Défausser
 INTERACTION BUTTON,Interact,Interagir
 INTERACTION BUTTON TOOLTIP,Press E to interact,Appuyez sur E pour interagir
-DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes surnuméraires.
+DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes en trop.
 TUTORIAL CHECK BOX,Hide tutorial,Cacher le tutorial
 TUTORIAL BOOK,TODO,"Voici la pièce de théâtre. Les tirades des Personnages Non-Joueurs (PNJ), ainsi que vos réponses s'afficheront ici."
 TUTORIAL CARDS,TODO,Les cartes représentent vos atouts dans cette histoire. Vous allez en gagner et en utiliser. Vous pouvez faire un clique gauche dessus pour les observer plus attentivement. Puis un clique droit pour les étudier en détails.
 TUTORIAL INTERACTION,TODO,"Lorsque vous approchez d'un PNJ ou d'un objet avec lequel vous pouvez interagir, cette icone deviendra visible. Vous pouvez cliquer dessus ou appuyer sur la lettre E pour entamer l'interaction."
 ,,
-SCENE 1 INTRO,TODO,"[center]SCENE PREMIERE[/center]
+SCENE 1 INTRO,TODO,"[center]SCÈNE PREMIÈRE[/center]
 [center][i]Une rue pavée. — Clair de lune ; un palais dans le fond.[/i][/center]
 
 [center][i]Entrent [/i]%N[i] ; [/i]UN BANDIT,[i] un bâton à la main ; [/i]UN GARDE,[i] armé.[/i][/center]"
-SCENE 1 ENTERS VITORI,TODO,[i][right]Entre Vitori[/right][i]
+SCENE 1 ENTERS VITORI,TODO,[i][right]Entre Vitori  [/right][i]
+SCENE 2 INTRO,,"[center]SCÈNE II[/center]
+[center][i]Une terasse de palais. — Pleine nuit ; la ville en contrebas.[/i][/center]
+
+[center][i]Entrent [/i]%N[i] et [/i]RUFFIO[i].[/i][/center]"
 ,,
 ,,
 GOLD POUCH,Gold pouch,Bourse d'or
@@ -103,16 +107,16 @@ VITORI D5 A2,,Mais...
 VITORI D6,,"Votre intuition était la bonne : Strozi est bien l'amant de Dame Cesni, et je suis parvenu à le faire inviter ce soir. Vous pourriez utiliser cela pour la contraindre à enfin vous rendre la faveur qu'elle vous doit !"
 VITORI D6 A1,,Comment cela...
 ,,
-VITORI D7,,"...Grâce à notre agent, Sire Philippe sera comme prévu indisposé ce soir. Subtilisez son traitement et nous serons débarrassés de sa vigilance paranoïaque."
+VITORI D7,,"...Notre agent n'a réussi à empoisonner Sire Philippe que partiellement. Il sera donc des nôtres ce soir. Mais sa présence dépend de son traitement. Subtilisez-le, et nous serons débarassés de sa vigilance paranoïaque."
 VITORI D7 A1,,"Attendez, j'ignore..."
 ,,
-VITORI D8,,"Laissez moi finir : voici le collier de l'animal de la Comptesse d'Alma. Il a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure de la contraindre au silence."
+VITORI D8,,"Laissez moi finir : Ruffio est parvenu à enlever l'animal de compagnie de la Comtesse Alma. Cela a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure d'utiliser ce levier."
 VITORI D8 A1,,Argh... Ma tête...
 ,,
 VITORI D9,,"[i]regardant sa montre.[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
-VITORI D9 A1,,Mon crâne... La douleur est insupportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez vous répéter plus lentement ?
+VITORI D9 A1,,Mon crâne... La douleur est à peine supportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez-vous prendre le temps de préciser tout cela ?
 ,,
-VITORI D10,,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, vraiment. Mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] A tout à l'heure, mon ami.[i]Il sort[/i]"
+VITORI D10,,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] A tout à l'heure, mon ami.[i]Il sort[/i]"
 VITORI D10 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
 ,,
 VITORI SCENE2DEFAULT,,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?"
