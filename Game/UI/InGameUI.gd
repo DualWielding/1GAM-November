@@ -10,6 +10,7 @@ onready var submit_button = input_wrapper.get_node("Submit")
 onready var discard_panel = get_node("DiscardPanel")
 onready var discard_button = discard_panel.get_node("DiscardButton")
 onready var discard_label = discard_panel.get_node("DiscardLabel")
+onready var tutorial = get_node("Tutorial")
 
 var ui_card_class = preload("res://UI/UICard.tscn")
 var ui_important_card_class = preload("res://UI/UIImportantCard.tscn")
@@ -17,10 +18,12 @@ var ui_important_card_class = preload("res://UI/UIImportantCard.tscn")
 var cards_to_discard_number = 0
 var cards_to_discard = []
 
+var is_visible = true
+var interaction_button_showed = false
+
 func _ready():
 	Input.set_custom_mouse_cursor(load("res://Sprites/Cursor.png"))
 	Player.ui = self
-	hide()
 	
 	# Connect to player
 	Player.character.connect("can_interact", self, "show_interaction_button")
@@ -52,6 +55,8 @@ func _ready():
 	interaction_button.set_text(tr("INTERACTION BUTTON"))
 #	discard_button.set_text(tr("DISCARD BUTTON"))
 	
+	# Start the first scene when loaded !
+	get_parent().get_node("Scene1").start()
 	
 	set_process_input(true)
 
@@ -81,8 +86,13 @@ func clear_answers():
 ###### INTERACTIONS ######
 
 func show_interaction_button():
-	if !Player.character.is_disabled():
+	if !Player.character.is_disabled() and is_visible:
 		interaction_button.set_disabled(false)
+		if !interaction_button_showed:
+			Player.character.set_disabled_movement(true)
+			Player.ui.tutorial.connect("got_it", Player.character, "set_disabled_movement", [false], CONNECT_ONESHOT)
+			Player.ui.tutorial.show_window("Interaction")
+			interaction_button_showed = true
 
 func hide_interaction_button():
 	interaction_button.set_disabled(true)
@@ -220,12 +230,14 @@ func hide():
 	hand.hide()
 	important_hand.hide()
 	dialog_panel.hide()
+	is_visible = false
 
 func show():
 	interaction_button.show()
 	hand.show()
 	important_hand.show()
 	dialog_panel.show()
+	is_visible = true
 # Test for discarding
 #func _on_Button_toggled( pressed ):
 #	if pressed:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=1]
+[gd_scene load_steps=18 format=1]
 
 [ext_resource path="res://UI/InGameUI.gd" type="Script" id=1]
 [ext_resource path="res://UI/Style/Theme-UI.tres" type="Theme" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Sprites/UI/card-discard.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/UI/card-discard-hovered.png" type="Texture" id=8]
 [ext_resource path="res://Fonts/palatino-bold-italic.fnt" type="BitmapFont" id=9]
+[ext_resource path="res://Tutorial.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 
@@ -73,7 +74,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxTexture" id=9]
+[sub_resource type="StyleBoxTexture" id=3]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -90,7 +91,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxTexture" id=10]
+[sub_resource type="StyleBoxTexture" id=4]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -107,7 +108,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxTexture" id=12]
+[sub_resource type="StyleBoxTexture" id=5]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -124,14 +125,14 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxEmpty" id=11]
+[sub_resource type="StyleBoxEmpty" id=6]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
 
-[sub_resource type="StyleBoxTexture" id=8]
+[sub_resource type="StyleBoxTexture" id=7]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -313,19 +314,60 @@ margin/left = 578.0
 margin/top = 20.0
 margin/right = 1090.0
 margin/bottom = 532.0
-custom_styles/hover = SubResource( 9 )
-custom_styles/pressed = SubResource( 10 )
-custom_styles/focus = SubResource( 12 )
-custom_styles/disabled = SubResource( 11 )
-custom_styles/normal = SubResource( 8 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
 custom_fonts/font = ExtResource( 9 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 flat = false
 
+[node name="Tutorial" parent="." instance=ExtResource( 10 )]
+
+editor/display_folded = true
+visibility/visible = false
+
+[node name="Book" parent="Tutorial"]
+
+visibility/visible = true
+margin/left = 344.0
+margin/top = 68.0
+margin/right = 844.0
+margin/bottom = 268.0
+
+[node name="Cards" parent="Tutorial"]
+
+visibility/visible = true
+margin/left = 385.0
+margin/top = 466.0
+margin/right = 885.0
+margin/bottom = 666.0
+
+[node name="Arrow" parent="Tutorial/Cards"]
+
+margin/top = 131.0
+margin/bottom = 281.0
+
+[node name="Interaction" parent="Tutorial"]
+
+visibility/visible = true
+margin/left = 472.0
+margin/right = 972.0
+
+[node name="Arrow" parent="Tutorial/Interaction"]
+
+rect/rotation = 90.0
+margin/left = 501.0
+margin/top = 91.0
+margin/right = 651.0
+margin/bottom = 241.0
+
 [connection signal="pressed" from="InteractionButton" to="." method="_on_InteractionButton_pressed"]
 
 [connection signal="pressed" from="DiscardPanel/DiscardButton" to="." method="_on_DiscardButton_pressed"]
 
 
+[editable path="Tutorial"]

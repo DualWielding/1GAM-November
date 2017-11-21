@@ -256,6 +256,7 @@ transform/pos = Vector2( -13.4517, 558.42 )
 
 [node name="Bandit" parent="." instance=ExtResource( 9 )]
 
+visibility/visible = false
 transform/pos = Vector2( -90.8303, 555.955 )
 
 [node name="TileMap 2" type="TileMap" parent="."]

@@ -90,6 +90,7 @@ func _write():
 
 func set_text_up(text, method):
 	full_text = text.replace("%n", Player.get_name())
+	full_text = text.replace("%N", Player.get_name().to_upper())
 	set_bbcode(full_text)
 #	clean_text = get_raw_text()
 	self.method = method

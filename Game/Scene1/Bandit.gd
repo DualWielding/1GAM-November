@@ -5,7 +5,7 @@ var _t = Timer.new()
 signal scene_over
 
 func _ready():
-	fade_in()
+	pass
 
 func init():
 	add_child(_t)

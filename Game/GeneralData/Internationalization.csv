@@ -1,6 +1,7 @@
 id,en,fr
 $i,,
 ,,
+STARTING PLAYER NAME,Unknown,Un inconnu
 INPUT PLACEHOLDER,My name is...,Je m'appelle...
 SUBMIT BUTTON,This is my name !,"Oui, c'est mon nom !"
 INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
@@ -8,8 +9,16 @@ DISCARD BUTTON,Discard,Défausser
 INTERACTION BUTTON,Interact,Interagir
 INTERACTION BUTTON TOOLTIP,Press E to interact,Appuyez sur E pour interagir
 DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes surnuméraires.
+TUTORIAL CHECK BOX,Hide tutorial,Cacher le tutorial
+TUTORIAL BOOK,TODO,"Voici la pièce de théâtre. Les tirades des Personnages Non-Joueurs (PNJ), ainsi que vos réponses s'afficheront ici."
+TUTORIAL CARDS,TODO,Les cartes représentent vos atouts dans cette histoire. Vous allez en gagner et en utiliser. Vous pouvez faire un clique gauche dessus pour les observer plus attentivement. Puis un clique droit pour les étudier en détails.
+TUTORIAL INTERACTION,TODO,"Lorsque vous approchez d'un PNJ ou d'un objet avec lequel vous pouvez interagir, cette icone deviendra visible. Vous pouvez cliquer dessus ou appuyer sur la lettre E pour entamer l'interaction."
 ,,
-,,
+SCENE 1 INTRO,TODO,"[center]SCENE PREMIERE[/center]
+[center][i]Une rue pavée. — Clair de lune ; un palais dans le fond.[/i][/center]
+
+[center][i]Entrent [/i]%N[i] ; [/i]UN BANDIT,[i] un bâton à la main ; [/i]UN GARDE,[i] armé.[/i][/center]"
+SCENE 1 ENTERS VITORI,TODO,[i][right]Entre Vitori[/right][i]
 ,,
 ,,
 GOLD POUCH,Gold pouch,Bourse d'or
@@ -42,7 +51,7 @@ SIR PHILIPPE SUFFERS FROM GOUTTE,,
 ,,
 BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
 BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
-BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes. [i]%n verse une poudre dans la bouteille et s'en saisit[/i][/color]
+BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes.[/color][i]%n verse une poudre dans la bouteille et s'en saisit[/i]
 BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
 DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de l'endroit où vous vous êtes éveillé."
