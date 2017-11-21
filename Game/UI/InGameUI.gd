@@ -56,7 +56,7 @@ func _ready():
 #	discard_button.set_text(tr("DISCARD BUTTON"))
 	
 	# Start the first scene when loaded !
-	get_parent().get_node("Scene1").start()
+	get_parent().start()
 	
 	set_process_input(true)
 
