@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://Scene2/Scene2.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/City-background.jpg" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Scene2/Claudio.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scene2/Augurie.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scene2/Alma.tscn" type="PackedScene" id=12]
+[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -144,34 +145,44 @@ transform/pos = Vector2( 440, 410 )
 
 [node name="Waiter" parent="." instance=ExtResource( 5 )]
 
+visibility/visible = false
 transform/pos = Vector2( 198.969, 566.759 )
 
 [node name="Vitori-2" parent="." instance=ExtResource( 6 )]
 
+visibility/visible = false
 transform/pos = Vector2( 694.882, 524.553 )
 
 [node name="Sire Philippe" parent="." instance=ExtResource( 7 )]
 
+visibility/visible = false
 transform/pos = Vector2( 557.715, 349.702 )
 
 [node name="Ruffio" parent="." instance=ExtResource( 8 )]
 
+visibility/visible = false
 transform/pos = Vector2( 211.027, 361.761 )
 
 [node name="Giulia" parent="." instance=ExtResource( 9 )]
 
+visibility/visible = false
 transform/pos = Vector2( 116.065, 428.084 )
 
 [node name="Claudio" parent="." instance=ExtResource( 10 )]
 
+visibility/visible = false
 transform/pos = Vector2( 792.859, 408.488 )
 
 [node name="Augurie" parent="." instance=ExtResource( 11 )]
 
+visibility/visible = false
 transform/pos = Vector2( 592.384, 556.207 )
 
 [node name="Alma" parent="." instance=ExtResource( 12 )]
 
+visibility/visible = false
 transform/pos = Vector2( 414.518, 548.671 )
+
+[node name="InGameUI" parent="." instance=ExtResource( 13 )]
 
 

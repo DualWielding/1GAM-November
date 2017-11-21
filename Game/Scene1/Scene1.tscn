@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=1]
+[gd_scene load_steps=19 format=1]
 
 [ext_resource path="res://Scene1/Scene1.gd" type="Script" id=1]
 [ext_resource path="res://Scene1/TileSet1t.tres" type="TileSet" id=2]
@@ -10,7 +10,8 @@
 [ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scene1/Bandit.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=10]
-[ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=11]
+[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -261,6 +262,7 @@ transform/pos = Vector2( -90.8303, 555.955 )
 
 [node name="TileMap 2" type="TileMap" parent="."]
 
+editor/display_folded = true
 mode = 0
 tile_set = ExtResource( 2 )
 cell/size = Vector2( 32, 32 )
@@ -326,6 +328,8 @@ shadow/buffer_size = 2048
 shadow/esm_multiplier = 80.0
 shadow/item_mask = 1
 
-[node name="TitleScreen" parent="." instance=ExtResource( 11 )]
+[node name="InGameUI" parent="." instance=ExtResource( 11 )]
+
+[node name="TitleScreen" parent="." instance=ExtResource( 12 )]
 
 
