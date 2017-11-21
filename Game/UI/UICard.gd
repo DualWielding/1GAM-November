@@ -120,7 +120,11 @@ func bring_up():
 
 func lower():
 	if !selectable:
-		ap.play_backwards("bring_up")
+		if !_recto:
+			ap.play_backwards("turn and go up")
+			_recto = true
+		else:
+			ap.play_backwards("bring_up")
 		_up = false
 
 func set_up(boolean):

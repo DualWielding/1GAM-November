@@ -53,7 +53,7 @@ func _ready():
 	# # Set the translations
 	interaction_button.set_tooltip(tr("INTERACTION BUTTON TOOLTIP"))
 	interaction_button.set_text(tr("INTERACTION BUTTON"))
-#	discard_button.set_text(tr("DISCARD BUTTON"))
+	discard_button.set_text(tr("DISCARD BUTTON"))
 	
 	# Start the first scene when loaded !
 	get_parent().start()

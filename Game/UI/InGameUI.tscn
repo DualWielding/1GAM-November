@@ -6,8 +6,8 @@
 [ext_resource path="res://UI/DialogPanel.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sprites/UI/Discard-panel.png" type="Texture" id=5]
 [ext_resource path="res://Fonts/palatino-regular.fnt" type="BitmapFont" id=6]
-[ext_resource path="res://Sprites/UI/card-discard.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/UI/card-discard-hovered.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/UI/card-discard-hovered.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/card-discard.png" type="Texture" id=8]
 [ext_resource path="res://Fonts/palatino-bold-italic.fnt" type="BitmapFont" id=9]
 [ext_resource path="res://Tutorial.tscn" type="PackedScene" id=10]
 
@@ -114,7 +114,6 @@ content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
-texture = ExtResource( 7 )
 margin/left = 0.0
 margin/right = 0.0
 margin/top = 0.0
@@ -125,12 +124,21 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxEmpty" id=6]
+[sub_resource type="StyleBoxTexture" id=6]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
 
 [sub_resource type="StyleBoxTexture" id=7]
 
@@ -296,7 +304,7 @@ margin/top = 26.0
 margin/right = 443.0
 margin/bottom = 45.0
 custom_fonts/font = ExtResource( 6 )
-custom_colors/font_color = Color( 0.701961, 0.701961, 0.701961, 1 )
+custom_colors/font_color = Color( 0.8, 0.8, 0.8, 1 )
 text = "DISCARD LABEL"
 align = 1
 percent_visible = 1.0
@@ -305,15 +313,14 @@ max_lines_visible = -1
 
 [node name="DiscardButton" type="Button" parent="DiscardPanel"]
 
-rect/scale = Vector2( 0.09, 0.09 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 578.0
-margin/top = 20.0
-margin/right = 1090.0
-margin/bottom = 532.0
+margin/left = 527.0
+margin/top = 25.0
+margin/right = 630.0
+margin/bottom = 63.0
 custom_styles/hover = SubResource( 3 )
 custom_styles/pressed = SubResource( 4 )
 custom_styles/focus = SubResource( 5 )
@@ -323,6 +330,7 @@ custom_fonts/font = ExtResource( 9 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
+text = "Discard"
 flat = false
 
 [node name="Tutorial" parent="." instance=ExtResource( 10 )]
@@ -332,7 +340,6 @@ visibility/visible = false
 
 [node name="Book" parent="Tutorial"]
 
-visibility/visible = true
 margin/left = 344.0
 margin/top = 68.0
 margin/right = 844.0
@@ -340,7 +347,6 @@ margin/bottom = 268.0
 
 [node name="Cards" parent="Tutorial"]
 
-visibility/visible = true
 margin/left = 385.0
 margin/top = 466.0
 margin/right = 885.0

@@ -239,8 +239,8 @@ _update_shape_index = 10
 
 [node name="Door" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 573.242, 301.491 )
-transform/scale = Vector2( 3.5857, 5.21846 )
+transform/pos = Vector2( 576.892, 301.491 )
+transform/scale = Vector2( 5.13346, 5.21846 )
 
 [node name="Vitori" parent="." instance=ExtResource( 6 )]
 
@@ -262,7 +262,6 @@ transform/pos = Vector2( -90.8303, 555.955 )
 
 [node name="TileMap 2" type="TileMap" parent="."]
 
-editor/display_folded = true
 mode = 0
 tile_set = ExtResource( 2 )
 cell/size = Vector2( 32, 32 )

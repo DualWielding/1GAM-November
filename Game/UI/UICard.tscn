@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=12 format=1]
 
 [ext_resource path="res://UI/UICard.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
@@ -47,7 +47,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=2]
 
-length = 1.0
+length = 0.6
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -55,7 +55,7 @@ tracks/0/path = NodePath("Wrapper:rect/scale")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1 ),
+"times": FloatArray( 0, 0.6 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1.5, 1.5 ) ]
@@ -65,7 +65,7 @@ tracks/1/path = NodePath("Wrapper:rect/pos")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 1 ),
+"times": FloatArray( 0, 0.6 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( -30, -640 ) ]
@@ -73,25 +73,25 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=3]
 
-length = 1.0
+length = 0.6
 loop = false
-step = 0.1
+step = 0.06
 tracks/0/type = "value"
 tracks/0/path = NodePath("Wrapper/VirginCard/Recto/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0, 0.06, 0.12, 0.18, 0.18, 0.24, 0.3, 0.3 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 1, 2, 3, 4, 5 ]
+"values": [ 0, 1, 2, 3, 3, 4, 5, 5 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Wrapper/VirginCard/Recto:visibility/visible")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 0.5, 1 ),
+"times": FloatArray( 0, 0.3, 0.6 ),
 "transitions": FloatArray( 1, 1, 1 ),
 "update": 0,
 "values": [ true, false, false ]
@@ -101,7 +101,7 @@ tracks/2/path = NodePath("Wrapper/VirginCard/Verso:visibility/visible")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 0, 0.5, 1 ),
+"times": FloatArray( 0, 0.3, 0.6 ),
 "transitions": FloatArray( 1, 1, 1 ),
 "update": 0,
 "values": [ false, true, true ]
@@ -111,7 +111,7 @@ tracks/3/path = NodePath("Wrapper/VirginCard/Verso/Sprite:visibility/visible")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0.5, 1 ),
+"times": FloatArray( 0.3, 0.6 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 1,
 "values": [ true, true ]
@@ -121,40 +121,147 @@ tracks/4/path = NodePath("Wrapper/VirginCard/Verso/Sprite:frame")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
-"times": FloatArray( 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 5, 4, 3, 2, 1, 0 ]
+"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0 ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Wrapper/VirginCard/Verso/Text:frame")
 tracks/5/interp = 1
 tracks/5/imported = false
 tracks/5/keys = {
-"times": FloatArray( 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 5, 4, 3, 2, 1, 0 ]
+"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0 ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Wrapper/VirginCard/Recto/Name:frame")
 tracks/6/interp = 1
 tracks/6/imported = false
 tracks/6/keys = {
-"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0, 0.06, 0.12, 0.18, 0.18, 0.24, 0.3, 0.3 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 5, 4, 3, 2, 1, 0 ]
+"values": [ 5, 4, 3, 2, 2, 1, 0, 0 ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Wrapper/VirginCard/Recto/Image:frame")
 tracks/7/interp = 1
 tracks/7/imported = false
 tracks/7/keys = {
-"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0, 0.06, 0.12, 0.18, 0.18, 0.24, 0.3, 0.3 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 5, 4, 3, 2, 1, 0 ]
+"values": [ 5, 4, 3, 2, 2, 1, 0, 0 ]
+}
+
+[sub_resource type="Animation" id=4]
+
+resource/name = "turn and go up"
+length = 0.6
+loop = false
+step = 0.06
+tracks/0/type = "value"
+tracks/0/path = NodePath("Wrapper/VirginCard/Recto/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.06, 0.12, 0.18, 0.18, 0.24, 0.3, 0.3 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 3, 4, 5, 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Wrapper/VirginCard/Recto:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.3, 0.6 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ true, false, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Wrapper/VirginCard/Verso:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0, 0.3, 0.6 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ false, true, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Wrapper/VirginCard/Verso/Sprite:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0.3, 0.6 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ true, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Wrapper/VirginCard/Verso/Sprite:frame")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Wrapper/VirginCard/Verso/Text:frame")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = {
+"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Wrapper/VirginCard/Recto/Name:frame")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": FloatArray( 0, 0.06, 0.12, 0.18, 0.18, 0.24, 0.3, 0.3 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 4, 3, 2, 2, 1, 0, 0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Wrapper/VirginCard/Recto/Image:frame")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = {
+"times": FloatArray( 0, 0.06, 0.12, 0.18, 0.18, 0.24, 0.3, 0.3 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 4, 3, 2, 2, 1, 0, 0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Wrapper:rect/pos")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = {
+"times": FloatArray( 0, 0.6 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -30, -640 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Wrapper:rect/scale")
+tracks/9/interp = 1
+tracks/9/imported = false
+tracks/9/keys = {
+"times": FloatArray( 0, 0.6 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.5, 1.5 ) ]
 }
 
 [node name="UICard" type="Control"]
@@ -178,7 +285,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 40.0
+margin/right = 42.0
 margin/bottom = 40.0
 
 [node name="Aura" type="TextureFrame" parent="Wrapper"]
@@ -245,7 +352,7 @@ frame = 5
 [node name="Name" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
 visibility/light_mask = 0
-transform/pos = Vector2( -61, -90 )
+transform/pos = Vector2( -71, -90 )
 texture = ExtResource( 5 )
 flip_h = true
 flip_v = true
@@ -288,6 +395,7 @@ root/root = NodePath("..")
 anims/animate_add = SubResource( 1 )
 anims/bring_up = SubResource( 2 )
 anims/turn = SubResource( 3 )
+"anims/turn and go up" = SubResource( 4 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
