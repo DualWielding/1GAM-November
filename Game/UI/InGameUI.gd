@@ -104,6 +104,7 @@ func _on_InteractionButton_pressed():
 	popup.clear()
 	var size = Player.character.interaction_possibilities.size()
 	if size == 1:
+		popup.hide()
 		send_start_interaction_message(0)
 	else:
 		for i in range(size):
