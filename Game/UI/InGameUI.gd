@@ -55,9 +55,6 @@ func _ready():
 	interaction_button.set_text(tr("INTERACTION BUTTON"))
 	discard_button.set_text(tr("DISCARD BUTTON"))
 	
-	# Start the first scene when loaded !
-	get_parent().start()
-	
 	set_process_input(true)
 
 ###### DIALOGS ######
