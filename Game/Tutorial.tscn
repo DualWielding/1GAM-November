@@ -95,6 +95,7 @@ script/script = ExtResource( 1 )
 
 [node name="Book" type="TextureFrame" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 0.7, 0.7 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -185,6 +186,7 @@ align = 0
 
 [node name="Cards" type="TextureFrame" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 0.7, 0.7 )
 focus/ignore_mouse = true
 focus/stop_mouse = true

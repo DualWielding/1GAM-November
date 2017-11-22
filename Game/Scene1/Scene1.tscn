@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=1]
+[gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://Scene1/Scene1.gd" type="Script" id=1]
 [ext_resource path="res://Scene1/TileSet1t.tres" type="TileSet" id=2]
@@ -42,6 +42,11 @@ extents = Vector2( 8.36768, 7.01831 )
 
 custom_solver_bias = 0.0
 extents = Vector2( 4.47278, 10.0345 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 66.3436, 10 )
 
 [node name="Scene1" type="Node2D"]
 
@@ -145,6 +150,9 @@ shapes/9/trigger = false
 shapes/10/shape = SubResource( 6 )
 shapes/10/transform = Matrix32( 1, 0, 0, 1, 671.603, 367.133 )
 shapes/10/trigger = false
+shapes/11/shape = SubResource( 7 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, 577.426, 342.639 )
+shapes/11/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -236,6 +244,13 @@ transform/pos = Vector2( 671.603, 367.133 )
 shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 10
+
+[node name="CollisionShape2D 4" type="CollisionShape2D" parent="InvisibleWalls"]
+
+transform/pos = Vector2( 577.426, 342.639 )
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 11
 
 [node name="Door" parent="." instance=ExtResource( 5 )]
 
