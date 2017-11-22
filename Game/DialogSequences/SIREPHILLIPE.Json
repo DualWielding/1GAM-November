@@ -1,6 +1,6 @@
 {
 
-		"sire philippe default": {
+		"default": {
 		"text":"SIRE PHILIPPE DEFAULT",
 		"options": [
 			{
@@ -9,6 +9,25 @@
 				"state change":"unchanged",
 				"next sequence": "d1",
 				"card used": "VITORI IS THE HEAD COMPLOTIST"
+			},
+			{
+				"text":"SIRE PHILIPPE DEFAULT A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8",
+				"card used":"SIRE PHILIPPE SUFFERS FROM GOUTTE"
+			},
+			{
+				"text":"SIRE PHILIPPE DEFAULT A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8"
+			},
+			{
+				"text":"SIRE PHILIPPE DEFAULT A4",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5"
 			}
 		]
 	},
@@ -21,6 +40,12 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d2"
+			},
+			{
+				"text":"SIRE PHILIPPE D1 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6"
 			}
 		]
 	},
@@ -33,12 +58,18 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d3"
+			},
+			{
+				"text":"SIRE PHILIPPE D2 A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
 			}
 		]
 	},
 
 	"d3": {
-		"text":"SIRE PHILIPPE",
+		"text":"SIRE PHILIPPE D3",
 		"options": [
 			{
 				"text":"SIRE PHILIPPE D3 A1",
@@ -54,9 +85,9 @@
 		"options": [
 			{
 				"text":"SIRE PHILIPPE D4 A1",
-				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d5"
+				"end": true,
+				"state change":"aware",
+				"next sequence": "none"
 			}
 		]
 	},
@@ -73,7 +104,113 @@
 		]
 	},
 
+	"d6": {
+		"text":"SIRE PHILIPPE D6",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D6 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d7"
+			}
+		]
+	},
 
+	"d7": {
+		"text":"SIRE PHILIPPE D7",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D7 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
 
+	"d8": {
+		"text":"SIRE PHILIPPE D8",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D8 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "D9"
+			},
+			{
+				"text":"SIRE PHILIPPE D8 A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"d9": {
+		"text":"SIRE PHILIPPE D9",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D9 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d10"
+			}
+		]
+	},
+
+	"d10": {
+		"text":"SIRE PHILIPPE D10",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D10 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d11"
+			}
+		]
+	},
+
+	"d11": {
+		"text":"SIRE PHILIPPE",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D11 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained":"ALMA IS NO LONGER PROTECTED"
+			}
+		]
+	},
+
+	"d12": {
+		"text":"SIRE PHILIPPE D12",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D12 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d13"
+			},
+			{
+				"text":"SIRE PHILIPPE D12 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d13"
+			}
+		]
+	},
+
+	"d13": {
+		"text":"SIRE PHILIPPE D13",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D13 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	}
 
 }
