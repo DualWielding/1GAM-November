@@ -1,15 +1,17 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=18 format=1]
 
 [ext_resource path="res://UI/InGameUI.gd" type="Script" id=1]
 [ext_resource path="res://UI/Style/Theme-UI.tres" type="Theme" id=2]
 [ext_resource path="res://Sprites/UI/Intercation-icon.png" type="Texture" id=3]
 [ext_resource path="res://UI/DialogPanel.tscn" type="PackedScene" id=4]
-[ext_resource path="res://UI/Style/Classic-panel.tres" type="StyleBox" id=5]
+[ext_resource path="res://Sprites/UI/Discard-panel.png" type="Texture" id=5]
 [ext_resource path="res://Fonts/palatino-regular.fnt" type="BitmapFont" id=6]
-[ext_resource path="res://UI/Style/Theme-Buttons-big.tres" type="Theme" id=7]
-[ext_resource path="res://Fonts/palatino-bold-italic.fnt" type="BitmapFont" id=8]
+[ext_resource path="res://Sprites/UI/card-discard-hovered.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/card-discard.png" type="Texture" id=8]
+[ext_resource path="res://Fonts/palatino-bold-italic.fnt" type="BitmapFont" id=9]
+[ext_resource path="res://Tutorial.tscn" type="PackedScene" id=10]
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=1]
 
 length = 1.0
 loop = false
@@ -54,6 +56,106 @@ tracks/3/keys = {
 "update": 0,
 "values": [ 100, 250 ]
 }
+
+[sub_resource type="StyleBoxTexture" id=2]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 5 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxTexture" id=3]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 7 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxTexture" id=4]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 8 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxTexture" id=5]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxTexture" id=6]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxTexture" id=7]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 8 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
 
 [node name="InGameUI" type="CanvasLayer"]
 
@@ -158,9 +260,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 0
 margin/left = 390.0
-margin/top = 575.0
+margin/top = 545.0
 margin/right = 1423.0
-margin/bottom = 835.0
+margin/bottom = 805.0
 custom_constants/vseparation = 300
 custom_constants/hseparation = 100
 columns = 12
@@ -170,7 +272,7 @@ columns = 12
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/bring_up = SubResource( 5 )
+anims/bring_up = SubResource( 1 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -184,11 +286,11 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = ExtResource( 2 )
-margin/left = 91.0
-margin/top = 24.0
-margin/right = 923.0
-margin/bottom = 123.0
-custom_styles/panel = ExtResource( 5 )
+margin/left = 172.0
+margin/top = 16.0
+margin/right = 822.0
+margin/bottom = 103.0
+custom_styles/panel = SubResource( 2 )
 
 [node name="DiscardLabel" type="Label" parent="DiscardPanel"]
 
@@ -197,12 +299,12 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 6.0
-margin/top = 33.0
-margin/right = 440.0
-margin/bottom = 52.0
+margin/left = 9.0
+margin/top = 26.0
+margin/right = 443.0
+margin/bottom = 45.0
 custom_fonts/font = ExtResource( 6 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0.8, 0.8, 0.8, 1 )
 text = "DISCARD LABEL"
 align = 1
 percent_visible = 1.0
@@ -215,24 +317,63 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-theme/theme = ExtResource( 7 )
-margin/left = 666.0
-margin/top = 1.0
-margin/right = 831.0
-margin/bottom = 98.0
-custom_fonts/font = ExtResource( 8 )
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+margin/left = 527.0
+margin/top = 25.0
+margin/right = 630.0
+margin/bottom = 63.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = ExtResource( 9 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "DISCARD BUTTON"
+text = "Discard"
 flat = false
+
+[node name="Tutorial" parent="." instance=ExtResource( 10 )]
+
+editor/display_folded = true
+visibility/visible = false
+
+[node name="Book" parent="Tutorial"]
+
+margin/left = 344.0
+margin/top = 68.0
+margin/right = 844.0
+margin/bottom = 268.0
+
+[node name="Cards" parent="Tutorial"]
+
+margin/left = 385.0
+margin/top = 466.0
+margin/right = 885.0
+margin/bottom = 666.0
+
+[node name="Arrow" parent="Tutorial/Cards"]
+
+margin/top = 131.0
+margin/bottom = 281.0
+
+[node name="Interaction" parent="Tutorial"]
+
+visibility/visible = true
+margin/left = 472.0
+margin/right = 972.0
+
+[node name="Arrow" parent="Tutorial/Interaction"]
+
+rect/rotation = 90.0
+margin/left = 501.0
+margin/top = 91.0
+margin/right = 651.0
+margin/bottom = 241.0
 
 [connection signal="pressed" from="InteractionButton" to="." method="_on_InteractionButton_pressed"]
 
 [connection signal="pressed" from="DiscardPanel/DiscardButton" to="." method="_on_DiscardButton_pressed"]
 
 
+[editable path="Tutorial"]

@@ -9,14 +9,15 @@ signal disabled
 signal enabled
 
 # Player is disabled at the start of the adventure
-var disabled_movement = true setget set_disabled_movement, is_disabled
+var disabled_movement = false setget set_disabled_movement, is_disabled
 
 func _ready():
 	set_process_input(true)
 	Player.character = self
 
 func init():
-	base_looking_direction = "left"
+	base_looking_direction = "right"
+	unique_name = "Player character" # Used to link to the sprite
 
 func handle_multiple_walking_keys_pressed():
 	if Input.is_action_pressed("char_up"):

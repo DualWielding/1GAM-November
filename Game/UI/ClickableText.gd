@@ -18,6 +18,7 @@ func set_option(opt):
 	
 	if Player.get_name():
 		used_text = used_text.replace("%n", Player.get_name())
+		used_text = used_text.replace("%N", Player.get_name().to_upper())
 	
 		# Show which card is used, if the option uses one
 	if opt.has("card used"):

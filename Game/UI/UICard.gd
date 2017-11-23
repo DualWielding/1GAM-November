@@ -5,7 +5,7 @@ var initial_card
 var name = "Test"
 var unique_name = "Test"
 var text = "Test"
-var img = preload("res://Sprites/Floor.png")
+var img
 var important = false
 
 var _hovered = false
@@ -26,9 +26,9 @@ func init_from_dic(dic):
 	# such as add_card or remove_card of the UI, which get their parameters from dialogs
 	initial_card = dic
 	
-	name = tr(dic.unique_name)
-	text = dic.text
+	name = dic.name
 	img = dic.img
+	text = dic.text
 	unique_name = dic.unique_name
 	if dic.has("important") and dic.important:
 		important = true
@@ -39,9 +39,9 @@ func init_from_dic(dic):
 	add_to_group("ui_card")
 
 func _ready():
-	get_node("Wrapper/VirginCard/Recto/Name").set_text(name)
-	get_node("Wrapper/VirginCard/Recto/Picture").set_texture(img)
-	get_node("Wrapper/VirginCard/Verso/Text").set_text(text)
+	get_node("Wrapper/VirginCard/Recto/Name").set_texture(name)
+	get_node("Wrapper/VirginCard/Recto/Image").set_texture(img)
+	get_node("Wrapper/VirginCard/Verso/Text").set_texture(text)
 	
 	hide()
 	
@@ -120,7 +120,11 @@ func bring_up():
 
 func lower():
 	if !selectable:
-		ap.play_backwards("bring_up")
+		if !_recto:
+			ap.play_backwards("turn and go up")
+			_recto = true
+		else:
+			ap.play_backwards("bring_up")
 		_up = false
 
 func set_up(boolean):

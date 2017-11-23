@@ -34,6 +34,9 @@ func add_text(unformatted_text, method="fade", show_now=false):
 	script_container.add_text_to_buffer(unformatted_text, method, show_now)
 	script_container.display_texts()
 
+func reset_current_options():
+	current_options = []
+
 func add_answers():
 	if answers_container.get_child_count() > 0:
 		return

@@ -8,17 +8,12 @@ var hand = {} setget get_hand
 var important_hand = {} setget get_important_hand
 var max_cards = 4
 
+var base_cards = ["DAGGER", "GOLD POUCH", "POWDER", "LOVE LETTER"]
+
 var unique_answers_used = {}
 
-signal card_added(card, animated)
-signal card_removed(card, animated)
-
-func _ready():
-	# /!\ These cards are not added via signal, but directly in the UI _ready func
-	add_card("DAGGER", false)
-	add_card("GOLD POUCH", false)
-	add_card("POWDER", false)
-	add_card("LOVE LETTER", false)
+signal card_added(card)
+signal card_removed(card)
 
 func set_name(n):
 	name = n
@@ -35,6 +30,11 @@ func is_unique_answer_up(untranslated_text):
 	return !unique_answers_used.has(untranslated_text)
 
 ###### CARDS ######
+
+func add_base_cards():
+	# Add all the players' cards at the beginning
+	for card_name in base_cards:
+		add_card(card_name)
 
 func get_hand():
 	return hand
@@ -53,14 +53,14 @@ func check_cards_number():
 		else:
 			ui.show_discard_screen(hand.keys().size() - max_cards)
 
-func add_card(card_unique_name, animated=true):
+func add_card(card_unique_name):
 	var card = Cards.get(card_unique_name)
 	
 	if card.has("important") and card.important:
 		important_hand[card_unique_name] = card
 	else:
 		hand[card_unique_name] = card
-	emit_signal("card_added", card, animated)
+	emit_signal("card_added", card)
 
 func remove_card(card_unique_name, animated=true):
 	emit_signal("card_removed", Cards.get(card_unique_name), animated)
