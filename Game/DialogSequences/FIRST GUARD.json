@@ -220,7 +220,8 @@
 				"text":"GUARD D12 A1",
 				"end": true,
 				"state change":"neutralized",
-				"next sequence": "none"
+				"next sequence": "none",
+				"card gained":"GUARD CORRUPTED"
 			}
 		]
 	},
