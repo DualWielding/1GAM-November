@@ -26,10 +26,10 @@ func _on_InteractionArea_area_enter( area ):
 		Player.character.animator.connect("finished", self, "crouch", [], CONNECT_ONESHOT)
 
 func _flee():
-	walk_up()
+	walk_down()
 	
 	var _t2 = Timer.new()
-	_t2.set_wait_time(0.175)
+	_t2.set_wait_time(0.2)
 	_t2.set_one_shot(true)
 	_t2.connect("timeout", self, "walk_right")
 	add_child(_t2)

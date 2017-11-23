@@ -1,7 +1,7 @@
 extends "res://NPC.gd"
 
 func init():
-	set_name("Guard")
+	set_name(tr("FIRST GUARD"))
 	unique_name = "First guard"
 	base_looking_direction = "right"
 
