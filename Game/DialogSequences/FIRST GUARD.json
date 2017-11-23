@@ -372,6 +372,12 @@
 				"state change":"neutralized",
 				"next sequence": "none",
 				"card used": "SLEEPING WINE"
+			},
+			{
+				"text":"GUARD D16 A4",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
 			}
 		]
 	},

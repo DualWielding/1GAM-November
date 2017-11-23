@@ -1,7 +1,9 @@
 id,en,fr
 $i,,
 ,,
-STARTING PLAYER NAME,Unknown,Vous
+STARTING PLAYER NAME,You,Vous
+FIRST GUARD,Guard,Garde
+WAITER,Waiter,Serveur
 INPUT PLACEHOLDER,My name is...,Je m'appelle...
 SUBMIT BUTTON,This is my name !,"Oui, c'est mon nom !"
 INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
@@ -30,6 +32,7 @@ POWDER,Powder,Poudre
 DAGGER,Dagger,Dague
 LOVE LETTER,Letter,Lettre
 BOTTLE,Wine,Vin
+SLEEPING WINE,Sleep,Sommeil
 GUARD KILLED,Death,Mort
 GUARD CORRUPTED,Corruption,Corruption
 CESNI OWN YOU,Debt,Dette
@@ -53,14 +56,20 @@ SIR PHILIPPE SUFFERS FROM GOUTTE,,
 ,,
 ,,
 ,,
-BOTTLE DEFAULT,,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
-BOTTLE DEFAULT A1,,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
-BOTTLE DEFAULT A2,,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes.[/color][i]%n verse une poudre dans la bouteille et s'en saisit[/i]
-BOTTLE DEFAULT A3,,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
+BOTTLE DEFAULT,TODO,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
+BOTTLE DEFAULT A1,TODO,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
+BOTTLE DEFAULT A2,TODO,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes.[/color][i]%n verse une poudre dans la bouteille et s'en saisit[/i]
+BOTTLE DEFAULT A3,TODO,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
-DAGGER DEFAULT,,"Une dague gît sur le sol, à quelques mètres de l'endroit où vous vous êtes éveillé."
-DAGGER DEFAULT A1,,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
-DAGGER DEFAULT A2,,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
+DAGGER DEFAULT,TODO,"Une dague gît sur le sol, à quelques mètres de l'endroit où vous vous êtes éveillé."
+DAGGER DEFAULT A1,TODO,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
+DAGGER DEFAULT A2,TODO,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
+,,
+SIRE PHILIPPE DEFAULT,,"[i]Devant Sire Philippe trône une fiole en verre et non loin, une pipette.[/i] Bien le bonsoir, jeune Sire."
+SIRE PHILIPPE DEFAULT A1,,"[VITORI IS THE HEAD COMPLOTIST] Vous êtes Sire Philippe, le Capitaine de la garde ?"
+SIRE PHILIPPE DEFAULT A2,,"[SIR PHILIPPE SUFFERS FROM GOUTTE] Pardonnez monsieur, ceci est à vous ?"
+SIRE PHILIPPE DEFAULT A3,,"[i]%n simule de trébucher et la renverse[/i] Oh ! Par les dieux je suis confus, veuillez m'excuser !"
+SIRE PHILIPPE DEFAULT A4,,Voilà une bien étrange récipient. Que renferme t-il ?
 ,,
 SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, %n ?"
 SIRE PHILIPPE D1 A1,,"Je dois vous paraître bien étrange ce soir, messire, mais peu importe. Vous semblez attendre de moi une information, et la voici. J'ai le nom de celui qui est à la tête du complot."
@@ -109,17 +118,14 @@ SIRE PHILIPPE D13 A1,,"Mmh, Ce Sire Philippe donnait l'impression de me connaît
 ,,
 ,,
 ,,
-VITORI D7,,"...Notre agent n'a réussi à empoisonner Sire Philippe que partiellement. Il sera donc des nôtres ce soir. Mais sa présence dépend de son traitement. Subtilisez-le, et nous serons débarassés de sa vigilance paranoïaque."
-VITORI D7 A1,,"Attendez, j'ignore..."
 ,,
-VITORI D8,,"Laissez moi finir : Ruffio est parvenu à enlever l'animal de compagnie de la Comtesse Alma. Cela a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure d'utiliser ce levier."
-VITORI D8 A1,,Argh... Ma tête...
 ,,
-VITORI D9,,"[i]regardant sa montre.[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
-VITORI D9 A1,,Mon crâne... La douleur est à peine supportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez-vous prendre le temps de préciser tout cela ?
+VITORI DEFAULT,TODO,Mon pauvre ami ! Je viens de vous voir sauvagemment agressé par ce malandrin ! Il a manqué de vous fracasser le crâne !
+VITORI DEFAULT A1,TODO,... Que.. comment ?
+VITORI DEFAULT A2,TODO,Ourgh... mon crâne...
 ,,
-VITORI D10,,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] A tout à l'heure, mon ami.[i]Il sort[/i]"
-VITORI D10 A1,,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
+VITORI D1,TODO,"Et ce garde, qui reste là sans agir ! Ah ! les voilà bien plus réactifs dès lors qu'il s'agit d'aller parader devant de jeunes godelurettes !"
+VITORI D1 A1,TODO,"Argh... par pitié, qui que vous soyez, parlez moins fort !"
 ,,
 VITORI D2,TODO,"Comment ça, qui suis-je ?! Vous ne vous souvenez plus de votre bon ami Vitori ?! Se pourrait-il que votre mémoire souffre de votre blessure ? Vous souvenez vous au moins de votre nom ?"
 VITORI D2 A1,TODO,//////// $i
@@ -256,10 +262,10 @@ GUARD D16,TODO,Hors de ma vue !
 GUARD D16 A1,TODO,[color=red]Je vous aurai prévenu.[/color][i]Il se jette sur le garde et le poignarde.[/i]
 GUARD D16 A2,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
 GUARD D16 A3,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
+GUARD D16 A4,,"Là, voyez ! Nul besoin d'hurler, je m'en vais."
 ,,
 GUARD D17,TODO,J'ai bien peur que ma patience ait atteint ses limites. Hors de ma vue !
 GUARD D17 A1,TODO,"Très bien, très bien !"
-,,
 ,,
 ,,
 ,,
