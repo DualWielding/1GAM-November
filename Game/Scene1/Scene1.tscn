@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=1]
+[gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://Scene1/Scene1.gd" type="Script" id=1]
 [ext_resource path="res://Scene1/TileSet1t.tres" type="TileSet" id=2]
@@ -9,9 +9,10 @@
 [ext_resource path="res://Scene1/FirstGuard.tscn" type="PackedScene" id=7]
 [ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scene1/Bandit.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=10]
-[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Plant - 1.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Light.tscn" type="PackedScene" id=11]
+[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -38,20 +39,10 @@ extents = Vector2( 158.451, 7.01831 )
 custom_solver_bias = 0.0
 extents = Vector2( 8.36768, 7.01831 )
 
-[sub_resource type="RectangleShape2D" id=6]
-
-custom_solver_bias = 0.0
-extents = Vector2( 4.47278, 10.0345 )
-
 [sub_resource type="RectangleShape2D" id=7]
 
 custom_solver_bias = 0.0
 extents = Vector2( 66.3436, 10 )
-
-[sub_resource type="CircleShape2D" id=8]
-
-custom_solver_bias = 0.0
-radius = 14.4602
 
 [node name="Scene1" type="Node2D"]
 
@@ -95,6 +86,9 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( 983050, 64, 983051, 64, 983069, 64, 1114110, 64, 1114111, 64, 1048576, 64, 1048597, 64, 1048598, 64, 1048607, 64, 1048608, 64, 1048609, 64, 1114119, 64, 1114120, 64, 1114121, 64, 1114145, 64, 1114146, 64, 1245180, 64, 1245181, 64, 1179663, 64, 1179664, 64, 1179665, 64, 1179678, 64, 1179679, 64, 1245184, 64, 1245206, 64, 1245207, 64, 1245218, 64, 1310725, 64, 1310726, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Dagger" parent="." instance=ExtResource( 3 )]
 
@@ -129,9 +123,64 @@ transform/pos = Vector2( -13.4517, 544.172 )
 visibility/visible = false
 transform/pos = Vector2( -90.8303, 545.146 )
 
-[node name="OnTopOfChars" type="TileMap" parent="."]
+[node name="Plant" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 847.898, 354.481 )
+
+[node name="Plant1" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 977.25, 354.481 )
+
+[node name="Plant2" parent="." instance=ExtResource( 10 )]
 
 editor/display_folded = true
+transform/pos = Vector2( 335.593, 354.744 )
+flip_h = true
+
+[node name="LightOccluder2D" parent="Plant2"]
+
+transform/scale = Vector2( -1, 1 )
+
+[node name="Plant3" parent="." instance=ExtResource( 10 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 208.312, 354.744 )
+flip_h = true
+
+[node name="Plant4" parent="." instance=ExtResource( 10 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 176.69, 354.744 )
+flip_h = true
+
+[node name="Plant5" parent="." instance=ExtResource( 10 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 47.564, 354.744 )
+flip_h = true
+
+[node name="Plant6" parent="." instance=ExtResource( 10 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 16.9954, 354.744 )
+flip_h = true
+
+[node name="Plant7" parent="." instance=ExtResource( 10 )]
+
+editor/display_folded = true
+transform/pos = Vector2( -111.076, 354.744 )
+flip_h = true
+
+[node name="Light - 1" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 671.449, 343.23 )
+
+[node name="Light - 2" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 480.451, 344.428 )
+
+[node name="OnTopOfChars" type="TileMap" parent="."]
+
 mode = 0
 tile_set = ExtResource( 2 )
 cell/size = Vector2( 32, 32 )
@@ -146,56 +195,10 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 327693, 53, 327702, 50, 393229, 54, 393238, 51, 458765, 54, 458774, 51, 524301, 55, 524310, 52, 720892, 60, 655360, 60, 655361, 60, 655365, 60, 655366, 60, 655370, 60, 655386, 60, 655390, 60, 917499, 56, 917500, 56, 917501, 56, 917502, 56, 917503, 56, 851968, 56, 851969, 56, 851970, 56, 851971, 56, 851972, 56, 851973, 56, 851974, 56, 851975, 56, 851976, 56, 851977, 56, 851978, 56, 851979, 56, 851980, 56, 851981, 56, 851982, 57, 851989, 56, 851990, 56, 851991, 56, 851992, 56, 851993, 56, 851994, 56, 851995, 56, 851996, 56, 851997, 56, 851998, 56, 851999, 56, 852000, 56, 852001, 56, 852002, 56, 852003, 56, 852004, 56, 983039, 64, 917504, 64, 917505, 64, 917512, 64, 917513, 64, 917514, 64, 917518, 57, 917520, 58, 917525, 64, 917526, 64, 983054, 56, 983055, 56, 983059, 56, 983060, 56, 983061, 57, 1048589, 64, 1048590, 64, 1048595, 64 )
+tile_data = IntArray( 327693, 53, 327702, 50, 393229, 54, 393238, 51, 458765, 54, 458774, 51, 524301, 55, 524310, 52, 917499, 56, 917500, 56, 917501, 56, 917502, 56, 917503, 56, 851968, 56, 851969, 56, 851970, 56, 851971, 56, 851972, 56, 851973, 56, 851974, 56, 851975, 56, 851976, 56, 851977, 56, 851978, 56, 851979, 56, 851980, 56, 851981, 56, 851982, 57, 851989, 56, 851990, 56, 851991, 56, 851992, 56, 851993, 56, 851994, 56, 851995, 56, 851996, 56, 851997, 56, 851998, 56, 851999, 56, 852000, 56, 852001, 56, 852002, 56, 852003, 56, 852004, 56, 983039, 64, 917504, 64, 917505, 64, 917512, 64, 917513, 64, 917514, 64, 917518, 57, 917520, 58, 917525, 64, 917526, 64, 983054, 56, 983055, 56, 983059, 56, 983060, 56, 983061, 57, 1048589, 64, 1048590, 64, 1048595, 64 )
 __meta__ = {
 "_edit_lock_": true
 }
-
-[node name="Light2D1" type="Light2D" parent="OnTopOfChars"]
-
-transform/pos = Vector2( 672.491, 314.965 )
-enabled = true
-editor_only = false
-texture = ExtResource( 10 )
-offset = Vector2( 0, 0 )
-scale = 1.0
-color = Color( 0.937255, 0.941176, 0.470588, 0.491804 )
-energy = 1.0
-mode = 0
-range/height = 0.0
-range/z_min = -1024
-range/z_max = 1024
-range/layer_min = 0
-range/layer_max = 0
-range/item_mask = 1
-shadow/enabled = true
-shadow/color = Color( 0, 0, 0, 0 )
-shadow/buffer_size = 2048
-shadow/esm_multiplier = 80.0
-shadow/item_mask = 1
-
-[node name="Light2D" type="Light2D" parent="OnTopOfChars"]
-
-transform/pos = Vector2( 480.395, 314.545 )
-enabled = true
-editor_only = false
-texture = ExtResource( 10 )
-offset = Vector2( 0, 0 )
-scale = 1.0
-color = Color( 0.937255, 0.941176, 0.470588, 0.45902 )
-energy = 1.0
-mode = 0
-range/height = 0.0
-range/z_min = -1024
-range/z_max = 1024
-range/layer_min = 0
-range/layer_max = 0
-range/item_mask = 1
-shadow/enabled = true
-shadow/color = Color( 0, 0, 0, 0 )
-shadow/buffer_size = 2048
-shadow/esm_multiplier = 80.0
-shadow/item_mask = 1
 
 [node name="Shade" type="ColorFrame" parent="."]
 
@@ -208,24 +211,6 @@ margin/top = -197.0
 margin/right = 1206.0
 margin/bottom = 694.0
 color = Color( 0.192157, 0.129412, 0.141176, 0.54098 )
-
-[node name="LightTileMap" type="TileMap" parent="."]
-
-mode = 0
-tile_set = ExtResource( 2 )
-cell/size = Vector2( 32, 32 )
-cell/quadrant_size = 16
-cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-cell/half_offset = 2
-cell/tile_origin = 0
-cell/y_sort = false
-collision/use_kinematic = false
-collision/friction = 1.0
-collision/bounce = 0.0
-collision/layers = 1
-collision/mask = 1
-occluder/light_mask = 1
-tile_data = IntArray( 589838, 49, 589844, 49 )
 
 [node name="InvisibleWalls" type="StaticBody2D" parent="."]
 
@@ -258,39 +243,9 @@ shapes/7/trigger = false
 shapes/8/shape = SubResource( 5 )
 shapes/8/transform = Matrix32( 0.283642, 0, 0, 5.03432, 441.805, 522.372 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 6 )
-shapes/9/transform = Matrix32( 1, 0, 0, 1, 479.85, 367.277 )
+shapes/9/shape = SubResource( 7 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 577.426, 353.665 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 6 )
-shapes/10/transform = Matrix32( 1, 0, 0, 1, 671.603, 367.133 )
-shapes/10/trigger = false
-shapes/11/shape = SubResource( 7 )
-shapes/11/transform = Matrix32( 1, 0, 0, 1, 577.426, 353.665 )
-shapes/11/trigger = false
-shapes/12/shape = SubResource( 8 )
-shapes/12/transform = Matrix32( 1, 0, 0, 1, 16.3706, 384.057 )
-shapes/12/trigger = false
-shapes/13/shape = SubResource( 8 )
-shapes/13/transform = Matrix32( 1, 0, 0, 1, 48.0026, 386.998 )
-shapes/13/trigger = false
-shapes/14/shape = SubResource( 8 )
-shapes/14/transform = Matrix32( 1, 0, 0, 1, -112.769, 385.333 )
-shapes/14/trigger = false
-shapes/15/shape = SubResource( 8 )
-shapes/15/transform = Matrix32( 1, 0, 0, 1, 175.716, 385.809 )
-shapes/15/trigger = false
-shapes/16/shape = SubResource( 8 )
-shapes/16/transform = Matrix32( 1, 0, 0, 1, 207.823, 385.809 )
-shapes/16/trigger = false
-shapes/17/shape = SubResource( 8 )
-shapes/17/transform = Matrix32( 1, 0, 0, 1, 335.774, 385.571 )
-shapes/17/trigger = false
-shapes/18/shape = SubResource( 8 )
-shapes/18/transform = Matrix32( 1, 0, 0, 1, 848.245, 385.809 )
-shapes/18/trigger = false
-shapes/19/shape = SubResource( 8 )
-shapes/19/transform = Matrix32( 1, 0, 0, 1, 976.245, 384.619 )
-shapes/19/trigger = false
 collision/layers = 1
 collision/mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
@@ -369,93 +324,16 @@ shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 8
 
-[node name="CollisionShape2D 3" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 479.85, 367.277 )
-shape = SubResource( 6 )
-trigger = false
-_update_shape_index = 9
-
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 671.603, 367.133 )
-shape = SubResource( 6 )
-trigger = false
-_update_shape_index = 10
-
 [node name="CollisionShape2D 4" type="CollisionShape2D" parent="InvisibleWalls"]
 
 transform/pos = Vector2( 577.426, 353.665 )
 shape = SubResource( 7 )
 trigger = false
-_update_shape_index = 11
+_update_shape_index = 9
 
-[node name="CollisionShape2D 5" type="CollisionShape2D" parent="InvisibleWalls"]
+[node name="InGameUI" parent="." instance=ExtResource( 12 )]
 
-transform/pos = Vector2( 16.3706, 384.057 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 12
-
-[node name="CollisionShape2D10" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 48.0026, 386.998 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 13
-
-[node name="CollisionShape2D11" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( -112.769, 385.333 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 14
-
-[node name="CollisionShape2D12" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 175.716, 385.809 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 15
-
-[node name="CollisionShape2D13" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 207.823, 385.809 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 16
-
-[node name="CollisionShape2D14" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 335.774, 385.571 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 17
-
-[node name="CollisionShape2D15" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 848.245, 385.809 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 18
-
-[node name="CollisionShape2D16" type="CollisionShape2D" parent="InvisibleWalls"]
-
-transform/pos = Vector2( 976.245, 384.619 )
-transform/scale = Vector2( 1, 1 )
-shape = SubResource( 8 )
-trigger = false
-_update_shape_index = 19
-
-[node name="InGameUI" parent="." instance=ExtResource( 11 )]
-
-[node name="TitleScreen" parent="." instance=ExtResource( 12 )]
+[node name="TitleScreen" parent="." instance=ExtResource( 13 )]
 
 
+[editable path="Plant2"]

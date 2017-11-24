@@ -193,6 +193,8 @@ items = [  ]
 
 [node name="DialogPanel" parent="." instance=ExtResource( 4 )]
 
+visibility/visible = false
+
 [node name="InputWrapper" type="HBoxContainer" parent="."]
 
 editor/display_folded = true
