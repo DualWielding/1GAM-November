@@ -7,7 +7,8 @@
 				"text":"WAITER DEFAULT A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d1"
+				"next sequence": "d1",
+				"card used": "NEED A DRINK"
 			},
 			{
 				"text":"WAITER DEFAULT A2",

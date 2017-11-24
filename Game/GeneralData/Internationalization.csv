@@ -30,6 +30,7 @@ SCENE 2 INTRO,,"[center]SCÈNE II[/center]
 GOLD POUCH,Gold pouch,Bourse d'or
 POWDER,Powder,Poudre
 DAGGER,Dagger,Dague
+MEDICINE,Medicine,Remède
 LOVE LETTER,Letter,Lettre
 BOTTLE,Wine,Vin
 SLEEPING WINE,Sleep,Sommeil
@@ -38,7 +39,7 @@ GUARD CORRUPTED,Corruption,Corruption
 CESNI OWN YOU,Debt,Dette
 STROZI IS CESNI LOVER,Adultery,Adultère
 ,,
-PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,Medicine,Remède
+PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,Illness,Maladie
 EXPLAINATION OF RUFFIO MISSING FINGER,Mutilation,Mutilation
 ALMA PET KIDNAPPED,Abduction,Rapt
 ALMA IS WAITING INSIDE,Accessary,Complice
@@ -153,7 +154,7 @@ VITORI D8 A1,TODO,Argh... Ma tête...
 VITORI D9,TODO,"[i]regardant sa montre.[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
 VITORI D9 A1,TODO,Mon crâne... La douleur est à peine supportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez-vous prendre le temps de préciser tout cela ?
 ,,
-VITORI D10,TODO,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] A tout à l'heure, mon ami.[i]Il sort[/i]"
+VITORI D10,TODO,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] Ruffio vous attendra sur la Terrasse. A tout à l'heure, mon ami.[i]Il sort[/i]"
 VITORI D10 A1,TODO,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
 ,,
 VITORI SCENE2DEFAULT,TODO,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?"
@@ -202,7 +203,7 @@ GUARD D3 A2,TODO,"Incroyable d'être borné à ce point. Bien, rendez moi ma bou
 GUARD D4,TODO,"Je ne vois pas de quelle bourse vous voulez parler, Messire."
 GUARD D4 A1,TODO,Qu... Comment ?! Mmh... Je vois.
 ,,
-GUARD D5,TODO,Je suis navré. Je ne peux rien pour vous.
+GUARD D5,TODO,"Ce qu'il se passe dans la rue ne me regarde pas, messire."
 GUARD D5 A1,TODO,"C'est un scandale ! Je reviendrai, nous n'en avons pas terminé, vous et moi."
 GUARD D5 A2,TODO,Je suis sûr que quelques florins pourraient changer cet état de fait.
 GUARD D5 A3,TODO,"Je passe, que vous le vouliez ou non !"
@@ -262,7 +263,7 @@ GUARD D16,TODO,Hors de ma vue !
 GUARD D16 A1,TODO,[color=red]Je vous aurai prévenu.[/color][i]Il se jette sur le garde et le poignarde.[/i]
 GUARD D16 A2,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
 GUARD D16 A3,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
-GUARD D16 A4,,"Là, voyez ! Nul besoin d'hurler, je m'en vais."
+GUARD D16 A4,TODO,"Là, voyez ! Nul besoin d'hurler, je m'en vais."
 ,,
 GUARD D17,TODO,J'ai bien peur que ma patience ait atteint ses limites. Hors de ma vue !
 GUARD D17 A1,TODO,"Très bien, très bien !"
@@ -347,7 +348,7 @@ STROZI D9 A2,TODO,"Rassurez-vous, vos cachoteries ne regardent que vous."
 ,,
 ,,
 WAITER DEFAULT,TODO,Puis-je vous proposer un rafrâichissment ?
-WAITER DEFAULT A1,TODO,"[NEED A DRINK] Un verre, je vous prie."
+WAITER DEFAULT A1,TODO,"Un verre, je vous prie."
 WAITER DEFAULT A2,TODO,"Non, merci."
 ,,
 WAITER D1,TODO,"Tout de suite, Messire. Si je puis me permettre, Messire, vous devriez garder à l'oeil l'individu au doigt manquant. Il n'apparaît pas sur la liste des invités."
@@ -356,24 +357,24 @@ WAITER D1 A1,TODO,Je vous demande pardon ? Nous connaissons nous ?
 WAITER D2,TODO,"[i], échangeant un clin d'oeil complice[/i] Bien sûr que non Messire. Mais sachez que Sire Philippe attend le nom du complotiste pour nous donner le signal. Bonne soirée, messire. [i] il sort.[/i]"
 WAITER D2 A1,TODO,Comment ? Attendez !
 ,,
-RUFFIO DEFAULT,TODO,"Pas trop tôt. Le Seigneur Vitori est passé il y a plusieurs minutes de cela. Je t'ai vu discuter longtemps avec ce garde, je peux savoir ce que tu tramais ?"
+RUFFIO DEFAULT,TODO,"Te voilà enfin. Je t'ai vu discuter longtemps avec ce garde, je peux savoir ce que tu tramais ?"
 RUFFIO DEFAULT A1,TODO,Rien de bien important. A qui ai-je l'honneur ?
 ,,
-RUFFIO D1,TODO,"Tu ne te souviens plus du bon Ruffio ? Eh bien quoi, lui voler la vedette ne t'as pas suffit ? Il faudrait que tu le dépossèdes de son nom en sus !"
+RUFFIO D1,TODO,"Tu ne te souviens plus du bon Ruffio ? Eh bien quoi, lui voler la vedette ne t'as pas suffit ? Il faudrait en plus que tu le dépossèdes de son nom !"
 RUFFIO D1 A1,TODO,Ruffio ? Alors c'est toi qui t'es chargé d'enlever cet animal ?
 ,,
-RUFFIO D2,TODO,"Cette saloperie m'a bequeté le doigt sans crier gare. Mais tu me connais. Oeil pour oeil... Je te passe les détails, mais la petite comptesse devrait être disposée à obéïr au moindre de tes désirs."
+RUFFIO D2,TODO,"Cette saloperie m'a bequeté le doigt sans crier gare. Mais tu me connais : ""oeil pour oeil""... Je te passe les détails, mais la petite comptesse devrait être disposée à obéïr au moindre de tes désirs."
 RUFFIO D2 A1,TODO,"Oh... Eh bien parfait, je suppose."
 ,,
-RUFFIO D3,TODO,"Alors c'est le grand soir, hein ? Assassiner le Duc, ce privilège me revenait. Mais il a fallu que tu te tordes et que tu rampes autour du Seigneur Vitori et de son maître jusqu'à le convaincre de t'attribuer la mission, hein ? A croire que la flatterie est une chose naturelle pour toi."
-RUFFIO D3 A1,TODO,[i]A part lui [/i] Assassi... Diantre ! Des bribes de souvenirs me reviennent... A propos d'un plan... Mais impossible de les fixer. La peste ! Je suis en train de me mettre dans un pétrin que je me suis moi-même concocté !
+RUFFIO D3,TODO,"Alors c'est le grand soir, hein ?"
+RUFFIO D3 A1,TODO,Que veux tu dire ?
+RUFFIO D3 A2,TODO,"Eh bien... Hum, il semblerait. A quel sujet, exactement ?"
 ,,
-RUFFIO D4,TODO,"Allez suis-moi, ceux que tu cherches sont sur la terasse.Puisque mes méthodes vous paraissent trop ""expéditives"", il va falloir que tu te courbes devant quelques nobles, si tu veux créer l'occasion de te débarasser du Duc en toute tranquillité. Mais si je comprends bien, te courber devant les autres, c'est un peu ta spécialité, hein ?"
-RUFFIO D4 A1,TODO,"J'ai peur de comprendre ce que tu sous-entend Ruffio. Gare à ne pas abuser de mon état.[i]Entrent un serveur, Vitori, Sire Philippe, Giulia, Claudio, Augurie et Alma.[/i]"
+RUFFIO D4,TODO,"Assassiner le Duc, ce privilège me revenait. Mais il a fallu que tu te tordes et que tu rampes autour du Seigneur Vitori et de son maître jusqu'à le convaincre de t'attribuer la mission. A croire que la flatterie est une chose naturelle pour toi."
+RUFFIO D4 A1,TODO,[i]A part lui [/i] Assassi... Diantre ! Des bribes de souvenirs me reviennent... A propos d'un plan... Mais impossible de les fixer. La peste ! Je suis en train de me mettre dans un pétrin que je me suis moi-même concocté !
 ,,
-,,
-,,
-,,
+RUFFIO D5,TODO,"J'entends les invités arriver. Bien, puisque mes méthodes vous paraissent trop ""expéditives"", il va falloir que tu te courbes devant quelques uns d'entre eux, si tu veux créer l'occasion de te débarasser du Duc en toute tranquillité. Mais si je comprends bien, te courber devant les autres, c'est un peu ta spécialité, hein ?"
+RUFFIO D5 A1,,"J'ai peur de comprendre ce que tu sous-entend Ruffio. Gare à ne pas abuser de mon état.[i]Entrent un serveur, Vitori, Sire Philippe, Giulia, Claudio, Augurie et Alma.[/i]"
 ,,
 ,,
 ,,
@@ -397,14 +398,14 @@ RUFFIO SCENE2DEFAULT ,TODO,"Que fais tu là ? Nous ne devrions pas nous parler, 
 RUFFIO SCENE2DEFAULT A1,TODO,[WAITER STRANGE REACTION] Connais tu le serveur qui vient de partir ?
 RUFFIO SCENE2DEFAULT A2,TODO,"Ca va, je m'en vais !"
 ,,
-RUFFIO D5,TODO,"Non, mais il ne m'a pas quitté des yeux. Peut être devrais je aller le surveiller."
-RUFFIO D5 A1,TODO,Depuis quand connais tu Sire Vitori ?
+RUFFIO D6,TODO,"Non, mais il ne m'a pas quitté des yeux. Peut être devrais je aller le surveiller."
+RUFFIO D6 A1,TODO,Depuis quand connais tu Sire Vitori ?
 ,,
-RUFFIO D6,TODO,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'aie confié la mission à toi... Toi qui débarque parmis nous, et qui parvient à convaincre notre meneur de te confier l'élimination du Tyran... Je garde un oeil sur toi aussi, évidemment."
-RUFFIO D6 A1,TODO,Ce qui veut dire Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
+RUFFIO D7,TODO,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'aie confié la mission à toi... Toi qui débarque parmis nous, et qui parvient à convaincre notre meneur de te confier l'élimination du Tyran... Je garde un oeil sur toi aussi, évidemment."
+RUFFIO D7 A1,TODO,Ce qui veut dire Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
 ,,
-RUFFIO D7,TODO,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
-RUFFIO D7 A1,TODO,"Bonne soirée, Ruffio."
+RUFFIO D8,TODO,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
+RUFFIO D8 A1,TODO,"Bonne soirée, Ruffio."
 ,,
 ,,
 SIRE PHILIPPE DEFAULT,TODO,"Bien le bonsoir, jeune Sire."

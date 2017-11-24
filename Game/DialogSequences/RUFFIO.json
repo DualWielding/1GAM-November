@@ -44,6 +44,12 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d4"
+			},
+			{
+				"text":"RUFFIO D3 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
 			}
 		]
 	},
@@ -53,27 +59,9 @@
 		"options": [
 			{
 				"text":"RUFFIO D4 A1",
-				"end": true,
-				"state change":"has_yelled",
-				"next sequence": "none"
-			}
-		]
-	},
-
-	"has_yelled": {
-		"text":"RUFFIO SCENE2DEFAULT",
-		"options": [
-			{
-				"text":"RUFFIO SCENE2DEFAULT A1",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d5"
-			},
-			{
-				"text":"RUFFIO SCENE2DEFAULT A2",
-				"end": true,
-				"state change":"unchanged",
-				"next sequence": "none"
 			}
 		]
 	},
@@ -83,9 +71,28 @@
 		"options": [
 			{
 				"text":"RUFFIO D5 A1",
+				"end": true,
+				"state change":"has_yelled",
+				"next sequence": "none"
+			}
+		]
+	},
+
+
+	"has_yelled": {
+		"text":"RUFFIO SCENE2DEFAULT",
+		"options": [
+			{
+				"text":"RUFFIO SCENE2DEFAULT A1",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d6"
+			},
+			{
+				"text":"RUFFIO SCENE2DEFAULT A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
 			}
 		]
 	},
@@ -97,16 +104,28 @@
 				"text":"RUFFIO D6 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "D7"
+				"next sequence": "d7"
 			}
 		]
 	},
 
 	"d7": {
-		"text":"RUFFIO",
+		"text":"RUFFIO D7",
 		"options": [
 			{
 				"text":"RUFFIO D7 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8"
+			}
+		]
+	},
+
+	"d8": {
+		"text":"RUFFIO",
+		"options": [
+			{
+				"text":"RUFFIO D8 A1",
 				"end": true,
 				"state change":"unchanged",
 				"next sequence": "none",
