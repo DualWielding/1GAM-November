@@ -16,7 +16,32 @@ region_rect = Rect2( 961, 705, 62, 94 )
 
 [node name="Light2D" type="Light2D" parent="."]
 
-transform/pos = Vector2( 0, -26 )
+transform/pos = Vector2( 0, -25 )
+transform/scale = Vector2( 0.85, 0.85 )
+enabled = true
+editor_only = false
+texture = ExtResource( 2 )
+offset = Vector2( 0, 0 )
+scale = 1.0
+color = Color( 0.937255, 0.937255, 0.466667, 0.469961 )
+energy = 1.0
+mode = 0
+range/height = 0.0
+range/z_min = -1024
+range/z_max = 1024
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 3
+shadow/enabled = true
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 80.0
+shadow/item_mask = 3
+
+[node name="Unshadowed-light" type="Light2D" parent="."]
+
+transform/pos = Vector2( 0, -25 )
+transform/scale = Vector2( 0.85, 0.85 )
 enabled = true
 editor_only = false
 texture = ExtResource( 2 )
@@ -30,12 +55,12 @@ range/z_min = -1024
 range/z_max = 1024
 range/layer_min = 0
 range/layer_max = 0
-range/item_mask = 1
-shadow/enabled = true
+range/item_mask = 8
+shadow/enabled = false
 shadow/color = Color( 0, 0, 0, 0 )
 shadow/buffer_size = 2048
 shadow/esm_multiplier = 80.0
-shadow/item_mask = 1
+shadow/item_mask = 3
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

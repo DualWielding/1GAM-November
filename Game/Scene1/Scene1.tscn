@@ -39,7 +39,7 @@ extents = Vector2( 158.451, 7.01831 )
 custom_solver_bias = 0.0
 extents = Vector2( 8.36768, 7.01831 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=6]
 
 custom_solver_bias = 0.0
 extents = Vector2( 66.3436, 10 )
@@ -171,14 +171,6 @@ editor/display_folded = true
 transform/pos = Vector2( -111.076, 354.744 )
 flip_h = true
 
-[node name="Light - 1" parent="." instance=ExtResource( 11 )]
-
-transform/pos = Vector2( 671.449, 343.23 )
-
-[node name="Light - 2" parent="." instance=ExtResource( 11 )]
-
-transform/pos = Vector2( 480.451, 344.428 )
-
 [node name="OnTopOfChars" type="TileMap" parent="."]
 
 mode = 0
@@ -212,6 +204,14 @@ margin/right = 1206.0
 margin/bottom = 694.0
 color = Color( 0.192157, 0.129412, 0.141176, 0.54098 )
 
+[node name="Light - 2" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 480.451, 344.428 )
+
+[node name="Light - 1" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 671.449, 343.23 )
+
 [node name="InvisibleWalls" type="StaticBody2D" parent="."]
 
 editor/display_folded = true
@@ -243,7 +243,7 @@ shapes/7/trigger = false
 shapes/8/shape = SubResource( 5 )
 shapes/8/transform = Matrix32( 0.283642, 0, 0, 5.03432, 441.805, 522.372 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 7 )
+shapes/9/shape = SubResource( 6 )
 shapes/9/transform = Matrix32( 1, 0, 0, 1, 577.426, 353.665 )
 shapes/9/trigger = false
 collision/layers = 1
@@ -327,7 +327,7 @@ _update_shape_index = 8
 [node name="CollisionShape2D 4" type="CollisionShape2D" parent="InvisibleWalls"]
 
 transform/pos = Vector2( 577.426, 353.665 )
-shape = SubResource( 7 )
+shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 9
 
