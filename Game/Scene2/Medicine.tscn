@@ -1,16 +1,23 @@
 [gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://Body.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scene2/Medicine.gd" type="Script" id=2]
-[ext_resource path="res://Sprites/Atlas.tex" type="Texture" id=3]
+[ext_resource path="res://Sprites/Atlas.tex" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "extends \"res://Body.gd\"
+
+func _init():
+	set_name(tr(\"MEDICINE\"))
+	unique_name = \"Medicine\""
 
 [node name="Medicine" instance=ExtResource( 1 )]
 
-script/script = ExtResource( 2 )
+script/script = SubResource( 1 )
 
 [node name="Sprite" parent="."]
 
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 region = true
 region_rect = Rect2( 480, 576, 32, 32 )
 
