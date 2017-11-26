@@ -54,6 +54,7 @@ func _input(event):
 
 func collapse():
 	animator.play("Hurt")
+	sp.play("chute_")
 	set_disabled_movement(true)
 
 func stand_up():

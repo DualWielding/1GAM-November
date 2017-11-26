@@ -24,6 +24,20 @@ texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 832, 704, 32, 32 )
 
+[node name="Rug - border" type="Sprite" parent="."]
+
+transform/pos = Vector2( 192, 144 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 736, 128, 32, 32 )
+
+[node name="Rug - end" type="Sprite" parent="."]
+
+transform/pos = Vector2( 224, 144 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 832, 128, 32, 32 )
+
 [node name="Block" type="Sprite" parent="."]
 
 editor/display_folded = true

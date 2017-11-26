@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://Sprites/build_atlas.atex" type="Texture" id=1]
+[ext_resource path="res://Sprites/Inside/Floor - 2.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Inside/window.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Round-table with drinks.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/rug/corner.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/rug/border.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/rug/end.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/rug/mid.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Inside/door.png" type="Texture" id=9]
 
 [node name="Scene3TileSet" type="Node"]
 
@@ -10,6 +18,13 @@ texture = ExtResource( 1 )
 centered = false
 region = true
 region_rect = Rect2( 832, 704, 32, 32 )
+
+[node name="Floor - 2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 96, 96 )
+texture = ExtResource( 2 )
+centered = false
+region_rect = Rect2( 919, 127, 64, 32 )
 
 [node name="Wall - Mid part" type="Sprite" parent="."]
 
@@ -46,9 +61,8 @@ region_rect = Rect2( 448, 800, 32, 32 )
 [node name="Window" type="Sprite" parent="."]
 
 transform/pos = Vector2( 320, 0 )
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 centered = false
-region = true
 region_rect = Rect2( 256, 896, 128, 128 )
 
 [node name="Furniture - M" type="Sprite" parent="."]
@@ -73,46 +87,48 @@ transform/pos = Vector2( 256, 64 )
 texture = ExtResource( 1 )
 centered = false
 region = true
-region_rect = Rect2( 864, 224, 64, 32 )
+region_rect = Rect2( 864, 348, 64, 64 )
+
+[node name="Round table" type="Sprite" parent="."]
+
+transform/pos = Vector2( 640, 0 )
+texture = ExtResource( 4 )
+centered = false
+region_rect = Rect2( 864, 348, 64, 64 )
 
 [node name="Rug - Corner" type="Sprite" parent="."]
 
 transform/pos = Vector2( 32, 0 )
-texture = ExtResource( 1 )
+texture = ExtResource( 5 )
 centered = false
-region = true
 region_rect = Rect2( 736, 128, 32, 32 )
 
 [node name="Rug - Border" type="Sprite" parent="."]
 
 transform/pos = Vector2( 32, 96 )
-texture = ExtResource( 1 )
+texture = ExtResource( 6 )
 centered = false
-region = true
 region_rect = Rect2( 768, 128, 32, 32 )
 
 [node name="Rug - end" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 96 )
-texture = ExtResource( 1 )
+texture = ExtResource( 7 )
 centered = false
-region = true
 region_rect = Rect2( 832, 128, 32, 32 )
 
 [node name="Rug" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 0 )
-texture = ExtResource( 1 )
+texture = ExtResource( 8 )
 centered = false
-region = true
-region_rect = Rect2( 800, 128, 32, 32 )
+region_rect = Rect2( 798, 128, 32, 32 )
 
 [node name="Door" type="Sprite" parent="."]
 
 transform/pos = Vector2( 448, 0 )
-texture = ExtResource( 1 )
+texture = ExtResource( 9 )
 centered = false
-region = true
 region_rect = Rect2( 800, 448, 192, 128 )
 
 [node name="Door - Inside - Mid" type="Sprite" parent="."]

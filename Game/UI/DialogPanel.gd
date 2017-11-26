@@ -6,6 +6,7 @@ onready var script_container = get_node("ScrollContainer/ScriptContainer")
 onready var answers_container = get_node("AnswersContainer")
 onready var slide_button = get_node("SlideButton")
 onready var ap = get_node("AnimationPlayer")
+onready var sp = get_node("SamplePlayer")
 
 var _hidden_panel = true
 var current_length = 0
@@ -109,6 +110,7 @@ func show_panel():
 	if _hidden_panel:
 		_hidden_panel = false
 		ap.play_backwards("Slide_left")
+		sp.play("writing")
 
 func _on_SlideButton_pressed():
 	if not _hidden_panel:

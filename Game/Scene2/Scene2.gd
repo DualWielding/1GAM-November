@@ -55,7 +55,6 @@ func start_ruffio_dialog():
 	ruffio.connect("state_change", self, "state_change_controller", [ruffio], CONNECT_ONESHOT)
 
 func eneveryone_enter():
-	Player.ui.dialog_panel.add_text(tr("SCENE 2 EVERYONE ENTER"), "fade", true)
 	vitori.enter()
 	alma.enter()
 	philippe.enter()

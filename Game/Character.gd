@@ -5,6 +5,7 @@ onready var lo_face = get_node("LightOccluderFace")
 onready var lo_left = get_node("LightOccluderLeft")
 onready var lo_right = get_node("LightOccluderRight")
 onready var animator = get_node("AnimationPlayer")
+onready var sp = get_node("SamplePlayer")
 
 var current_direction = null
 var base_looking_direction = "left"
@@ -76,6 +77,7 @@ func stop_dialog(option):
 
 func collapse():
 	animator.play("Hurt")
+	sp.play("chute_")
 
 func stand_up():
 	animator.play_backward("Hurt")

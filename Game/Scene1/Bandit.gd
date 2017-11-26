@@ -1,5 +1,6 @@
 extends "res://NPC.gd"
 
+var has_hit = false
 var _t = Timer.new()
 
 signal scene_over
@@ -16,7 +17,8 @@ func init():
 
 func _on_InteractionArea_area_enter( area ):
 	var body = area.get_parent()
-	if body == Player.character:
+	if body == Player.character and !has_hit:
+		has_hit = true
 		body.stop_walking()
 		stop_walking()
 		slash_right()
@@ -29,7 +31,7 @@ func _flee():
 	walk_down()
 	
 	var _t2 = Timer.new()
-	_t2.set_wait_time(0.2)
+	_t2.set_wait_time(0.3)
 	_t2.set_one_shot(true)
 	_t2.connect("timeout", self, "walk_right")
 	add_child(_t2)
