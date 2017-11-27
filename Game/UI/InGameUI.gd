@@ -102,6 +102,11 @@ func _on_InteractionButton_pressed():
 	var popup = interaction_button.get_popup()
 	popup.clear()
 	var size = Player.character.interaction_possibilities.size()
+	if size == 0:
+		return
+	
+	Player.character.set_disabled_movement(true)
+	
 	if size == 1:
 		popup.hide()
 		send_start_interaction_message(0)
