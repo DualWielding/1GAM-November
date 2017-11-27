@@ -125,6 +125,18 @@ transform/pos = Vector2( 191.69, 415.514 )
 editor/display_folded = true
 transform/pos = Vector2( 507.827, 299.143 )
 
+[node name="CollisionShape2D" parent="PlayerCharacter"]
+
+transform/pos = Vector2( -0.264517, 15.6859 )
+
+[node name="SamplePlayer" parent="PlayerCharacter"]
+
+default/reverb_room = 2
+
+[node name="CollisionPolygon2D" parent="PlayerCharacter/PlayerDetectionArea"]
+
+polygon = Vector2Array( -6.90508, 19.7234, -5.78864, 12.3378, -8.5368, 12.5954, -10.1685, 11.0496, -9.05208, 1.94627, -7.07684, 0.0569066, -7.678, -6.98526, -3.8134, -11.5369, 2.45585, -11.5369, 6.74985, -8.18758, 7.35101, -3.3783, 6.74985, 1.68863, 8.46745, 3.57799, 9.41213, 7.78611, 8.38157, 14.2271, 5.97693, 19.9811 )
+
 [node name="Camera2D" parent="PlayerCharacter"]
 
 transform/pos = Vector2( -0.00012207, 6.85159 )

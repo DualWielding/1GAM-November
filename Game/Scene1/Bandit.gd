@@ -51,6 +51,7 @@ func _flee():
 func _drop_dagger():
 	get_parent().dagger.set_pos(get_pos() + Vector2(0, 40))
 	get_parent().dagger.show()
+	sp.play("metalClick")
 
 func _scene_over():
 	fade()

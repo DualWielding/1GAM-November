@@ -55,11 +55,10 @@ func _input(event):
 
 func collapse():
 	animator.play("Hurt")
-	sp.play("chute_")
 	set_disabled_movement(true)
 
 func stand_up():
-	animator.play_backwards("Hurt")
+	animator.play("Stand")
 	animator.connect("finished", self, "set_disable_movement", [false], CONNECT_ONESHOT)
 
 ######## MOVEMENT ########

@@ -24,6 +24,9 @@ func _ready():
 	Player.ui.show_book()
 	Player.ui.dialog_panel.ap.connect("finished", self, "write_scene_informations", [], CONNECT_ONESHOT)
 
+func get_step_type(pos):
+	return ["stepstone_", 8]
+
 func write_scene_informations():
 	Player.ui.dialog_panel.add_text(tr("SCENE 2 INTRO"), "fade", true)
 	

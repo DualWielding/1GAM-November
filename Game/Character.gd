@@ -77,12 +77,15 @@ func stop_dialog(option):
 
 func collapse():
 	animator.play("Hurt")
-	sp.play("chute_")
 
 func stand_up():
-	animator.play_backward("Hurt")
+	animator.play("Stand")
 
 ######## WALKING ########
+
+func play_step_sound():
+	var step_type = get_parent().get_step_type(get_pos())
+	sp.play(str(step_type[0], (randi() % step_type[1]) + 1))
 
 func walk_up():
 	current_direction  = "up"

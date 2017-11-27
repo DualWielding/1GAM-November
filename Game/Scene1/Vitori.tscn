@@ -32,10 +32,6 @@ frame = 33
 
 visibility/visible = false
 
-[node name="InteractionArea" parent="."]
-
-visibility/visible = false
-
 [node name="FadePlayer" parent="."]
 
 anims/Fade = SubResource( 1 )

@@ -23,5 +23,6 @@ func _ready():
 
 func get(card_unique_name):
 	if !cards.has(card_unique_name):
+		print("The card you're looking for does not exist.")
 		return null
 	return cards[card_unique_name]
