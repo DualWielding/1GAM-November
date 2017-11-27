@@ -1,0 +1,123 @@
+[gd_scene load_steps=12 format=1]
+
+[ext_resource path="res://Sprites/Round-table with drinks.png" type="Texture" id=1]
+[ext_resource path="res://Isometric-item.gd" type="Script" id=2]
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 23.0856, -12.0626, 25.0791, -7.64836, 23.3704, -3.37647, 17.9593, -0.813345, 19.9529, -13.9138 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -0.409786, -17.7585, 6.28283, -17.6161, 11.4091, -17.1889, 17.2473, -15.6225, 19.9529, -13.9138, 17.9593, -0.813345, 8.84596, 2.03458, -6.81761, 1.60739, -4.39687, -17.4737 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -17.2125, -14.7682, -13.2254, -16.4769, -10.5199, -17.1889, -4.39687, -17.4737, -6.81761, 1.60739, -16.3581, -0.101364, -23.3356, -2.3797 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -21.342, -13.629, -17.2125, -14.7682, -23.3356, -2.3797, -23.6203, -11.4931 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -26.6107, -6.2244, -26.1835, -9.21472, -23.6203, -11.4931, -23.3356, -2.3797, -25.3291, -3.80366 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -13.7474, -19.955, 11.9477, -22.2909, 26.5472, -12.3633, 29.1751, -3.89559, 14.2836, 3.98814, -9.95154, 3.40416, -26.5949, -13.5312 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 7.56786, 19.1716, 10.1958, 25.8874, 2.02004, 31.1432, -9.36755, 27.6393, -9.95154, 3.40416 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 14.2836, 3.98814, 7.56786, 19.1716, -9.95154, 3.40416 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -26.5949, -13.5312, -9.95154, 3.40416, -23.6751, 3.11217, -28.3469, -5.06355 )
+
+[node name="Table" type="Sprite"]
+
+texture = ExtResource( 1 )
+region_rect = Rect2( 672, 608, 64, 64 )
+script/script = ExtResource( 2 )
+ceil_value = -10
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 8 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -0.854378, 18.3691 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 9 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, -0.854378, 18.3691 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 10 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, -0.854378, 18.3691 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 11 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, -0.854378, 18.3691 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 12 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, -0.854378, 18.3691 )
+shapes/4/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+
+transform/pos = Vector2( -0.854378, 18.3691 )
+build_mode = 0
+polygon = Vector2Array( -25.3291, -3.80366, -26.6107, -6.2244, -26.1835, -9.21472, -23.6203, -11.4931, -21.342, -13.629, -17.2125, -14.7682, -13.2254, -16.4769, -10.5199, -17.1889, -4.39687, -17.4737, -0.409786, -17.7585, 6.28283, -17.6161, 11.4091, -17.1889, 17.2473, -15.6225, 19.9529, -13.9138, 23.0856, -12.0626, 25.0791, -7.64836, 23.3704, -3.37647, 17.9593, -0.813345, 8.84596, 2.03458, -6.81761, 1.60739, -16.3581, -0.101364, -23.3356, -2.3797 )
+shape_range = Vector2( 0, 4 )
+trigger = false
+
+[node name="PlayerDetectionArea" type="Area2D" parent="."]
+
+visibility/visible = false
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 5 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 6 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 7 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayerDetectionArea"]
+
+build_mode = 0
+polygon = Vector2Array( -9.36755, 27.6393, -9.95154, 3.40416, -23.6751, 3.11217, -28.3469, -5.06355, -26.5949, -13.5312, -13.7474, -19.955, 11.9477, -22.2909, 26.5472, -12.3633, 29.1751, -3.89559, 14.2836, 3.98814, 7.56786, 19.1716, 10.1958, 25.8874, 2.02004, 31.1432 )
+shape_range = Vector2( 0, 3 )
+trigger = false
+
+[connection signal="area_enter" from="PlayerDetectionArea" to="." method="_on_PlayerDetectionArea_area_enter"]
+
+[connection signal="area_exit" from="PlayerDetectionArea" to="." method="_on_PlayerDetectionArea_area_exit"]
+
+
