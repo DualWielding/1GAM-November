@@ -1010,6 +1010,7 @@ transform/pos = Vector2( 489.147, 647.998 )
 
 [node name="Medicine" type="Sprite" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 265.162, 252.468 )
 texture = ExtResource( 2 )
 region = true
@@ -1033,6 +1034,7 @@ transform/pos = Vector2( 694.882, 554.69 )
 
 [node name="Sire Philippe" parent="." instance=ExtResource( 9 )]
 
+visibility/visible = false
 transform/pos = Vector2( 252.345, 266.297 )
 
 [node name="Ruffio" parent="." instance=ExtResource( 10 )]

@@ -75,7 +75,9 @@ func hide_dialog():
 	dialog_panel.clear_answers()
 	dialog_panel.hide_panel()
 	dialog_panel.enable_toggling()
-	show_interaction_button()
+	
+	if Player.character.interaction_possibilities.size() > 0:
+		show_interaction_button()
 
 func clear_answers():
 	dialog_panel.clear_answers()

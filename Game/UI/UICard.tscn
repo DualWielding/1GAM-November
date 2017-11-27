@@ -2,7 +2,7 @@
 
 [ext_resource path="res://UI/UICard.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/CircularLightShape.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Cards/animation_recto_carte_speciale.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Cards/animation_recto_carte_normale.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Cards/strozi is cesni lover img.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Cards/cesni owns you name.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Cards/animation_verso_carte_normale.png" type="Texture" id=6]
@@ -121,20 +121,20 @@ tracks/4/path = NodePath("Wrapper/VirginCard/Verso/Sprite:frame")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
-"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0 ]
+"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0, 0 ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Wrapper/VirginCard/Verso/Text:frame")
 tracks/5/interp = 1
 tracks/5/imported = false
 tracks/5/keys = {
-"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0.3, 0.36, 0.36, 0.42, 0.48, 0.54, 0.54, 0.6, 0.6, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0 ]
+"values": [ 5, 4, 4, 3, 2, 1, 1, 0, 0, 0 ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Wrapper/VirginCard/Recto/Name:frame")
@@ -352,7 +352,7 @@ frame = 5
 [node name="Name" type="Sprite" parent="Wrapper/VirginCard/Recto"]
 
 visibility/light_mask = 0
-transform/pos = Vector2( -71, -90 )
+transform/pos = Vector2( -67.6667, -89.9999 )
 texture = ExtResource( 5 )
 flip_h = true
 flip_v = true

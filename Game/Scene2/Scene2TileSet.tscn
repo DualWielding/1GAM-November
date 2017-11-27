@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://Sprites/build_atlas.atex" type="Texture" id=1]
-[ext_resource path="res://Sprites/transparent-bg-tiles.tex" type="Texture" id=2]
+[ext_resource path="res://Sprites/rug/corner.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/rug/end.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/transparent-bg-tiles.tex" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -27,15 +29,13 @@ region_rect = Rect2( 832, 704, 32, 32 )
 [node name="Rug - border" type="Sprite" parent="."]
 
 transform/pos = Vector2( 192, 144 )
-texture = ExtResource( 1 )
-region = true
+texture = ExtResource( 2 )
 region_rect = Rect2( 736, 128, 32, 32 )
 
 [node name="Rug - end" type="Sprite" parent="."]
 
 transform/pos = Vector2( 224, 144 )
-texture = ExtResource( 1 )
-region = true
+texture = ExtResource( 3 )
 region_rect = Rect2( 832, 128, 32, 32 )
 
 [node name="Block" type="Sprite" parent="."]
@@ -69,42 +69,42 @@ _update_shape_index = 0
 [node name="House-Face" type="Sprite" parent="."]
 
 transform/pos = Vector2( 47, 64 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 region = true
 region_rect = Rect2( 144, 0, 96, 128 )
 
 [node name="Tree" type="Sprite" parent="."]
 
 transform/pos = Vector2( 112, 53 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 region = true
 region_rect = Rect2( 128, 32, 16, 86 )
 
 [node name="Path" type="Sprite" parent="."]
 
 transform/pos = Vector2( 120, 104 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 region = true
 region_rect = Rect2( 256, 144, 16, 16 )
 
 [node name="Path-End" type="Sprite" parent="."]
 
 transform/pos = Vector2( 104, 120 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 region = true
 region_rect = Rect2( 256, 128, 16, 16 )
 
 [node name="Grass" type="Sprite" parent="."]
 
 transform/pos = Vector2( 104, 104 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 region = true
 region_rect = Rect2( 336, 112, 16, 16 )
 
 [node name="House-Side" type="Sprite" parent="."]
 
 transform/pos = Vector2( 152, 91 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 region = true
 region_rect = Rect2( 288, 0, 48, 150 )
 
