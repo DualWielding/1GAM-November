@@ -1,5 +1,4 @@
 {
-
 		"default": {
 		"text":"SIRE PHILIPPE DEFAULT",
 		"options": [
@@ -21,7 +20,7 @@
 				"text":"SIRE PHILIPPE DEFAULT A3",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d8"
+				"next sequence": "d12"
 			},
 			{
 				"text":"SIRE PHILIPPE DEFAULT A4",
@@ -135,7 +134,7 @@
 				"text":"SIRE PHILIPPE D8 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "D9"
+				"next sequence": "d9"
 			},
 			{
 				"text":"SIRE PHILIPPE D8 A2",
@@ -171,7 +170,7 @@
 	},
 
 	"d11": {
-		"text":"SIRE PHILIPPE",
+		"text":"SIRE PHILIPPE D11",
 		"options": [
 			{
 				"text":"SIRE PHILIPPE D11 A1",
@@ -208,7 +207,8 @@
 				"text":"SIRE PHILIPPE D13 A1",
 				"end": true,
 				"state change":"unchanged",
-				"next sequence": "none"
+				"next sequence": "none",
+				"card gained":"ALMA IS NO MORE PROTECTED"
 			}
 		]
 	}

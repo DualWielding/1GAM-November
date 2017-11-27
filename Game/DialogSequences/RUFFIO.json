@@ -86,7 +86,8 @@
 				"text":"RUFFIO SCENE2DEFAULT A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d6"
+				"next sequence": "d6",
+				"card used":"WAITER STRANGE REACTION"
 			},
 			{
 				"text":"RUFFIO SCENE2DEFAULT A2",

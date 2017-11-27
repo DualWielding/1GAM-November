@@ -11,7 +11,7 @@
 				"card used":"A SURPRISE IS PLANNED"
 			},
 			{
-				"text":"AUGURIE D1 A2",
+				"text":"AUGURIE DEFAULT A2",
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d6"
