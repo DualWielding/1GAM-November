@@ -100,7 +100,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d7",
-				"card gained": ["CESNI OWN YOU","STROZI IS CESNI LOVER"]
+				"card gained": ["CESNI OWNS YOU","STROZI IS CESNI LOVER"]
 			}
 		]
 	},
@@ -113,7 +113,7 @@
 				"end":false,
 				"state change":"unchanged",
 				"next sequence": "d8",
-				"card gained":["AUGURIE IS WORKING WITH VITORI","PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE"] 
+				"card gained":"PHILIPPE PRESENCE DEPENDS ON HIS MEDICINE"
 			}
 		]
 	},
@@ -127,7 +127,7 @@
 				"state change":"unchanged",
 				"next sequence": "d9",
 
-				"card gained":["MISSING FINGER OF RUFFIO EXPLAINATION","ALMA PET KIDNAPPED"]
+				"card gained":["MISSING FINGER OF RUFFIO EXPLANATION","ALMA PET KIDNAPPED"]
 			}
 		]
 	},
@@ -154,40 +154,7 @@
 				"next sequence": "none"
 			}
 		]
-	},
-
-	"scene2default" :{
-		"text":"VITORI SCENE2DEFAULT",
-		"options": [
-			{
-				"text":"VITORI SCENE2DEFAULT A1",
-				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d11",
-				"card used" : "HEAD COMPLOTIST DESCRIPTION"
-			},
-			{
-				"text":"VITORI SCENE2DEFAULT A2",
-				"end": true,
-				"state change":"unchanged",
-				"next sequence": "none"
-			}
-		]
-	},
-
-	"d11": {
-		"text":"VITORI D11",
-		"options": [
-			{
-				"text":"VITORI D11 A1",
-				"end": true,
-				"state change":"unchanged",
-				"next sequence": "none",
-				"card gained" : "NEED A DRINK"
-			}
-		]
-	}	
-
+	}
 
 
 }

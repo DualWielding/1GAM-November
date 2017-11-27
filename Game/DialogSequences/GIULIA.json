@@ -1,0 +1,29 @@
+{
+
+	"default": {
+		"text":"GIULIA DEFAULT",
+		"options": [
+			{
+				"text":"GIULIA DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d1"
+			}
+		]
+	},
+
+	"d1": {
+		"text":"GIULIA D1",
+		"options": [
+			{
+				"text":"GIULIA D1 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained": "A SURPRISE IS PLANNED"
+			}
+		]
+	}
+
+
+}

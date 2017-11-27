@@ -10,6 +10,7 @@ onready var submit_button = input_wrapper.get_node("Submit")
 onready var discard_panel = get_node("DiscardPanel")
 onready var discard_button = discard_panel.get_node("DiscardButton")
 onready var discard_label = discard_panel.get_node("DiscardLabel")
+onready var tutorial = get_node("Tutorial")
 
 var ui_card_class = preload("res://UI/UICard.tscn")
 var ui_important_card_class = preload("res://UI/UIImportantCard.tscn")
@@ -17,10 +18,12 @@ var ui_important_card_class = preload("res://UI/UIImportantCard.tscn")
 var cards_to_discard_number = 0
 var cards_to_discard = []
 
+var is_visible = true
+var interaction_button_showed = false
+
 func _ready():
 	Input.set_custom_mouse_cursor(load("res://Sprites/Cursor.png"))
 	Player.ui = self
-	hide()
 	
 	# Connect to player
 	Player.character.connect("can_interact", self, "show_interaction_button")
@@ -28,18 +31,14 @@ func _ready():
 	Player.connect("card_added", self, "add_card")
 	Player.connect("card_removed", self, "remove_card")
 	
-	# Add all the players' cards at the beginning
-	for card_name in Player.get_hand():
-		add_card(Player.get_hand()[card_name], false)
-	
-	for card_name in Player.get_important_hand():
-		add_card(Player.get_important_hand()[card_name], false)
+	Player.add_base_cards()
 	
 	# Connect the UI to every bodies in the scene
 	for body in get_tree().get_nodes_in_group("body"):
 		body.connect("say", self, "show_dialog")
 		body.connect("stop_dialog", self, "hide_dialog")
 		body.connect("stop_dialog", Player, "check_cards_number")
+		body.connect("stop_dialog", dialog_panel, "reset_current_options")
 	
 	# Assign the shortcut "E" to the interaction action
 	var hotkey = InputEvent()
@@ -56,25 +55,29 @@ func _ready():
 	interaction_button.set_text(tr("INTERACTION BUTTON"))
 	discard_button.set_text(tr("DISCARD BUTTON"))
 	
-	
 	set_process_input(true)
 
 ###### DIALOGS ######
+
+func show_book():
+	dialog_panel.show_panel()
+
+func hide_book():
+	dialog_panel.hide_panel()
 
 func show_dialog(body, unformatted_text, options):
 	# Hide the interaction button
 	hide_interaction_button()
 	dialog_panel.set_dialog(body, unformatted_text, options)
-	# This two next are now handled by set_dialog func
-#	dialog_panel.show_panel()
-#	dialog_panel.disable_toggling()
 
 func hide_dialog():
 	# Show the interaction button again
 	dialog_panel.clear_answers()
 	dialog_panel.hide_panel()
 	dialog_panel.enable_toggling()
-	show_interaction_button()
+	
+	if Player.character.interaction_possibilities.size() > 0:
+		show_interaction_button()
 
 func clear_answers():
 	dialog_panel.clear_answers()
@@ -82,8 +85,13 @@ func clear_answers():
 ###### INTERACTIONS ######
 
 func show_interaction_button():
-	if !Player.character.is_disabled():
+	if !Player.character.is_disabled() and is_visible:
 		interaction_button.set_disabled(false)
+		if !interaction_button_showed:
+			Player.character.set_disabled_movement(true)
+			Player.ui.tutorial.connect("got_it", Player.character, "set_disabled_movement", [false], CONNECT_ONESHOT)
+			Player.ui.tutorial.show_window("Interaction")
+			interaction_button_showed = true
 
 func hide_interaction_button():
 	interaction_button.set_disabled(true)
@@ -95,15 +103,15 @@ func _on_InteractionButton_pressed():
 	popup.clear()
 	var size = Player.character.interaction_possibilities.size()
 	if size == 1:
+		popup.hide()
 		send_start_interaction_message(0)
 	else:
 		for i in range(size):
 			var body = Player.character.interaction_possibilities[i]
-			var b = Button.new()
 			popup.add_item(body.get_name(), i)
 			popup.connect("item_pressed", self, "send_start_interaction_message")
 		popup.show()
-		popup.set_global_pos(OS.get_window_size()/2)
+		popup.set_pos(get_viewport().get_mouse_pos() + Vector2(-10, -10))
 
 func send_start_interaction_message(id):
 	Player.character.interaction_possibilities[id].start_dialog()
@@ -192,7 +200,13 @@ func remove_from_discard_stash(card):
 	cards_to_discard_number += 1
 
 func show_discard_screen(number):
-	discard_label.set_text(tr("DISCARD TEXT").replace("%number", str(number)))
+
+	var text = tr("DISCARD TEXT").replace("%number", str(number))
+	if number == 1:
+		text = text.replace("cartes", "carte")
+		text = text.replace("surnuméraires", "surnuméraire")
+	
+	discard_label.set_text(text)
 	cards_to_discard_number = number
 	bring_cards_up()
 	hand.get_node("AnimationPlayer").connect("finished", discard_panel, "show", [], CONNECT_ONESHOT)
@@ -216,12 +230,14 @@ func hide():
 	hand.hide()
 	important_hand.hide()
 	dialog_panel.hide()
+	is_visible = false
 
 func show():
 	interaction_button.show()
 	hand.show()
 	important_hand.show()
 	dialog_panel.show()
+	is_visible = true
 # Test for discarding
 #func _on_Button_toggled( pressed ):
 #	if pressed:

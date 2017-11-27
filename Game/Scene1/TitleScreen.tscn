@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://Scene1/TitleScreen.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/UI/fondlogo.jpg" type="Texture" id=2]
 [ext_resource path="res://Sprites/UI/Title.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/Linux_Biolinum_big.fnt" type="BitmapFont" id=4]
 
 [sub_resource type="Animation" id=1]
 
@@ -144,6 +145,16 @@ tracks/5/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("Title/DualWielding:custom_colors/font_color")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": FloatArray( 4, 6, 9 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.117188, 0.117188, 0.117188, 0 ), Color( 0.117188, 0.117188, 0.117188, 1 ), Color( 0.117188, 0.117188, 0.117188, 0 ) ]
+}
 
 [node name="TitleScreen" type="CanvasLayer"]
 
@@ -160,11 +171,11 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 1026.0
-margin/bottom = 600.0
-color = Color( 1, 1, 1, 0 )
+margin/left = -256.0
+margin/top = -184.0
+margin/right = 1460.0
+margin/bottom = 886.0
+color = Color( 1, 1, 1, 1 )
 
 [node name="BackGround" type="TextureFrame" parent="."]
 
@@ -190,11 +201,28 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 150.0
 margin/top = 150.0
-margin/right = 1469.0
+margin/right = 1611.0
 margin/bottom = 409.0
 texture = ExtResource( 3 )
 modulate = Color( 1, 1, 1, 0 )
 stretch_mode = 0
+
+[node name="DualWielding" type="Label" parent="Title"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -57.3333
+margin/top = -77.3333
+margin/right = 416.667
+margin/bottom = -6.33333
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.117188, 0.117188, 0.117188, 0 )
+text = "Dual Wielding's"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 

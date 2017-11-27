@@ -1,0 +1,59 @@
+{
+
+	"default": {
+		"text":"WAITER DEFAULT",
+		"options": [
+			{
+				"text":"WAITER DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d1",
+				"card used": "NEED A DRINK"
+			},
+			{
+				"text":"WAITER DEFAULT A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"d1": {
+		"text":"WAITER D1",
+		"options": [
+			{
+				"text":"WAITER D1 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"WAITER D2",
+		"options": [
+			{
+				"text":"WAITER D2 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained": "WAITER STRANGE REACTION"
+			}
+		]
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -4,12 +4,15 @@ var sequences = {}
 var state = "default" setget set_state, get_state
 var display_name setget set_name, get_name
 var unique_name = "Base body"
+var is_object = true
+var fade_timer = Timer.new()
 
 signal say(body, text, options)
 signal state_change(old_state, new_state)
 signal stop_dialog
 
 func _ready():
+	add_child(fade_timer)
 	connect("state_change", self, "check_neutralized")
 	add_to_group("body")
 	init()
@@ -60,8 +63,7 @@ func stop_dialog(option):
 	# Re-enable the character movement
 	Player.character.set_disabled_movement(false)
 	
-	if option["state change"] != "unchanged":
-		state = option["state change"]
+	# The state change is done in clickable text
 	emit_signal("stop_dialog")
 	
 	Player.ui.dialog_panel.enable_toggling()
@@ -98,6 +100,12 @@ func get_name():
 func fade():
 	get_node("FadePlayer").play("Fade")
 	get_node("FadePlayer").connect("finished", self, "queue_free")
+
+func fade_in():
+	get_node("FadePlayer").play_backwards("Fade")
+	fade_timer.set_wait_time(0.1)
+	fade_timer.connect("timeout", self, "show", [], CONNECT_ONESHOT)
+	fade_timer.start()
 
 func check_neutralized(old_state, new_state):
 	if new_state == "neutralized":

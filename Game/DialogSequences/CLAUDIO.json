@@ -1,0 +1,41 @@
+{
+
+	"default": {
+		"text":"CLAUDIO DEFAULT",
+		"options": [
+			{
+				"text":"CLAUDIO DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d1"
+			}
+		]
+	},
+
+	"d1": {
+		"text":"CLAUDIO D1",
+		"options": [
+			{
+				"text":"CLAUDIO D1 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"CLAUDIO D2",
+		"options": [
+			{
+				"text":"CLAUDIO D2 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained":"SIR PHILIPPE SUFFERS FROM GOUTTE"
+			}
+		]
+	}
+
+
+}

@@ -1,5 +1,5 @@
 {
-	"alma default": {
+	"default": {
 		"text":"ALMA DEFAULT",
 		"options": [
 			{
@@ -31,6 +31,13 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d2"
+			},
+			{
+				"text":"ALMA D1 A3",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6",
+				"card used":"ALMA IS NO MORE PROTECTED"
 			}
 		]
 	},
@@ -60,7 +67,7 @@
 			{
 				"text":"ALMA D3 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"pissed",
 				"next sequence": "none"
 			}
 		]
@@ -76,17 +83,18 @@
 				"next sequence": "d8"
 			}
 		]
-	}
+	},
 
 
-	"alma no more protected": {
-		"text":"ALMA D5",
+	"pissed": {
+		"text":"ALMA NO MORE PROTECTED",
 		"options": [
 			{
 				"text":"ALMA NO MORE PROTECTED A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d6"
+				"next sequence": "d6",
+				"card used":"ALMA IS NO MORE PROTECTED"
 			},
 			{
 				"text":"ALMA NO MORE PROTECTED A2",
@@ -138,34 +146,37 @@
 		"options": [
 			{
 				"text":"ALMA D9 A1",
-				"end": true,
+				"end": false,
 				"state change":"unchanged",
-				"next sequence": "none",
-				"card gained" : "COMPLOTIST QUEST"
-			},
+				"next sequence": "d10"
+			}
+		]
+	},
+
+	"d10": {
+		"text":"ALMA D10",
+		"options": [
 			{
-				"text":"ALMA D9 A2",
-				"end": true,
+				"text":"ALMA D10 A1",
+				"end": false,
 				"state change":"unchanged",
-				"next sequence": "none",
-				"card gained" : "COMPLOTIST QUEST"
+				"next sequence": "d11"
+			}
+		]
+	},
+
+	"d11": {
+		"text":"ALMA D11",
+		"options": [
+			{
+				"text":"ALMA D11 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d12",
+				"card gained":"COMPLOTIST QUEST"
 			}
 		]
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

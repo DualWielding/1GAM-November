@@ -1,0 +1,381 @@
+[gd_scene load_steps=11 format=1]
+
+[ext_resource path="res://Tutorial.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/tuto-bg.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/plain-arrow.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/hand-ok-hovered.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/hand-ok.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxTexture" id=1]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 4 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxTexture" id=2]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 5 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxTexture" id=3]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 4 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxTexture" id=5]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+texture = ExtResource( 5 )
+margin/left = 0.0
+margin/right = 0.0
+margin/top = 0.0
+margin/bottom = 0.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
+
+[node name="Tutorial" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+script/script = ExtResource( 1 )
+
+[node name="Book" type="TextureFrame" parent="."]
+
+visibility/visible = false
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 500.0
+margin/bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Label" type="RichTextLabel" parent="Book"]
+
+rect/scale = Vector2( 1.4, 1.4 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 27.0
+margin/top = 20.0
+margin/right = 345.0
+margin/bottom = 96.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="Arrow" type="TextureFrame" parent="Book"]
+
+rect/rotation = -90.0
+rect/scale = Vector2( 0.3, 0.3 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -4.0
+margin/top = 70.0
+margin/right = 146.0
+margin/bottom = 220.0
+texture = ExtResource( 3 )
+stretch_mode = 0
+
+[node name="Button" type="Button" parent="Book"]
+
+rect/scale = Vector2( 0.4, 0.4 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 145.0
+margin/right = 560.0
+margin/bottom = 220.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="CheckBox" type="CheckBox" parent="Book"]
+
+rect/scale = Vector2( 1.35, 1.35 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 25.0
+margin/top = 145.0
+margin/right = 51.0
+margin/bottom = 170.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="Cards" type="TextureFrame" parent="."]
+
+visibility/visible = false
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 500.0
+margin/bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Label" type="RichTextLabel" parent="Cards"]
+
+rect/scale = Vector2( 1.4, 1.4 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 27.0
+margin/top = 20.0
+margin/right = 345.0
+margin/bottom = 96.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="Arrow" type="TextureFrame" parent="Cards"]
+
+rect/rotation = -90.0
+rect/scale = Vector2( 0.3, 0.3 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -4.0
+margin/top = 70.0
+margin/right = 146.0
+margin/bottom = 220.0
+texture = ExtResource( 3 )
+stretch_mode = 0
+
+[node name="Button" type="Button" parent="Cards"]
+
+rect/scale = Vector2( 0.4, 0.4 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 145.0
+margin/right = 560.0
+margin/bottom = 220.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="CheckBox" type="CheckBox" parent="Cards"]
+
+rect/scale = Vector2( 1.35, 1.35 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 25.0
+margin/top = 145.0
+margin/right = 51.0
+margin/bottom = 170.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="Interaction" type="TextureFrame" parent="."]
+
+visibility/visible = false
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 500.0
+margin/bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Label" type="RichTextLabel" parent="Interaction"]
+
+rect/scale = Vector2( 1.4, 1.4 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 27.0
+margin/top = 20.0
+margin/right = 345.0
+margin/bottom = 96.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="Arrow" type="TextureFrame" parent="Interaction"]
+
+rect/rotation = -90.0
+rect/scale = Vector2( 0.3, 0.3 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -4.0
+margin/top = 70.0
+margin/right = 146.0
+margin/bottom = 220.0
+texture = ExtResource( 3 )
+stretch_mode = 0
+
+[node name="Button" type="Button" parent="Interaction"]
+
+rect/scale = Vector2( 0.4, 0.4 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 145.0
+margin/right = 560.0
+margin/bottom = 220.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="CheckBox" type="CheckBox" parent="Interaction"]
+
+rect/scale = Vector2( 1.35, 1.35 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 25.0
+margin/top = 145.0
+margin/right = 51.0
+margin/bottom = 170.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[connection signal="pressed" from="Book/Button" to="." method="_on_Button_pressed"]
+
+[connection signal="toggled" from="Book/CheckBox" to="." method="_on_CheckBox_toggled"]
+
+[connection signal="pressed" from="Cards/Button" to="." method="_on_Button_pressed"]
+
+[connection signal="toggled" from="Cards/CheckBox" to="." method="_on_CheckBox_toggled"]
+
+[connection signal="pressed" from="Interaction/Button" to="." method="_on_Button_pressed"]
+
+[connection signal="toggled" from="Interaction/CheckBox" to="." method="_on_CheckBox_toggled"]
+
+

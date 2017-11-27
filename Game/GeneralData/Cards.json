@@ -45,8 +45,8 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
-	"CESNI OWN YOU": {
-		"unique_name": "CESNI OWN YOU",
+	"CESNI OWNS YOU": {
+		"unique_name": "CESNI OWNS YOU",
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
@@ -60,13 +60,13 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
-	"PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE": {
-		"unique_name": "PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE",
+	"PHILIPPE PRESENCE DEPENDS ON HIS MEDICINE": {
+		"unique_name": "PHILIPPE PRESENCE DEPENDS ON HIS MEDICINE",
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
-	"MISSING FINGER OF RUFFIO EXPLAINATION": {
-		"unique_name": "MISSING FINGER OF RUFFIO EXPLAINATION",
+	"MISSING FINGER OF RUFFIO EXPLANATION": {
+		"unique_name": "MISSING FINGER OF RUFFIO EXPLANATION",
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
@@ -75,4 +75,36 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation"
 	},
+	"NEED A DRINK": {
+		"unique_name": "NEED A DRINK",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"SIR PHILIPPE SUFFERS FROM GOUTTE": {
+		"unique_name": "SIR PHILIPPE SUFFERS FROM GOUTTE",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"A SURPRISE IS PLANNED": {
+		"unique_name": "A SURPRISE IS PLANNED",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"WAITER STRANGE REACTION": {
+		"unique_name": "WAITER STRANGE REACTION",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"ALMA IS NO MORE PROTECTED": {
+		"unique_name": "ALMA IS NO MORE PROTECTED",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"COMPLOTIST QUEST": {
+		"unique_name": "COMPLOTIST QUEST",
+		"name": "To be added in translation",
+		"text": "To be added in translation",
+		"important": true
+	}
+	
 }

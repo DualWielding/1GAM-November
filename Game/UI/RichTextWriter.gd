@@ -8,7 +8,6 @@ var _current_visible_text_idx = 0
 var _current_real_text_idx = 0
 
 var full_text
-var clean_text
 var method = "fade"
 var base_speed
 var hovered = false setget set_hovered, is_hovered
@@ -90,8 +89,9 @@ func _write():
 
 func set_text_up(text, method):
 	full_text = text.replace("%n", Player.get_name())
+	full_text = full_text.replace("%N", Player.get_name().to_upper())
 	set_bbcode(full_text)
-#	clean_text = get_raw_text()
+	
 	self.method = method
 	hide()
 

@@ -1,0 +1,140 @@
+{
+
+	"default": {
+			"text":"RUFFIO DEFAULT",
+			"options": [
+				{
+					"text":"RUFFIO DEFAULT A1",
+					"end": false,
+					"state change":"unchanged",
+					"next sequence": "d1"
+				}
+			]
+		},
+
+	"d1": {
+			"text":"RUFFIO D1",
+			"options": [
+				{
+					"text":"RUFFIO D1 A1",
+					"end": false,
+					"state change":"unchanged",
+					"next sequence": "d2"
+				}
+			]
+		},
+
+	"d2": {
+			"text":"RUFFIO D2",
+			"options": [
+				{
+					"text":"RUFFIO D2 A1",
+					"end": false,
+					"state change":"unchanged",
+					"next sequence": "d3"
+				}
+			]
+		},
+
+	"d3": {
+		"text":"RUFFIO D3",
+		"options": [
+			{
+				"text":"RUFFIO D3 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			},
+			{
+				"text":"RUFFIO D3 A2",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			}
+		]
+	},
+
+	"d4": {
+		"text":"RUFFIO D4",
+		"options": [
+			{
+				"text":"RUFFIO D4 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d5"
+			}
+		]
+	},
+
+	"d5": {
+		"text":"RUFFIO D5",
+		"options": [
+			{
+				"text":"RUFFIO D5 A1",
+				"end": true,
+				"state change":"has_yelled",
+				"next sequence": "none"
+			}
+		]
+	},
+
+
+	"has_yelled": {
+		"text":"RUFFIO SCENE2DEFAULT",
+		"options": [
+			{
+				"text":"RUFFIO SCENE2DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6",
+				"card used":"WAITER STRANGE REACTION"
+			},
+			{
+				"text":"RUFFIO SCENE2DEFAULT A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"d6": {
+		"text":"RUFFIO D6",
+		"options": [
+			{
+				"text":"RUFFIO D6 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d7"
+			}
+		]
+	},
+
+	"d7": {
+		"text":"RUFFIO D7",
+		"options": [
+			{
+				"text":"RUFFIO D7 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8"
+			}
+		]
+	},
+
+	"d8": {
+		"text":"RUFFIO",
+		"options": [
+			{
+				"text":"RUFFIO D8 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card gained" : "VITORI IS THE HEAD COMPLOTIST"
+			}
+		]
+	}
+
+
+
+}

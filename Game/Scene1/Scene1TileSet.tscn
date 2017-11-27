@@ -1,257 +1,473 @@
-[gd_scene load_steps=26 format=1]
+[gd_scene load_steps=3 format=1]
 
-[ext_resource path="res://Sprites/Floor.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/Stairs2/Top-Left-stairs2.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Stairs2/Top-Mid-stairs2.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Stairs2/Top-Right-stairs2.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Stairs2/Mid-Left-stairs2.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Stairs2/Mid-Mid-stairs2Bis.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Stairs2/Mid-Right-stairs2.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Wall/Bot-Left-Wall.png" type="Texture" id=8]
-[ext_resource path="res://Wall.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Sprites/Wall/Mid-Left-Wall.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Wall/Mid-Right-Wall copy.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Wall/Mid-Mid-Wall.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Wall/Bot-Mid-Wall.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Wall/Bot-Right-Wall.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/WoodenDoor/Bot-Left-WoodenDoor.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/WoodenDoor/Bot-Right-WoodenDoor.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/WoodenDoor/Mid-Left-WoodenDoor.png" type="Texture" id=17]
-[ext_resource path="res://Sprites/WoodenDoor/Mid-Right-WoodenDoor.png" type="Texture" id=18]
-[ext_resource path="res://Sprites/WoodenDoor/Top-Left-WoodenDoor.png" type="Texture" id=19]
-[ext_resource path="res://Sprites/WoodenDoor/Top-Right-WoodenDoor.png" type="Texture" id=20]
-
-[sub_resource type="RectangleShape2D" id=6]
-
-custom_solver_bias = 0.0
-extents = Vector2( 11.0938, 10 )
-
-[sub_resource type="RectangleShape2D" id=2]
-
-custom_solver_bias = 0.0
-extents = Vector2( 7.02856, 16.2213 )
-
-[sub_resource type="RectangleShape2D" id=3]
-
-custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
-
-[sub_resource type="RectangleShape2D" id=4]
-
-custom_solver_bias = 0.0
-extents = Vector2( 13.3428, 14.9821 )
-
-[sub_resource type="RectangleShape2D" id=5]
-
-custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+[ext_resource path="res://Sprites/build_atlas.atex" type="Texture" id=1]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=2]
 
 [node name="Scene1TileSet" type="Node"]
 
 [node name="Floor" type="Sprite" parent="."]
 
-transform/pos = Vector2( 502.945, 45.233 )
+transform/pos = Vector2( 304, 16 )
 texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 992, 800, 32, 32 )
 
-[node name="TopLeftStairs" type="Sprite" parent="."]
+[node name="FloorShade" type="Sprite" parent="."]
 
-editor/display_folded = true
-transform/pos = Vector2( 502.067, 284.48 )
-texture = ExtResource( 2 )
+transform/pos = Vector2( 304, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 896, 768, 32, 32 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="TopLeftStairs"]
+[node name="Floor 2" type="Sprite" parent="."]
 
-input/pickable = false
-shapes/0/shape = SubResource( 6 )
-shapes/0/transform = Matrix32( 0.408666, 0, 0, 1.60413, -11.4991, -0.105373 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+transform/pos = Vector2( 336, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 832, 736, 32, 32 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TopLeftStairs/StaticBody2D"]
+[node name="BrickWall - Top - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( -11.4991, -0.105373 )
-transform/scale = Vector2( 0.408666, 1.60413 )
-shape = SubResource( 6 )
-trigger = false
-_update_shape_index = 0
+transform/pos = Vector2( 592, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 608, 832, 32, 32 )
 
-[node name="TopMidStairs" type="Sprite" parent="."]
+[node name="BrickWall - Top - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 546.533, 285.077 )
-texture = ExtResource( 3 )
+transform/pos = Vector2( 624, 16 )
+texture = ExtResource( 1 )
+flip_h = true
+region = true
+region_rect = Rect2( 640, 832, 32, 32 )
 
-[node name="TopRightStairs" type="Sprite" parent="."]
+[node name="BrickWall - Top - Right" parent="." instance=ExtResource( 2 )]
 
-editor/display_folded = true
-transform/pos = Vector2( 592.146, 282.633 )
-texture = ExtResource( 4 )
+transform/pos = Vector2( 656, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 702, 832, 32, 32 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="TopRightStairs"]
+[node name="BrickWall - Mid - Left" parent="." instance=ExtResource( 2 )]
 
-input/pickable = false
-shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 0.515641, 0, 0, 1, 11.8577, 0.397217 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+transform/pos = Vector2( 592, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 608, 864, 32, 32 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TopRightStairs/StaticBody2D"]
+[node name="BrickWall - Mid - Mid" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 11.8577, 0.397217 )
-transform/scale = Vector2( 0.515641, 1 )
-shape = SubResource( 2 )
-trigger = false
-_update_shape_index = 0
+transform/pos = Vector2( 624, 48 )
+texture = ExtResource( 1 )
+flip_h = true
+region = true
+region_rect = Rect2( 672, 832, 32, 32 )
 
-[node name="MidLeftStairs" type="Sprite" parent="."]
+[node name="BrickWall - Mid - Right" parent="." instance=ExtResource( 2 )]
 
-editor/display_folded = true
-transform/pos = Vector2( 502.144, 329.033 )
-texture = ExtResource( 5 )
+transform/pos = Vector2( 656, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 704, 864, 32, 32 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="MidLeftStairs"]
+[node name="BrickWall - Bot - Left" parent="." instance=ExtResource( 2 )]
 
-input/pickable = false
-shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Matrix32( 0.428498, 0, 0, 1.62166, -11.9094, 0.0443784 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+transform/pos = Vector2( 592, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 608, 896, 32, 32 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MidLeftStairs/StaticBody2D"]
+[node name="BrickWall - Bot - Mid" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -11.9094, 0.0443784 )
-transform/scale = Vector2( 0.428498, 1.62166 )
-shape = SubResource( 3 )
-trigger = false
-_update_shape_index = 0
+transform/pos = Vector2( 624, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 672, 736, 32, 32 )
 
-[node name="MidMidStairs" type="Sprite" parent="."]
+[node name="BrickWall - Bot - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 547.321, 329.056 )
-texture = ExtResource( 6 )
+transform/pos = Vector2( 656, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 704, 896, 32, 32 )
 
-[node name="MidRightStairs" type="Sprite" parent="."]
+[node name="SoftWall - Mid - Left" parent="." instance=ExtResource( 2 )]
 
-editor/display_folded = true
-transform/pos = Vector2( 593.761, 328.393 )
-texture = ExtResource( 7 )
+transform/pos = Vector2( 592, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 608, 926, 32, 32 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="MidRightStairs"]
+[node name="SoftWall - Mid - Mid" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 0.643921, -1.28787 )
-input/pickable = false
-shapes/0/shape = SubResource( 4 )
-shapes/0/transform = Matrix32( 0.312369, 0, 0, 1.07412, 11.4298, 1.33292 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+transform/pos = Vector2( 624, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 672, 768, 32, 32 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MidRightStairs/StaticBody2D"]
+[node name="SoftWall - Mid - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 11.4298, 1.33292 )
-transform/scale = Vector2( 0.312369, 1.07412 )
-shape = SubResource( 4 )
-trigger = false
-_update_shape_index = 0
+transform/pos = Vector2( 656, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 704, 926, 32, 32 )
 
-[node name="BotLeftWall" type="Sprite" parent="."]
+[node name="SoftWall - Bot - Left" parent="." instance=ExtResource( 2 )]
 
-editor/display_folded = true
-transform/pos = Vector2( 210, 310 )
-texture = ExtResource( 8 )
+transform/pos = Vector2( 592, 144 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 640, 800, 32, 32 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="BotLeftWall"]
+[node name="SoftWall - Bot - Mid" parent="." instance=ExtResource( 2 )]
 
-input/pickable = false
-shapes/0/shape = SubResource( 5 )
-shapes/0/transform = Matrix32( 1.6099, 0, 0, 1.61905, -0.0670635, 0.0382717 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+transform/pos = Vector2( 624, 144 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 672, 800, 32, 32 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BotLeftWall/StaticBody2D"]
+[node name="SoftWall - Bot - Right" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -0.0670635, 0.0382717 )
-transform/scale = Vector2( 1.6099, 1.61905 )
-shape = SubResource( 5 )
-trigger = false
-_update_shape_index = 0
+transform/pos = Vector2( 656, 144 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 704, 800, 32, 32 )
 
-[node name="MidLeftWall" parent="." instance=ExtResource( 9 )]
+[node name="Stairs - Top - Mid" type="Sprite" parent="."]
 
-transform/pos = Vector2( 210.957, 259.013 )
-texture = ExtResource( 10 )
+transform/pos = Vector2( 368, 16 )
+texture = ExtResource( 1 )
+flip_h = true
+region = true
+region_rect = Rect2( 448, 320, 32, 32 )
 
-[node name="MidRightWall" parent="." instance=ExtResource( 9 )]
+[node name="Stairs - Top - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 320.101, 255.755 )
-texture = ExtResource( 11 )
+transform/pos = Vector2( 336, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 417, 320, 32, 32 )
 
-[node name="MidMidWall" parent="." instance=ExtResource( 9 )]
+[node name="Stairs - Top - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 264.714, 259.013 )
-texture = ExtResource( 12 )
+transform/pos = Vector2( 400, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 479, 320, 32, 32 )
 
-[node name="BotMidWall" parent="." instance=ExtResource( 9 )]
+[node name="Door - Top - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 264.714, 305.44 )
-texture = ExtResource( 13 )
+transform/pos = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 832, 800, 32, 32 )
 
-[node name="BotRightWall" parent="." instance=ExtResource( 9 )]
+[node name="Door - Top - MidLeft1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 321.73, 310.327 )
-texture = ExtResource( 14 )
+transform/pos = Vector2( 48, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 864, 864, 32, 32 )
 
-[node name="BotLeftDoor" parent="." instance=ExtResource( 9 )]
+[node name="Door - Top - MidLeft2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 222.909, 187.084 )
-texture = ExtResource( 15 )
+transform/pos = Vector2( 80, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 896, 864, 32, 32 )
 
-[node name="BotRightDoor" parent="." instance=ExtResource( 9 )]
+[node name="Door - Top - MidRight2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 267.358, 187.748 )
-texture = ExtResource( 16 )
+transform/pos = Vector2( 112, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 864, 928, 32, 32 )
 
-[node name="MidLeftDoor" parent="." instance=ExtResource( 9 )]
+[node name="Door - Top - MidRight1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 223.572, 139.982 )
-texture = ExtResource( 17 )
+transform/pos = Vector2( 144, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 896, 928, 32, 32 )
 
-[node name="MidRightDoor" parent="." instance=ExtResource( 9 )]
+[node name="Door - Top - Right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 268.022, 139.318 )
-texture = ExtResource( 18 )
+transform/pos = Vector2( 176, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 928, 800, 32, 32 )
 
-[node name="TopLeftDoor" parent="." instance=ExtResource( 9 )]
+[node name="Door - TopMid - Left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 223.572, 93.5422 )
-texture = ExtResource( 19 )
+transform/pos = Vector2( 16, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 832, 832, 32, 32 )
 
-[node name="TopRightDoor" parent="." instance=ExtResource( 9 )]
+[node name="Door - TopMid - MidLeft1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 267.358, 94.869 )
-texture = ExtResource( 20 )
+transform/pos = Vector2( 48, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 864, 896, 32, 32 )
+
+[node name="Door - TopMid - MidRight1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 144, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 896, 960, 32, 32 )
+
+[node name="Door - TopMid - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 176, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 928, 832, 32, 32 )
+
+[node name="Door - Mid  - Mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 80, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 896, 992, 32, 32 )
+
+[node name="Door - BotMid - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 16, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 832, 864, 32, 32 )
+
+[node name="Door - BotMid - MidLeft1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 48, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 864, 992, 32, 32 )
+
+[node name="Door - BotMid - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 144, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 928, 864, 32, 32 )
+
+[node name="Door - Bot - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 16, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 832, 896, 32, 32 )
+
+[node name="Door - Bot - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 144, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 928, 896, 32, 32 )
+
+[node name="Window - Top - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 208, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 736, 768, 32, 32 )
+
+[node name="Window - Top - Mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 768, 768, 32, 32 )
+
+[node name="Window - Top - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 272, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 800, 768, 32, 32 )
+
+[node name="Window - Mid - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 208, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 736, 800, 32, 32 )
+
+[node name="Window - Mid - Mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 768, 800, 32, 32 )
+
+[node name="Window - Mid - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 272, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 800, 800, 32, 32 )
+
+[node name="Window - Bot - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 208, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 736, 832, 32, 32 )
+
+[node name="Window - Bot - Mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 768, 832, 32, 32 )
+
+[node name="Window - Bot - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 272, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 800, 832, 32, 32 )
+
+[node name="Window - Botbot - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 208, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 736, 864, 32, 32 )
+
+[node name="Window - Botbot - Mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 768, 864, 32, 32 )
+
+[node name="Window - Botbot - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 272, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 800, 864, 32, 32 )
+
+[node name="Drapery1 - Top" type="Sprite" parent="."]
+
+transform/pos = Vector2( 528, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 608, 640, 32, 32 )
+
+[node name="Drapery1 - Mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 528, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 608, 672, 32, 32 )
+
+[node name="Drapery1 - Bot" type="Sprite" parent="."]
+
+transform/pos = Vector2( 528, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 608, 704, 32, 32 )
+
+[node name="Drapery2 - Top" type="Sprite" parent="."]
+
+transform/pos = Vector2( 560, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 640, 640, 32, 32 )
+
+[node name="Drapery2 - Mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 560, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 640, 672, 32, 32 )
+
+[node name="Drapery2 - Bot" type="Sprite" parent="."]
+
+transform/pos = Vector2( 560, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 640, 704, 32, 32 )
+
+[node name="Fence - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 304, 96 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 576, 512, 32, 64 )
+
+[node name="Fence - End" type="Sprite" parent="."]
+
+transform/pos = Vector2( 336, 96 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 640, 512, 32, 64 )
+
+[node name="Fence - Portal" type="Sprite" parent="."]
+
+transform/pos = Vector2( 400, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 672, 512, 96, 96 )
+
+[node name="Handtruck" type="Sprite" parent="."]
+
+transform/pos = Vector2( 96, 96 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 416, 576, 64, 64 )
+
+[node name="Plant1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 176, 96 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 416, 512, 32, 64 )
+
+[node name="Plant2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 32, 160 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 448, 512, 64, 64 )
+
+[node name="Plant3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 80, 160 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 512, 512, 32, 64 )
+
+[node name="Plant4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 112, 144 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 512, 576, 32, 32 )
+
+[node name="Grass - Left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 112, 176 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 416, 640, 32, 32 )
+
+[node name="Grass - Middle" type="Sprite" parent="."]
+
+transform/pos = Vector2( 144, 176 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 448, 640, 32, 32 )
+
+[node name="Grass - Right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 176, 176 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 480, 640, 32, 32 )
 
 

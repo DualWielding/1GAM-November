@@ -1,5 +1,5 @@
 extends "res://Body.gd"
 
 func _init():
-	set_name("Bottle")
+	set_name(tr("BOTTLE"))
 	unique_name = "Bottle"

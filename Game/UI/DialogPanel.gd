@@ -6,6 +6,7 @@ onready var script_container = get_node("ScrollContainer/ScriptContainer")
 onready var answers_container = get_node("AnswersContainer")
 onready var slide_button = get_node("SlideButton")
 onready var ap = get_node("AnimationPlayer")
+onready var sp = get_node("SamplePlayer")
 
 var _hidden_panel = true
 var current_length = 0
@@ -33,6 +34,9 @@ func set_dialog(body, unformatted_text, options):
 func add_text(unformatted_text, method="fade", show_now=false):
 	script_container.add_text_to_buffer(unformatted_text, method, show_now)
 	script_container.display_texts()
+
+func reset_current_options():
+	current_options = []
 
 func add_answers():
 	if answers_container.get_child_count() > 0:
@@ -106,6 +110,7 @@ func show_panel():
 	if _hidden_panel:
 		_hidden_panel = false
 		ap.play_backwards("Slide_left")
+		sp.play("writing")
 
 func _on_SlideButton_pressed():
 	if not _hidden_panel:

@@ -1,0 +1,9 @@
+extends "res://NPC.gd"
+
+func init():
+	set_name("Alma")
+	unique_name = "Alma"
+	base_looking_direction = "up"
+
+func enter():
+	fade_in()

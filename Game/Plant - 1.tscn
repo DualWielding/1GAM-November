@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Sprites/build_atlas.atex" type="Texture" id=1]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( 12.1655, 16.7584, 11.5375, 24.609, 10.072, 26.3885, 9.02527, 26.5978, 8.39722, 28.0633, 5.67568, 28.5866, 5.062, 24.3859, 3.70123, 20.7223, 0.0376205, 17.5821, 0.142296, 13.7091, 1.29372, 14.1278, 2.75916, 11.9297, 2.65449, -0.212582, 1.39839, -3.87619, -0.590424, -7.9585, -0.696617, -13.6244, 1.30396, -13.7014, 5.53596, -8.23825, 8.22905, -8.23825, 10.3066, -9.54632, 10.6913, -13.6244, 9.61407, -15.2403, 12.4611, -15.3172, 14.0105, -14.6793, 13.0766, -9.62327, 11.3069, -8.46909, 10.3066, -7.77658, 10.3066, -5.6221, 7.4596, -3.0829, 7.15182, -1.77483, 5.84375, -0.928432, 5.68985, 0.533531, 6.22847, 1.30299, 6.27026, 2.87721, 4.67306, 3.22443, 4.82068, 9.03455, 5.64813, 8.97967, 6.10063, 10.62, 6.77937, 11.2987, 7.11874, 12.034, 7.06218, 13.6178, 10.06, 13.9571, 10.9094, 15.2929 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 12.1128
+
+[node name="Plant" type="Sprite"]
+
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 416, 513, 32, 63 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+
+occluder = SubResource( 1 )
+light_mask = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 1.52588e-05, 20.4532 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+
+transform/pos = Vector2( 1.52588e-05, 20.4532 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+

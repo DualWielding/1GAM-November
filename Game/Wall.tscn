@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=1]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=6]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
@@ -9,8 +9,9 @@ extents = Vector2( 10, 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
+visibility/visible = false
 input/pickable = false
-shapes/0/shape = SubResource( 1 )
+shapes/0/shape = SubResource( 6 )
 shapes/0/transform = Matrix32( 1.58826, 0, 0, 1.58826, 0.0107885, -0.00444689 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -24,7 +25,7 @@ bounce = 0.0
 
 transform/pos = Vector2( 0.0107885, -0.00444689 )
 transform/scale = Vector2( 1.58826, 1.58826 )
-shape = SubResource( 1 )
+shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 0
 
