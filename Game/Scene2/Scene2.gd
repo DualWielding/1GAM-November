@@ -11,6 +11,7 @@ onready var claudio = get_node("Claudio")
 onready var strozi = get_node("Strozi")
 
 onready var scene_timer = get_node("SceneTimer")
+onready var sp = get_node("SamplePlayer")
 
 func state_change_controller(old_state, new_state, character):
 	if character.get_name() == "Ruffio" and new_state == "has_yelled":
@@ -67,3 +68,15 @@ func everyone_enter():
 	augurie.enter()
 	waiter.enter()
 	strozi.enter()
+	sp.play("ambiance_soiree")
+
+func next_scene():
+	get_node("SamplePlayer").play("ouverture_porte_2")
+	var t = Timer.new()
+	t.set_wait_time(0.7)
+	t.connect("timeout", self, "change_scene")
+	add_child(t)
+	t.start()
+
+func change_scene():
+	get_tree().change_scene("res://Scene3/Scene3.tscn")

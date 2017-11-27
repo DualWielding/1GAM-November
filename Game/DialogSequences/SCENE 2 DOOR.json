@@ -1,0 +1,13 @@
+{
+	"default": {
+		"text": "SCENE 2 DOOR DEFAULT",
+		"options": [
+			{
+				"text": "SCENE 2 DOOR DEFAULT A1",
+				"end": true,
+				"state change": "unchanged"
+				
+			}
+		]
+	}
+}

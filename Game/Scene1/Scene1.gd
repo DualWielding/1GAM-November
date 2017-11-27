@@ -8,13 +8,10 @@ onready var dagger = get_node("Dagger")
 onready var title_screen = get_node("TitleScreen")
 
 func _ready():
-#	Player.ui.show_book()
-#	Player.ui.tutorial.connect("got_it", self, "explain_cards", [], CONNECT_ONESHOT)
-#	Player.ui.dialog_panel.ap.connect("finished", Player.ui.tutorial, "show_window", ["Book"], CONNECT_ONESHOT)
-#	Player.ui.dialog_panel.ap.connect("finished", self, "write_scene_informations", [], CONNECT_ONESHOT)
-#	
-	Player.character.set_disabled_movement(false)
-	Player.character.show()
+	Player.ui.show_book()
+	Player.ui.tutorial.connect("got_it", self, "explain_cards", [], CONNECT_ONESHOT)
+	Player.ui.dialog_panel.ap.connect("finished", Player.ui.tutorial, "show_window", ["Book"], CONNECT_ONESHOT)
+	Player.ui.dialog_panel.ap.connect("finished", self, "write_scene_informations", [], CONNECT_ONESHOT)
 
 func get_step_type(pos):
 	if pos.y < 460:
@@ -64,7 +61,7 @@ func show_title_screen():
 func next_scene():
 	get_node("SamplePlayer").play("ouverture_porte_2")
 	var t = Timer.new()
-	t.set_wait_time(0.5)
+	t.set_wait_time(0.7)
 	t.connect("timeout", self, "change_scene")
 	add_child(t)
 	t.start()
