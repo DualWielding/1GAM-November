@@ -170,9 +170,8 @@
 		"options": [
 			{
 				"text":"ALMA D11 A1",
-				"end": false,
+				"end": true,
 				"state change":"unchanged",
-				"next sequence": "d12",
 				"card gained":"COMPLOTIST QUEST"
 			}
 		]

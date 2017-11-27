@@ -20,7 +20,7 @@
 	},
 
 	"d1": {
-		"text":"AUGURIE D1 ",
+		"text":"AUGURIE D1",
 		"options": [
 			{
 				"text":"AUGURIE D1 A1",
@@ -169,7 +169,6 @@
 			}
 		]
 	}
-
 
 
 }

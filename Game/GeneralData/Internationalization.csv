@@ -425,12 +425,6 @@ RUFFIO D8 A1,TODO,"Bonne soirée, Ruffio."
 ,,
 ,,
 ,,
-,,
-,,
-,,
-,,
-,,
-,,
 CLAUDIO DEFAULT,TODO,"Mmh, le Capitaine n'a pas l'air dans son assiette, ce soir."
 CLAUDIO DEFAULT A1,TODO,Vous voulez dire que le capitaine de la Garde est présent ?
 ,,
@@ -440,6 +434,9 @@ CLAUDIO D1 A1,TODO,Que lui arrive t-il ?
 CLAUDIO D2,TODO,"Le pauvre souffre apparemment de Goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses. Pour un militaire, quelle tragédie."
 CLAUDIO D2 A1,TODO,Mmh... En effet. Bonne soirée.
 ,,
+CLAUDIO D3,todo,"Un homme si droit, si juste. Il ne mérite pas ça."
+CLAUDIO D3 A1,todo,Le malheur frappe aveuglément. C'est ainsi.
+,,
 ,,
 GIULIA DEFAULT,TODO,"J'ai entendu certaines personnes parler d'une surprise pour les invités ce soir, comme c'est excitant !"
 GIULIA DEFAULT A1,TODO,Une surprise ?
@@ -447,6 +444,9 @@ GIULIA DEFAULT A1,TODO,Une surprise ?
 GIULIA D1,TODO,"Comme je vous dis ! Dame Augurie est en charge des festivités, nul doute qu'elle en sait un peu plus. Je n'en ai jamais vu, comme je suis excitée !"
 GIULIA D1 A1,TODO,Je partage votre enthousiasme. Bonne soirée.
 ,,
+GIULIA D2,,Comme j'ai hâte de voir ce que Dame Augurie nous réserve !
+GIULIA D2 A1,,C'est un sentiment partagé.
+ ,,
 ,,
 AUGURIE DEFAULT,TODO,Mmh ? Je peux vous aider ?
 AUGURIE DEFAULT A1,TODO,"Certaines rumeurs font état d'une surprise pour le Duc, êtes vous au courant ?"
@@ -465,12 +465,12 @@ AUGURIE D2 A3,TODO,"Je le serai, compte sur moi."
 AUGURIE D3,TODO,"Bien, maintenant que tu es rassuré, du balais ! Nous risquons gros à discuter ainsi. [i](Plus haut)[/i] J'ignore ce que vous espériez, mais je ne suis pas intéressée Messire ! Bonne soirée."
 AUGURIE D3 A1,TODO,"Bien, bonne soirée !"
 ,,
-AUGURIE D4,TODO,"Parce que c'est une raison suffisante pour rassembler tous les invités sur la Terasse. Enfin, c'est ce que tu asprésumé."
+AUGURIE D4,TODO,"C'est une raison suffisante pour rassembler tous les invités sur la Terasse. Enfin, c'est ce que tu asprésumé."
 AUGURIE D4 A1,TODO,"Oh ? Je... j'ai quelques soucis avec ma mémoire ce soir. Quel est le signal, déjà ?"
 AUGURIE D4 A2,TODO,"Je... Je le savais, je m'assurais que tout était au point, voilà tout. Et pourquoi devons nous éviter ?"
 AUGURIE D4 A3,TODO,Je vois...
 ,,
-AUGURIE D5,TODO,"Comme TU me l'as expliqué plusieurs fois, tu es sensé me proposer un verre, et moi t'éconduire. Ce sera la signal pour commencer à rassembler les invités. A moins que cela ait encore changé."
+AUGURIE D5,TODO,"Comme TU me l'as expliqué plusieurs fois, tu es censé me proposer un verre, et moi t'éconduire. Ce sera la signal pour commencer à rassembler les invités. A moins que cela ait encore changé ?"
 AUGURIE D5 A1,TODO,"Non, non. Cela me paraît parfait."
 AUGURIE D5 A2,TODO,"Non, parfait. Mais pourquoi un feu d'artifice, déjà ?"
 AUGURIE D5 A3,TODO,"Non, c'est très bien. Mais pourquoi devrions nous nous éviter, déjà ?"
@@ -482,5 +482,5 @@ AUGURIE WAITING SIGNAL,TODO,"Encore vous, Messire ?"
 AUGURIE WAITING SIGNAL A1,TODO,"Non, rien."
 AUGURIE WAITING SIGNAL A2,TODO,"Puis-je vous offrir un verre, très chère ?"
 ,,
-AUGURIE D7,TODO,Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
+AUGURIE D7,TODO,[i]prenant visiblement beaucoup de plaisir[/i]Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
 AUGURIE D7 A1,TODO,"Hum ! Je pense que cela suffit. Bonne soirée, madame."

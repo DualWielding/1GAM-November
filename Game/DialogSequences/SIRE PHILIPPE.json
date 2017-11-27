@@ -14,7 +14,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d8",
-				"card used":"SIRE PHILIPPE SUFFERS FROM GOUTTE"
+				"card used":"SIR PHILIPPE SUFFERS FROM GOUTTE"
 			},
 			{
 				"text":"SIRE PHILIPPE DEFAULT A3",
@@ -177,7 +177,7 @@
 				"end": true,
 				"state change":"unchanged",
 				"next sequence": "none",
-				"card gained":"ALMA IS NO LONGER PROTECTED"
+				"card gained":"ALMA IS NO MORE PROTECTED"
 			}
 		]
 	},

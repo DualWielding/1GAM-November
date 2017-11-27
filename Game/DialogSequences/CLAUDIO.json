@@ -30,12 +30,23 @@
 			{
 				"text":"CLAUDIO D2 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"card_given",
 				"next sequence": "none",
 				"card gained":"SIR PHILIPPE SUFFERS FROM GOUTTE"
 			}
 		]
-	}
+	},
 
+	"card_given": {
+		"text":"CLAUDIO D3",
+		"options": [
+			{
+				"text":"CLAUDIO D3 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
+			}
+		]
+	}
 
 }

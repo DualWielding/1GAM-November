@@ -18,9 +18,21 @@
 			{
 				"text":"GIULIA D1 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"card_given",
 				"next sequence": "none",
 				"card gained": "A SURPRISE IS PLANNED"
+			}
+		]
+	},
+
+	"card_given": {
+		"text":"GIULIA D2",
+		"options": [
+			{
+				"text":"GIULIA D2 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
 			}
 		]
 	}

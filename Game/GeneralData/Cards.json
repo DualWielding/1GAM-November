@@ -105,6 +105,12 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation",
 		"important": true
+	},
+	"DIVERSION": {
+		"unique_name": "DIVERSION",
+		"name": "To be added in translation",
+		"text": "To be added in translation",
+		"important": true
 	}
 	
 }
