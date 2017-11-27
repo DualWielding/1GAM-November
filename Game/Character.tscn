@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=1]
+[gd_scene load_steps=22 format=1]
 
 [ext_resource path="res://Character.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/characters/Player character.png" type="Texture" id=2]
@@ -8,8 +8,8 @@
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 14.5886
-height = 24.4392
+radius = 10.2628
+height = 0.346205
 
 [sub_resource type="Animation" id=2]
 
@@ -381,17 +381,33 @@ samples/pas = {
 "sample": ExtResource( 4 )
 }
 
+[sub_resource type="ConvexPolygonShape2D" id=15]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 8.46745, 3.57799, 9.41213, 7.78611, 8.38157, 14.2271, 5.97693, 19.9811, -6.90508, 19.7234, -5.78864, 12.3378, 6.74985, 1.68863 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 6.74985, 1.68863, -5.78864, 12.3378, -8.5368, 12.5954, -10.1685, 11.0496, -9.05208, 1.94627, -7.07684, 0.0569066, 7.35101, -3.3783 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 7.35101, -3.3783, -7.07684, 0.0569066, -7.678, -6.98526, -3.8134, -11.5369, 2.45585, -11.5369, 6.74985, -8.18758 )
+
 [node name="Character" type="KinematicBody2D"]
 
 transform/scale = Vector2( 1.1, 1.1 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 0.65, 0, 0, 0.65, -0.216556, 6.43016 )
+shapes/0/transform = Matrix32( 0.65, 0, 0, 0.65, -0.264517, 15.6859 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 collision/margin = 0.08
 script/script = ExtResource( 1 )
+ceil_value = 10
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
@@ -416,13 +432,12 @@ transform/scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 2 )
 vframes = 21
 hframes = 13
-frame = 265
+frame = 131
 region_rect = Rect2( 0, 0, 580, 70 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-visibility/visible = false
-transform/pos = Vector2( -0.216556, 6.43016 )
+transform/pos = Vector2( -0.264517, 15.6859 )
 transform/scale = Vector2( 0.65, 0.65 )
 shape = SubResource( 1 )
 trigger = false
@@ -430,12 +445,12 @@ _update_shape_index = 0
 
 [node name="LightOccluderFace" type="LightOccluder2D" parent="."]
 
-visibility/visible = false
 occluder = SubResource( 9 )
 light_mask = 15
 
 [node name="LightOccluderLeft" type="LightOccluder2D" parent="."]
 
+visibility/visible = false
 occluder = SubResource( 10 )
 light_mask = 15
 
@@ -491,5 +506,34 @@ default/filter/gain = 1.0
 default/reverb_room = 2
 default/reverb_send = 0.0
 default/chorus_send = 0.0
+
+[node name="PlayerDetectionArea" type="Area2D" parent="."]
+
+visibility/visible = false
+input/pickable = true
+shapes/0/shape = SubResource( 15 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 16 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 17 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayerDetectionArea"]
+
+build_mode = 0
+polygon = Vector2Array( -6.90508, 19.7234, -5.78864, 12.3378, -8.5368, 12.5954, -10.1685, 11.0496, -9.05208, 1.94627, -7.07684, 0.0569066, -7.678, -6.98526, -3.8134, -11.5369, 2.45585, -11.5369, 6.74985, -8.18758, 7.35101, -3.3783, 6.74985, 1.68863, 8.46745, 3.57799, 9.41213, 7.78611, 8.38157, 14.2271, 5.97693, 19.9811 )
+shape_range = Vector2( 0, 2 )
+trigger = false
+
+[connection signal="area_enter" from="PlayerDetectionArea" to="." method="_on_PlayerDetectionArea_area_enter"]
+
+[connection signal="area_exit" from="PlayerDetectionArea" to="." method="_on_PlayerDetectionArea_area_exit"]
 
 

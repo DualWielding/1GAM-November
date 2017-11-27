@@ -46,6 +46,7 @@ collision/layers = 1
 collision/mask = 1
 collision/margin = 0.08
 script/script = ExtResource( 1 )
+ceil_value = 10
 
 [node name="Sprite" type="Sprite" parent="."]
 

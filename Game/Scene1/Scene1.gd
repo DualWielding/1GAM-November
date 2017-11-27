@@ -8,10 +8,13 @@ onready var dagger = get_node("Dagger")
 onready var title_screen = get_node("TitleScreen")
 
 func _ready():
-	Player.ui.show_book()
-	Player.ui.tutorial.connect("got_it", self, "explain_cards", [], CONNECT_ONESHOT)
-	Player.ui.dialog_panel.ap.connect("finished", Player.ui.tutorial, "show_window", ["Book"], CONNECT_ONESHOT)
-	Player.ui.dialog_panel.ap.connect("finished", self, "write_scene_informations", [], CONNECT_ONESHOT)
+#	Player.ui.show_book()
+#	Player.ui.tutorial.connect("got_it", self, "explain_cards", [], CONNECT_ONESHOT)
+#	Player.ui.dialog_panel.ap.connect("finished", Player.ui.tutorial, "show_window", ["Book"], CONNECT_ONESHOT)
+#	Player.ui.dialog_panel.ap.connect("finished", self, "write_scene_informations", [], CONNECT_ONESHOT)
+	
+	Player.character.set_disabled_movement(false)
+	Player.character.show()
 
 func write_scene_informations():
 	Player.ui.dialog_panel.add_text(tr("SCENE 1 INTRO"), "fade", true)
