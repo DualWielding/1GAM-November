@@ -50,5 +50,4 @@ func show_title_screen():
 	title_screen.show()
 
 func next_scene():
-	get_tree().quit()
-#	get_tree().change_scene("res://Scene2/Scene2.tscn")
+	get_tree().change_scene("res://Scene2/Scene2.tscn")
