@@ -12,6 +12,7 @@ signal enabled
 var disabled_movement = false setget set_disabled_movement, is_disabled
 
 func _ready():
+	can_be_interacted_with = false
 	set_process_input(true)
 	Player.character = self
 
@@ -88,15 +89,19 @@ func remove_interaction_possibility(body):
 
 func _on_InteractionArea_area_enter( area ):
 	var body = area.get_parent()
-	if interaction_possibilities.find(body) == -1:
+	if body.can_be_interacted_with and interaction_possibilities.find(body) == -1:
 		add_interaction_possibility(body)
 
 func _on_InteractionArea_area_exit( area ):
 	var body = area.get_parent()
-	remove_interaction_possibility(body)
+	if body.can_be_interacted_with:
+		remove_interaction_possibility(body)
 
+func _on_PlayerDetectionArea_area_enter( area ):
+	pass
 
-
+func _on_PlayerDetectionArea_area_exit( area ):
+	pass
 
 
 

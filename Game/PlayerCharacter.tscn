@@ -16,10 +16,6 @@ frame = 10
 
 visibility/visible = false
 
-[node name="InteractionArea" parent="."]
-
-visibility/visible = false
-
 [node name="Camera2D" type="Camera2D" parent="."]
 
 anchor_mode = 1

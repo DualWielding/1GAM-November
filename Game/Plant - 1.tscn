@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://Sprites/build_atlas.atex" type="Texture" id=1]
+[ext_resource path="res://Isometric-item.gd" type="Script" id=2]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 
@@ -13,11 +14,19 @@ polygon = Vector2Array( 12.1655, 16.7584, 11.5375, 24.609, 10.072, 26.3885, 9.02
 custom_solver_bias = 0.0
 radius = 12.1128
 
+[sub_resource type="CapsuleShape2D" id=3]
+
+custom_solver_bias = 0.0
+radius = 14.8326
+height = 29.3377
+
 [node name="Plant" type="Sprite"]
 
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 416, 513, 32, 63 )
+script/script = ExtResource( 2 )
+ceil_value = 10
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 
@@ -43,5 +52,27 @@ transform/pos = Vector2( 1.52588e-05, 20.4532 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 0
+
+[node name="PlayerDetectionArea" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -0.85437, -3.27512 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetectionArea"]
+
+transform/pos = Vector2( -0.85437, -3.27512 )
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[connection signal="area_enter" from="PlayerDetectionArea" to="." method="_on_PlayerDetectionArea_area_enter"]
+
+[connection signal="area_exit" from="PlayerDetectionArea" to="." method="_on_PlayerDetectionArea_area_exit"]
 
 

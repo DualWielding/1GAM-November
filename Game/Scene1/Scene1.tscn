@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=1]
+[gd_scene load_steps=22 format=1]
 
 [ext_resource path="res://Scene1/Scene1.gd" type="Script" id=1]
 [ext_resource path="res://Scene1/TileSet1t.tres" type="TileSet" id=2]
@@ -7,12 +7,18 @@
 [ext_resource path="res://Scene1/Door.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scene1/Vitori.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scene1/FirstGuard.tscn" type="PackedScene" id=7]
-[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scene1/Bandit.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Plant - 1.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Light.tscn" type="PackedScene" id=11]
-[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scene1/Bandit.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Plant - 1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Light.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scene1/Isometric-fence.gd" type="Script" id=11]
+[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=12]
+[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=14]
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 738.159, 61.9771 )
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -22,22 +28,22 @@ extents = Vector2( 10, 10 )
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 883.905, 10 )
+extents = Vector2( 883.905, 2.61783 )
 
 [sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-extents = Vector2( 870, 10 )
+extents = Vector2( 870, 2.51154 )
 
 [sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
-extents = Vector2( 158.451, 7.01831 )
+extents = Vector2( 158.451, 2.16284 )
 
 [sub_resource type="RectangleShape2D" id=5]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8.36768, 7.01831 )
+extents = Vector2( 8.36768, 6.67548 )
 
 [sub_resource type="RectangleShape2D" id=6]
 
@@ -112,26 +118,22 @@ transform/pos = Vector2( -121.308, 545.213 )
 
 [node name="FirstDoorGuard" parent="." instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 509.853, 348.658 )
+transform/pos = Vector2( 508.671, 353.737 )
 
-[node name="PlayerCharacter" parent="." instance=ExtResource( 8 )]
-
-transform/pos = Vector2( -13.4517, 544.172 )
-
-[node name="Bandit" parent="." instance=ExtResource( 9 )]
+[node name="Bandit" parent="." instance=ExtResource( 8 )]
 
 visibility/visible = false
 transform/pos = Vector2( -90.8303, 545.146 )
 
-[node name="Plant" parent="." instance=ExtResource( 10 )]
+[node name="Plant" parent="." instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 847.898, 354.481 )
 
-[node name="Plant1" parent="." instance=ExtResource( 10 )]
+[node name="Plant1" parent="." instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 977.25, 354.481 )
 
-[node name="Plant2" parent="." instance=ExtResource( 10 )]
+[node name="Plant2" parent="." instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 335.593, 354.744 )
@@ -141,38 +143,47 @@ flip_h = true
 
 transform/scale = Vector2( -1, 1 )
 
-[node name="Plant3" parent="." instance=ExtResource( 10 )]
+[node name="Plant3" parent="." instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 208.312, 354.744 )
 flip_h = true
 
-[node name="Plant4" parent="." instance=ExtResource( 10 )]
+[node name="Plant4" parent="." instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 176.69, 354.744 )
 flip_h = true
 
-[node name="Plant5" parent="." instance=ExtResource( 10 )]
+[node name="Plant5" parent="." instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 47.564, 354.744 )
 flip_h = true
 
-[node name="Plant6" parent="." instance=ExtResource( 10 )]
+[node name="Plant6" parent="." instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 16.9954, 354.744 )
 flip_h = true
 
-[node name="Plant7" parent="." instance=ExtResource( 10 )]
+[node name="Plant7" parent="." instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform/pos = Vector2( -111.076, 354.744 )
 flip_h = true
 
-[node name="OnTopOfChars" type="TileMap" parent="."]
+[node name="Light - 2" parent="." instance=ExtResource( 10 )]
 
+transform/pos = Vector2( 480.451, 344.428 )
+
+[node name="Light - 1" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 671.449, 343.23 )
+
+[node name="Fence" type="TileMap" parent="."]
+
+editor/display_folded = true
 mode = 0
 tile_set = ExtResource( 2 )
 cell/size = Vector2( 32, 32 )
@@ -188,29 +199,34 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( 327693, 53, 327702, 50, 393229, 54, 393238, 51, 458765, 54, 458774, 51, 524301, 55, 524310, 52, 917499, 56, 917500, 56, 917501, 56, 917502, 56, 917503, 56, 851968, 56, 851969, 56, 851970, 56, 851971, 56, 851972, 56, 851973, 56, 851974, 56, 851975, 56, 851976, 56, 851977, 56, 851978, 56, 851979, 56, 851980, 56, 851981, 56, 851982, 57, 851989, 56, 851990, 56, 851991, 56, 851992, 56, 851993, 56, 851994, 56, 851995, 56, 851996, 56, 851997, 56, 851998, 56, 851999, 56, 852000, 56, 852001, 56, 852002, 56, 852003, 56, 852004, 56, 983039, 64, 917504, 64, 917505, 64, 917512, 64, 917513, 64, 917514, 64, 917518, 57, 917520, 58, 917525, 64, 917526, 64, 983054, 56, 983055, 56, 983059, 56, 983060, 56, 983061, 57, 1048589, 64, 1048590, 64, 1048595, 64 )
+script/script = ExtResource( 11 )
 __meta__ = {
 "_edit_lock_": true
 }
+ceil_value = 10
 
-[node name="Shade" type="ColorFrame" parent="."]
+[node name="PlayerDetectionArea" type="Area2D" parent="Fence"]
 
-focus/ignore_mouse = true
-focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = -164.0
-margin/top = -197.0
-margin/right = 1206.0
-margin/bottom = 694.0
-color = Color( 0.192157, 0.129412, 0.141176, 0.54098 )
+visibility/visible = false
+input/pickable = true
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 499.691, 481.275 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
 
-[node name="Light - 2" parent="." instance=ExtResource( 11 )]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence/PlayerDetectionArea"]
 
-transform/pos = Vector2( 480.451, 344.428 )
+transform/pos = Vector2( 499.691, 481.275 )
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
 
-[node name="Light - 1" parent="." instance=ExtResource( 11 )]
+[node name="PlayerCharacter" parent="." instance=ExtResource( 12 )]
 
-transform/pos = Vector2( 671.449, 343.23 )
+transform/pos = Vector2( -13.4517, 544.172 )
 
 [node name="InvisibleWalls" type="StaticBody2D" parent="."]
 
@@ -226,22 +242,22 @@ shapes/2/shape = SubResource( 2 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 360, 670 )
 shapes/2/trigger = false
 shapes/3/shape = SubResource( 2 )
-shapes/3/transform = Matrix32( 0.348073, 0, 0, 1, 138.796, 483.155 )
+shapes/3/transform = Matrix32( 0.348073, 0, 0, 1, 138.796, 478.949 )
 shapes/3/trigger = false
 shapes/4/shape = SubResource( 3 )
-shapes/4/transform = Matrix32( 0.287844, 0, 0, 1, 922.531, 484.383 )
+shapes/4/transform = Matrix32( 0.287844, 0, 0, 1, 922.531, 478.559 )
 shapes/4/trigger = false
 shapes/5/shape = SubResource( 4 )
-shapes/5/transform = Matrix32( 0.283642, 0, 0, 1, 487.267, 550.14 )
+shapes/5/transform = Matrix32( 0.283642, 0, 0, 1, 487.267, 541.728 )
 shapes/5/trigger = false
 shapes/6/shape = SubResource( 4 )
-shapes/6/transform = Matrix32( 0.283642, 0, 0, 1, 630.951, 551.006 )
+shapes/6/transform = Matrix32( 0.283642, 0, 0, 1, 630.951, 542.594 )
 shapes/6/trigger = false
 shapes/7/shape = SubResource( 5 )
-shapes/7/transform = Matrix32( 0.283642, 0, 0, 4.95075, 674.114, 523.332 )
+shapes/7/transform = Matrix32( 0.283642, 0, 0, 4.95075, 674.114, 510.391 )
 shapes/7/trigger = false
 shapes/8/shape = SubResource( 5 )
-shapes/8/transform = Matrix32( 0.283642, 0, 0, 5.03432, 441.805, 522.372 )
+shapes/8/transform = Matrix32( 0.283642, 0, 0, 5.03432, 449.893, 511.372 )
 shapes/8/trigger = false
 shapes/9/shape = SubResource( 6 )
 shapes/9/transform = Matrix32( 1, 0, 0, 1, 577.426, 353.665 )
@@ -278,7 +294,7 @@ _update_shape_index = 2
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="InvisibleWalls"]
 
-transform/pos = Vector2( 138.796, 483.155 )
+transform/pos = Vector2( 138.796, 478.949 )
 transform/scale = Vector2( 0.348073, 1 )
 shape = SubResource( 2 )
 trigger = false
@@ -286,7 +302,7 @@ _update_shape_index = 3
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="InvisibleWalls"]
 
-transform/pos = Vector2( 922.531, 484.383 )
+transform/pos = Vector2( 922.531, 478.559 )
 transform/scale = Vector2( 0.287844, 1 )
 shape = SubResource( 3 )
 trigger = false
@@ -294,7 +310,7 @@ _update_shape_index = 4
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="InvisibleWalls"]
 
-transform/pos = Vector2( 487.267, 550.14 )
+transform/pos = Vector2( 487.267, 541.728 )
 transform/scale = Vector2( 0.283642, 1 )
 shape = SubResource( 4 )
 trigger = false
@@ -302,7 +318,7 @@ _update_shape_index = 5
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="InvisibleWalls"]
 
-transform/pos = Vector2( 630.951, 551.006 )
+transform/pos = Vector2( 630.951, 542.594 )
 transform/scale = Vector2( 0.283642, 1 )
 shape = SubResource( 4 )
 trigger = false
@@ -310,7 +326,7 @@ _update_shape_index = 6
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="InvisibleWalls"]
 
-transform/pos = Vector2( 674.114, 523.332 )
+transform/pos = Vector2( 674.114, 510.391 )
 transform/scale = Vector2( 0.283642, 4.95075 )
 shape = SubResource( 5 )
 trigger = false
@@ -318,7 +334,7 @@ _update_shape_index = 7
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="InvisibleWalls"]
 
-transform/pos = Vector2( 441.805, 522.372 )
+transform/pos = Vector2( 449.893, 511.372 )
 transform/scale = Vector2( 0.283642, 5.03432 )
 shape = SubResource( 5 )
 trigger = false
@@ -331,9 +347,30 @@ shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 9
 
-[node name="InGameUI" parent="." instance=ExtResource( 12 )]
+[node name="ShadeWrapper" type="Node2D" parent="."]
 
-[node name="TitleScreen" parent="." instance=ExtResource( 13 )]
+editor/display_folded = true
+z/z = 3
+
+[node name="Shade" type="ColorFrame" parent="ShadeWrapper"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -164.0
+margin/top = -197.0
+margin/right = 1206.0
+margin/bottom = 694.0
+color = Color( 0.192157, 0.129412, 0.141176, 0.54098 )
+
+[node name="InGameUI" parent="." instance=ExtResource( 13 )]
+
+[node name="TitleScreen" parent="." instance=ExtResource( 14 )]
+
+[connection signal="area_enter" from="Fence/PlayerDetectionArea" to="Fence" method="_on_PlayerDetectionArea_area_enter"]
+
+[connection signal="area_exit" from="Fence/PlayerDetectionArea" to="Fence" method="_on_PlayerDetectionArea_area_exit"]
 
 
 [editable path="Plant2"]

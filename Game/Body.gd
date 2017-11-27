@@ -1,4 +1,5 @@
-extends Node2D
+#extends Node2D
+extends "res://Isometric-item.gd"
 
 var sequences = {}
 var state = "default" setget set_state, get_state
@@ -12,6 +13,7 @@ signal state_change(old_state, new_state)
 signal stop_dialog
 
 func _ready():
+	can_be_interacted_with = true
 	add_child(fade_timer)
 	connect("state_change", self, "check_neutralized")
 	add_to_group("body")
