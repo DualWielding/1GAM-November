@@ -13,7 +13,7 @@ onready var scene_timer = get_node("SceneTimer")
 
 func state_change_controller(old_state, new_state, character):
 	if character.get_name() == "Ruffio" and new_state == "has_yelled":
-		eneveryone_enter()
+		everyone_enter()
 
 func _ready():
 	Player.character.look_at("up")
@@ -54,7 +54,7 @@ func start_ruffio_dialog():
 	ruffio.start_dialog()
 	ruffio.connect("state_change", self, "state_change_controller", [ruffio], CONNECT_ONESHOT)
 
-func eneveryone_enter():
+func everyone_enter():
 	vitori.enter()
 	alma.enter()
 	philippe.enter()
