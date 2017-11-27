@@ -163,9 +163,21 @@
 			{
 				"text":"AUGURIE D7 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"signal_given",
 				"next sequence": "none",
 				"card gained" : "DIVERSION"
+			}
+		]
+	},
+
+	"signal_given": {
+		"text":"AUGURIE D8",
+		"options": [
+			{
+				"text":"AUGURIE D8 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none"
 			}
 		]
 	}

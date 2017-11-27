@@ -44,7 +44,13 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d4",
-				"card gained" : "STROZI IS CESNI LOVER"
+				"card used" : "STROZI IS CESNI LOVER"
+			},
+			{
+				"text":"STROZI D3 A2",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "d4",
 			}
 		]
 	},
@@ -105,7 +111,7 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d9",
-				"card gained" : "COMPLOTIST HEAD DESCRIPTION"
+				"card gained" : "HEAD COMPLOTIST DESCRIPTION"
 			}
 		]
 	},

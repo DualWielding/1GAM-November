@@ -58,7 +58,7 @@ DIVERSION,,Diversion
 ALMA IS NO MORE PROTECTED,,Vulnerable
 SIR PHILIPPE SUFFERS FROM GOUTTE,,Goutte
 COMPLOTIST QUEST,,Complot
-,,
+LOYALIST QUEST,,Loyauté
 ,,
 ,,
 ,,
@@ -72,6 +72,7 @@ DAGGER DEFAULT A1,TODO,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser to
 DAGGER DEFAULT A2,TODO,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
 ,,
 SCENE 2 DOOR DEFAULT,TODO,Les servants semblent encore s'affairer à l'intérieur. Quitter la terasse serait remarqué.
+SCENE 2 DOOR DEFAULT A1,TODO,[i]A part-soi[/i]Je devrais plutôt me mélanger aux invité.
 ,,
 SIRE PHILIPPE DEFAULT,,"[i]devant lui trône une fiole en verre et non loin, une pipette.[/i] Bien le bonsoir, jeune Sire."
 SIRE PHILIPPE DEFAULT A1,,"[VITORI IS THE HEAD COMPLOTIST] Vous êtes Sire Philippe, le Capitaine de la garde ?"
@@ -87,7 +88,7 @@ SIRE PHILIPPE D2,,Vous avez réussi ? Dites le moi sans plus attendre !
 SIRE PHILIPPE D2 A1,,Vitori. C'est lui l'instigateur.
 SIRE PHILIPPE D2 A2,,"Tout bien réfléchi, j'ai peut être besoin d'un peu plus de temps avant d'être sûr."
 ,,
-SIRE PHILIPPE D3,,La vermine ! Très bien : Augurie va s'assurer que tout le monde soit réuni sur la Terrasse. C'est à ce moment que je donnerai l'ordre à mes hommes de se saisir des traitres.
+SIRE PHILIPPE D3,,La vermine ! Très bien. Allez voir Augurie si ce n'est déjà fait. Elle s'assurera que tout le monde soit réuni sur la Terrasse. C'est à ce moment que je donnerai l'ordre à mes hommes de se saisir des traitres.
 SIRE PHILIPPE D3 A1,,Et si certains parviennent à s'échapper ?
 ,,
 SIRE PHILIPPE D4,,"Leur tête pensante tranchée, le complot s'effondrera de lui même. Bon travail. Je dois avouer que j'avais tort de ne pas vous faire confiance."
@@ -487,3 +488,6 @@ AUGURIE WAITING SIGNAL A2,TODO,"Puis-je vous offrir un verre, très chère ?"
 ,,
 AUGURIE D7,TODO,[i]prenant visiblement beaucoup de plaisir[/i]Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
 AUGURIE D7 A1,TODO,"Hum ! Je pense que cela suffit. Bonne soirée, madame."
+,,
+AUGURIE D8,TODO,"Qu'y a t-il, encore ? J'ai le signal maintenant. Et toi, tu as encore du travail !"
+AUGURIE D8 A1,TODO,Je m'assurais simplement que les choses soient claire. J'y retourne.

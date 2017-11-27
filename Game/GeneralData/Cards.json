@@ -111,6 +111,22 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation",
 		"important": true
+	},
+	"HEAD COMPLOTIST DESCRIPTION": {
+		"unique_name": "HEAD COMPLOTIST DESCRIPTION",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"VITORI IS THE HEAD COMPLOTIST": {
+		"unique_name": "VITORI IS THE HEAD COMPLOTIST",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
+	},
+	"LOYALIST QUEST": {
+		"unique_name": "LOYALIST QUEST",
+		"name": "To be added in translation",
+		"text": "To be added in translation",
+		"important": true
 	}
-	
+
 }

@@ -86,7 +86,8 @@
 				"text":"SIRE PHILIPPE D4 A1",
 				"end": true,
 				"state change":"aware",
-				"next sequence": "none"
+				"next sequence": "none",
+				"card gained": "LOYALIST QUEST"
 			}
 		]
 	},
