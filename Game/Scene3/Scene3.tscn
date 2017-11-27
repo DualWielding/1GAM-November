@@ -1,9 +1,18 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=21 format=1]
 
 [ext_resource path="res://Scene3/Scene3.gd" type="Script" id=1]
 [ext_resource path="res://Scene3/TileSet3t.tres" type="TileSet" id=2]
 [ext_resource path="res://Round-table.tscn" type="PackedScene" id=3]
-[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene3/Guest1.gd" type="Script" id=5]
+[ext_resource path="res://Scene3/Guest2.gd" type="Script" id=6]
+[ext_resource path="res://Scene3/Guest3.gd" type="Script" id=7]
+[ext_resource path="res://Scene3/Guest4.gd" type="Script" id=8]
+[ext_resource path="res://Scene3/Guest5.gd" type="Script" id=9]
+[ext_resource path="res://Scene3/Hero.gd" type="Script" id=10]
+[ext_resource path="res://Scene3/Alma-2.gd" type="Script" id=11]
+[ext_resource path="res://Scene3/Guard.gd" type="Script" id=12]
+[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -120,7 +129,47 @@ transform/pos = Vector2( 352.355, 545.154 )
 
 transform/pos = Vector2( 191.69, 415.514 )
 
-[node name="PlayerCharacter" parent="." instance=ExtResource( 4 )]
+[node name="Guest1" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 370.806, 272.829 )
+script/script = ExtResource( 5 )
+
+[node name="Guest2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 379.85, 354.226 )
+script/script = ExtResource( 6 )
+
+[node name="Guest3" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 283.38, 354.226 )
+script/script = ExtResource( 7 )
+
+[node name="Guest4" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 340.66, 420.549 )
+script/script = ExtResource( 8 )
+
+[node name="Guest5" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 428.085, 461.247 )
+script/script = ExtResource( 9 )
+
+[node name="Hero" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 461.247, 355.733 )
+script/script = ExtResource( 10 )
+
+[node name="Alma-2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 492.901, 391.909 )
+script/script = ExtResource( 11 )
+
+[node name="Guard" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 431.1, 299.961 )
+script/script = ExtResource( 12 )
+
+[node name="PlayerCharacter" parent="." instance=ExtResource( 13 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 507.827, 299.143 )

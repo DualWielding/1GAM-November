@@ -14,8 +14,14 @@ var base_speed = 1.0
 func _ready():
 	is_object = false
 	var file = File.new()
-	if file.file_exists(str("res://Sprites/characters/", unique_name,".png")):
-		sprite.set_texture(load(str("res://Sprites/characters/", unique_name,".png")))
+	var n = unique_name
+	
+	if n.ends_with("2"):
+		n.erase(n.length() - 1, 1)
+	
+	if file.file_exists(str("res://Sprites/characters/", n,".png")):
+		sprite.set_texture(load(str("res://Sprites/characters/", n,".png")))
+	
 	add_to_group("character")
 	set_fixed_process(true)
 	look_at(base_looking_direction)
