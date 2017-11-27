@@ -16,37 +16,37 @@
 [ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Sounds/ouverture_porte_2.wav" type="Sample" id=15]
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 738.159, 61.9771 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 883.905, 2.61783 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
 extents = Vector2( 870, 2.51154 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=5]
 
 custom_solver_bias = 0.0
 extents = Vector2( 146.774, 2.16284 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=6]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.36768, 6.67548 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=7]
 
 custom_solver_bias = 0.0
 extents = Vector2( 66.3436, 10 )
@@ -219,7 +219,7 @@ ceil_value = 10
 
 visibility/visible = false
 input/pickable = true
-shapes/0/shape = SubResource( 7 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 499.691, 481.275 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -230,7 +230,7 @@ angular_damp = 1.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fence/PlayerDetectionArea"]
 
 transform/pos = Vector2( 499.691, 481.275 )
-shape = SubResource( 7 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -242,34 +242,34 @@ transform/pos = Vector2( -13.4517, 544.172 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 1 )
+shapes/0/shape = SubResource( 2 )
 shapes/0/transform = Matrix32( 1, 0, 0, 28.1923, -150, 390 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 1 )
+shapes/1/shape = SubResource( 2 )
 shapes/1/transform = Matrix32( 1, 0, 0, 28.1923, 1180, 380 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 2 )
+shapes/2/shape = SubResource( 3 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 360, 670 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 2 )
+shapes/3/shape = SubResource( 3 )
 shapes/3/transform = Matrix32( 0.348073, 0, 0, 1, 138.796, 478.949 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 3 )
+shapes/4/shape = SubResource( 4 )
 shapes/4/transform = Matrix32( 0.287844, 0, 0, 1, 922.531, 478.559 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 4 )
+shapes/5/shape = SubResource( 5 )
 shapes/5/transform = Matrix32( 0.283642, 0, 0, 1, 490.956, 541.728 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 4 )
+shapes/6/shape = SubResource( 5 )
 shapes/6/transform = Matrix32( 0.283642, 0, 0, 1, 630.951, 542.594 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 5 )
+shapes/7/shape = SubResource( 6 )
 shapes/7/transform = Matrix32( 0.283642, 0, 0, 4.95075, 674.114, 510.391 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 5 )
+shapes/8/shape = SubResource( 6 )
 shapes/8/transform = Matrix32( 0.283642, 0, 0, 5.03432, 449.893, 511.372 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 6 )
+shapes/9/shape = SubResource( 7 )
 shapes/9/transform = Matrix32( 1, 0, 0, 1, 577.426, 353.665 )
 shapes/9/trigger = false
 collision/layers = 1
@@ -283,7 +283,7 @@ bounce = 0.0
 
 transform/pos = Vector2( -150, 390 )
 transform/scale = Vector2( 1, 28.1923 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 0
 
@@ -291,14 +291,14 @@ _update_shape_index = 0
 
 transform/pos = Vector2( 1180, 380 )
 transform/scale = Vector2( 1, 28.1923 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 1
 
 [node name="CollisionShape2D 2" type="CollisionShape2D" parent="InvisibleWalls"]
 
 transform/pos = Vector2( 360, 670 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 trigger = false
 _update_shape_index = 2
 
@@ -306,7 +306,7 @@ _update_shape_index = 2
 
 transform/pos = Vector2( 138.796, 478.949 )
 transform/scale = Vector2( 0.348073, 1 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 trigger = false
 _update_shape_index = 3
 
@@ -314,7 +314,7 @@ _update_shape_index = 3
 
 transform/pos = Vector2( 922.531, 478.559 )
 transform/scale = Vector2( 0.287844, 1 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 trigger = false
 _update_shape_index = 4
 
@@ -322,7 +322,7 @@ _update_shape_index = 4
 
 transform/pos = Vector2( 490.956, 541.728 )
 transform/scale = Vector2( 0.283642, 1 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 5
 
@@ -330,7 +330,7 @@ _update_shape_index = 5
 
 transform/pos = Vector2( 630.951, 542.594 )
 transform/scale = Vector2( 0.283642, 1 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 6
 
@@ -338,7 +338,7 @@ _update_shape_index = 6
 
 transform/pos = Vector2( 674.114, 510.391 )
 transform/scale = Vector2( 0.283642, 4.95075 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 7
 
@@ -346,14 +346,14 @@ _update_shape_index = 7
 
 transform/pos = Vector2( 449.893, 511.372 )
 transform/scale = Vector2( 0.283642, 5.03432 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 8
 
 [node name="CollisionShape2D 4" type="CollisionShape2D" parent="InvisibleWalls"]
 
 transform/pos = Vector2( 577.426, 353.665 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 9
 

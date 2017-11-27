@@ -8,6 +8,7 @@ onready var waiter = get_node("Waiter")
 onready var alma = get_node("Alma")
 onready var augurie = get_node("Augurie")
 onready var claudio = get_node("Claudio")
+onready var strozi = get_node("Strozi")
 
 onready var scene_timer = get_node("SceneTimer")
 
@@ -65,3 +66,4 @@ func everyone_enter():
 	claudio.enter()
 	augurie.enter()
 	waiter.enter()
+	strozi.enter()

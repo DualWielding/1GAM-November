@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=1]
+[gd_scene load_steps=30 format=1]
 
 [ext_resource path="res://Scene2/Scene2.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/build_atlas.atex" type="Texture" id=2]
@@ -16,8 +16,9 @@
 [ext_resource path="res://Scene2/Claudio.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scene2/Augurie.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Scene2/Alma.tscn" type="PackedScene" id=16]
-[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=17]
-[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Scene2/Strozi.tscn" type="PackedScene" id=17]
+[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=18]
+[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=19]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -1347,7 +1348,12 @@ transform/pos = Vector2( 122.412, 517.111 )
 visibility/visible = false
 transform/pos = Vector2( 346.849, 246.814 )
 
-[node name="PlayerCharacter" parent="." instance=ExtResource( 17 )]
+[node name="Strozi" parent="." instance=ExtResource( 17 )]
+
+visibility/visible = false
+transform/pos = Vector2( 43.9217, 365.48 )
+
+[node name="PlayerCharacter" parent="." instance=ExtResource( 18 )]
 
 visibility/visible = false
 transform/pos = Vector2( 489.147, 647.998 )
@@ -1368,7 +1374,7 @@ margin/right = 1180.0
 margin/bottom = 690.0
 color = Color( 0.192157, 0.129412, 0.137255, 0.537255 )
 
-[node name="InGameUI" parent="." instance=ExtResource( 18 )]
+[node name="InGameUI" parent="." instance=ExtResource( 19 )]
 
 [node name="SceneTimer" type="Timer" parent="."]
 
