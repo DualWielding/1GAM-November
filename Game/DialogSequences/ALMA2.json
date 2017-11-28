@@ -1,0 +1,59 @@
+{
+
+	"default": {
+		"text":"ALMA2 DEFAULT",
+		"options": [
+			{
+				"text":"ALMA2 DEFAULT A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d4"
+			},
+			{
+				"text":"ALMA2 DEFAULT A2",
+				"end": false,
+				"state change":"plan b ending",
+				"next sequence": "d1"
+			}
+		]
+	},
+
+	"d1": {
+		"text":"ALMA2 D1",
+		"options": [
+			{
+				"text":"ALMA2 D1 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"ALMA2 D2",
+		"options": [
+			{
+				"text":"ALMA2 D2 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			}
+		]
+	},
+
+	"d3": {
+		"text":"ALMA2 D3",
+		"options": [
+			{
+				"text":"ALMA2 D3 A1",
+				"end": true,
+				"state change":"make hero enter",
+				"next sequence": "none"
+			}
+		]
+	}
+
+
+
+}

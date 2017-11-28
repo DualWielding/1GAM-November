@@ -149,8 +149,8 @@ SIRE PHILIPPE D12 A2,,Oups.
 SIRE PHILIPPE D13,,"Vous ?! Que vous l'ayez faite tomber intentionnellement ne m'étonnerait guère. J'ignore à quoi vous jouez, mais laissez moi vous dire que sitôt que je serai revenu, je serai sur vous comme la misère sur cette ville ! [i]Sort[/i]"
 SIRE PHILIPPE D13 A1,,"Mmh, Ce Sire Philippe donnait l'impression de me connaître. J'imagine qu'à son retour, il trop tard pour lui poser des questions..."
 ,,
-,,
-,,
+SIRE PHILIPPE D14,,"Par tous les Dieux, vous disiez vrai, Comtesse ! %n a fini par rallier la cause des parjures, il a assassiné le Duc ! Garde ! Tuez ce traître !"
+SIRE PHILIPPE D14 A1,,Pu... Pulcino ?
 ,,
 ,,
 ,,
@@ -533,3 +533,84 @@ GUARD2 DEFAULT A1,,"[GUARD KILLED] Eh bien, que se passe t-il ?"
 GUARD2 DEFAULT A2,,"[GUARD CORRUPTED] Eh bien, que se passe t-il ?"
 GUARD2 DEFAULT A3,,[COMPLOTIST QUEST]Pas maintenant !
 GUARD2 DEFAULT A4,,[LOYALIST QUEST] Pas maintenant !
+,,
+,,
+ALMA2 DEFAULT,,Bon... Bonsoir monseigneur !
+ALMA2 DEFAULT A1,,"Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
+ALMA2 DEFAULT A2,,"[PLAN B] Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
+,,
+ALMA2 D1,,"C'est que... Je n'ose vous demander de partager une coupe avec moi, Monseigneur."
+ALMA2 D1 A1,,"Ah ! Ce sera avec plaisir ma jeune et tendre amie, mais le moment est peut-être mal choisi, je me dois de..."
+,,
+ALMA2 D2,,Je... j'insiste. Au nom du comté d'Alma... Je... Vous semblez m'avoir évitée toute la soirée et...
+ALMA2 D2 A1,,"Ola, ola ! Ne prenez pas ombrage de ma discrétion. Tenez, voilà. Buvons, mais rapidement car des affaires pressantes m'attendent. Au comté d'Alma ! [i]Ils vident leurs verres d'une traite.[/i]"
+,,
+ALMA2 D3,,"[i]Regarde avec anxiété le Duc [/i] Je suis désolé, votre altesse, ils ne m'ont pas laissé pas le choix..."
+ALMA2 D3 A1,,Que voulez vous dire ? Qu'est ce... que... tout cela... signifie ?.. [i]S'écroule.[/i]
+,,
+ALMA2 D4,,"Rien que la brise, je vous rassure..."
+ALMA2 D4 A1,,Doit-on aussi votre teint de cadavre à la brise ?
+,,
+ALMA2 D5,,"Non, c'est que je dois m'entretenir avec vous..."
+ALMA2 D5 A1,,"Je vous écoute, mon enfant."
+,,
+ALMA2 D6,,"Voyez-vous, c'est assez délicat, Monseigneur... Je.. Oh, dieux tout puissants."
+ALMA2 D6 A1,,Eh bien ?..
+,,
+ALMA2 D7,,"Si vous étiez contraint de faire une chose horrible, mais que vous n'en avez pas le choix. Est-on tout de même coupable ?"
+ALMA2 D7 A1,,"Vous m'inquiétez, Comtesse. De quoi diable parlez vous ?"
+,,
+ALMA2 D8,,"Je suis confuse, Monseigneur, je n'aurai pas dû !"
+ALMA2 D8 A1,,Que... %n ?!
+,,
+,,
+HERO D1,,"Vous avez joué votre rôle à la perfection, Comtesse, vous pouvez disposer."
+HERO D1 A1,,...
+,,
+HERO D2,,"A nous deux, Duc. Mais avant de procéder, assurons nous que vous ne dissimiliez aucune surprise. [i]Il fouille le Duc, trouve une lettre qu'il déplie et lit.[/i]"
+HERO D2 A1,,...
+,,
+HERO D3,,"Eh bien, voilà une lettre bien passionnée ! Mais... Cette écriture... C'est la mienne ! Je... Ma mémoire me revient ! Dieux, qu'étais-je sur le point de commettre ?! Mon Duc, mio caro !"
+HERO D3 A1,,"... [i] La porte s'ouvre, entrent Alma, Sire Philippe et un garde [/i]"
+,,
+HERO D4,,"La soirée a été quelque peu étrange, mon Duc."
+HERO D4 A1,,"Mais, tu saignes ?! Garde, qu'avez vous fait ?! Allez cherchez de l'aide ! Immédiatement !"
+,,
+HERO D5,,"Votre garde est occupée, mio caro. Elle fait son devoir envers vous, comme j'ai fais le mien."
+HERO D5 A1, ,"Votre devoir ? Votre devoir est de vivre, Pulcino !"
+,,
+HERO D6,,"La mémoire est un organe étrange... Tout le soir, elle a refusé de danser avec moi. Mais la vue de votre visage a su dompter le fauve capricieux. Oui... Maintenant, je me souviens, mon Duc. Comment ai-je pu l'oublier, ne serait-ce qu'un instant ?"
+HERO D6 A1,,"Là, là... Faites silence et gardez vos forces, beau parleur. On prendra tôt soin de vous. GARDES !"
+,,
+HERO D7,,"De grâce mio caro, gardez ces larmes qui enlaidissent vos yeux et ne me bercez pas de mensonges : je sens mon heure venir. La passer à vos côtés, vous sachant sauf des manigences qui pesaient sur vous... Je n'aurai pu espérer mieux."
+HERO D7 A1,,... Je...
+,,
+HERO D8,,"[i], sort la lettre de sa veste.[/i] J'ai bien reçu votre lettre. Chaque mot, comme chaque instant... m'ont comblé. [i]... il meurt.[/i]"
+HERO D8 A1,,"Sogni d'oro, angelo mio... [i]Embrasse %n.[/i]"
+,,
+HERO D9,,[i] poignarde le Duc [/i]
+HERO D9 A1,,"%n, Mio Pulcino ? Toi, tu m'assassines ?"
+,,
+HERO D10,,"Mon Duc ? Ma tête... Mes esprits me reviennent... Oh, mio caro, qu'ai je fait?!"
+HERO D10 A1,,Tes yeux...
+,,
+HERO D11,,"[i] se précipite près du Duc[/i] Je me souviens, désormais... Oh mon bien-aimé, qu'ai je fait ?!"
+HERO D11 A1,,"Tes yeux implorent le pardon et hurlent leur détresse. Des pierres si précieuses, ne les entache pas de honte, et souris, Pulcino. Accorde moi cela."
+,,
+HERO D12,,Tout pour vous mon Duc ! Chaque souvenir qui me revient est comme autant de coups qui me lacèrent...
+HERO D12 A1,,"Là, là... Cesse de t'affliger, mon doux. Je connais mes derniers instants auprès de toi, je pars satisfait."
+,,
+HERO D13,,"Oh, mio caro... [i]il se penche et l'embrasse[/i]."
+HERO D13 A1,,"As-tu... As-tu reçu ma lettre, Pulcino ?"
+,,
+HERO D14,,"Oui. Oui... Chaque mot, et chaque instant... m'ont comblé."
+HERO D14 A1,,Bien... Bien. [i]...il meurt.[/i]
+,,
+HERO D15,,"Que la nuit est laide ! Que l'air du ciel est infect ! Je ne peux plus respirer... Je ne peux plus respirer, le coeur lesté de peines !"
+HERO D15 A1,,...
+,,
+HERO D16,,"Que le vent du soir est ardent et lourd. O nature immonde,ô éternels tourments..."
+HERO D16 A1,,...
+,,
+HERO D17,,"[i]au Duc[/i] Viens, partons. [i]Il s'effondre[/i]"
+HERO D17 A1,,...
