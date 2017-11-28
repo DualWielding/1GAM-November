@@ -1,0 +1,100 @@
+{
+
+	"default": {
+		"text":"HERO D1",
+		"options": [
+			{
+				"text":"HERO D1 A1",
+				"end": false,
+				"state change":"make alma go",
+				"next sequence": "d2"
+			}
+		]
+	},
+
+	"d2": {
+		"text":"HERO D2",
+		"options": [
+			{
+				"text":"HERO D2 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d3"
+			}
+		]
+	},
+
+	"d3": {
+		"text":"HERO D3",
+		"options": [
+			{
+				"text":"HERO D3 A1",
+				"end": true,
+				"state change":"make guards enter",
+				"next sequence": "none"
+			}
+		]
+	},
+
+	"d4": {
+		"text":"HERO D4",
+		"options": [
+			{
+				"text":"HERO D4 A1",
+				"end": false,
+				"state change":"make guards go out",
+				"next sequence": "d5"
+			}
+		]
+	},
+
+	"d5": {
+		"text":"HERO D5",
+		"options": [
+			{
+				"text":"HERO D5 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d6"
+			}
+		]
+	},
+
+	"d6": {
+		"text":"HERO D6",
+		"options": [
+			{
+				"text":"HERO D6 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d7"
+			}
+		]
+	},
+
+	"d7": {
+		"text":"HERO D7",
+		"options": [
+			{
+				"text":"HERO D7 A1",
+				"end": false,
+				"state change":"unchanged",
+				"next sequence": "d8"
+			}
+		]
+	},
+
+	"d8": {
+		"text":"HERO D8",
+		"options": [
+			{
+				"text":"HERO D8 A1",
+				"end": true,
+				"state change":"unchanged",
+				"next sequence": "none",
+				"card lost": "LOVE LETTER"
+			}
+		]
+	}
+
+}

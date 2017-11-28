@@ -212,6 +212,19 @@
 				"card gained":"ALMA IS NO MORE PROTECTED"
 			}
 		]
+	},
+
+	"d14": {
+		"text":"SIRE PHILIPPE D14",
+		"options": [
+			{
+				"text":"SIRE PHILIPPE D14 A1",
+				"end": true,
+				"state change":"make guard attack hero",
+				"next sequence": "none"
+			}
+		]
 	}
+
 
 }

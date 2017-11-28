@@ -1,0 +1,31 @@
+{
+   "default":{
+      "text":"GUARD2 DEFAULT",
+      "options":[
+         {
+            "text":"GUARD2 DEFAULT A1",
+            "end":false,
+            "state change":"unchanged",
+            "next sequence":"d1"
+         },
+         {
+            "text":"GUARD2 DEFAULT A2",
+            "end":false,
+            "state change":"unchanged",
+            "next sequence":"d5"
+         },
+         {
+            "text":"GUARD2 DEFAULT A3",
+            "end":true,
+            "state change":"make alma enter",
+            "next sequence":"none"
+         },
+         {
+            "text":"GUARD2 DEFAULT A4",
+            "end":false,
+            "state change":"unchanged",
+            "next sequence":"d9"
+         }
+      ]
+   }
+}

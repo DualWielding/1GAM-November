@@ -1,0 +1,35 @@
+{
+   "default":{
+      "text":"GUEST DEFAULT",
+      "options":[
+         {
+            "text":"GUEST DEFAULT",
+            "end":false,
+            "state change":"make duke monologing",
+            "next sequence":"d1"
+         }
+      ]
+   },
+   "d1":{
+      "text":"GUEST D1",
+      "options":[
+         {
+            "text":"GUEST D1 A1",
+            "end":false,
+            "state change":"unchanged",
+            "next sequence":"d2"
+         }
+      ]
+   },
+   "d2":{
+      "text":"GUEST D2",
+      "options":[
+         {
+            "text":"GUEST D2 A1",
+            "end":true,
+            "state change":"everybody get out",
+            "next sequence":"none"
+         }
+      ]
+   }
+}
