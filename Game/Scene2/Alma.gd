@@ -5,5 +5,6 @@ func init():
 	unique_name = "Alma"
 	base_looking_direction = "up"
 
-func enter():
-	fade_in()
+func on_state_change(old_state, new_state):
+	if new_state == "out":
+		fade()

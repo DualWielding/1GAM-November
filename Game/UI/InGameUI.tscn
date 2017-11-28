@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=1]
+[gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://UI/InGameUI.gd" type="Script" id=1]
 [ext_resource path="res://UI/Style/Theme-UI.tres" type="Theme" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Sprites/UI/card-discard.png" type="Texture" id=8]
 [ext_resource path="res://Fonts/palatino-bold-italic.fnt" type="BitmapFont" id=9]
 [ext_resource path="res://Tutorial.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Sounds/bouton_dinteraction.wav" type="Sample" id=11]
 
 [sub_resource type="Animation" id=1]
 
@@ -156,6 +157,15 @@ expand_margin/right = 0.0
 expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
+
+[sub_resource type="SampleLibrary" id=8]
+
+samples/interact = {
+"db": -15.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 11 )
+}
 
 [node name="InGameUI" type="CanvasLayer"]
 
@@ -370,6 +380,23 @@ margin/left = 501.0
 margin/top = 91.0
 margin/right = 651.0
 margin/bottom = 241.0
+
+[node name="SamplePlayer" type="SamplePlayer" parent="."]
+
+config/polyphony = 1
+config/samples = SubResource( 8 )
+default/volume_db = 0.0
+default/pitch_scale = 1.0
+default/pan = 0.0
+default/depth = 0.0
+default/height = 0.0
+default/filter/type = 0
+default/filter/cutoff = 5000.0
+default/filter/resonance = 1.0
+default/filter/gain = 1.0
+default/reverb_room = 2
+default/reverb_send = 0.0
+default/chorus_send = 0.0
 
 [connection signal="pressed" from="InteractionButton" to="." method="_on_InteractionButton_pressed"]
 

@@ -171,7 +171,7 @@
 			{
 				"text":"ALMA D11 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"out",
 				"card gained":"COMPLOTIST QUEST"
 			}
 		]

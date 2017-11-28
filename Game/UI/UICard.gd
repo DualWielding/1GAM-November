@@ -19,6 +19,7 @@ onready var aura = get_node("Wrapper/Aura")
 onready var recto = get_node("Wrapper/VirginCard/Recto")
 onready var verso = get_node("Wrapper/VirginCard/Verso")
 
+onready var sp = get_node("SamplePlayer")
 onready var ap = get_node("AnimationPlayer")
 
 func init_from_dic(dic):
@@ -109,22 +110,27 @@ func is_selected():
 
 func animate_add():
 	ap.play("animate_add", -1, 0.8)
+	sp.play(str("cardSlide", (randi() % 7) + 8))
 
 func animate_discard():
 	ap.play_backwards("animate_add")
+	sp.play(str("cardSlide", (randi() % 7) + 1))
 
 func bring_up():
 	if !selectable:
 		ap.play("bring_up")
+		sp.play(str("cardShove", (randi() % 4) + 1))
 		_up = true
 
 func lower():
 	if !selectable:
 		if !_recto:
 			ap.play_backwards("turn and go up")
+			sp.play(str("cardPlace", (randi() % 4) + 1))
 			_recto = true
 		else:
 			ap.play_backwards("bring_up")
+			sp.play(str("cardShove", (randi() % 4) + 1))
 		_up = false
 
 func set_up(boolean):
@@ -135,10 +141,12 @@ func is_up():
 
 func view_recto():
 	ap.play_backwards("turn")
+	sp.play(str("cardPlace", (randi() % 4) + 1))
 	_recto = true
 
 func view_verso():
 	ap.play("turn")
+	sp.play(str("cardPlace", (randi() % 4) + 1))
 	_recto = false
 
 func _on_VirginCard_toggled( pressed ):

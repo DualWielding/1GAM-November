@@ -37,7 +37,7 @@
 			{
 				"text":"WAITER D2 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"out",
 				"next sequence": "none",
 				"card gained": "WAITER STRANGE REACTION"
 			}

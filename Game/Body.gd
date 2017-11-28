@@ -15,7 +15,7 @@ signal stop_dialog
 func _ready():
 	can_be_interacted_with = true
 	add_child(fade_timer)
-	connect("state_change", self, "check_neutralized")
+	connect("state_change", self, "on_state_change")
 	add_to_group("body")
 	init()
 	load_sequences()
@@ -93,6 +93,9 @@ func say(text, opt):
 	# Thus enabling us to follow up with the next dialog line
 	emit_signal("say", self, text, options)
 
+func enter():
+	fade_in()
+
 func set_name(name):
 	display_name = name
 
@@ -109,6 +112,6 @@ func fade_in():
 	fade_timer.connect("timeout", self, "show", [], CONNECT_ONESHOT)
 	fade_timer.start()
 
-func check_neutralized(old_state, new_state):
-	if new_state == "neutralized":
-		fade()
+func on_state_change(old_state, new_state):
+	# Called when the state changes
+	pass

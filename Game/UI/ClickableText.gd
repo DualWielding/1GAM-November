@@ -76,6 +76,7 @@ func get_speaker():
 	return speaker
 
 func _on_ClickableText_pressed():
+	get_node("SamplePlayer").play("click")
 	Player.ui.dialog_panel.script_container.set_dialog(Player.character, full_text, [], true)
 	
 	Player.ui.clear_answers()

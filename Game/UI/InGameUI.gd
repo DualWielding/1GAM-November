@@ -99,6 +99,7 @@ func hide_interaction_button():
 	interaction_button.get_popup().clear()
 
 func _on_InteractionButton_pressed():
+	get_node("SamplePlayer").play("interact")
 	var popup = interaction_button.get_popup()
 	popup.clear()
 	var size = Player.character.interaction_possibilities.size()

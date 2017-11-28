@@ -2,6 +2,7 @@ id,en,fr
 $i,,
 ,,
 STARTING PLAYER NAME,You,Vous
+GUEST,Guest,Invité
 FIRST GUARD,Guard,Garde
 WAITER,Waiter,Serveur
 DUKE,The Duke,Le Duc
@@ -12,17 +13,42 @@ INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court...
 DISCARD BUTTON,Discard,Défausser
 INTERACTION BUTTON,Interact,Interagir
 INTERACTION BUTTON TOOLTIP,Press E to interact,Appuyez sur E pour interagir
+START BUTTON,Start,Commencer
+QUIT BUTTON,Quit,Quitter
 DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes en trop.
+DEVELOPMENT,Development,Développement
+GAME DESIGN,Game Design,Game Design
+GRAPHICS,Art,Graphismes
+MUSIC,Music,Musique
+SOUNDS,Sounds,Sons
+THANKS,Special thanks to:,Merci à :
+END POEM,"The world now knows I am able,
+to create gorgeous tables
+and poetry,
+next time I will draw potery.
+
+
+  Thank you for playing,
+  Dual Wielding","Désormais tout le monde sait
+ma capacité à créer
+de magnifiques tables
+pour illustrer nos fables.
+
+   Merci d'avoir joué,
+   Dual Wielding
+"
+MAILING LIST,Subscribe to our mailing list !,S'inscrire à notre mailing list !
+WEBSITE,Website,Site web
 TUTORIAL CHECK BOX,Hide tutorial,Cacher le tutorial
-TUTORIAL BOOK,TODO,"Voici la pièce de théâtre. Les tirades des Personnages Non-Joueurs (PNJ), ainsi que vos réponses s'afficheront ici."
-TUTORIAL CARDS,TODO,Les cartes représentent vos atouts dans cette histoire. Vous allez en gagner et en utiliser. Vous pouvez faire un clique gauche dessus pour les observer plus attentivement. Puis un clique droit pour les étudier en détails.
-TUTORIAL INTERACTION,TODO,"Lorsque vous approchez d'un PNJ ou d'un objet avec lequel vous pouvez interagir, cette icone deviendra visible. Vous pouvez cliquer dessus ou appuyer sur la lettre E pour entamer l'interaction."
+TUTORIAL BOOK,This is where the play will be written with the NPC's tirades (Non Player Character) and yours.,"Voici la pièce de théâtre. Les tirades des Personnages Non-Joueurs (PNJ), ainsi que vos réponses s'afficheront ici."
+TUTORIAL CARDS,"The cards show your assets in this story. You will need to use those you win along the game. You can either use a left-click on one to see it more clearly, or a right-click to display more information.",Les cartes représentent vos atouts dans cette histoire. Vous allez en gagner et en utiliser. Vous pouvez faire un clique gauche dessus pour les observer plus attentivement. Puis un clique droit pour les étudier en détails.
+TUTORIAL INTERACTION,This icon will be visible when you are close to a NPC or an object you can interact with. You can click on it or push E to start the interaction.,"Lorsque vous approchez d'un PNJ ou d'un objet avec lequel vous pouvez interagir, cette icone deviendra visible. Vous pouvez cliquer dessus ou appuyer sur la lettre E pour entamer l'interaction."
 ,,
 SCENE 1 INTRO,TODO,"[center]SCÈNE PREMIÈRE[/center]
 [center][i]Une rue pavée. — Clair de lune ; un palais dans le fond.[/i][/center]
 
 [center][i]Entrent [/i]%N[i] ; [/i]UN BANDIT,[i] un bâton à la main ; [/i]UN GARDE,[i] armé.[/i][/center]"
-SCENE 1 ENTERS VITORI,TODO,[i][right]Entre Vitori  [/right][i]
+SCENE 1 ENTERS VITORI,TODO,[i][right]Entre Vitori.  [/right][i]
 SCENE 2 INTRO,TODO,"[center]SCÈNE II[/center]
 [center][i]Une terasse de palais. — Pleine nuit ; la ville en contrebas.[/i][/center]
 
@@ -30,7 +56,7 @@ SCENE 2 INTRO,TODO,"[center]SCÈNE II[/center]
 SCENE 3 INTRO,TODO,"[center]SCÈNE III[/center]
 [center][i]Une salle de réception du palais.[/i][/center]
 
-[center][i]Entrent ????[/i][/center]"
+[center][i]Entrent [/i]LE DUC[i], [/i]ALMA[i], [/i]UN GARDE[i] armé ; des invités.[/i] [/center]"
 ,,
 ,,
 GOLD POUCH,Gold pouch,Bourse d'or
@@ -53,31 +79,31 @@ NEED A DRINK,,A
 WAITER STRANGE REACTION,,A
 VITORI IS THE HEAD COMPLOTIST,,A
 ,,
-A SURPRISE IS PLANNED,,Surprise !
-DIVERSION,,Diversion
-ALMA IS NO MORE PROTECTED,,Vulnerable
-SIR PHILIPPE SUFFERS FROM GOUTTE,,Goutte
-COMPLOTIST QUEST,,Complot
-LOYALIST QUEST,,Loyauté
+A SURPRISE IS PLANNED,Surprise !,Surprise !
+DIVERSION,Diversion,Diversion
+ALMA IS NO MORE PROTECTED,Vulnerable,Vulnérable
+SIR PHILIPPE SUFFERS FROM GOUTTE,Gout,Goutte
+COMPLOTIST QUEST,Conspiracy,Complot
+LOYALIST QUEST,Loyalty,Loyauté
 ,,
 ,,
 ,,
 BOTTLE DEFAULT,TODO,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
-BOTTLE DEFAULT A1,TODO,[i]A part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
-BOTTLE DEFAULT A2,TODO,[i]A part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes.[/color][i]%n verse une poudre dans la bouteille et s'en saisit[/i]
-BOTTLE DEFAULT A3,TODO,[i]A part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
+BOTTLE DEFAULT A1,TODO,[i]à part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
+BOTTLE DEFAULT A2,TODO,[i]à part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes.[/color][i]%n verse une poudre dans la bouteille et s'en saisit[/i]
+BOTTLE DEFAULT A3,TODO,[i]à part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
 DAGGER DEFAULT,TODO,"Une dague gît sur le sol, à quelques mètres de l'endroit où vous vous êtes éveillé."
-DAGGER DEFAULT A1,TODO,"[i]A part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
-DAGGER DEFAULT A2,TODO,"[i]A part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
+DAGGER DEFAULT A1,TODO,"[i]à part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
+DAGGER DEFAULT A2,TODO,"[i]à part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
 ,,
 SCENE 2 DOOR DEFAULT,TODO,Les servants semblent encore s'affairer à l'intérieur. Quitter la terasse serait remarqué.
-SCENE 2 DOOR DEFAULT A1,TODO,[i]A part-soi[/i]Je devrais plutôt me mélanger aux invité.
+SCENE 2 DOOR DEFAULT A1,TODO,[i]à part-soi[/i]Je devrais plutôt me mélanger aux invité.
 ,,
-SIRE PHILIPPE DEFAULT,,"[i]devant lui trône une fiole en verre et non loin, une pipette.[/i] Bien le bonsoir, jeune Sire."
-SIRE PHILIPPE DEFAULT A1,,"[VITORI IS THE HEAD COMPLOTIST] Vous êtes Sire Philippe, le Capitaine de la garde ?"
-SIRE PHILIPPE DEFAULT A2,,"[SIR PHILIPPE SUFFERS FROM GOUTTE] Pardonnez monsieur, ceci est à vous ?"
-SIRE PHILIPPE DEFAULT A3,,"[i]faisant mine de trébucher et renverse la fiole.[/i] *Renverser la fiole* Oh ! Par les dieux je suis confus, veuillez m'excuser !"
+SIRE PHILIPPE DEFAULT,,"[i]assis près d'une fiole en verre et d'une pipette.[/i] Bien le bonsoir, jeune Sire."
+SIRE PHILIPPE DEFAULT A1,,"Vous êtes Sire Philippe, le Capitaine de la garde ?"
+SIRE PHILIPPE DEFAULT A2,,"Pardonnez monsieur, ceci est à vous ?"
+SIRE PHILIPPE DEFAULT A3,,"[i]renversant la fiole.[/i] Oh ! Par les dieux, j'ai renversé votre médicament. Je suis confus, veuillez m'excuser !"
 SIRE PHILIPPE DEFAULT A4,,Voilà une bien étrange récipient. Que renferme t-il ?
 ,,
 SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, %n ?"
@@ -166,11 +192,11 @@ VITORI D10,TODO,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air qu
 VITORI D10 A1,TODO,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
 ,,
 VITORI SCENE2DEFAULT,TODO,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?"
-VITORI SCENE2DEFAULT A1,TODO,"[HEAD COMPLOTIST DESCRIPTION] Mes souvenirs s'acharnent à rester flous. Dites moi, Vitori, auriez vous l'obligeance de me rappeler qui est à l'initiative du plan de ce soir ?"
+VITORI SCENE2DEFAULT A1,TODO,"Mes souvenirs s'acharnent à rester flous. Dites moi, Vitori, auriez vous l'obligeance de me rappeler qui est à l'initiative du plan de ce soir ?"
 VITORI SCENE2DEFAULT A2,TODO,"Pas tout à fait. A vrai dire, j'ai bien l'impression que mon mal empire... Je ne vous ennuie pas plus."
 ,,
 ,,
-VITORI D11,TODO,"[i], riant aux éclats.[/i] A l'initiative du plan ? Allons, vous vous moquez ? Allez donc prendre un verre, cela vous fera le plus grand bien, et vous évitera de parler de si grave sujet en public !"
+VITORI D11,TODO,"[i]riant aux éclats.[/i] A l'initiative du plan ? Allons, vous vous moquez ? Allez donc prendre un verre, cela vous fera le plus grand bien, et vous évitera de parler de si grave sujet en public !"
 VITORI D11 A1,TODO,Vous avez surement raison...
 ,,
 ,,
@@ -279,7 +305,7 @@ GUARD D17 A1,TODO,"Très bien, très bien !"
 ,,
 ,,
 ,,
-ALMA DEFAULT,TODO,"[i](Visiblement très anxieuse)[/i] Bon... bonsoir Messire. Je vous prie de m'excusez, je ne me sens pas d'humeur à entretenir la conversation."
+ALMA DEFAULT,TODO,"[i]anxieuse.[/i] Bon... bonsoir Messire. Je vous prie de m'excusez, je ne me sens pas d'humeur à entretenir la conversation."
 ALMA DEFAULT A1,TODO,Vous n'avez pas l'air de beaucoup vous amuser... Un problème ?
 ALMA DEFAULT A2,TODO,"Je ne vous importune pas plus longtemps alors, bonne soirée."
 ,,
@@ -288,28 +314,28 @@ ALMA D1 A1,TODO,Vous n'aurez pas besoin d'en arriver là. Voyez : je m'en vais !
 ALMA D1 A2,TODO,"Et moi si j'étais vous, je m'écouterais quelques minutes si vous voulez revoir votre précieuse bestiole en vie."
 ALMA D1 A3,,"Mais voyons, Comtesse... Je ne vois personne. Il n'y a que nous. Alors cessez vos menaces puériles et écoutez moi si vous tenez à votre animal."
 ,,
-ALMA D2,TODO,"[i](Parlant tout bas)[/i] Alors c'est vous le monstre qui avez enlevé Sporco ! Vous n'êtes qu'un...qu'un..! Jamais je n'accepterai de céder à vos menaces ! Et si je ne craignais pas autant pour mon pauvre Sporco, je vous aurai dénoncé au Capitaine depuis longtemps !"
+ALMA D2,TODO,"[i]chuchotant.[/i] Alors c'est vous le monstre qui avez enlevé Sporco ! Vous n'êtes qu'un...qu'un..! Jamais je n'accepterai de céder à vos menaces ! Et si je ne craignais pas autant pour mon pauvre Sporco, je vous aurai dénoncé au Capitaine depuis longtemps !"
 ALMA D2 A1,TODO,"Si vous croyez que cet homme puisse quoi que ce soit pour vous, vous vous trompez."
-ALMA D2 A2,TODO,"[garde éliminé] J'ai tué sans sourciller un garde un peu trop buté en rentrant, et vous croyez que c'est un vieillard qui m'empêchera de m'en prendre à vous ?"
+ALMA D2 A2,TODO,"J'ai tué sans sourciller un garde un peu trop buté en rentrant, et vous croyez que c'est un vieillard qui m'empêchera de m'en prendre à vous ?"
 ,,
-ALMA D3,TODO,"Dans ce cas, vous n'aurez rien contre le fait que je hurle à plein poumons. Si vous voulez bien m'excuser. [i]Elle fait mine de prendre une grande inspiration[/i]"
+ALMA D3,TODO,"Dans ce cas, vous n'aurez rien contre le fait que je hurle à plein poumons. Si vous voulez bien m'excuser. [i]Elle fait mine de prendre une grande inspiration.[/i]"
 ALMA D3 A1,TODO,Ca suffit ! Gardez votre souffle ! Je vais revenir. Ne faites rien de stupide si vous tenez à retrouver votre animal en un seul morceau.
 ,,
 ALMA D4,TODO,Je... Je ne vous crois pas !
-ALMA D4 A1,TODO,"[Ruffio missing finger explained]Votre bestiole a mutilé mon ami, là bas. Il me semblerait juste de lui rendre l'appareil. Une patte, une oreille... Sa langue, peut être ?"
+ALMA D4 A1,TODO,"Votre bestiole a mutilé mon ami, là bas. Il me semblerait juste de lui rendre l'appareil. Une patte, une oreille... Sa langue, peut être ?"
 ,,
 ALMA NO MORE PROTECTED,TODO,"Je vous prie de m'excuser, mais je n'ai aucune envie de m'entretenir avec vous. Bonne soirée."
-ALMA NO MORE PROTECTED A1,TODO,"[Alma protegée par Philippe] Nous allons discuter, maintenant. Que vous le vouliez ou non."
+ALMA NO MORE PROTECTED A1,TODO,"Nous allons discuter, maintenant. Que vous le vouliez ou non."
 ALMA NO MORE PROTECTED A2,TODO,Bonne soirée.
 ,,
 ALMA D6,TODO,Vous n'oserez pas vous en prendre à moi en présence de...
 ALMA D6 A1,TODO,"...Sire Philippe ? Le malheureux a du nous fausser compagnie. Désormais vous allez m'écouter, petite peste !"
 ,,
-ALMA D7,TODO,[i]recouvre sa bouche de ses mains et couine[/i]
+ALMA D7,TODO,"[i]recouvrant sa bouche de ses mains, dans un sanglot.[/i]Non..."
 ALMA D7 A1,TODO,Il me faut une arme. Mais les gardes vont fouiller les hommes avant qu'ils n'accèdent à la salle de réception en présence du Duc. Alors voici ce que vous allez faire...
 ,,
 ALMA D8,TODO,Mon pauvre Sporco... Non ! Je... Je vous écoute !
-ALMA D8 A1,TODO,"Vous allez récupérer l'arme de cet homme [i](désigne Ruffio)[/i], rentrer dans la salle de réception et vous me la remettrez une fois à l'intérieur. Est-ce clair ?"
+ALMA D8 A1,TODO,"Vous allez récupérer l'arme que Ruffio vous donnera, entrer dans la salle de réception et me la remettrez une fois à l'intérieur. Est-ce clair ?"
 ,,
 ALMA D9,TODO,Oui.. Oui mais qu'attendez vous de moi ensuite ?
 ALMA D9 A1,TODO,"Je veux que vous distrayez le Duc. Trouvez n'importe quelle raison, mais vous devrez à tout prix occuper son entière attention."
@@ -317,24 +343,24 @@ ALMA D9 A1,TODO,"Je veux que vous distrayez le Duc. Trouvez n'importe quelle rai
 ALMA D10,TODO,Mais comment faire ? Je...
 ALMA D10 A1,TODO,"Baissez le ton ! C'est cela, ou retrouver votre Sporco en pièce, avec l'assurance qu'il aura souffert mille mort avant de rendre son dernier souffle. A vous de voir, Comtesse ! Serez-vous à la hauteur ?"
 ,,
-ALMA D11,TODO,"[i]couine une nouvelle fois, hoche la tête puis sort.[/i]"
+ALMA D11,TODO,[i]sanglotant.[/i]Oui ![i]Elle sort.[/i]
 ALMA D11 A1,TODO,"Cette violence, ces mots glacials... Ils vinrent naturellement. Mes souvenirs ont beau m'échapper, mon âme n'est pas dupe... Qui étais-je, avant ce soir ?"
 ,,
 ,,
 ,,
 ,,
-STROZI DEFAULT,TODO,"[i], se tourne vers %n et lève un sourcil.[/i] "
+STROZI DEFAULT,TODO,"[i]se tournant vers %n, il lève un sourcil.[/i] Bonsoir."
 STROZI DEFAULT A1,TODO,"Bien le bonsoir, messire."
 ,,
 STROZI D1 ,TODO,"Le bonsoir, la réception est-elle à votre convenance ?"
 STROZI D1 A1,TODO,"Parfaite, je vous remercie. Est-ce vous qui l'organisez ?"
 ,,
-STROZI D2,TODO,"Non, je la constate, impuissant, engloutir l'argent de la ville... [i](tend une main vers %n)[/i]Sire Strozi, comptable du Duc. Votre visage m'est familier, êtes vous un habitué du palais ?"
+STROZI D2,TODO,"Non, je la constate, impuissant, engloutir l'argent de la ville... [i]Il tend une main vers %n.[/i]Sire Strozi, comptable du Duc. Votre visage m'est familier, êtes vous un habitué du palais ?"
 STROZI D2 A1,TODO,A vous de me le dire. Mes maux de têtes me tuent et mes souvenirs semblent vouloir s'acharner à fuir mon esprit.
 ,,
 STROZI D3 ,TODO,"Au prix des bouteilles que vous et les autres invités engloutissez, je veux bien vous croire."
-STROZI D3 A1,TODO,"[STROZI IS CESNI LOVER]Mmh. Cela dit, le vin n'est pas la seule chose qui impacte le budget de la ville, n'est-ce pas ?"
-STROZI D3 A2,TODO,Je ferais peut-être mieux de vous laisser apprécier la soirée seul. Messire. [i](prend congé)[/i]
+STROZI D3 A1,TODO,"Mmh. Cela dit, le vin n'est pas la seule chose qui impacte le budget de la ville, n'est-ce pas ?"
+STROZI D3 A2,TODO,Je ferais peut-être mieux de vous laisser apprécier la soirée seul. Messire.
 ,,
 STROZI D4,TODO,Qu'être vous en train d'insinuer ?
 STROZI D4 A1,TODO,"Allons, qui n'a jamais abusé de sa position pour se faciliter quelques conquêtes ?"
@@ -345,13 +371,13 @@ STROZI D5 A1,TODO,Il est osé de menacer un homme tenté de révéler une si tou
 STROZI D6,TODO,Je vois. A combien estimez vous votre silence ?
 STROZI D6 A1,TODO,Nous n'aurons pas à arriver à ces extrêmités. Contentez- vous de me confier ce que vous savez sur le complot qui se trame.
 ,,
-STROZI D7,TODO,"Ces rumeurs ridicules ? Des bruits de boudoir parlent d'anarchistes assoifés de sang lassés par la politique du Duc, et vous y accordez crédit ? Ca n'a aucun sens !"
+STROZI D7,TODO,"Ces rumeurs ridicules ? Des bruits de couloir parlent d'anarchistes assoifés de sang lassés par la politique du Duc, et vous y accordez crédit ? Ca n'a aucun sens !"
 STROZI D7 A1,TODO,Probablement. Qui est à la tête de ce complot ?
 ,,
-STROZI D8,TODO,"Il n'y a PAS de complot. Mais ces racontars parlent d'un nobliau de basse exctraction envieux du Duc et outré de sa façon de gouverner, qu'il juge tyrannique. Et... êtes-vous sûr de vous sentir bien ?"
+STROZI D8,TODO,"Il n'y a PAS de complot. Mais les racontars parlent d'un jeune coq, un nobliau de basse exctraction envieux du Duc et outré de sa façon de gouverner, qu'il juge tyrannique. Et... êtes-vous sûr de vous sentir bien ?"
 STROZI D8 A1,TODO,"Je... Oui, ce n'est rien."
 ,,
-STROZI D9,TODO,"Le sang qui vous coule du crâne semble indiquer le contraire. Bien, est-ce que cela suffira à m'assurer de votre discrétion ?"
+STROZI D9,TODO,"Le sang qui teinte vos cheveux semble indiquer le contraire. Bien, est-ce que cela suffira à m'assurer de votre discrétion ?"
 STROZI D9 A1,TODO,"Oui, ne vous en faites pas pour cela."
 STROZI D9 A2,TODO,"Rassurez-vous, vos cachoteries ne regardent que vous."
 ,,
@@ -363,7 +389,7 @@ WAITER DEFAULT A2,TODO,"Non, merci."
 WAITER D1,TODO,"Tout de suite, Messire. Si je puis me permettre, Messire, vous devriez garder à l'oeil l'individu au doigt manquant. Il n'apparaît pas sur la liste des invités."
 WAITER D1 A1,TODO,Je vous demande pardon ? Nous connaissons nous ?
 ,,
-WAITER D2,TODO,"[i], échangeant un clin d'oeil complice[/i] Bien sûr que non Messire. Mais sachez que Sire Philippe attend le nom du complotiste pour nous donner le signal. Bonne soirée, messire. [i] il sort.[/i]"
+WAITER D2,TODO,"[i]avec un clin d'oeil complice.[/i] Bien sûr que non Messire. Mais sachez que Sire Philippe attend le nom du complotiste pour nous donner le signal. Bonne soirée, messire. [i]Il sort.[/i]"
 WAITER D2 A1,TODO,Comment ? Attendez !
 ,,
 RUFFIO DEFAULT,TODO,"Te voilà enfin. Je t'ai vu discuter longtemps avec ce garde, je peux savoir ce que tu tramais ?"
@@ -380,7 +406,7 @@ RUFFIO D3 A1,TODO,Que veux tu dire ?
 RUFFIO D3 A2,TODO,"Eh bien... Hum, il semblerait. A quel sujet, exactement ?"
 ,,
 RUFFIO D4,TODO,"Assassiner le Duc, ce privilège me revenait. Mais il a fallu que tu te tordes et que tu rampes autour du Seigneur Vitori et de son maître jusqu'à le convaincre de t'attribuer la mission. A croire que la flatterie est une chose naturelle pour toi."
-RUFFIO D4 A1,TODO,[i]A part lui [/i] Assassi... Diantre ! Des bribes de souvenirs me reviennent... A propos d'un plan... Mais impossible de les fixer. La peste ! Je suis en train de me mettre dans un pétrin que je me suis moi-même concocté !
+RUFFIO D4 A1,TODO,[i]à part soi.[/i] Assassi... Diantre ! Des bribes de souvenirs me reviennent... A propos d'un plan... Mais impossible de les fixer. La peste !
 ,,
 RUFFIO D5,TODO,"J'entends les invités arriver. Bien, puisque mes méthodes vous paraissent trop ""expéditives"", il va falloir que tu te courbes devant quelques uns d'entre eux, si tu veux créer l'occasion de te débarasser du Duc en toute tranquillité. Mais si je comprends bien, te courber devant les autres, c'est un peu ta spécialité, hein ?"
 RUFFIO D5 A1,TODO,"J'ai peur de comprendre ce que tu sous-entend Ruffio. Gare à ne pas abuser de mon état.[i]Entrent un serveur, Vitori, Strozi, Sire Philippe, Giulia, Claudio, Augurie et Alma.[/i]"
@@ -410,7 +436,7 @@ RUFFIO D6,TODO,"Non, mais il ne m'a pas quitté des yeux. Peut-être devrais-je 
 RUFFIO D6 A1,TODO,"Ca ne me paraît pas très sage. Dis-moi, depuis quand connais-tu Sire Vitori ?"
 ,,
 RUFFIO D7,TODO,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'ait confié la mission à toi... Toi qui débarques parmi nous, et parviens à convaincre notre meneur de te confier l'élimination du Tyran... Je ne t'ai jamais fait confiance, %n."
-RUFFIO D7 A1,TODO,Ce qui veut dire que Vitori... je... Je vois. J'imagine que je ferai la même chose dans ton cas.
+RUFFIO D7 A1,TODO,Ce qui veut dire que Vitori... je... Je vois. J'imagine que je ferais la même chose à ta place.
 ,,
 RUFFIO D8,TODO,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
 RUFFIO D8 A1,TODO,"Bonne soirée, Ruffio."
@@ -432,10 +458,10 @@ RUFFIO D8 A1,TODO,"Bonne soirée, Ruffio."
 CLAUDIO DEFAULT,TODO,"Mmh, le Capitaine n'a pas l'air dans son assiette, ce soir."
 CLAUDIO DEFAULT A1,TODO,Vous voulez dire que le capitaine de la Garde est présent ?
 ,,
-CLAUDIO D1,TODO,"Oui, Sire Philippe lui-même. C'este vieil homme à l'allure martiale, adossé contre le muret, là-bas. Le mal qui l'afflige est bien triste."
+CLAUDIO D1,TODO,"Oui, Sire Philippe lui-même. C'est le vieil homme à l'allure martiale, adossé contre le muret, là-bas. Le mal qui l'afflige est bien triste."
 CLAUDIO D1 A1,TODO,Que lui arrive t-il ?
 ,,
-CLAUDIO D2,TODO,"Le pauvre souffre apparemment de Goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses. Pour un militaire, quelle tragédie."
+CLAUDIO D2,TODO,"Le pauvre souffre apparemment de la goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses. Pour un militaire, quelle tragédie."
 CLAUDIO D2 A1,TODO,Mmh... En effet. Bonne soirée.
 ,,
 CLAUDIO D3,todo,"Un homme si droit, si juste. Il ne mérite pas ça."
@@ -445,7 +471,7 @@ CLAUDIO D3 A1,todo,Le malheur frappe aveuglément. C'est ainsi.
 GIULIA DEFAULT,TODO,"J'ai entendu certaines personnes parler d'une surprise pour les invités ce soir, comme c'est excitant !"
 GIULIA DEFAULT A1,TODO,Une surprise ?
 ,,
-GIULIA D1,TODO,"Comme je vous dis ! Dame Augurie est en charge des festivités, nul doute qu'elle en sait un peu plus. Je n'en ai jamais vu, comme je suis excitée !"
+GIULIA D1,TODO,"Comme je vous dis ! Dame Augurie est en charge des festivités, nul doute qu'elle en sait un peu plus. Je me demande bien ce que c'est. Comme je suis excitée !"
 GIULIA D1 A1,TODO,Je partage votre enthousiasme. Bonne soirée.
 ,,
 GIULIA D2,,Comme j'ai hâte de voir ce que Dame Augurie nous réserve !
@@ -456,7 +482,7 @@ AUGURIE DEFAULT,TODO,Mmh ? Je peux vous aider ?
 AUGURIE DEFAULT A1,TODO,"Certaines rumeurs font état d'une surprise pour le Duc, êtes vous au courant ?"
 AUGURIE DEFAULT A2,TODO,Euh... Une bien belle soirée n'est ce pas ?
 ,,
-AUGURIE D1,TODO,"Euh... Eh bien oui. [i](Plus bas)[/i] Mais qu'est ce qu'il te prend ? Nous ne sommes pas censés nous parler ! Le feu d'artifice aura lieu comme prévu, à ton signal. Maintenant, déguerpis !"
+AUGURIE D1,TODO,"Euh... Eh bien oui. [i]Elle baisse la voix.[/i]Mais qu'est ce qu'il te prend ? Nous ne sommes pas censés nous parler ! Le feu d'artifice aura lieu comme prévu, à ton signal. Maintenant, déguerpis !"
 AUGURIE D1 A1,TODO,Pourquoi devrions nous nous éviter ?
 AUGURIE D1 A2,TODO,Pourquoi un feu d'artifice ?
 AUGURIE D1 A3,TODO,J'ai... euh... oublié quel était le signal.
@@ -466,7 +492,7 @@ AUGURIE D2 A1,TODO,Quel est le signal qui lancera le feu d'artifice ?
 AUGURIE D2 A2,TODO,Pourquoi un feu d'artifice ?
 AUGURIE D2 A3,TODO,"Je le serai, compte sur moi."
 ,,
-AUGURIE D3,TODO,"Bien, maintenant que tu es rassuré, du balais ! Nous risquons gros à discuter ainsi. [i](Plus haut)[/i] J'ignore ce que vous espériez, mais je ne suis pas intéressée Messire ! Bonne soirée."
+AUGURIE D3,TODO,"Bien, maintenant que tu es rassuré, du balais ! Nous risquons gros à discuter ainsi.[i]Elle hausse la voix.[/i]J'ignore ce que vous espériez, mais je ne suis pas intéressée Messire ! Bonne soirée."
 AUGURIE D3 A1,TODO,"Bien, bonne soirée !"
 ,,
 AUGURIE D4,TODO,"C'est une raison parfaite pour rassembler tous les invités sur la terasse. Enfin, c'est ce que tu as présumé."
@@ -474,20 +500,36 @@ AUGURIE D4 A1,TODO,"Oh ? Je... j'ai quelques soucis avec ma mémoire ce soir. Qu
 AUGURIE D4 A2,TODO,"Je... Je le savais, je m'assurais que tout était au point, voilà tout. Et pourquoi devons nous éviter ?"
 AUGURIE D4 A3,TODO,Je vois... Parfait.
 ,,
-AUGURIE D5,TODO,"Oh, mais quel idiot ! Bien, comme TU me l'as expliqué plusieurs fois, tu es censé me proposer un verre, et moi t'éconduire. Après cela je commencerai à rassembler les invités. A moins que ton plan ait encore changé ?"
+AUGURIE D5,TODO,"Oh, mais quel idiot ! Bien, comme tu me l'as expliqué plusieurs fois, tu es censé me proposer un verre, et moi t'éconduire. Après cela je commencerai à rassembler les invités pendant que tu préviendras Sire Philippe. A moins que ton plan ait encore changé ?"
 AUGURIE D5 A1,TODO,"Non, non. Cela me paraît parfait."
 AUGURIE D5 A2,TODO,"Non, parfait. Mais pourquoi un feu d'artifice ?"
 AUGURIE D5 A3,TODO,"Non, c'est très bien. Mais pourquoi devrions nous nous éviter, déjà ?"
 ,,
-AUGURIE D6,TODO,"[i](Froide)[/i] Magnifique, en effet. Veuillez m'excuser."
-AUGURIE D6 A1,TODO,Je... vous...Bonne soirée.
+AUGURIE D6,TODO,"[i]froidement.[/i] Magnifique, en effet. Veuillez m'excuser."
+AUGURIE D6 A1,TODO,Je... vous... Bonne soirée.
 ,,
 AUGURIE WAITING SIGNAL,TODO,"Encore vous, Messire ?"
 AUGURIE WAITING SIGNAL A1,TODO,"Non, rien."
 AUGURIE WAITING SIGNAL A2,TODO,"Puis-je vous offrir un verre, très chère ?"
 ,,
-AUGURIE D7,TODO,[i]prenant visiblement beaucoup de plaisir[/i]Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
+AUGURIE D7,TODO,[i]avec un plaisir non dissimulé.[/i]Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
 AUGURIE D7 A1,TODO,"Hum ! Je pense que cela suffit. Bonne soirée, madame."
 ,,
 AUGURIE D8,TODO,"Qu'y a t-il, encore ? J'ai le signal maintenant. Et toi, tu as encore du travail !"
 AUGURIE D8 A1,TODO,Je m'assurais simplement que les choses soient claire. J'y retourne.
+,,
+,,
+GUEST DEFAULT,,"...et vous mon Duc, qu'en pensez vous ? Incroyable non ?"
+GUEST DEFAULT A1, ,"Mmh ? Oh, oui, merveilleux. Véritablement confondant. Je vous prie de m'excuser."
+,,
+GUEST D1,,[monologue]
+GUEST D1 A1,,"Difficile d'avoir le coeur à la fête quand celle-ci n'est qu'une vaste mascarade, un piège, ni plus ni moins, pour faire tomber les ennemis qui complotent contre moi ! Et mon %n, qui a dû s'acoquiner de ces gredins, s'en faire des amis dans le but de découvrir qui tirait les ficelles ! Ah, mon sang se glace quand je pense aux risques qu'il encoure. Mon Pulcino... J'ai hâte que tout ceci se termine, que mes bras puissent retrouver les siens !"
+,,
+GUEST D2,,"[i] Des bruits sourds résonnent[/i] Diantre ! Un feu d'artifice ! Décidément mon Duc, votre réception va de surprise en surprise ! Ne perdons pas de temps et allons admirer cela de plus près !"
+GUEST D2 A1,,Je vous suis.
+,,
+GUARD2 DEFAULT,,"Monseigneur, nous avons un problème."
+GUARD2 DEFAULT A1,,"[GUARD KILLED] Eh bien, que se passe t-il ?"
+GUARD2 DEFAULT A2,,"[GUARD CORRUPTED] Eh bien, que se passe t-il ?"
+GUARD2 DEFAULT A3,,[COMPLOTIST QUEST]Pas maintenant !
+GUARD2 DEFAULT A4,,[LOYALIST QUEST] Pas maintenant !
