@@ -52,8 +52,67 @@
 				"next sequence": "none"
 			}
 		]
-	}
+	},
 
+	"d4": {
+		"text":"ALMA2 D4",
+		"options": [
+			{
+				"text":"ALMA2 D4 A1",
+				"end": false,
+				"state change":"hero approach1",
+				"next sequence": "d5"
+			}
+		]
+	},
+
+	"d5": {
+		"text":"ALMA2 D5",
+		"options": [
+			{
+				"text":"ALMA2 D5 A1",
+				"end": false,
+				"state change":"hero approach2",
+				"next sequence": "d6"
+			}
+		]
+	},
+
+	"d6": {
+		"text":"ALMA2 D6",
+		"options": [
+			{
+				"text":"ALMA2 D6 A1",
+				"end": false,
+				"state change":"hero approach3",
+				"next sequence": "d7"
+			}
+		]
+	},
+
+	"d7": {
+		"text":"ALMA2 D7",
+		"options": [
+			{
+				"text":"ALMA2 D7 A1",
+				"end": false,
+				"state change":"hero approach4",
+				"next sequence": "d8"
+			}
+		]
+	},
+
+	"d8": {
+		"text":"ALMA2 D5",
+		"options": [
+			{
+				"text":"ALMA2 D8 A1",
+				"end": true,
+				"state change":"hero approach2",
+				"next sequence": "d6"
+			}
+		]
+	}
 
 
 }

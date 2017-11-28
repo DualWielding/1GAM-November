@@ -27,5 +27,116 @@
             "next sequence":"d9"
          }
       ]
+   },
+
+   "d1": {
+      "text":"GUARD2 D1",
+      "options": [
+         {
+            "text":"GUARD2 D1 A1",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d2"
+         },
+         {
+            "text":"GUARD2 D1 A2",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d3",
+            "card used":"ALMA IS NO MORE PROTECTED"
+         }
+      ]
+   },
+
+   "d2": {
+      "text":"GUARD2 D2",
+      "options": [
+         {
+            "text":"GUARD2 D2 A1",
+            "end": true,
+            "state change":"make alma enter",
+            "next sequence": "none"
+         },
+         {
+            "text":"GUARD2 D2 A2",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d9"
+         }
+      ]
+   },
+
+   "d3": {
+      "text":"GUARD2 D3",
+      "options": [
+         {
+            "text":"GUARD2 D3 A1",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d4"
+         }
+      ]
+   },
+
+   "d4": {
+      "text":"GUARD2 D4",
+      "options": [
+         {
+            "text":"GUARD2 D4 A1",
+            "end": true,
+            "state change":"make alma enter",
+            "next sequence": "none"
+         },
+         {
+            "text":"GUARD2 D4 A2",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d9"
+         }
+      ]
+   },
+
+   "d5": {
+      "text":"GUARD2 D5",
+      "options": [
+         {
+            "text":"GUARD2 D5 A1",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d2"
+         },
+         {
+            "text":"GUARD2 D5 A2",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d7"
+         }
+      ]
+   },
+
+   "d9": {
+      "text":"GUARD2 D9",
+      "options": [
+         {
+            "text":"GUARD2 D9 A1",
+            "end": false,
+            "state change":"unchanged",
+            "next sequence": "d10"
+         }
+      ]
+   },
+
+   "d10": {
+      "text":"GUARD2 D10",
+      "options": [
+         {
+            "text":"GUARD2 D10 A1",
+            "end": true,
+            "state change":"make hero enter",
+            "next sequence": "none"
+         }
+      ]
    }
+
+
 }

@@ -534,6 +534,42 @@ GUARD2 DEFAULT A2,,"[GUARD CORRUPTED] Eh bien, que se passe t-il ?"
 GUARD2 DEFAULT A3,,[COMPLOTIST QUEST]Pas maintenant !
 GUARD2 DEFAULT A4,,[LOYALIST QUEST] Pas maintenant !
 ,,
+GUARD2 D1,,"[GUARD KILLED] Giomo, qui surveillait l'entrée, est mort, Monseigneur. Poignardé."
+GUARD2 D1 A1,,Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
+GUARD2 D1 A2,,[ALMA IS NO MORE PROTECTED] Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
+,,
+GUARD2 D2,,"Tout de suite ! [i], sort[/i]"
+GUARD2 D2 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D2 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+,,
+GUARD2 D3,,C'est que... Sire Philippe a quitté précipitemment la réception il y a quelques minutes.
+GUARD2 D3 A1,,"Comment ?! Grands Dieux ! Dans ce cas allez sans plus tarder garder l'entrée, personne ne doit plus rentrer ni sortir !"
+,,
+GUARD2 D4,,"[i], sort[/i]"
+GUARD2 D4 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D4 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+,,
+GUARD2 D5,,Nous avons retrouvé Giomo ivre mort dans la rue alors qu'il était en charge de surveiller l'entré.
+GUARD2 D5 A1,,Comment ?! Cela veut dire que mon palais est à l'instar d'un moulin ? Ouvert à qui veut ? Allez immédiatement prévenir Sire Philippe !
+GUARD2 D5 A2,,[ALMA IS NO MORE PROTECTED] Comment ?! Cela veut dire que mon palais est à l'instar d'un moulin ? Ouvert à qui veut ? Allez immédiatement prévenir Sire Philippe !
+,,
+GUARD2 D6,,"Tout de suite ! [i], sort[/i]"
+GUARD2 D6 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D6 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+,,
+GUARD2 D7,,C'est que... Sire Philippe a quitté précipitemment la réception il y a quelques minutes.
+GUARD2 D7 A1,,"Comment ?! Grands Dieux ! Dans ce cas allez sans plus tarder garder l'entrée, personne ne doit plus rentrer ni sortir !"
+,,
+GUARD2 D8,,"[i], sort[/i]"
+GUARD2 D8 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D8 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+,,
+GUARD2 D9,,"Monseigneur, je me dois d'insister. C'est au sujet de votre conseiller."
+GUARD2 D9 A1,,Que se passe t-il ? Qu'y a t-il ? Parlez sans retenue !
+,,
+GUARD2 D10,,Sire Philippe me charge de vous dire qu'il a mené à bien sa mission. Nous connaissons l'instigateur du complot : il s'agit du Sire Vitori.
+GUARD2 D10 A1,,Ah ! Cher %n ! Ce cher %n ! Qu'il soit mille fois remercié ! C'est parfait ! Profitons du fait que les invités soient réunis. Que la Garde se prépare : je veux que tous les fomenteurs soient mis aux arrêts dès maintenant ! Et assurez vous que ce chien de Vitori soit le premier à qui on passe les fers ! Ah ! Glorieuse soirée pour la cité ! [i]Entre %n[/i]
+,,
 ,,
 ALMA2 DEFAULT,,Bon... Bonsoir monseigneur !
 ALMA2 DEFAULT A1,,"Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
@@ -614,3 +650,9 @@ HERO D16 A1,,...
 ,,
 HERO D17,,"[i]au Duc[/i] Viens, partons. [i]Il s'effondre[/i]"
 HERO D17 A1,,...
+,,
+HERO D18,,[i]s'effondrant [/i] Ouille j'ai mal.
+HERO D18 A1,,%n ?
+,,
+HERO D19,,"La soirée a été quelque peu étrange, mon Duc."
+HERO D19 A1,,"Mais ?! Votre tête ! Vous saignez ?! GARDES ! GARDES ! Parlez, qui a osé porter la main sur vous ? GARDES !"
