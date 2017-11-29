@@ -13,6 +13,7 @@ func show():
 	get_node("ColorFrame").show()
 
 func appear():
+	get_node("StreamPlayer").play()
 	ap.play("Appear")
 	get_node("BackGround").show()
 	get_node("Title").show()

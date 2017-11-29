@@ -50,6 +50,8 @@ func _input(event):
 	or event.is_action_released("char_up")\
 	or event.is_action_released("char_down"):
 		handle_multiple_walking_keys_pressed()
+	
+	get_parent().set_music_volume()
 
 ######## HURT ########
 

@@ -1,6 +1,7 @@
 extends "res://NPC.gd"
 
 func start():
+	fade_in()
 	walk_right()
 
 func init():
@@ -11,6 +12,7 @@ func init():
 # Override the base stop_dialog function
 # In order to prevent the player from moving
 func stop_dialog(option):
+	get_parent().start_music()
 	Player.character.set_disabled_movement(false)
 	emit_signal("stop_dialog")
 	walk_left()

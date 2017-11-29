@@ -69,6 +69,7 @@ func everyone_enter():
 	waiter.enter()
 	strozi.enter()
 	sp.play("ambiance_soiree")
+	get_node("StreamPlayer").play()
 
 func next_scene():
 	get_node("SamplePlayer").play("ouverture_porte_2")
@@ -77,6 +78,12 @@ func next_scene():
 	t.connect("timeout", self, "change_scene")
 	add_child(t)
 	t.start()
+
+func start_music():
+	get_node("StreamPlayer").play()
+
+func set_music_volume():
+	pass
 
 func change_scene():
 	get_tree().change_scene("res://Scene3/Scene3.tscn")

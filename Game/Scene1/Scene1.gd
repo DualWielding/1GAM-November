@@ -52,8 +52,7 @@ func intro_pause():
 func start_vitoris_scene():
 	Player.ui.dialog_panel.add_text(tr("SCENE 1 ENTERS VITORI"), "fade", true)
 	vitori.get_node("FadePlayer").play_backwards("Fade")
-	vitori.show()
-	vitori.walk_right()
+	vitori.start()
 
 func show_title_screen():
 	title_screen.show()
@@ -65,6 +64,13 @@ func next_scene():
 	t.connect("timeout", self, "change_scene")
 	add_child(t)
 	t.start()
+
+func start_music():
+	set_music_volume()
+	get_node("StreamPlayer").play()
+
+func set_music_volume():
+	get_node("StreamPlayer").set_volume_db(-10 -(Player.character.get_pos().y/OS.get_window_size().y) * 15)
 
 func change_scene():
 	get_tree().change_scene("res://Scene2/Scene2.tscn")

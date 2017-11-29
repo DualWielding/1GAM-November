@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=1]
+[gd_scene load_steps=25 format=1]
 
 [ext_resource path="res://Scene1/Scene1.gd" type="Script" id=1]
 [ext_resource path="res://Scene1/TileSet1t.tres" type="TileSet" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Sounds/ouverture_porte_2.wav" type="Sample" id=15]
+[ext_resource path="res://Musics/son_gratt_export_RAW.ogg" type="AudioStream" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -397,6 +398,17 @@ default/chorus_send = 0.0
 [node name="Node2D" type="Node2D" parent="."]
 
 transform/pos = Vector2( 417.432, 443.215 )
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 16 )
+stream/play = false
+stream/loop = true
+stream/volume_db = -25.0
+stream/autoplay = false
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
 
 [connection signal="area_enter" from="Fence/PlayerDetectionArea" to="Fence" method="_on_PlayerDetectionArea_area_enter"]
 
