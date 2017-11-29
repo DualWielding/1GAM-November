@@ -56,7 +56,7 @@ SCENE 2 INTRO,TODO,"[center]SCÈNE II[/center]
 SCENE 3 INTRO,TODO,"[center]SCÈNE III[/center]
 [center][i]Une salle de réception du palais.[/i][/center]
 
-[center][i]Entrent [/i]LE DUC[i], [/i]ALMA[i], [/i]UN GARDE[i] armé ; des invités.[/i] [/center]"
+[center][i]Entrent [/i]LE DUC[i] et des invités.[/i] [/center]"
 ,,
 ,,
 GOLD POUCH,Gold pouch,Bourse d'or
@@ -522,10 +522,10 @@ AUGURIE D8 A1,TODO,Je m'assurais simplement que les choses soient claire. J'y re
 GUEST DEFAULT,,"...et vous mon Duc, qu'en pensez vous ? Incroyable non ?"
 GUEST DEFAULT A1, ,"Mmh ? Oh, oui, merveilleux. Véritablement confondant. Je vous prie de m'excuser."
 ,,
-GUEST D1,,[monologue]
-GUEST D1 A1,,"Difficile d'avoir le coeur à la fête quand celle-ci n'est qu'une vaste mascarade, un piège, ni plus ni moins, pour faire tomber les ennemis qui complotent contre moi ! Et mon %n, qui a dû s'acoquiner de ces gredins, s'en faire des amis dans le but de découvrir qui tirait les ficelles ! Ah, mon sang se glace quand je pense aux risques qu'il encoure. Mon Pulcino... J'ai hâte que tout ceci se termine, que mes bras puissent retrouver les siens !"
+GUEST D1,,"Et c'est... Mh, assurément."
+GUEST D1 A1,,"Difficile d'avoir le coeur à la fête quand celle-ci n'est qu'une vaste mascarade, un piège, ni plus ni moins, pour faire tomber les ennemis qui complotent contre moi ! Et mon %n, qui a dû s'acoquiner de ces gredins, s'en faire des amis dans le but de découvrir qui tirait les ficelles ! Ah, mon sang se glace quand je pense aux risques qu'il encoure. Mon Pulcino... J'ai hâte que tout ceci se termine, que mes bras puissent retrouver les siens ! [i]Des bruits sourds résonnent[/i]"
 ,,
-GUEST D2,,"[i] Des bruits sourds résonnent[/i] Diantre ! Un feu d'artifice ! Décidément mon Duc, votre réception va de surprise en surprise ! Ne perdons pas de temps et allons admirer cela de plus près !"
+GUEST D2,,"Diantre ! Un feu d'artifice ! Décidément mon Duc, votre réception va de surprise en surprise ! Ne perdons pas de temps et allons admirer cela de plus près !"
 GUEST D2 A1,,Je vous suis.
 ,,
 GUARD2 DEFAULT,,"Monseigneur, nous avons un problème."
@@ -651,8 +651,20 @@ HERO D16 A1,,...
 HERO D17,,"[i]au Duc[/i] Viens, partons. [i]Il s'effondre[/i]"
 HERO D17 A1,,...
 ,,
-HERO D18,,[i]s'effondrant [/i] Ouille j'ai mal.
-HERO D18 A1,,%n ?
+HERO D18,,"[i]Claudiquant [/i] J'ai son nom, mon Duc... Vitori... Vous êtes sauf."
+HERO D18 A1,,%n ! Quelle joie de te revoir ! Je me suis tant inquiété !
 ,,
 HERO D19,,"La soirée a été quelque peu étrange, mon Duc."
-HERO D19 A1,,"Mais ?! Votre tête ! Vous saignez ?! GARDES ! GARDES ! Parlez, qui a osé porter la main sur vous ? GARDES !"
+HERO D19 A1,,"Mais ?! Votre tête ! Vous saignez ?! Parlez, qui a osé porter la main sur vous ? GARDES !"
+,,
+HERO D20,,"Oh, rien qu'une fâcheuse ... une fâcheuse et douloureuse égratinure. Votre garde est bien occupée mon Duc, et votre place est... argh... à ses côtés, à châtier ceux qui ont osé vous désavouer."
+HERO D20 A1,,"Oh, Pulcino ! Pourquoi es-tu toujours aussi sérieux ? Des jours que nous sommes séparés, et toi tu ne penses qu'au devoir ! Tu as raison, mais tu es un idiot. [i]Il embrasse %n.[/i] A tout à l'heure."
+,,
+HERO D21,,"Ce baiser m'a rendu mes derniers fragments de mémoire. Comment... comment ai-je pu vousoublier, rien que pour quelques heures, Mio Caro ?"
+HERO D21 A1,,"M'oublier ? Que palabres-tu donc là, beau parleur ? Allons, assied toi ici et repose toi en m'attendant, tu n'as pas l'air dans ton état normal. Je ne serai long. [i]il sort[/i]"
+,,
+HERO D22,,"En effet, c'est une nuit bien anormale. [i]Il sort une lettre de sa veste.[/i] Je me souviens désormais. De si jolis mots, auxquels je n'ai pris le temps de répondre. Sans doute est ce le moment."
+HERO D22 A1,,...
+,,
+HERO D23,,"[i]Grifonnant sur le verso de la lettre[/i] Chaque mot, comme chaque instant... m'ont comblé. A tout à l'heure, Mio Caro... Ton Pulcino.[i]...il meurt.[/i]"
+HERO D23 A1,,...

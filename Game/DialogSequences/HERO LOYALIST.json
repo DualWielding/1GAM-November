@@ -19,52 +19,52 @@
 				"text":"HERO D19 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d5"
+				"next sequence": "d20"
 			}
 		]
 	},
 
-	"d5": {
-		"text":"HERO D5",
+	"d20": {
+		"text":"HERO D20",
 		"options": [
 			{
-				"text":"HERO D5 A1",
+				"text":"HERO D20 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d6"
+				"next sequence": "d21"
 			}
 		]
 	},
 
-	"d6": {
-		"text":"HERO D6",
+	"d21": {
+		"text":"HERO D21",
 		"options": [
 			{
-				"text":"HERO D6 A1",
+				"text":"HERO D21 A1",
 				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d7"
+				"state change":"make the duke go out",
+				"next sequence": "d22"
 			}
 		]
 	},
 
-	"d7": {
-		"text":"HERO D7",
+	"d22": {
+		"text":"HERO D22",
 		"options": [
 			{
-				"text":"HERO D7 A1",
+				"text":"HERO D22 A1",
 				"end": false,
-				"state change":"unchanged",
-				"next sequence": "d8"
+				"state change":"make hero go to table",
+				"next sequence": "d23"
 			}
 		]
 	},
 
-	"d8": {
-		"text":"HERO D8",
+	"d23": {
+		"text":"HERO D23",
 		"options": [
 			{
-				"text":"HERO D8 A1",
+				"text":"HERO D23 A1",
 				"end": true,
 				"state change":"unchanged",
 				"next sequence": "none",
