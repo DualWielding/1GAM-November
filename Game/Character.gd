@@ -126,6 +126,8 @@ func slash_left():
 func slash_right():
 	animator.play("Slash_right")
 
+func thrust_up():
+	animator.play("Thrust_up")
 
 ######## STANDING ########
 
@@ -169,6 +171,7 @@ func look_at(direction):
 		set_stand_to_base_left()
 	elif direction == "down":
 		set_stand_to_base_down()
+	base_looking_direction = direction
 
 func crouch():
 	sprite.set_frame(262)

@@ -6,5 +6,9 @@ func init():
 	base_looking_direction = "up"
 
 func enter():
-	set_pos(Vector2(505, 550))
+	set_pos(Vector2(510, 550))
 	fade_in()
+
+func on_state_change(old_state, new_state):
+	if new_state == "make guard attack hero":
+		get_parent().make_guard_attack_hero()

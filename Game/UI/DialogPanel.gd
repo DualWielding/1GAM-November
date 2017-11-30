@@ -109,8 +109,6 @@ func hide_panel():
 func show_panel():
 	if _hidden_panel:
 		_hidden_panel = false
-		if ap.is_playing():
-			ap.connect("finished", ap, "play_backwards", ["Slide_left"], CONNECT_ONESHOT)
 		ap.play_backwards("Slide_left")
 		sp.play("writing")
 

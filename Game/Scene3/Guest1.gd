@@ -10,5 +10,7 @@ func on_state_change(old_state, new_state):
 		get_parent().start_duke_monolog()
 
 func stop_dialog(option):
+	Player.character.set_disabled_movement(false)
+	emit_signal("stop_dialog")
 	get_parent().guests_leave()
 	get_parent().duke_goes_to_firework()

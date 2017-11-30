@@ -52,9 +52,6 @@ func start_dialog():
 	Player.ui.dialog_panel.disable_toggling()
 
 func follow_up_dialog(option):
-	if option["state change"] != "unchanged":
-		state = option["state change"]
-	
 	if option["end"]:
 		stop_dialog(option)
 	else:

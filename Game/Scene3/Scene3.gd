@@ -98,7 +98,9 @@ func make_hero_complotist_enter():
 
 func make_hero_plan_b_enter():
 	Player.character.collapse()
-	Player.character.animator.connect("finished", self, "hero_plan_b_start_dialog")
+	var t = get_timer(1.5)
+	t.connect("timeout", self, "hero_plan_b_start_dialog")
+	t.start()
 
 func hero_plan_b_start_dialog():
 	alma.look_at("down")
@@ -120,7 +122,47 @@ func hero_plan_b_make_guards_enter():
 	sir_p.enter()
 	alma2.enter()
 	guard2.enter()
-	sir_p.start_dialog()
+	hero_plan_b.look_at("down")
+	var t = get_timer(1.5)
+	t.connect("timeout", sir_p, "start_dialog")
+	t.start()
+
+func hero_plan_b_make_guards_out():
+	Player.character.crouch()
+	sir_p.out()
+	alma2.out()
+	guard2.out()
+
+########## Sir Philippe ##########
+
+func make_guard_attack_hero():
+	guard2.base_speed = 1.3
+	guard2.walk_up()
+	var t1 = get_timer(0.85)
+	t1.connect("timeout", guard2, "walk_left")
+	t1.start()
+	var t2 = get_timer(1.2)
+	t2.start()
+	t2.connect("timeout", self, "guard_attack")
+
+func guard_attack():
+	guard2.stop_walking()
+	guard2.thrust_up()
+	guard2.animator.connect("finished", self, "hero_is_hurt", [], CONNECT_ONESHOT)
+
+func hero_is_hurt():
+	hero_plan_b.collapse()
+	hero_plan_b.animator.connect("finished", self, "duke_wake_up", [], CONNECT_ONESHOT)
+
+func duke_wake_up():
+	Player.character.stand_up()
+	Player.character.animator.connect("finished", Player.character, "look_at", ["left"], CONNECT_ONESHOT)
+	var t = get_timer(0.6)
+	t.connect("timeout", self, "start_hero_dialog")
+	t.start()
+
+func start_hero_dialog():
+	hero_plan_b.start_dialog()
 
 ########## GUESTS ################
 
@@ -129,6 +171,12 @@ func guests_leave():
 	for i in range(5):
 		get_node(str("Guest", i+1)).out()
 
+
+######### END ############
+
+func the_end():
+	get_node("ColorFrame/AnimationPlayer").play("end")
+	get_node("ColorFrame/AnimationPlayer").connect("finished", get_tree(), "change_scene", ["res://Credits/Credits.tscn"], CONNECT_ONESHOT)
 
 ######### TECH ###########
 

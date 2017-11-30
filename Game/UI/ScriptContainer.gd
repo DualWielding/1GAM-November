@@ -27,7 +27,6 @@ func add_text_to_buffer(unformatted_text, method="fade", show_now=false):
 	wrapper.add_child(rtw)
 	
 	buffer.append(wrapper)
-	
 	if show_now:
 		_show_first_text()
 
@@ -111,6 +110,9 @@ func show_last():
 	var last_child = get_children()[get_child_count() - 1].get_children()[0] # wrapper
 	if !last_child.finished:
 		last_child.finish()
+	
+	if buffer.size() > 0 and get_children()[get_child_count() - 1].get_children()[0].finished:
+		_show_first_text()
 
 func get_last_dialog_section_idx():
 	if buffer.size() == 0:
