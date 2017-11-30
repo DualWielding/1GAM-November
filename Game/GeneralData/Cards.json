@@ -127,6 +127,11 @@
 		"name": "To be added in translation",
 		"text": "To be added in translation",
 		"important": true
+	},
+	"PLAN B": {
+		"unique_name": "PLAN B",
+		"name": "To be added in translation",
+		"text": "To be added in translation"
 	}
 
 }

@@ -6,25 +6,29 @@
             "text":"GUARD2 DEFAULT A1",
             "end":false,
             "state change":"unchanged",
-            "next sequence":"d1"
+            "next sequence":"d1",
+            "card used" : "GUARD KILLED"
          },
          {
             "text":"GUARD2 DEFAULT A2",
             "end":false,
             "state change":"unchanged",
-            "next sequence":"d5"
+            "next sequence":"d5",
+            "card used" : "GUARD CORRUPTED"
          },
          {
             "text":"GUARD2 DEFAULT A3",
             "end":true,
             "state change":"make alma enter",
-            "next sequence":"none"
+            "next sequence":"none",
+            "card used" :"COMPLOTIST QUEST"
          },
          {
             "text":"GUARD2 DEFAULT A4",
             "end":false,
             "state change":"unchanged",
-            "next sequence":"d9"
+            "next sequence":"d9",
+            "card used" :"LOYALIST QUEST"
          }
       ]
    },
@@ -55,13 +59,15 @@
             "text":"GUARD2 D2 A1",
             "end": true,
             "state change":"make alma enter",
-            "next sequence": "none"
+            "next sequence": "none",
+            "card used" :"COMPLOTIST QUEST"
          },
          {
             "text":"GUARD2 D2 A2",
             "end": false,
             "state change":"unchanged",
-            "next sequence": "d9"
+            "next sequence": "d9",
+            "card used" :"LOYALIST QUEST"
          }
       ]
    },
@@ -85,13 +91,15 @@
             "text":"GUARD2 D4 A1",
             "end": true,
             "state change":"make alma enter",
-            "next sequence": "none"
+            "next sequence": "none",
+            "card used" :"COMPLOTIST QUEST"
          },
          {
             "text":"GUARD2 D4 A2",
             "end": false,
             "state change":"unchanged",
-            "next sequence": "d9"
+            "next sequence": "d9",
+            "card used" : "LOYALIST QUEST"
          }
       ]
    },
@@ -109,7 +117,8 @@
             "text":"GUARD2 D5 A2",
             "end": false,
             "state change":"unchanged",
-            "next sequence": "d7"
+            "next sequence": "d7",
+            "card used" :"ALMA IS NO MORE PROTECTED"
          }
       ]
    },
