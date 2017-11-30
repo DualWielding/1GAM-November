@@ -3,7 +3,8 @@ $i,,
 ,,
 STARTING PLAYER NAME,You,Vous
 GUEST,Guest,Invité
-FIRST GUARD,Guard,Garde
+SIR PHILIPPE,Sir Philippe,Sire Philippe
+GUARD,Guard,Garde
 WAITER,Waiter,Serveur
 DUKE,The Duke,Le Duc
 DOOR,A door,Une porte
@@ -85,7 +86,7 @@ ALMA IS NO MORE PROTECTED,Vulnerable,Vulnérable
 SIR PHILIPPE SUFFERS FROM GOUTTE,Gout,Goutte
 COMPLOTIST QUEST,Conspiracy,Complot
 LOYALIST QUEST,Loyalty,Loyauté
-,,
+PLAN B,Plan B,Plan B
 ,,
 ,,
 BOTTLE DEFAULT,TODO,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
@@ -147,7 +148,7 @@ SIRE PHILIPPE D12 A1,,"Oh, seigneur, je suis confus !"
 SIRE PHILIPPE D12 A2,,Oups.
 ,,
 SIRE PHILIPPE D13,,"Vous ?! Que vous l'ayez faite tomber intentionnellement ne m'étonnerait guère. J'ignore à quoi vous jouez, mais laissez moi vous dire que sitôt que je serai revenu, je serai sur vous comme la misère sur cette ville ! [i]Sort[/i]"
-SIRE PHILIPPE D13 A1,,"Mmh, Ce Sire Philippe donnait l'impression de me connaître. J'imagine qu'à son retour, il trop tard pour lui poser des questions..."
+SIRE PHILIPPE D13 A1,,"Mmh, Ce Sire Philippe donnait l'impression de me connaître. J'imagine qu'à son retour, il sera trop tard pour lui poser des questions..."
 ,,
 SIRE PHILIPPE D14,,"Par tous les Dieux, vous disiez vrai, Comtesse ! %n a fini par rallier la cause des parjures, il a assassiné le Duc ! Garde ! Tuez ce traître !"
 SIRE PHILIPPE D14 A1,,Pu... Pulcino ?
@@ -529,14 +530,14 @@ GUEST D2,,"Diantre ! Un feu d'artifice ! Décidément mon Duc, votre réception 
 GUEST D2 A1,,Je vous suis.
 ,,
 GUARD2 DEFAULT,,"Monseigneur, nous avons un problème."
-GUARD2 DEFAULT A1,,"[GUARD KILLED] Eh bien, que se passe t-il ?"
-GUARD2 DEFAULT A2,,"[GUARD CORRUPTED] Eh bien, que se passe t-il ?"
-GUARD2 DEFAULT A3,,[COMPLOTIST QUEST]Pas maintenant !
-GUARD2 DEFAULT A4,,[LOYALIST QUEST] Pas maintenant !
+GUARD2 DEFAULT A1,,"Eh bien, que se passe t-il ?"
+GUARD2 DEFAULT A2,,"Eh bien, que se passe t-il ?"
+GUARD2 DEFAULT A3,,Pas maintenant !
+GUARD2 DEFAULT A4,,Pas maintenant !
 ,,
-GUARD2 D1,,"[GUARD KILLED] Giomo, qui surveillait l'entrée, est mort, Monseigneur. Poignardé."
+GUARD2 D1,,"Giomo, qui surveillait l'entrée, est mort, Monseigneur. Poignardé."
 GUARD2 D1 A1,,Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
-GUARD2 D1 A2,,[ALMA IS NO MORE PROTECTED] Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
+GUARD2 D1 A2,,Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
 ,,
 GUARD2 D2,,"Tout de suite ! [i], sort[/i]"
 GUARD2 D2 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
@@ -573,15 +574,15 @@ GUARD2 D10 A1,,Ah ! Cher %n ! Ce cher %n ! Qu'il soit mille fois remercié ! C'e
 ,,
 ALMA2 DEFAULT,,Bon... Bonsoir monseigneur !
 ALMA2 DEFAULT A1,,"Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
-ALMA2 DEFAULT A2,,"[PLAN B] Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
+ALMA2 DEFAULT A2,,"Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
 ,,
 ALMA2 D1,,"C'est que... Je n'ose vous demander de partager une coupe avec moi, Monseigneur."
-ALMA2 D1 A1,,"Ah ! Ce sera avec plaisir ma jeune et tendre amie, mais le moment est peut-être mal choisi, je me dois de..."
+ALMA2 D1 A1,,"Ah ! Ce sera avec plaisir ma jeune et tendre amie, mais plus tard. Le moment est mal choisi, je dois me rendre à..."
 ,,
 ALMA2 D2,,Je... j'insiste. Au nom du comté d'Alma... Je... Vous semblez m'avoir évitée toute la soirée et...
 ALMA2 D2 A1,,"Ola, ola ! Ne prenez pas ombrage de ma discrétion. Tenez, voilà. Buvons, mais rapidement car des affaires pressantes m'attendent. Au comté d'Alma ! [i]Ils vident leurs verres d'une traite.[/i]"
 ,,
-ALMA2 D3,,"[i]Regarde avec anxiété le Duc [/i] Je suis désolé, votre altesse, ils ne m'ont pas laissé pas le choix..."
+ALMA2 D3,,"[i]Regarde le Duc avec anxiété. [/i] Je suis désolé, votre altesse, ils ne m'ont pas laissé pas le choix..."
 ALMA2 D3 A1,,Que voulez vous dire ? Qu'est ce... que... tout cela... signifie ?.. [i]S'écroule.[/i]
 ,,
 ALMA2 D4,,"Rien que la brise, je vous rassure..."
@@ -621,7 +622,7 @@ HERO D6 A1,,"Là, là... Faites silence et gardez vos forces, beau parleur. On p
 HERO D7,,"De grâce mio caro, gardez ces larmes qui enlaidissent vos yeux et ne me bercez pas de mensonges : je sens mon heure venir. La passer à vos côtés, vous sachant sauf des manigences qui pesaient sur vous... Je n'aurai pu espérer mieux."
 HERO D7 A1,,... Je...
 ,,
-HERO D8,,"[i], sort la lettre de sa veste.[/i] J'ai bien reçu votre lettre. Chaque mot, comme chaque instant... m'ont comblé. [i]... il meurt.[/i]"
+HERO D8,,"[i]sortant la lettre de sa veste.[/i] J'ai bien reçu votre lettre. Chaque mot, comme chaque instant... m'ont comblé. [i]... il meurt.[/i]"
 HERO D8 A1,,"Sogni d'oro, angelo mio... [i]Embrasse %n.[/i]"
 ,,
 HERO D9,,[i] poignarde le Duc [/i]

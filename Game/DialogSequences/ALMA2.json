@@ -13,7 +13,8 @@
 				"text":"ALMA2 DEFAULT A2",
 				"end": false,
 				"state change":"plan b ending",
-				"next sequence": "d1"
+				"next sequence": "d1",
+				"card used" : "PLAN B"
 			}
 		]
 	},
