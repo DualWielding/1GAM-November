@@ -56,7 +56,7 @@ SCENE 2 INTRO,TODO,"[center]SCÈNE II[/center]
 SCENE 3 INTRO,TODO,"[center]SCÈNE III[/center]
 [center][i]Une salle de réception du palais.[/i][/center]
 
-[center][i]Entrent [/i]LE DUC[i], [/i]ALMA[i], [/i]UN GARDE[i] armé ; des invités.[/i] [/center]"
+[center][i]Entrent [/i]LE DUC[i] et des invités.[/i] [/center]"
 ,,
 ,,
 GOLD POUCH,Gold pouch,Bourse d'or
@@ -522,7 +522,7 @@ AUGURIE D8 A1,TODO,Je m'assurais simplement que les choses soient claire. J'y re
 GUEST DEFAULT,,"...et vous mon Duc, qu'en pensez vous ? Incroyable non ?"
 GUEST DEFAULT A1, ,"Mmh ? Oh, oui, merveilleux. Véritablement confondant. Je vous prie de m'excuser."
 ,,
-GUEST D1,,[monologue]
+GUEST D1,,"Et c'est... Mh, assurément. [i]Il sort[/i]"
 GUEST D1 A1,,"Difficile d'avoir le coeur à la fête quand celle-ci n'est qu'une vaste mascarade, un piège, ni plus ni moins, pour faire tomber les ennemis qui complotent contre moi ! Et mon %n, qui a dû s'acoquiner de ces gredins, s'en faire des amis dans le but de découvrir qui tirait les ficelles ! Ah, mon sang se glace quand je pense aux risques qu'il encoure. Mon Pulcino... J'ai hâte que tout ceci se termine, que mes bras puissent retrouver les siens !"
 ,,
 GUEST D2,,"[i] Des bruits sourds résonnent[/i] Diantre ! Un feu d'artifice ! Décidément mon Duc, votre réception va de surprise en surprise ! Ne perdons pas de temps et allons admirer cela de plus près !"

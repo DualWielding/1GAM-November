@@ -110,11 +110,11 @@ func is_selected():
 
 func animate_add():
 	ap.play("animate_add", -1, 0.8)
-	sp.play(str("cardSlide", (randi() % 7) + 8))
+	sp.play(str("cardSlide", (randi() % 8) + 1))
 
 func animate_discard():
 	ap.play_backwards("animate_add")
-	sp.play(str("cardSlide", (randi() % 7) + 1))
+	sp.play(str("cardSlide", (randi() % 8) + 1))
 
 func bring_up():
 	if !selectable:

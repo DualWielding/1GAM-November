@@ -3,7 +3,7 @@
       "text":"GUEST DEFAULT",
       "options":[
          {
-            "text":"GUEST DEFAULT",
+            "text":"GUEST DEFAULT A1",
             "end":false,
             "state change":"make duke monologing",
             "next sequence":"d1"

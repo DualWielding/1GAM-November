@@ -1,6 +1,7 @@
 extends Node
 
 var name = tr("STARTING PLAYER NAME") setget set_name, get_name
+var display_name = tr("STARTING PLAYER NAME")
 var character
 var ui
 
@@ -17,9 +18,13 @@ signal card_removed(card)
 
 func set_name(n):
 	name = n
+	display_name = n
 
 func get_name():
 	return name
+
+func get_display_name():
+	return display_name
 
 ###### DIALOGS ######
 

@@ -20,6 +20,9 @@ func init():
 	base_looking_direction = "right"
 	unique_name = "Player character" # Used to link to the sprite
 
+func get_display_name():
+	return Player.get_display_name()
+
 func handle_multiple_walking_keys_pressed():
 	if Input.is_action_pressed("char_up"):
 		walk_up()

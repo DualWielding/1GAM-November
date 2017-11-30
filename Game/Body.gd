@@ -96,11 +96,17 @@ func say(text, opt):
 func enter():
 	fade_in()
 
+func out():
+	fade()
+
 func set_name(name):
 	display_name = name
 
 func get_name():
 	return display_name
+
+func get_display_name():
+	return get_name()
 
 func fade():
 	get_node("FadePlayer").play("Fade")

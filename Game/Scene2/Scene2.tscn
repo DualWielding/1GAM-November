@@ -1385,6 +1385,7 @@ transform/pos = Vector2( 489.147, 640.647 )
 
 [node name="Door" parent="." instance=ExtResource( 19 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 480.027, 656.028 )
 script/script = ExtResource( 20 )
 

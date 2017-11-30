@@ -85,10 +85,10 @@ func set_dialog(body, unformatted_text, options, player_speaking=false):
 	var current_part = 0
 	# Fade the name of the speaker in
 	if text_parts[0].stage_direction:
-		add_text_to_buffer(str("[center][i]", body.get_name().to_upper(), ", ", text_parts[0].text.to_lower(), "[/i][/center]"), "fade_fast")
+		add_text_to_buffer(str("[center][i]", body.get_display_name().to_upper(), ", ", text_parts[0].text.to_lower(), "[/i][/center]"), "fade_fast")
 		current_part += 1
 	else:
-		add_text_to_buffer(str("[center][i]", body.get_name().to_upper(), "[/i][/center]"), "fade_fast")
+		add_text_to_buffer(str("[center][i]", body.get_display_name().to_upper(), "[/i][/center]"), "fade_fast")
 	
 	while current_part < text_parts.size():
 		if text_parts[current_part].stage_direction:
