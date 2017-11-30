@@ -67,8 +67,6 @@ func stop_dialog(option):
 	
 	# The state change is done in clickable text
 	emit_signal("stop_dialog")
-	
-	Player.ui.dialog_panel.enable_toggling()
 
 func say(text, opt):
 	var to_remove = []

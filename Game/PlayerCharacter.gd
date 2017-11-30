@@ -73,6 +73,8 @@ func set_disabled_movement(boolean):
 		emit_signal("disabled")
 		stop_walking()
 	else:
+		if get_parent().get_name() == "Scene3":
+			return
 		emit_signal("enabled")
 	disabled_movement = boolean
 

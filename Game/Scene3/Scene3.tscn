@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=1]
+[gd_scene load_steps=28 format=1]
 
 [ext_resource path="res://Scene3/Scene3.gd" type="Script" id=1]
 [ext_resource path="res://Scene3/TileSet3t.tres" type="TileSet" id=2]
@@ -9,12 +9,17 @@
 [ext_resource path="res://Round-table.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scene3/Guest1.gd" type="Script" id=8]
 [ext_resource path="res://Scene3/Guest3.gd" type="Script" id=9]
-[ext_resource path="res://Scene3/Hero.gd" type="Script" id=10]
-[ext_resource path="res://Scene3/Alma-2.gd" type="Script" id=11]
-[ext_resource path="res://Scene3/Guard.gd" type="Script" id=12]
-[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Musics/maquette_zic_de_fond.ogg" type="AudioStream" id=14]
-[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scene3/Hero Loyalist.gd" type="Script" id=10]
+[ext_resource path="res://Scene3/Hero Complotist.gd" type="Script" id=11]
+[ext_resource path="res://Scene3/Hero.gd" type="Script" id=12]
+[ext_resource path="res://Scene3/Alma-2.gd" type="Script" id=13]
+[ext_resource path="res://Scene3/Alma-3.gd" type="Script" id=14]
+[ext_resource path="res://Scene3/Guard.gd" type="Script" id=15]
+[ext_resource path="res://Scene3/Sire Philippe2.gd" type="Script" id=16]
+[ext_resource path="res://Scene3/Guard-2.gd" type="Script" id=17]
+[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Musics/maquette_zic_de_fond.ogg" type="AudioStream" id=19]
+[ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=20]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -89,7 +94,7 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( -65504, 8, -65503, 8, 32, 9, 33, 9, 65568, 9, 65569, 9, 131104, 9, 131105, 9, 196640, 9, 196641, 9, 262145, 13, 262150, 13, 262155, 13, 262163, 13, 262168, 13, 262173, 13, 262176, 10, 262177, 10, 327694, 1073741843, 327695, 1610612738, 327696, 1073741826, 327697, 1610612755, 393228, 21, 393230, 1073741842, 393231, 3, 393232, 1073741827, 393233, 1610612754, 458753, 21, 458766, 1073741842, 458767, 3, 458768, 1073741827, 458769, 1610612754, 458771, 21, 524295, 21, 524302, 1073741842, 524303, 3, 524304, 1073741827, 524305, 1610612754, 524315, 21, 589838, 18, 589839, 3, 589840, 1073741827, 589841, 1610612754, 589846, 21, 655374, 18, 655375, 3, 655376, 1073741827, 655377, 1610612754, 720910, 1073741842, 720911, 3, 720912, 1073741827, 720913, 1610612754, 786437, 21, 786446, 1073741842, 786447, 3, 786448, 1073741827, 786449, 1610612754, 786451, 21, 851982, 1073741842, 851983, 3, 851984, 1073741827, 851985, 1610612754, 851994, 21, 917518, 1073741842, 917519, 3, 917520, 1073741827, 917521, 1610612754, 983054, 1073741842, 983055, 1073741827, 983056, 3, 983057, 1610612754, 1048586, 21, 1048590, 1073741842, 1048591, 1073741827, 1048592, 3, 1048593, 1610612754, 1114126, 1073741842, 1114127, 3, 1114128, 3, 1114129, 1610612754, 1179662, 1073741842, 1179663, 1073741827, 1179664, 1073741827, 1179665, 1610612754 )
+tile_data = IntArray( -65504, 8, -65503, 8, 32, 9, 33, 9, 65568, 9, 65569, 9, 131104, 9, 131105, 9, 196640, 9, 196641, 9, 262145, 13, 262150, 13, 262155, 13, 262163, 13, 262168, 13, 262173, 13, 262176, 10, 262177, 10, 327694, 1073741843, 327695, 1610612738, 327696, 1073741826, 327697, 1610612755, 393230, 1073741842, 393231, 3, 393232, 1073741827, 393233, 1610612754, 458766, 1073741842, 458767, 3, 458768, 1073741827, 458769, 1610612754, 524295, 21, 524302, 1073741842, 524303, 3, 524304, 1073741827, 524305, 1610612754, 589838, 18, 589839, 3, 589840, 1073741827, 589841, 1610612754, 655374, 18, 655375, 3, 655376, 1073741827, 655377, 1610612754, 720910, 1073741842, 720911, 3, 720912, 1073741827, 720913, 1610612754, 786446, 1073741842, 786447, 3, 786448, 1073741827, 786449, 1610612754, 851982, 1073741842, 851983, 3, 851984, 1073741827, 851985, 1610612754, 917518, 1073741842, 917519, 3, 917520, 1073741827, 917521, 1610612754, 983054, 1073741842, 983055, 1073741827, 983056, 3, 983057, 1610612754, 1048590, 1073741842, 1048591, 1073741827, 1048592, 3, 1048593, 1610612754, 1114126, 1073741842, 1114127, 3, 1114128, 3, 1114129, 1610612754, 1179662, 1073741842, 1179663, 1073741827, 1179664, 1073741827, 1179665, 1610612754 )
 
 [node name="Guest2" parent="." instance=ExtResource( 3 )]
 
@@ -156,27 +161,59 @@ script/script = ExtResource( 8 )
 transform/pos = Vector2( 272.258, 292.491 )
 script/script = ExtResource( 9 )
 
-[node name="Hero" parent="." instance=ExtResource( 3 )]
+[node name="Hero Loyalist" parent="." instance=ExtResource( 3 )]
 
 visibility/visible = false
 transform/pos = Vector2( 461.247, 355.733 )
 script/script = ExtResource( 10 )
 
+[node name="Hero Complotist" parent="." instance=ExtResource( 3 )]
+
+visibility/visible = false
+transform/pos = Vector2( 461.247, 355.733 )
+script/script = ExtResource( 11 )
+
+[node name="Hero Plan B" parent="." instance=ExtResource( 3 )]
+
+visibility/visible = false
+transform/pos = Vector2( 461.247, 355.733 )
+script/script = ExtResource( 12 )
+
 [node name="Alma-2" parent="." instance=ExtResource( 3 )]
 
 visibility/visible = false
-transform/pos = Vector2( 492.901, 391.909 )
-script/script = ExtResource( 11 )
+transform/pos = Vector2( 509.146, 572.41 )
+script/script = ExtResource( 13 )
+
+[node name="Alma-3" parent="." instance=ExtResource( 3 )]
+
+visibility/visible = false
+transform/pos = Vector2( 69.0174, 562.482 )
+script/script = ExtResource( 14 )
 
 [node name="Guard" parent="." instance=ExtResource( 3 )]
 
 visibility/visible = false
-transform/pos = Vector2( 510.52, 576.127 )
-script/script = ExtResource( 12 )
+transform/pos = Vector2( 546.62, 562.589 )
+script/script = ExtResource( 15 )
 
-[node name="PlayerCharacter" parent="." instance=ExtResource( 13 )]
+[node name="Sire Philippe-2" parent="." instance=ExtResource( 3 )]
+
+visibility/visible = false
+transform/pos = Vector2( 69.9988, 566 )
+transform/scale = Vector2( 1.21, 1.21 )
+script/script = ExtResource( 16 )
+
+[node name="Guard-2" parent="." instance=ExtResource( 3 )]
+
+visibility/visible = false
+transform/pos = Vector2( 45.619, 570.589 )
+script/script = ExtResource( 17 )
+
+[node name="PlayerCharacter" parent="." instance=ExtResource( 18 )]
 
 editor/display_folded = true
+visibility/visible = false
 transform/pos = Vector2( 908.636, 349.706 )
 
 [node name="SamplePlayer" parent="PlayerCharacter"]
@@ -364,7 +401,7 @@ _update_shape_index = 15
 
 [node name="StreamPlayer" type="StreamPlayer" parent="."]
 
-stream/stream = ExtResource( 14 )
+stream/stream = ExtResource( 19 )
 stream/play = false
 stream/loop = false
 stream/volume_db = -6.0
@@ -373,7 +410,7 @@ stream/paused = false
 stream/loop_restart_time = 0.0
 stream/buffering_ms = 500
 
-[node name="InGameUI" parent="." instance=ExtResource( 15 )]
+[node name="InGameUI" parent="." instance=ExtResource( 20 )]
 
 
 [editable path="PlayerCharacter"]

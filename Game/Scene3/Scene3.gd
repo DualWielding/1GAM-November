@@ -2,16 +2,21 @@ extends Node2D
 
 onready var guest = get_node("Guest1")
 onready var alma = get_node("Alma-2")
-onready var hero = get_node("Hero")
+onready var alma2 = get_node("Alma-3")
+onready var hero_loyalist = get_node("Hero Loyalist")
+onready var hero_plan_b = get_node("Hero Plan B")
+onready var hero_complotist = get_node("Hero Complotist")
 onready var guard = get_node("Guard")
+onready var guard2 = get_node("Guard-2")
+onready var sir_p = get_node("Sire Philippe-2")
 
 func _ready():
 	# Set the player as the duke
+	Player.character.set_disabled_movement(true)
 	Player.display_name = tr("DUKE")
 #	Player.character.sprite.set_texture(load(str("res://Sprites/characters/duke.png"))) # TODO activate that
-	start_music() #TODO activate that
+#	start_music() #TODO activate that
 	Player.character.look_at("up")
-	Player.character.set_disabled_movement(true)
 	Player.character.show()
 	Player.ui.show_book()
 	Player.ui.dialog_panel.ap.connect("finished", self, "write_scene_informations", [], CONNECT_ONESHOT)
@@ -35,7 +40,6 @@ func start_duke_monolog():
 	Player.character.walk_down()
 
 func duke_goes_to_firework():
-	Player.character.set_disabled_movement(true)
 	# triggered by guest 1
 	var t1 = get_timer(1.8)
 	var t2 = get_timer(0.4)
@@ -55,20 +59,75 @@ func duke_goes_to_firework():
 func guard_enter():
 	guard.fade_in()
 	guard.walk_up()
-	var t1 = get_timer(1.5)
+	var t1 = get_timer(1.0)
 	t1.connect("timeout", self, "start_guard_conversation")
 	t1.start()
 
 func start_guard_conversation():
+	Player.character.look_at("down")
 	guard.stop_walking()
 	guard.start_dialog()
+
+########## ALMA #################
+
+func make_alma_enter():
+	guard.out()
+	alma.fade_in()
+	alma.walk_up()
+	var t1 = get_timer(1.4)
+	t1.connect("timeout", self, "start_alma_dialog")
+	t1.start()
+
+func start_alma_dialog():
+	alma.stop_walking()
+	alma.look_at("right")
+	Player.character.look_at("left")
+	alma.start_dialog()
+
+########## HERO LOYALIST #################
+
+func make_hero_loyalist_enter():
+	pass
+
+########## HERO COMPLOTIST ##############
+
+func make_hero_complotist_enter():
+	pass
+
+########## HERO PLAN B ############
+
+func make_hero_plan_b_enter():
+	Player.character.collapse()
+	Player.character.animator.connect("finished", self, "hero_plan_b_start_dialog")
+
+func hero_plan_b_start_dialog():
+	alma.look_at("down")
+	hero_plan_b.enter()
+	hero_plan_b.start_dialog()
+
+func hero_plan_b_make_alma_go():
+	alma.out()
+	hero_plan_b.walk_up()
+	var t1 = get_timer(1.35)
+	t1.connect("timeout", self, "hero_plan_b_search_duke")
+	t1.start()
+
+func hero_plan_b_search_duke():
+	hero_plan_b.stop_walking()
+	hero_plan_b.crouch()
+
+func hero_plan_b_make_guards_enter():
+	sir_p.enter()
+	alma2.enter()
+	guard2.enter()
+	sir_p.start_dialog()
 
 ########## GUESTS ################
 
 func guests_leave():
 # triggered by guest 1
 	for i in range(5):
-		get_node(str("Guest", i+1)).fade()
+		get_node(str("Guest", i+1)).out()
 
 
 ######### TECH ###########
