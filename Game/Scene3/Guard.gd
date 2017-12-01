@@ -8,6 +8,10 @@ func init():
 func enter():
 	fade_in()
 
+func out():
+	walk_down()
+	fade()
+
 func on_state_change(old_state, new_state):
 	if new_state == "make alma enter":
 		get_parent().make_alma_enter()

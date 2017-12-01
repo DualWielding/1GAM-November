@@ -42,7 +42,7 @@
 			{
 				"text":"HERO D12 A1",
 				"end": false,
-				"state change":"unchanged",
+				"state change":"kissing",
 				"next sequence": "d13"
 			}
 		]
@@ -91,7 +91,7 @@
 				"text":"HERO D16 A1",
 				"end": false,
 				"state change":"make hero final monolog 3",
-				"next sequence": "d16"
+				"next sequence": "d17"
 			}
 		]
 	},

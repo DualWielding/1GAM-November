@@ -5,5 +5,9 @@ func init():
 	unique_name = "Guest two"
 	base_looking_direction = "down"
 
+func out():
+	walk_left()
+	fade()
+
 func enter():
 	fade_in()

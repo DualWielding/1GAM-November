@@ -5,6 +5,10 @@ func init():
 	unique_name = "Sire Philippe2"
 	base_looking_direction = "up"
 
+func out():
+	walk_down()
+	fade()
+
 func enter():
 	set_pos(Vector2(510, 550))
 	fade_in()

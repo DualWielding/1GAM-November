@@ -104,13 +104,13 @@
 	},
 
 	"d8": {
-		"text":"ALMA2 D5",
+		"text":"ALMA2 D8",
 		"options": [
 			{
 				"text":"ALMA2 D8 A1",
 				"end": true,
-				"state change":"hero approach2",
-				"next sequence": "d6"
+				"state change":"unchanged",
+				"next sequence": "none"
 			}
 		]
 	}

@@ -5,6 +5,10 @@ func init():
 	unique_name = "Guest"
 	base_looking_direction = "down"
 
+func out():
+	walk_right()
+	fade()
+
 func on_state_change(old_state, new_state):
 	if new_state == "make duke monologing":
 		get_parent().start_duke_monolog()

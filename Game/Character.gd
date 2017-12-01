@@ -93,21 +93,21 @@ func play_step_sound():
 	var step_type = get_parent().get_step_type(get_pos())
 	sp.play(str(step_type[0], (randi() % step_type[1]) + 1))
 
-func walk_up():
+func walk_up(speed=1):
 	current_direction  = "up"
-	animator.play("Walk_up")
+	animator.play("Walk_up", -1, speed)
 
-func walk_down():
+func walk_down(speed=1):
 	current_direction = "down"
-	animator.play("Walk_down")
+	animator.play("Walk_down", -1, speed)
 
-func walk_left():
+func walk_left(speed=1):
 	current_direction = "left"
-	animator.play("Walk_left")
+	animator.play("Walk_left", -1, speed)
 
-func walk_right():
+func walk_right(speed=1):
 	current_direction = "right"
-	animator.play("Walk_right")
+	animator.play("Walk_right", -1, speed)
 
 func stop_walking():
 	if current_direction == null:

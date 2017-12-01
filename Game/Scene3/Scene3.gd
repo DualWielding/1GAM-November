@@ -84,6 +84,18 @@ func start_alma_dialog():
 	Player.character.look_at("left")
 	alma.start_dialog()
 
+func hero_approach():
+	var t = get_timer(0.36)
+	hero_complotist.walk_up()
+	t.connect("timeout", hero_complotist, "stop_walking")
+	t.start()
+
+func duke_faces_off():
+	Player.character.look_at("right")
+	var t = get_timer(1)
+	t.connect("timeout", hero_complotist, "start_dialog")
+	t.start()
+
 ########## HERO LOYALIST #################
 
 func make_hero_loyalist_enter():
@@ -92,7 +104,43 @@ func make_hero_loyalist_enter():
 ########## HERO COMPLOTIST ##############
 
 func make_hero_complotist_enter():
-	pass
+	hero_complotist.enter()
+	hero_approach()
+
+func hero_complotist_stabs_duke():
+	hero_complotist.look_at("left")
+	hero_complotist.slash_left()
+	hero_complotist.animator.connect("finished", Player.character, "collapse", [], CONNECT_ONESHOT)
+	hero_complotist.animator.connect("finished", hero_complotist, "look_at", ["left"], CONNECT_ONESHOT)
+	alma.out()
+
+func hero_complotist_kisses():
+	hero_complotist.crouch()
+
+func hero_complotist_final_monolog():
+	hero_complotist.base_speed = 0.5
+	hero_complotist.walk_up(0.5)
+	var t1 = get_timer(2)
+	t1.connect("timeout", hero_complotist, "stop_walking")
+	t1.start()
+
+func hero_complotist_final_monolog2():
+	hero_complotist.stop_walking()
+	hero_complotist.look_at("down")
+	var t1 = get_timer(0.2)
+	t1.connect("timeout", hero_complotist, "hero_complotist_falters")
+	t1.start()
+
+func hero_complotist_falters():
+	hero_complotist.base_speed = 0.3
+	hero_complotist.walk_down(0.3)
+
+func hero_complotist_final_monolog3():
+	hero_complotist.stop_walking()
+	hero_complotist.crouch()
+
+func hero_complotist_die():
+	hero_complotist.collapse()
 
 ########## HERO PLAN B ############
 
@@ -170,7 +218,6 @@ func guests_leave():
 # triggered by guest 1
 	for i in range(5):
 		get_node(str("Guest", i+1)).out()
-
 
 ######### END ############
 
