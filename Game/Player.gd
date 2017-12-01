@@ -9,7 +9,7 @@ var hand = {} setget get_hand
 var important_hand = {} setget get_important_hand
 var max_cards = 4
 
-var base_cards = ["DAGGER", "GOLD POUCH", "POWDER", "LOVE LETTER", "LOYALIST QUEST"]
+var base_cards = ["DAGGER", "GOLD POUCH", "POWDER", "LOVE LETTER"]
 
 var unique_answers_used = {}
 
