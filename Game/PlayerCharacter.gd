@@ -109,7 +109,8 @@ func _on_PlayerDetectionArea_area_enter( area ):
 func _on_PlayerDetectionArea_area_exit( area ):
 	pass
 
-
+func fade():
+	get_node("FadePlayer").play("Fade")
 
 func get_name():
 	return Player.get_name()

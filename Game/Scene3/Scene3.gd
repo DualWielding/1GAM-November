@@ -99,7 +99,59 @@ func duke_faces_off():
 ########## HERO LOYALIST #################
 
 func make_hero_loyalist_enter():
-	pass
+	guard.out()
+	hero_loyalist.enter()
+	hero_loyalist.base_speed = 0.5
+	hero_loyalist.walk_up(0.5)
+	var t1 = get_timer(1)
+	t1.connect("timeout", self, "hero_loyalist_start_dialog")
+	t1.start()
+
+func hero_loyalist_start_dialog():
+	hero_loyalist.stop_walking()
+	hero_loyalist.start_dialog()
+
+func hero_loyalist_collapses():
+	hero_loyalist.collapse()
+	hero_loyalist.animator.connect("finished", Player.character, "walk_down", [], CONNECT_ONESHOT)
+	var t1 = get_timer(1)
+	t1.connect("timeout", self, "hero_loyalist_duke_care")
+	t1.start()
+
+func hero_loyalist_duke_care():
+	Player.character.stop_walking()
+	Player.character.crouch()
+
+func hero_loyalist_duke_out():
+	Player.character.fade()
+	Player.character.walk_right()
+	var t1 = get_timer(0.2)
+	t1.connect("timeout", Player.character, "walk_down")
+	t1.start()
+	Player.character.get_node("FadePlayer").connect("finished", hero_loyalist, "stand_up")
+	Player.character.get_node("FadePlayer").connect("finished", Player.character, "stop_walking")
+
+func hero_loyalist_go_to_table():
+	var t1 = get_timer(1.1)
+	var t2 = get_timer(3.2)
+	var t3 = get_timer(3.5)
+	
+	hero_loyalist.walk_right()
+	t1.connect("timeout", hero_loyalist, "walk_up")
+	t1.start()
+	t2.connect("timeout", hero_loyalist, "walk_right")
+	t2.start()
+	t3.connect("timeout", self, "hero_loyalist_at_table")
+	t3.start()
+
+func hero_loyalist_at_table():
+	hero_loyalist.stop_walking()
+	get_node("Letter").show()
+	Player.ui.dialog_panel.sp.play("writing")
+
+func hero_loyalist_die():
+	hero_loyalist.set_z(0)
+	hero_loyalist.collapse()
 
 ########## HERO COMPLOTIST ##############
 

@@ -9,6 +9,7 @@ var text
 signal button_pressed(name, list)
 
 func _ready():
+	add_to_group("credit_char")
 	sprite.set_frame(32)
 	
 	var path = str("res://Credits/", get_name(), ".json")
@@ -29,6 +30,13 @@ func _ready():
 	
 	get_node("Button").set_tooltip(get_name())
 
+
+func start_walking():
+	get_node("AnimationPlayer").play("Walk_down")
+
+func stop_walking():
+	get_node("AnimationPlayer").stop_all()
+	get_node("Sprite").set_frame(130)
 
 func _on_Button_pressed():
 	emit_signal("button_pressed", get_name(), options.list)

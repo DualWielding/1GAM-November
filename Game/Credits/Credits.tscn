@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://Credits/Credits.gd" type="Script" id=1]
 [ext_resource path="res://Scene3/TileSet3t.tres" type="TileSet" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Credits/CreditChar.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Sprites/Round-table.png" type="Texture" id=6]
 [ext_resource path="res://UI/Style/Theme-Buttons-little.tres" type="Theme" id=7]
+[ext_resource path="res://Musics/maquette_zic_de_fond.ogg" type="AudioStream" id=8]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -46,7 +47,7 @@ content_margin/bottom = -1.0
 [sub_resource type="Animation" id=6]
 
 resource/name = "fade"
-length = 2.5
+length = 10.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -54,10 +55,55 @@ tracks/0/path = NodePath(".:visibility/opacity")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 2.5 ),
+"times": FloatArray( 5.5, 10 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 0.0 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 4.5, 8 ),
+"transitions": FloatArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "start_walking"
+}, {
+"args": [  ],
+"method": "stop_walking"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Container:rect/pos")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 4.5, 8 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 184 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../StreamPlayer:stream/play")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0.5 ),
+"transitions": FloatArray( 1 ),
+"update": 2,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../StreamPlayer:stream/volume_db")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": FloatArray( 0, 10 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ -20.0, -5.0 ]
 }
 
 [node name="Credits" type="Node2D"]
@@ -89,9 +135,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 109.0
-margin/top = 261.0
-margin/right = 154.0
-margin/bottom = 275.0
+margin/top = 277.0
+margin/right = 167.0
+margin/bottom = 296.0
 custom_fonts/font = ExtResource( 3 )
 text = "Credits"
 percent_visible = 1.0
@@ -105,7 +151,7 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 70.0
-margin/top = 285.0
+margin/top = 315.0
 margin/right = 631.0
 margin/bottom = 585.0
 custom_fonts/normal_font = ExtResource( 4 )
@@ -121,33 +167,33 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 0.0
+margin/top = 184.0
 margin/right = 40.0
-margin/bottom = 40.0
+margin/bottom = 224.0
 
 [node name="Development" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 133, 131 )
+transform/pos = Vector2( 133, -0.368317 )
 
 [node name="Game Design" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 283, 131 )
+transform/pos = Vector2( 283, -0.368317 )
 
 [node name="Graphics" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 433, 131 )
+transform/pos = Vector2( 433, -0.368317 )
 
 [node name="Music" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 583, 131 )
+transform/pos = Vector2( 583, -0.368317 )
 
 [node name="Sounds" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 733, 131 )
+transform/pos = Vector2( 733, -0.368317 )
 
 [node name="Thanks" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 883, 131 )
+transform/pos = Vector2( 883, -0.368317 )
 
 [node name="MailingList" type="RichTextLabel" parent="."]
 
@@ -199,13 +245,14 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = ExtResource( 7 )
-margin/left = 715.0
-margin/top = 384.0
-margin/right = 727.0
-margin/bottom = 404.0
+margin/left = 878.0
+margin/top = 6.0
+margin/right = 1017.0
+margin/bottom = 39.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
+text = "MAIN MENU"
 flat = false
 
 [node name="ColorFrame" type="ColorFrame" parent="."]
@@ -231,6 +278,17 @@ playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 8 )
+stream/play = false
+stream/loop = false
+stream/volume_db = -5.0
+stream/autoplay = false
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
 
 [connection signal="meta_clicked" from="Persons" to="." method="_on_Persons_meta_clicked"]
 
