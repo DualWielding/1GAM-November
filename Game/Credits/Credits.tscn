@@ -173,27 +173,31 @@ margin/bottom = 224.0
 
 [node name="Development" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 133, -0.368317 )
+transform/pos = Vector2( 66.702, -0.368317 )
 
 [node name="Game Design" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 283, -0.368317 )
+transform/pos = Vector2( 216.702, -0.368317 )
 
 [node name="Graphics" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 433, -0.368317 )
+transform/pos = Vector2( 366.702, -0.368317 )
 
 [node name="Music" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 583, -0.368317 )
+transform/pos = Vector2( 516.702, -0.368317 )
 
 [node name="Sounds" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 733, -0.368317 )
+transform/pos = Vector2( 666.702, -0.368317 )
 
 [node name="Thanks" parent="Container" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 883, -0.368317 )
+transform/pos = Vector2( 946, -0.368317 )
+
+[node name="Translation" parent="Container" instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 816, -0.368317 )
 
 [node name="MailingList" type="RichTextLabel" parent="."]
 
@@ -219,9 +223,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 486.0
+margin/left = 437.0
 margin/top = 15.0
-margin/right = 541.0
+margin/right = 492.0
 margin/bottom = 84.0
 custom_styles/hover = SubResource( 1 )
 custom_styles/pressed = SubResource( 2 )
