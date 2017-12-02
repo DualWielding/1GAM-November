@@ -114,5 +114,6 @@ func fade_in():
 	fade_timer.start()
 
 func on_state_change(old_state, new_state):
-	# Called when the state changes
-	pass
+	if new_state == "neutralized":
+		get_node("InteractionArea").queue_free()
+		fade()
