@@ -160,7 +160,8 @@
 				"text":"ALMA D10 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d11"
+				"next sequence": "d11",
+				"card gained":"PLAN B"
 			}
 		]
 	},
