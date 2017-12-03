@@ -1,7 +1,6 @@
 extends Button
 
 onready var rich_text = get_node("RichTextLabel")
-onready var label = get_node("Label")
 
 var option setget set_option, get_option
 var speaker setget set_speaker, get_speaker

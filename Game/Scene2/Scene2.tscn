@@ -23,7 +23,7 @@
 [ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Sounds/ambiance_soiree.smp" type="Sample" id=22]
 [ext_resource path="res://Sounds/ouverture_porte_2.wav" type="Sample" id=23]
-[ext_resource path="res://Musics/zic de fond vfinale.ogg" type="AudioStream" id=24]
+[ext_resource path="res://Musics/music_1_and_2.ogg" type="AudioStream" id=24]
 
 [sub_resource type="RectangleShape2D" id=1]
 

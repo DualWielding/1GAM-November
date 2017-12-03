@@ -14,8 +14,8 @@ func _ready():
 	# Set the player as the duke
 	Player.character.set_disabled_movement(true)
 	Player.display_name = tr("DUKE")
-	Player.character.sprite.set_texture(load(str("res://Sprites/characters/duke.png")))
-#	start_music() #TODO activate that
+	Player.character.sprite.set_texture(load(str("res://Sprites/characters/Duke.png")))
+	start_music() #TODO activate that
 	Player.character.look_at("up")
 	Player.character.show()
 	Player.ui.show_book()

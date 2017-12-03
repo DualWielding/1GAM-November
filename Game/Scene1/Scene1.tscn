@@ -15,7 +15,7 @@
 [ext_resource path="res://UI/InGameUI.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scene1/TitleScreen.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Sounds/ouverture_porte_2.wav" type="Sample" id=15]
-[ext_resource path="res://Musics/son_gratt_export_RAW.ogg" type="AudioStream" id=16]
+[ext_resource path="res://Musics/music_1_and_2.ogg" type="AudioStream" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 
