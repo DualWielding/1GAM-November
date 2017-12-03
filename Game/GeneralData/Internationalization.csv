@@ -10,13 +10,13 @@ DUKE,The Duke,Le Duc
 DOOR,A door,Une porte
 INPUT PLACEHOLDER,My name is...,Je m'appelle...
 SUBMIT BUTTON,This is my name!,"Oui, c'est mon nom !"
-INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
+INVALID NAME PLACEHOLDER,"Nope, too short...","Non, c'est trop court..."
 DISCARD BUTTON,Discard,Défausser
 INTERACTION BUTTON,Interact,Interagir
 INTERACTION BUTTON TOOLTIP,Press E to interact,Appuyez sur E pour interagir
 START BUTTON,Start,Commencer
 QUIT BUTTON,Quit,Quitter
-DISCARD TEXT,You have too many cards. Please discard %number cards.,Vous avez %number cartes en trop.
+DISCARD TEXT,Please discard %number cards.,Vous avez %number cartes en trop.
 DEVELOPMENT,Development,Développement
 GAME DESIGN,Game Design,Game Design
 GRAPHICS,Art,Graphismes
@@ -38,10 +38,12 @@ pour illustrer nos fables.
    Merci d'avoir joué,
    Dual Wielding
 "
+MY NAME IS,my name is,mon nom est
 CREDIT BASE TEXT,Click on the characters above to see the credits.,Cliquez sur les personnages au dessus pour voir les crédits.
 MAILING LIST,Subscribe to our mailing list !,S'inscrire à notre mailing list !
 WEBSITE,Website,Site web
 HELP US,Help us get better ! (answer our 8 questions form),Aidez-nous à nous améliorer ! (Répondez à notre formulaire de 8 questions)
+LOADING,Loading...,Chargement...
 TUTORIAL CHECK BOX,Hide tutorial,Cacher le tutorial
 TUTORIAL BOOK,This is where the play will be written with the NPC's tirades (Non Player Character) and yours.,"Voici la pièce de théâtre. Les tirades des Personnages Non-Joueurs (PNJ), ainsi que vos réponses s'afficheront ici."
 TUTORIAL CARDS,"The cards show your assets in this story. You will need to use those you win along the game. You can either use a left-click on one to see it more clearly, or a right-click to display more information.",Les cartes représentent vos atouts dans cette histoire. Vous allez en gagner et en utiliser. Vous pouvez faire un clique gauche dessus pour les observer plus attentivement. Puis un clique droit pour les étudier en détails.
@@ -115,7 +117,7 @@ SCENE 2 DOOR DEFAULT A1,[i]to himself[/i]I should rahter blend in with the guest
 SIRE PHILIPPE DEFAULT,"[i]Sitting close to a glass vial and a pipette.[/i] Good evening to you, young Sir.","[i]assis près d'une fiole en verre et d'une pipette.[/i] Bien le bonsoir, jeune Sire."
 SIRE PHILIPPE DEFAULT A1,"Are you Sir Philip, Captain of the Guard?","Vous êtes Sire Philippe, le Capitaine de la garde ?"
 SIRE PHILIPPE DEFAULT A2,"Forgive me sir, but is this yours?","Pardonnez monsieur, ceci est à vous ?"
-SIRE PHILIPPE DEFAULT A3,"[i]Spilling the vial.[/i] Ah! By the gods, I spilled your cure! This is so embarrassing, please forgive me!","[i]renversant la fiole.[/i]Oh ! Par les dieux, j'ai renversé votre médicament. Je suis confus, veuillez m'excuser !"
+SIRE PHILIPPE DEFAULT A3,"[i]Spilling the vial.[/i]Ah! By the gods, I spilled your cure! This is so embarrassing, please forgive me!","[i]renversant la fiole.[/i]Oh ! Par les dieux, j'ai renversé votre médicament. Je suis confus, veuillez m'excuser !"
 SIRE PHILIPPE DEFAULT A4,This is quite a curious recipient. What can it hold?,Voilà une bien étrange récipient. Que renferme t-il ?
 ,,
 SIRE PHILIPPE D1,"Are you mocking me, %n ?","Etes vous en train de vous moquer de moi, %n ?"
@@ -203,7 +205,7 @@ VITORI D9 A1,My skull hurts. The pain is unbearable! My memories are fading as I
 VITORI D10,"[i]worried.[/i]I will not have this leisure. Try to recover from the hit. Breath the fresh air, it will all come back to you. I commiserate with you, but we cannot postpone what is supposed to happen tonight. [i]He puts a hand on %n's shoulder.[/i] Ruffio will help you on the Patio. I will see you later, my friend.[i]He goes out[/i]","[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] Ruffio vous attendra sur la Terrasse. A tout à l'heure, mon ami.[i]Il sort[/i]"
 VITORI D10 A1,Here I am. Half dead and responsible for something I do not know anything about. This evening the stars are laughing at me. Baste! I am willing to bet that a glass of wine will do wonders on my memory.,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
 ,,
-VITORI SCENE2DEFAULT,Ah! My friend! Are you feeling any better?,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?"
+VITORI SCENE2DEFAULT,Ah! My friend! Are you feeling any better?[i]He lowers his voice.[/i]I heard the Duke was inside.,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?[i]Il baisse la voix.[/i]J'ai entendu dire que le Duc était à l'intérieur."
 VITORI SCENE2DEFAULT A1,"My memories are still fuzzy. Tell me, Vitori, who planned tonight mission?","Mes souvenirs s'acharnent à rester flous. Dites moi, Vitori, auriez vous l'obligeance de me rappeler qui est à l'initiative du plan de ce soir ?"
 VITORI SCENE2DEFAULT A2,"Not quite. It seems to be worst, actually... I will leave you to it.","Pas tout à fait. A vrai dire, j'ai bien l'impression que mon mal empire... Je ne vous ennuie pas plus."
 ,,
@@ -285,7 +287,7 @@ GUARD HAS GOLDPOUCH A2,Is this really what you are hoping to become ? An empty-h
 GUARD HAS GOLDPOUCH A3,"Listen to me carrefully. If you do not restitute my property this second, you will face terrible consequences.","Ecoutez moi bien, si vous ne me rendez pas mon dû dans la minute, vous vous exposerez à de graves conséquences !"
 ,,
 GUARD D13,What do you mean?,Que voulez-vous dire ?
-GUARD D13 A3,I... I will refer it to your commanding officer as soon as I will be able to enter! Believe me : I will!,Je... Je n'hésiterai pas à en référer à votre supérieur une fois que je serai à intérieur ! Car croyez-moi : je rentrerai !
+GUARD D13 A3,I... I will refer it to your commanding officer as soon as I will be able to enter! Believe me: I will!,Je... Je n'hésiterai pas à en référer à votre supérieur une fois que je serai à intérieur ! Car croyez-moi : je rentrerai !
 GUARD D13 A1,This kind of consequences ![i]He slams the bottle on the guard's head.[/i],Ce genre de conséquences ![i]Il abbat la bouteille sur le crâne du garde.[/i]
 GUARD D13 A2,I cannot waste my time tonight. Sorry.[i]He rushes to the guard and stabs him.[/i],"Je n'ai pas de temps à perdre ce soir, navré.[i]Il se jete sur le garde et le poignarde.[/i]"
 ,,
@@ -349,6 +351,7 @@ ALMA D7 A1,I need a weapon. The guards are going to search every man before they
 ,,
 ALMA D8,Poor Sporco... No! I... I am listening!,Mon pauvre Sporco... Non ! Je... Je vous écoute !
 ALMA D8 A1,"You are going to take the weapon Ruffio will give you, enter in the hall and give the weapon to me once we are both inside. Is that clear?","Vous allez récupérer l'arme que Ruffio vous donnera, entrer dans la salle de réception et me la remettrez une fois à l'intérieur. Est-ce clair ?"
+ALMA D8 A2,You are going to give some of this wine to the Duke. It should quickly knock him out. Then I will come in and kill him.,Vous allez donner ce vin au Duc. Cela devrait le mettre assez rapidement hors d'état de nuire. Puis j'entrerai et je finirai le travail. Est-ce clair ?
 ,,
 ALMA D9,Yes... Yes but what am I supposed to do after that?,Oui.. Oui mais qu'attendez vous de moi ensuite ?
 ALMA D9 A1,"I want you to distract the Duke. Find any reason to speak to him, but I need you to fully occupy his attention.","Je veux que vous distrayez le Duc. Trouvez n'importe quelle raison, mais vous devrez à tout prix occuper son entière attention."
@@ -525,7 +528,7 @@ AUGURIE D4 A1,Really ? I have some troubles with my memory tonight. What is the 
 AUGURIE D4 A2,"I... I knew it. I was just making sure that everything is ready, that is all. Why should we avoid each other, by the way ?","Je... Je le savais, je m'assurais que tout était au point, voilà tout. Et pourquoi devons nous nous éviter ?"
 AUGURIE D4 A3,I see... Perfect.,Je vois... Parfait.
 ,,
-AUGURIE D5,"What an idiot ! As you explained to me several times, you are supposed to offer me a drink and I am supposed to reject you. After what I will start gathering our guests while you warn Sir Philip. Unless the plan has changed... again ?","Oh, mais quel idiot ! Bien, comme tu me l'as expliqué plusieurs fois, tu es censé me proposer un verre, et moi t'éconduire. Après cela je commencerai à rassembler les invités pendant que tu préviendras Sire Philippe. A moins que ton plan ait encore changé ?"
+AUGURIE D5,"What an idiot ! As you explained to me several times, you are supposed to offer me a drink and I am supposed to reject you. After what I will start gathering the guests. Unless the plan has changed... again ?","Oh, mais quel idiot ! Bien, comme tu me l'as expliqué plusieurs fois, tu es censé me proposer un verre, et moi t'éconduire. Après cela je commencerai à rassembler les invités. A moins que ton plan ait encore changé ?"
 AUGURIE D5 A1,"No, no. This seems fine.","Non, non. Cela me paraît parfait."
 AUGURIE D5 A2,"No, this is perfect. But... a firework ? Why ?","Non, parfait. Mais pourquoi un feu d'artifice ?"
 AUGURIE D5 A3,"No, this one is fine. But why should we avoid each other ?","Non, c'est très bien. Mais pourquoi devrions nous nous éviter, déjà ?"

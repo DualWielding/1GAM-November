@@ -39,6 +39,8 @@ func _fixed_process(delta):
 ######## TALKING #####
 
 func start_dialog():
+	if !can_be_interacted_with:
+		return
 	# Stop the player's movement while interacting
 	Player.character.set_disabled_movement(true)
 	

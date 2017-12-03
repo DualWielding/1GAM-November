@@ -78,7 +78,8 @@
 	"A SURPRISE IS PLANNED": {
 		"unique_name": "A SURPRISE IS PLANNED",
 		"name": "To be added in translation",
-		"text": "To be added in translation"
+		"text": "To be added in translation",
+		"important": true
 	},
 	"WAITER STRANGE REACTION": {
 		"unique_name": "WAITER STRANGE REACTION",

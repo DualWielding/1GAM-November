@@ -207,7 +207,7 @@
 			{
 				"text":"SIRE PHILIPPE D13 A1",
 				"end": true,
-				"state change":"unchanged",
+				"state change":"neutralized",
 				"next sequence": "none",
 				"card gained":"ALMA IS NO MORE PROTECTED"
 			}

@@ -2,7 +2,7 @@ extends Node
 
 var cards = {}
 
-func _ready():
+func load_cards():
 	# Load cards from JSON file
 	var path = "res://GeneralData/Cards.json"
 	var file = File.new()

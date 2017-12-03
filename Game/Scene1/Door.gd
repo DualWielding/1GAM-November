@@ -1,5 +1,7 @@
 extends Node2D
 
+var can_be_interacted_with = true
+
 func appear():
 	get_node("Area2D").set_layer_mask(1)
 

@@ -67,22 +67,24 @@ func stop_dialog(option):
 
 func say(text, opt):
 	var to_remove = []
-	var options = opt
+	var options = []
 	
-	for option in options:
+	for option in opt:
 		# Remove a dialog option the player does not have the right tool
 		# or if he already used that option
-		if !Player.is_unique_answer_up(option.text):
-			to_remove.append(option)
-		elif option.has("card used") and typeof(option["card used"]) == TYPE_STRING and !Player.has_card(option["card used"]):
-			to_remove.append(option)
+#		if !Player.is_unique_answer_up(option.text):
+#			options.append(option)
+		if !option.has("card used"):
+			options.append(option)
+		elif option.has("card used") and typeof(option["card used"]) == TYPE_STRING and Player.has_card(option["card used"]):
+			options.append(option)
 		elif option.has("card used") and typeof(option["card used"]) == TYPE_ARRAY:
+			var add = false
 			for card in option["card used"]:
 				if !Player.has_card(card):
-					to_remove.append(option)
-	
-	for option in to_remove:
-		options.remove(options.find(option))
+					break
+			if add:
+				options.append(option)
 	
 	# We need the body param in order to send the player's answer back to the body
 	# Thus enabling us to follow up with the next dialog line
@@ -104,6 +106,8 @@ func get_display_name():
 	return get_name()
 
 func fade():
+	Player.character.remove_interaction_possibility(self)
+	can_be_interacted_with = false
 	get_node("FadePlayer").play("Fade")
 	get_node("FadePlayer").connect("finished", self, "queue_free")
 
@@ -115,5 +119,4 @@ func fade_in():
 
 func on_state_change(old_state, new_state):
 	if new_state == "neutralized":
-		get_node("InteractionArea").queue_free()
 		fade()

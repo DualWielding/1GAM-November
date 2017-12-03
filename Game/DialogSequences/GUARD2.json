@@ -65,7 +65,7 @@
          {
             "text":"GUARD2 D2 A2",
             "end": false,
-            "state change":"unchanged",
+            "state change":"out",
             "next sequence": "d9",
             "card used" :"LOYALIST QUEST"
          }
@@ -97,7 +97,7 @@
          {
             "text":"GUARD2 D4 A2",
             "end": false,
-            "state change":"unchanged",
+            "state change":"out",
             "next sequence": "d9",
             "card used" : "LOYALIST QUEST"
          }

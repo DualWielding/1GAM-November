@@ -5,6 +5,8 @@ var is_on = true
 signal got_it
 
 func _ready():
+	if Player.character.get_parent().get_name() != "Scene1":
+		is_on = false
 	for child in get_children():
 		var cb = child.get_node("CheckBox")
 		cb.set_text(tr("TUTORIAL CHECK BOX"))

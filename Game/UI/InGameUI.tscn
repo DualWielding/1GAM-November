@@ -254,9 +254,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 10.0
+margin/left = -4.0
 margin/top = 575.0
-margin/right = 320.0
+margin/right = 328.0
 margin/bottom = 875.0
 custom_constants/separation = 100
 alignment = 0
@@ -269,9 +269,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 0
-margin/left = 390.0
+margin/left = 654.0
 margin/top = 575.0
-margin/right = 1423.0
+margin/right = 1281.0
 margin/bottom = 835.0
 custom_constants/vseparation = 300
 custom_constants/hseparation = 100
@@ -309,14 +309,15 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 9.0
-margin/top = 26.0
-margin/right = 443.0
-margin/bottom = 45.0
+margin/left = 12.0
+margin/top = 33.0
+margin/right = 357.0
+margin/bottom = 52.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0.8, 0.8, 0.8, 1 )
 text = "DISCARD LABEL"
 align = 1
+valign = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -345,11 +346,11 @@ flat = false
 
 [node name="Tutorial" parent="." instance=ExtResource( 10 )]
 
-editor/display_folded = true
 visibility/visible = false
 
 [node name="Book" parent="Tutorial"]
 
+editor/display_folded = true
 margin/left = 344.0
 margin/top = 68.0
 margin/right = 844.0
@@ -357,6 +358,7 @@ margin/bottom = 268.0
 
 [node name="Cards" parent="Tutorial"]
 
+editor/display_folded = true
 margin/left = 385.0
 margin/top = 466.0
 margin/right = 885.0
@@ -369,7 +371,7 @@ margin/bottom = 281.0
 
 [node name="Interaction" parent="Tutorial"]
 
-visibility/visible = true
+editor/display_folded = true
 margin/left = 472.0
 margin/right = 972.0
 

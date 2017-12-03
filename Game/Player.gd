@@ -38,8 +38,14 @@ func is_unique_answer_up(untranslated_text):
 
 func add_base_cards():
 	# Add all the players' cards at the beginning
-	for card_name in base_cards:
-		add_card(card_name)
+	if Player.character.get_parent().get_name() == "Scene1":
+		for card_name in base_cards:
+			add_card(card_name)
+	else:
+		for card_name in get_hand():
+			emit_signal("card_added", hand[card_name])
+		for card_name in get_important_hand():
+			emit_signal("card_added", important_hand[card_name])
 
 func get_hand():
 	return hand

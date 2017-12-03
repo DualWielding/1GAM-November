@@ -137,6 +137,14 @@
 				"end": false,
 				"state change":"unchanged",
 				"next sequence": "d9"
+			},
+			{
+				"text": "ALMA D8 A2",
+				"end": false,
+				"state change": "unchanged",
+				"next sequence": "d10",
+				"card used": "SLEEPING WINE",
+				"card gained": "PLAN B"
 			}
 		]
 	},
@@ -160,8 +168,7 @@
 				"text":"ALMA D10 A1",
 				"end": false,
 				"state change":"unchanged",
-				"next sequence": "d11",
-				"card gained":"PLAN B"
+				"next sequence": "d11"
 			}
 		]
 	},
