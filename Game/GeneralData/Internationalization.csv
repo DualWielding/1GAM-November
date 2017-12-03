@@ -3,20 +3,20 @@ $i,,
 ,,
 STARTING PLAYER NAME,You,Vous
 GUEST,Guest,Invité
-SIR PHILIPPE,Sir Philippe,Sire Philippe
+SIR PHILIPPE,Sir Philip,Sire Philippe
 GUARD,Guard,Garde
 WAITER,Waiter,Serveur
 DUKE,The Duke,Le Duc
 DOOR,A door,Une porte
 INPUT PLACEHOLDER,My name is...,Je m'appelle...
-SUBMIT BUTTON,This is my name !,"Oui, c'est mon nom !"
+SUBMIT BUTTON,This is my name!,"Oui, c'est mon nom !"
 INVALID NAME PLACEHOLDER,"Nope, that was too short...","Non, c'est trop court..."
 DISCARD BUTTON,Discard,Défausser
 INTERACTION BUTTON,Interact,Interagir
 INTERACTION BUTTON TOOLTIP,Press E to interact,Appuyez sur E pour interagir
 START BUTTON,Start,Commencer
 QUIT BUTTON,Quit,Quitter
-DISCARD TEXT,You have %number supernumerary cards.,Vous avez %number cartes en trop.
+DISCARD TEXT,You have too many cards. Please discard %number cards.,Vous avez %number cartes en trop.
 DEVELOPMENT,Development,Développement
 GAME DESIGN,Game Design,Game Design
 GRAPHICS,Art,Graphismes
@@ -38,23 +38,34 @@ pour illustrer nos fables.
    Merci d'avoir joué,
    Dual Wielding
 "
+CREDIT BASE TEXT,Click on the characters above to see the credits.,Cliquez sur les personnages au dessus pour voir les crédits.
 MAILING LIST,Subscribe to our mailing list !,S'inscrire à notre mailing list !
 WEBSITE,Website,Site web
+HELP US,Help us get better ! (answer our 8 questions form),Aidez-nous à nous améliorer ! (Répondez à notre formulaire de 8 questions)
 TUTORIAL CHECK BOX,Hide tutorial,Cacher le tutorial
 TUTORIAL BOOK,This is where the play will be written with the NPC's tirades (Non Player Character) and yours.,"Voici la pièce de théâtre. Les tirades des Personnages Non-Joueurs (PNJ), ainsi que vos réponses s'afficheront ici."
 TUTORIAL CARDS,"The cards show your assets in this story. You will need to use those you win along the game. You can either use a left-click on one to see it more clearly, or a right-click to display more information.",Les cartes représentent vos atouts dans cette histoire. Vous allez en gagner et en utiliser. Vous pouvez faire un clique gauche dessus pour les observer plus attentivement. Puis un clique droit pour les étudier en détails.
-TUTORIAL INTERACTION,This icon will be visible when you are close to a NPC or an object you can interact with. You can click on it or push E to start the interaction.,"Lorsque vous approchez d'un PNJ ou d'un objet avec lequel vous pouvez interagir, cette icone deviendra visible. Vous pouvez cliquer dessus ou appuyer sur la lettre E pour entamer l'interaction."
+TUTORIAL INTERACTION,This icon will be visible when you are close to a NPC or an object you can interact with. You can click on it or press E to start the interaction.,"Lorsque vous approchez d'un PNJ ou d'un objet avec lequel vous pouvez interagir, cette icone deviendra visible. Vous pouvez cliquer dessus ou appuyer sur la lettre E pour entamer l'interaction."
 ,,
-SCENE 1 INTRO,TODO,"[center]SCÈNE PREMIÈRE[/center]
+SCENE 1 INTRO,"[center]SCENE I[/center]
+[center][i]A paved street. — Moonlight; A palace in the background.[/i][/center]
+
+[center][i]Come in[/i]%N[i] ; [/i]A THUG,[i] armed with a stick; [/i]A GUARD,[i] armed.[/i][/center]","[center]SCÈNE PREMIÈRE[/center]
 [center][i]Une rue pavée. — Clair de lune ; un palais dans le fond.[/i][/center]
 
 [center][i]Entrent [/i]%N[i] ; [/i]UN BANDIT,[i] un bâton à la main ; [/i]UN GARDE,[i] armé.[/i][/center]"
-SCENE 1 ENTERS VITORI,TODO,[i][right]Entre Vitori.  [/right][i]
-SCENE 2 INTRO,TODO,"[center]SCÈNE II[/center]
+SCENE 1 ENTERS VITORI,[i][right]Come in Vitori.  [/right][i],[i][right]Entre Vitori.  [/right][i]
+SCENE 2 INTRO,"[center]SCENE II[/center]
+[center][i]A terrace of the palace. — Full night; sight of the city below.[/i][/center]
+
+[center][i]Come in [/i]%N[i] and [/i]RUFFIO[i].[/i][/center]","[center]SCÈNE II[/center]
 [center][i]Une terasse de palais. — Pleine nuit ; la ville en contrebas.[/i][/center]
 
 [center][i]Entrent [/i]%N[i] et [/i]RUFFIO[i].[/i][/center]"
-SCENE 3 INTRO,TODO,"[center]SCÈNE III[/center]
+SCENE 3 INTRO,"[center]SCENE III[/center]
+[center][i]A reception hall of the palace.[/i][/center]
+
+[center][i]Come in[/i]THE DUKE[i] and guests.[/i] [/center]","[center]SCÈNE III[/center]
 [center][i]Une salle de réception du palais.[/i][/center]
 
 [center][i]Entrent [/i]LE DUC[i] et des invités.[/i] [/center]"
@@ -67,20 +78,20 @@ LOVE LETTER,Letter,Lettre
 BOTTLE,Wine,Vin
 SLEEPING WINE,Sleep,Sommeil
 GUARD KILLED,Death,Mort
-GUARD CORRUPTED,Corruption,Corruption
+GUARD CORRUPTED,Bribery,Corruption
 CESNI OWN YOU,Debt,Dette
 STROZI IS CESNI LOVER,Adultery,Adultère
 ,,
 PHILIPPE PRENSENCE DEPENDS ON HIS MEDICINE,Illness,Maladie
 EXPLAINATION OF RUFFIO MISSING FINGER,Mutilation,Mutilation
 ALMA PET KIDNAPPED,Abduction,Rapt
-ALMA IS WAITING INSIDE,Accessary,Complice
-HEAD COMPLOTIST DESCRIPTION,,A
-NEED A DRINK,,A
-WAITER STRANGE REACTION,,A
-VITORI IS THE HEAD COMPLOTIST,,A
+ALMA IS WAITING INSIDE,Accomplice,Complice
+HEAD COMPLOTIST DESCRIPTION,Instigator,Instigateur
+NEED A DRINK,Drink,Verre
+WAITER STRANGE REACTION,Waiter,Serveur
+VITORI IS THE HEAD COMPLOTIST,Vitori,Vitori
 ,,
-A SURPRISE IS PLANNED,Surprise !,Surprise !
+A SURPRISE IS PLANNED,Surprise!,Surprise !
 DIVERSION,Diversion,Diversion
 ALMA IS NO MORE PROTECTED,Vulnerable,Vulnérable
 SIR PHILIPPE SUFFERS FROM GOUTTE,Gout,Goutte
@@ -89,116 +100,116 @@ LOYALIST QUEST,Loyalty,Loyauté
 PLAN B,Plan B,Plan B
 ,,
 ,,
-BOTTLE DEFAULT,TODO,"Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
-BOTTLE DEFAULT A1,TODO,[i]à part-soi[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
-BOTTLE DEFAULT A2,TODO,[i]à part-soi[/i][color=#4169E1]Voilà qui pourrait m'ouvrir des portes.[/color][i]%n verse une poudre dans la bouteille et s'en saisit[/i]
-BOTTLE DEFAULT A3,TODO,[i]à part-soi[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
+BOTTLE DEFAULT,"A bottle of wine, almost untouched, carelessly left on the window sill.","Une bouteille de vin presque pleine, négligemment posée sur le rebord de la fenêtre."
+BOTTLE DEFAULT A1,[i]to himself[/i]This could prove useful.[i]He seizes the bottle.[/i],[i]à part-soi.[/i]Voici qui pourrait s'avérer utile.[i]Il se saisit de la bouteille.[/i]
+BOTTLE DEFAULT A2,[i]to himself[/i]Now this could open some doors.[i]%n drops a powder in the bottle and seizes it.[/i],[i]à part-soi.[/i]Voilà qui pourrait m'ouvrir des portes.[i]%n verse une poudre dans la bouteille et s'en saisit[/i]
+BOTTLE DEFAULT A3,[i]to himself[/i]I wouldn't know what to do with it. It's better to let it alone.[i]he goes out.[/i],[i]à part-soi.[/i]Je ne saurais que faire de ceci. Laissons-là ici.[i]Il s'éloigne.[/i]
 ,,
-DAGGER DEFAULT,TODO,"Une dague gît sur le sol, à quelques mètres de l'endroit où vous vous êtes éveillé."
-DAGGER DEFAULT A1,TODO,"[i]à part-soi[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
-DAGGER DEFAULT A2,TODO,"[i]à part-soi[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
+DAGGER DEFAULT,"A dagger lies on the ground, a few meters away from you.","Une dague gît sur le sol, à quelques mètres de l'endroit où vous vous êtes éveillé."
+DAGGER DEFAULT A1,"[i]to himself[/i]My dagger! the thief must have dropped it while they fled. From what Vitori just said, I could have a use for it tonight... [i]He picks it up.[/i]","[i]à part-soi.[/i]Ma dague ! Le voleur a du la laisser tomber en s'enfuyant. Si j'en crois Vitori, elle pourrait m'être utile ce soir... [i]Il se baisse et la ramasse.[/i]"
+DAGGER DEFAULT A2,[i]to himself[/i]My dagger... Maybe it's best to let it here for the time being.[i]He goes out.[/i],"[i]à part-soi.[/i]Ma dague... Pour l'heure, peut être est-elle mieux ici.[i]Il s'éloigne.[/i]"
 ,,
-SCENE 2 DOOR DEFAULT,TODO,Les servants semblent encore s'affairer à l'intérieur. Quitter la terasse serait remarqué.
-SCENE 2 DOOR DEFAULT A1,TODO,[i]à part-soi[/i]Je devrais plutôt me mélanger aux invité.
+SCENE 2 DOOR DEFAULT,The inside of the palace still seems busy with servants. You would likely be seen if you left the terrace now.,Les serviteurs semblent encore s'affairer à l'intérieur. Quitter la terasse serait remarqué.
+SCENE 2 DOOR DEFAULT A1,[i]to himself[/i]I should rahter blend in with the guests.,[i]à part-soi[/i]Je devrais plutôt me mélanger aux invité.
 ,,
-SIRE PHILIPPE DEFAULT,,"[i]assis près d'une fiole en verre et d'une pipette.[/i] Bien le bonsoir, jeune Sire."
-SIRE PHILIPPE DEFAULT A1,,"Vous êtes Sire Philippe, le Capitaine de la garde ?"
-SIRE PHILIPPE DEFAULT A2,,"Pardonnez monsieur, ceci est à vous ?"
-SIRE PHILIPPE DEFAULT A3,,"[i]renversant la fiole.[/i] Oh ! Par les dieux, j'ai renversé votre médicament. Je suis confus, veuillez m'excuser !"
-SIRE PHILIPPE DEFAULT A4,,Voilà une bien étrange récipient. Que renferme t-il ?
+SIRE PHILIPPE DEFAULT,"[i]Sitting close to a glass vial and a pipette.[/i] Good evening to you, young Sir.","[i]assis près d'une fiole en verre et d'une pipette.[/i] Bien le bonsoir, jeune Sire."
+SIRE PHILIPPE DEFAULT A1,"Are you Sir Philip, Captain of the Guard?","Vous êtes Sire Philippe, le Capitaine de la garde ?"
+SIRE PHILIPPE DEFAULT A2,"Forgive me sir, but is this yours?","Pardonnez monsieur, ceci est à vous ?"
+SIRE PHILIPPE DEFAULT A3,"[i]Spilling the vial.[/i] Ah! By the gods, I spilled your cure! This is so embarrassing, please forgive me!","[i]renversant la fiole.[/i]Oh ! Par les dieux, j'ai renversé votre médicament. Je suis confus, veuillez m'excuser !"
+SIRE PHILIPPE DEFAULT A4,This is quite a curious recipient. What can it hold?,Voilà une bien étrange récipient. Que renferme t-il ?
 ,,
-SIRE PHILIPPE D1,,"Etes vous en train de vous moquer de moi, %n ?"
-SIRE PHILIPPE D1 A1,,"Je dois vous paraître bien étrange ce soir, messire, mais peu importe. Vous semblez attendre de moi une information, et la voici. J'ai le nom de celui qui est à la tête du complot."
-SIRE PHILIPPE D1 A2,,Vous n'avez pas l'air de beaucoup m'apprécier. Pourquoi me moquerais-je de vous ?
+SIRE PHILIPPE D1,"Are you mocking me, %n ?","Etes vous en train de vous moquer de moi, %n ?"
+SIRE PHILIPPE D1 A1,"Surely I must appear odd to you tonight sir, but it matters not. You look like I should give you an information, so here it is: I have the name of the main conspirator.","Je dois vous paraître bien étrange ce soir, messire, mais peu importe. Vous semblez attendre de moi une information, et la voici. J'ai le nom de celui qui est à la tête du complot."
+SIRE PHILIPPE D1 A2,"You already look like you don't hold me dear to your heart, why would I mock you?",Vous n'avez pas l'air de beaucoup m'apprécier. Pourquoi me moquerais-je de vous ?
 ,,
-SIRE PHILIPPE D2,,Vous avez réussi ? Dites le moi sans plus attendre !
-SIRE PHILIPPE D2 A1,,Vitori. C'est lui l'instigateur.
-SIRE PHILIPPE D2 A2,,"Tout bien réfléchi, j'ai peut être besoin d'un peu plus de temps avant d'être sûr."
+SIRE PHILIPPE D2,Did you do it? Tell me without delay!,Vous avez réussi ? Dites le moi sans plus attendre !
+SIRE PHILIPPE D2 A1,Vitori. He is the instigator.,Vitori. C'est lui l'instigateur.
+SIRE PHILIPPE D2 A2,"All things considered, I think I need more time before I commit to anything.","Tout bien réfléchi, j'ai peut être besoin d'un peu plus de temps avant d'être sûr."
 ,,
-SIRE PHILIPPE D3,,La vermine ! Très bien. Allez voir Augurie si ce n'est déjà fait. Elle s'assurera que tout le monde soit réuni sur la Terrasse. C'est à ce moment que je donnerai l'ordre à mes hommes de se saisir des traitres.
-SIRE PHILIPPE D3 A1,,Et si certains parviennent à s'échapper ?
+SIRE PHILIPPE D3,What a scoundrel! Right. Go talk to Augurie if you haven't already. She'll make sure every one will be on the Terrace. By that time I'll give the orders to seize those traitors.,La vermine ! Très bien. Allez voir Augurie si ce n'est déjà fait. Elle s'assurera que tout le monde soit réuni sur la Terrasse. C'est à ce moment que je donnerai l'ordre à mes hommes de se saisir des traitres.
+SIRE PHILIPPE D3 A1,What if some manage to escape?,Et si certains parviennent à s'échapper ?
 ,,
-SIRE PHILIPPE D4,,"Leur tête pensante tranchée, le complot s'effondrera de lui même. Bon travail. Je dois avouer que j'avais tort de ne pas vous faire confiance."
-SIRE PHILIPPE D4 A1,,"J'ai moi même toutes les difficultés à me faire confiance, ce soir... Je... Je vais tenter de noyer mes maux de têtes à l'intérieur."
+SIRE PHILIPPE D4,"Once the head is cut off, the whole plot will fall apart. Good work. I admit I was wrong not to trust you. ","Leur tête pensante tranchée, le complot s'effondrera de lui même. Bon travail. Je dois avouer que j'avais tort de ne pas vous faire confiance."
+SIRE PHILIPPE D4 A1,I find it hard to even trust myself tonight... I... I'll try to drown my headaches inside.,"J'ai moi même toutes les difficultés à me faire confiance, ce soir... Je... Je vais tenter de noyer mes maux de têtes à l'intérieur."
 ,,
-SIRE PHILIPPE D5,,Rien qui ne vous concerne. Bonne soirée.
-SIRE PHILIPPE D5 A1,,Je vois...
+SIRE PHILIPPE D5,Nothing of your concern. Good night.,Rien qui ne vous concerne. Bonne soirée.
+SIRE PHILIPPE D5 A1,I see...,Je vois...
 ,,
-SIRE PHILIPPE D6,,"Vous savez très bien qui je suis, et pour cause : je vous ai mis en garde il a juste quelques heures de cela."
-SIRE PHILIPPE D6 A1,,En garde ? Mais à quel sujet ?
+SIRE PHILIPPE D6,You know very well who I am. I personally warned you a few hours ago.,"Vous savez très bien qui je suis, et pour cause : je vous ai mis en garde il a juste quelques heures de cela."
+SIRE PHILIPPE D6 A1,Warned me? About what?,En garde ? Mais à quel sujet ?
 ,,
-SIRE PHILIPPE D7,,"Au sujet de votre incessante et suspecte habitude de tourner autour du Duc. Ne vous méprenez pas : je vous ai à l'oeil au même titre que les complotistes, l'affection que semble vous porter le Duc n'y changera rien."
-SIRE PHILIPPE D7 A1,,Ce que j'ai à vous dire dissipera peut être vos soupçons... Je sais qui orchestre le complot.
+SIRE PHILIPPE D7,"It is highly dubious that you spend so much time around the Duke. Be careful, I am keeping an eye on you, the same way I am keeping an eye on our local plotters. And the fact that the Duke seems to like you won't change a thing.","Au sujet de votre incessante et suspecte habitude de tourner autour du Duc. Ne vous méprenez pas : je vous ai à l'oeil au même titre que les complotistes, l'affection que semble vous porter le Duc n'y changera rien."
+SIRE PHILIPPE D7 A1,I may have something to help easing your mind about my intentions. I happen to know who is behind the scheme.,Ce que j'ai à vous dire dissipera peut être vos soupçons... Je sais qui orchestre le complot.
 ,,
-SIRE PHILIPPE D8,,Eh bien oui. En quoi cela vous intéresse t-il ?
-SIRE PHILIPPE D8 A1,,J'ai eu un parent autrefois qui prenait ce genre de traitement.
-SIRE PHILIPPE D8 A2,,"Simple curiosité, la bonne soirée, messire."
+SIRE PHILIPPE D8,"Well, yes. Why are you interested?",Eh bien oui. En quoi cela vous intéresse t-il ?
+SIRE PHILIPPE D8 A1,One of my kin once took that kind of medicine.,J'ai eu un parent autrefois qui prenait ce genre de traitement.
+SIRE PHILIPPE D8 A2,I was just being curious. Have a good evening Sir.,"Simple curiosité, la bonne soirée, messire."
 ,,
-SIRE PHILIPPE D9,,"""Autrefois"" ? Que lui est-il arrivé ?"
-SIRE PHILIPPE D9 A1,,"L'apothicaire lui avait prescrit ce genre de traitement, et lui avait ordonné beaucoup de repos. La Goutte. Cette maladie ne pardonne pas."
+SIRE PHILIPPE D9,"""Once""? What happened?","""Autrefois"" ? Que lui est-il arrivé ?"
+SIRE PHILIPPE D9 A1,"The local apothecary prescribed him this kind of medicine, along with a lot of rest. Gout. This sickness is terrible.","L'apothicaire lui avait prescrit ce genre de traitement, et lui avait ordonné beaucoup de repos. La Goutte. Cette maladie ne pardonne pas."
 ,,
-SIRE PHILIPPE D10,,"La Goutte vous dites ? Oui, mon médecin aussi m'a déconseillé de veiller. Mais je..."
-SIRE PHILIPPE D10 A1,,"Le pauvre n'a pas tenu l'hiver, il était militaire. Ah, comme ce vieil oncle me manque, aujourd'hui. Vous devriez prendre soin de vous, Messire."
+SIRE PHILIPPE D10,"Gout, you say? Yes, my doctor also told me not to age. But, you...","La Goutte vous dites ? Oui, mon médecin aussi m'a déconseillé de veiller. Mais je..."
+SIRE PHILIPPE D10 A1,"Poor him! He faded during the winter that year. He was a military man, see? Ah... I miss this uncle of mine. You should take care of yourself, Sir.","Le pauvre n'a pas tenu l'hiver, il était militaire. Ah, comme ce vieil oncle me manque, aujourd'hui. Vous devriez prendre soin de vous, Messire."
 ,,
-SIRE PHILIPPE D11,,"Eh bien.. M..merci. Je ne me sens pas très bien... Pardonnez moi, je vais aller m'allonger à l'intérieur quelques moments."
-SIRE PHILIPPE D11 A1,,"Oh, faites, faites !"
+SIRE PHILIPPE D11,"Eh... Well... Thank you. I don't know... Forgive me, I will come inside and rest for a while.","Eh bien.. M..merci. Je ne me sens pas très bien... Pardonnez moi, je vais aller m'allonger à l'intérieur quelques moments."
+SIRE PHILIPPE D11 A1,"Oh please, do!","Oh, faites, faites !"
 ,,
-SIRE PHILIPPE D12,,"Porca puttana ! Mais faites attention ! Oh grands Dieux, elle est fichue !"
-SIRE PHILIPPE D12 A1,,"Oh, seigneur, je suis confus !"
-SIRE PHILIPPE D12 A2,,Oups.
+SIRE PHILIPPE D12,"Porca puttana! Can't you look at what you're doing? Gods, it had it!","Porca puttana ! Mais faites attention ! Oh grands Dieux, elle est fichue !"
+SIRE PHILIPPE D12 A1,"My lord, I'm so embarassed!","Oh, seigneur, je suis confus !"
+SIRE PHILIPPE D12 A2,Oops.,Oups.
 ,,
-SIRE PHILIPPE D13,,"Vous ?! Que vous l'ayez faite tomber intentionnellement ne m'étonnerait guère. J'ignore à quoi vous jouez, mais laissez moi vous dire que sitôt que je serai revenu, je serai sur vous comme la misère sur cette ville ! [i]Sort[/i]"
-SIRE PHILIPPE D13 A1,,"Mmh, Ce Sire Philippe donnait l'impression de me connaître. J'imagine qu'à son retour, il sera trop tard pour lui poser des questions..."
+SIRE PHILIPPE D13,"You! I wouldn't be surprised if you did it on purpose. I have no idea about what you're doing here, but as soon as I am back here, I will be with you like two peas in a pod![i]He goes out.[/i]","Vous ?! Que vous l'ayez faite tomber intentionnellement ne m'étonnerait guère. J'ignore à quoi vous jouez, mais laissez moi vous dire que sitôt que je serai revenu, je serai sur vous comme la misère sur cette ville ! [i]Il sort.[/i]"
+SIRE PHILIPPE D13 A1,That Sir Philip seems to know me. I guess now is too late to ask him any question.,"Mmh, Ce Sire Philippe donnait l'impression de me connaître. J'imagine qu'à son retour, il sera trop tard pour lui poser des questions..."
 ,,
-SIRE PHILIPPE D14,,"Par tous les Dieux, vous disiez vrai, Comtesse ! %n a fini par rallier la cause des parjures, il a assassiné le Duc ! Garde ! Tuez ce traître !"
-SIRE PHILIPPE D14 A1,,Pu... Pulcino ?
+SIRE PHILIPPE D14,"Heavens above! You were saying the truth, Countess! %n is now with the plotists and murdered the Duke! Guards! Kill this traitor!","Par tous les Dieux, vous disiez vrai, Comtesse ! %n a fini par rallier la cause des parjures, il a assassiné le Duc ! Garde ! Tuez ce traître !"
+SIRE PHILIPPE D14 A1,Pu... Pulcino?,Pu... Pulcino ?
 ,,
 ,,
 ,,
 ,,
-VITORI DEFAULT,TODO,Mon pauvre ami ! Je viens de vous voir sauvagemment agressé par ce malandrin ! Il a manqué de vous fracasser le crâne !
-VITORI DEFAULT A1,TODO,... Que.. comment ?
-VITORI DEFAULT A2,TODO,Ourgh... mon crâne...
+VITORI DEFAULT,"My dear friend! I just saw you being assaulted by this miscreant. He almost cracked your skull, didn't he?",Mon pauvre ami ! Je viens de vous voir sauvagemment agressé par ce malandrin ! Il a manqué de vous fracasser le crâne !
+VITORI DEFAULT A1,... Wh... what?,... Que.. comment ?
+VITORI DEFAULT A2,Ugh... my head...,Ourgh... mon crâne...
 ,,
-VITORI D1,TODO,"Et ce garde, qui reste là sans agir ! Ah ! les voilà bien plus réactifs dès lors qu'il s'agit d'aller parader devant de jeunes godelurettes !"
-VITORI D1 A1,TODO,"Argh... par pitié, qui que vous soyez, parlez moins fort !"
+VITORI D1,"Look at this guard! Standing there, doing nothing! They are far more interested in strutting in front of young ingénues!","Et ce garde, qui reste là sans agir ! Ah ! les voilà bien plus réactifs dès lors qu'il s'agit d'aller parader devant de jeunes godelurettes !"
+VITORI D1 A1,"Arh... please, whoever you may be, speak lower!","Argh... par pitié, qui que vous soyez, parlez moins fort !"
 ,,
-VITORI D2,TODO,"Comment ça, qui suis-je ?! Vous ne vous souvenez plus de votre bon ami Vitori ?! Se pourrait-il que votre mémoire souffre de votre blessure ? Vous souvenez vous au moins de votre nom ?"
-VITORI D2 A1,TODO,//////// $i
+VITORI D2,"Who am I? Are you unable to remember your good friend Vitori? Is it possible that your memory would have been affected by your recent injury? Can you, at the very least, remember your name?","Comment ça, qui suis-je ?! Vous ne vous souvenez plus de votre bon ami Vitori ?! Se pourrait-il que votre mémoire souffre de votre blessure ? Vous souvenez vous au moins de votre nom ?"
+VITORI D2 A1,$i,//////// $i
 ,,
-VITORI D3,TODO,"A la bonne heure ! Allons, debout ! Ce n'est pas le soir pour chanceler, vous avez du pain sur la planche. Que vous a pris ce voleur de malheur ?"
-VITORI D3 A1,TODO,Ma dague. Elle a disparu. Et mon somnifère avec... Il a dû le confondre avec ma bourse.
-VITORI D3 A2,TODO,"Ce qui avait le plus de valeur, ma dague et mon or."
+VITORI D3,"Good! Stand up, now! Tonight is not a good night to falter; there is much work to be done. What did this wicked thief stole from you?","A la bonne heure ! Allons, debout ! Ce n'est pas le soir pour chanceler, vous avez du pain sur la planche. Que vous a pris ce voleur de malheur ?"
+VITORI D3 A1,"My dagger. It is missing, along with my sleep powder... He must have mistaken it for my purse.",Ma dague. Elle a disparu. Et mon somnifère avec... Il a dû le confondre avec ma bourse.
+VITORI D3 A2,What was the most precious. My dagger and my purse.,"Ce qui avait le plus de valeur, ma dague et mon or."
 ,,
-VITORI D4,TODO,"Fâcheux, mais l'essentiel est que vous alliez bien. Bien, je n'ai pas eu le temps lors de notre dernière réunion de m'entretenir en privé avec vous, mais voici ce que je sais et qui pourrait vous être utile..."
-VITORI D4 A1,TODO,Je... j'ai bien peur d'avoir l'esprit un peu confus pour le moment.
+VITORI D4,"Unpleasant, but still, you seem fine. Which is the most important for us. Listen, I did not manage to speak to you privately during our last meeting, but here is what I know and could be of some use to you.","Fâcheux, mais l'essentiel est que vous alliez bien. Bien, je n'ai pas eu le temps lors de notre dernière réunion de m'entretenir en privé avec vous, mais voici ce que je sais et qui pourrait vous être utile..."
+VITORI D4 A1,I... I am afraid I am a bit confused right now.,Je... j'ai bien peur d'avoir l'esprit un peu confus pour le moment.
 ,,
-VITORI D5,TODO,"Je suis désolé mon ami, mais le temps presse et les invités risquent de se poser des questions s'ils nous voient discuter ensemble, vous connaissez ma réputation. Bien, Ecoutez attentivement."
-VITORI D5 A1,TODO,Je...
-VITORI D5 A2,TODO,Mais...
+VITORI D5,"I am truly sorry my friend, but we are in a rush and guests might become a bit suspicious if they happen to see us together. You know what everyone say about me. Now, listen carefully.","Je suis désolé mon ami, mais le temps presse et les invités risquent de se poser des questions s'ils nous voient discuter ensemble, vous connaissez ma réputation. Bien, Ecoutez attentivement."
+VITORI D5 A1,I...,Je...
+VITORI D5 A2,But...,Mais...
 ,,
-VITORI D6,TODO,"Votre intuition était la bonne : Strozi est bien l'amant de Dame Cesni, et je suis parvenu à le faire inviter ce soir. Vous pourriez utiliser cela pour la contraindre à enfin vous rendre la faveur qu'elle vous doit !"
-VITORI D6 A1,TODO,Comment cela...
+VITORI D6,Your intuition was a good one: Strozi actually is Dame Cesni's lover. He will be present tonight. Maybe you could use that in order to gather information!,Votre intuition était la bonne : Strozi est bien l'amant de Dame Cesni et il sera présent ce soir. Vous pourriez utiliser cela pour le contraindre à vous révéler des informations utiles !
+VITORI D6 A1,How is that...,Comment cela...
 ,,
-VITORI D7,TODO,"...Notre agent n'a réussi à empoisonner Sire Philippe que partiellement. Il sera donc des nôtres ce soir. Mais sa présence dépend de son traitement. Subtilisez-le, et nous serons débarassés de sa vigilance paranoïaque."
-VITORI D7 A1,TODO,"Attendez, j'ignore..."
+VITORI D7,"... Our agent only managed to partially poison Sir Philip. Hence his presence during this event. Nonetheless, his presence completely depends on his medicine. Make it disappear and we will be freed from his watchful eye.","...Notre agent n'a réussi à empoisonner Sire Philippe que partiellement. Il sera donc des nôtres ce soir. Mais sa présence dépend de son traitement. Subtilisez-le, et nous serons débarassés de sa vigilance paranoïaque."
+VITORI D7 A1,"Wait, I don't know...","Attendez, j'ignore..."
 ,,
-VITORI D8,TODO,"Laissez moi finir : Ruffio est parvenu à enlever l'animal de compagnie de la Comtesse Alma. Cela a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure d'utiliser ce levier."
-VITORI D8 A1,TODO,Argh... Ma tête...
+VITORI D8,Let me finish. Ruffio managed to take Countess Alma's pet away. It cost him a finger but we now have leverage on her.,"Laissez moi finir : Ruffio est parvenu à enlever l'animal de compagnie de la Comtesse Alma. Cela a coûté un doigt à Ruffio, mais nous sommes dorénavant en mesure d'utiliser ce levier."
+VITORI D8 A1,Urgh... My head...,Argh... Ma tête...
 ,,
-VITORI D9,TODO,"[i]regardant sa montre.[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
-VITORI D9 A1,TODO,Mon crâne... La douleur est à peine supportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez-vous prendre le temps de préciser tout cela ?
+VITORI D9,"[i]looking at his watch.[/i]God's wounds! I am late! My friend, are you certain you are fine? you seem so pale...","[i]regardant sa montre.[/i]La peste ! Me voilà déjà en retard ! Etes vous sûr d'aller bien, mon ami ? Vous semblez tellement pâle..."
+VITORI D9 A1,My skull hurts. The pain is unbearable! My memories are fading as I try to gather them... Could you at least take the time to explain this further?,Mon crâne... La douleur est à peine supportable ! Mes souvenirs semblent s'évaporer à mesure que je tente de les rassembler... Pourriez-vous prendre le temps de préciser tout cela ?
 ,,
-VITORI D10,TODO,"[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] Ruffio vous attendra sur la Terrasse. A tout à l'heure, mon ami.[i]Il sort[/i]"
-VITORI D10 A1,TODO,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
+VITORI D10,"[i]worried.[/i]I will not have this leisure. Try to recover from the hit. Breath the fresh air, it will all come back to you. I commiserate with you, but we cannot postpone what is supposed to happen tonight. [i]He puts a hand on %n's shoulder.[/i] Ruffio will help you on the Patio. I will see you later, my friend.[i]He goes out[/i]","[i]Soucieux.[/i]Je ne vais pas avoir ce loisir. Prenez l'air quelques minutes, remettez vous du choc, et cela vous reviendra. Je compatis, mais nous ne pouvons pas nous permettre de remettre à plus tard ce qui va s'accomplir ce soir. [i]Il pose une main sur l'épaule de %n.[/i] Ruffio vous attendra sur la Terrasse. A tout à l'heure, mon ami.[i]Il sort[/i]"
+VITORI D10 A1,Here I am. Half dead and responsible for something I do not know anything about. This evening the stars are laughing at me. Baste! I am willing to bet that a glass of wine will do wonders on my memory.,"Me voilà à demi gisant et chargé d'une mission dont j'ignore les détails, affublée d'une mémoire chancelante. Ce soir les étoiles semblent se rire de moi, et elles ont de quoi. Baste ! Gageons qu'une coupe de vin m'aidera à me remettre les idées en place."
 ,,
-VITORI SCENE2DEFAULT,TODO,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?"
-VITORI SCENE2DEFAULT A1,TODO,"Mes souvenirs s'acharnent à rester flous. Dites moi, Vitori, auriez vous l'obligeance de me rappeler qui est à l'initiative du plan de ce soir ?"
-VITORI SCENE2DEFAULT A2,TODO,"Pas tout à fait. A vrai dire, j'ai bien l'impression que mon mal empire... Je ne vous ennuie pas plus."
+VITORI SCENE2DEFAULT,Ah! My friend! Are you feeling any better?,"Ah, mon ami ! Vous êtes vous remis de vos émotions ?"
+VITORI SCENE2DEFAULT A1,"My memories are still fuzzy. Tell me, Vitori, who planned tonight mission?","Mes souvenirs s'acharnent à rester flous. Dites moi, Vitori, auriez vous l'obligeance de me rappeler qui est à l'initiative du plan de ce soir ?"
+VITORI SCENE2DEFAULT A2,"Not quite. It seems to be worst, actually... I will leave you to it.","Pas tout à fait. A vrai dire, j'ai bien l'impression que mon mal empire... Je ne vous ennuie pas plus."
 ,,
 ,,
-VITORI D11,TODO,"[i]riant aux éclats.[/i] A l'initiative du plan ? Allons, vous vous moquez ? Allez donc prendre un verre, cela vous fera le plus grand bien, et vous évitera de parler de si grave sujet en public !"
-VITORI D11 A1,TODO,Vous avez surement raison...
+VITORI D11,"[i]laughing out loud.[/i]Who planned it? Surely you jest? Go and get a drink, it can only do you some good and prevent you to talk about such serious matters in public!","[i]riant aux éclats.[/i] A l'initiative du plan ? Allons, vous vous moquez ? Allez donc prendre un verre, cela vous fera le plus grand bien, et vous évitera de parler de si grave sujet en public !"
+VITORI D11 A1,You are probably right...,Vous avez surement raison...
 ,,
 ,,
 ,,
@@ -217,200 +228,201 @@ VITORI D11 A1,TODO,Vous avez surement raison...
 ,,
 ,,
 ,,
-GUARD DEFAULT,TODO,"Bonsoir Messire, votre invitation je vous prie."
-GUARD DEFAULT A1,TODO,Invitation ?
-GUARD DEFAULT UNIQUE A1,TODO,Je n'en possède pas.
+GUARD DEFAULT,"Good evening Sir, may I see your invitation please?","Bonsoir Messire, votre invitation je vous prie."
+GUARD DEFAULT A1,Invitation?,Invitation ?
+GUARD DEFAULT UNIQUE A1,I do not have one.,Je n'en possède pas.
 ,,
-GUARD D1,TODO,"C’est une réception privée, messire. Les invités doivent posséder une invitation pour passer ces portes."
-GUARD D1 A1,TODO,J'ai dû me faire voler la mienne il y a une minute de cela !
-GUARD UNIQUE A2,TODO,[i]mentant.[/i] Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
+GUARD D1,"This is a private reception, Sir. Guests must posess an invitation in order to pass these gates.","C’est une réception privée, messire. Les invités doivent posséder une invitation pour passer ces portes."
+GUARD D1 A1,Mine must have been stolen just a minute ago!,J'ai dû me faire voler la mienne il y a une minute de cela !
+GUARD UNIQUE A2,[i]lying.[/i]I do not need one. Do you think I am stupid enough to come here without  being absolutely certain about my abilities to get it?,[i]mentant.[/i] Je n'en ai pas l'utilité. Vous me croyez assez stupide pour me présenter devant vous sans l'assurance de pouvoir rentrer ?
 ,,
-GUARD D2,TODO,"Je suis désolé Messire, mais les instructions du Duc sont très claires. Personne ne passe ces portes sans une invitation."
-GUARD D2 A1,TODO,"[color=green]Allons, je suis sûr que nous pourrions nous arranger autrement.[/color][i]Il agite une bourse devant le garde.[/i]"
-GUARD D2 A2,TODO,"Mais vous étiez là, vous avez assisté à mon aggression !"
-GUARD UNIQUE A3,TODO,"Savez vous au moins qui je suis, pour oser me parler de la sorte ?"
-GUARD D2 A4,TODO,"[color=#4169E1]Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte ?[/color]"
+GUARD D2,"I am sorry Sir, but the Duke explicitely requested that no one pass through these gates without an invitation.","Je suis désolé Messire, mais les instructions du Duc sont très claires. Personne ne passe ces portes sans une invitation."
+GUARD D2 A1,I am sure we can find an arrangment.[i]He waves a pouch in front of the guard.[/i],"Allons, je suis sûr que nous pourrions nous arranger autrement.[i]Il agite une bourse devant le garde.[/i]"
+GUARD D2 A2,But you were here! You saw someone mugged me!,"Mais vous étiez là, vous avez assisté à mon aggression !"
+GUARD UNIQUE A3,Do you even know who I am? You should not be speaking to me this way!,"Savez vous au moins qui je suis, pour oser me parler de la sorte ?"
+GUARD D2 A4,"Yes, yes I know. Will it prevent you from sharing that bottle with me? Since we both have to wait outside.","Oui, oui, je sais. Cela vous empêche t-il pour autant de partager cette bouteille avec moi, entre pauvres ères mis à la porte ?"
 ,,
-GUARD D3,TODO,"C’est très généreux de votre part Messire. Merci… Mais sans invitation, je ne peux vous faire rentrer."
-GUARD D3 A1,TODO,"Je vois. C'est dommage, cette bourse vous aurait permis de vous offrir quelque bon temps."
-GUARD D3 A2,TODO,"Incroyable d'être borné à ce point. Bien, rendez moi ma bourse."
+GUARD D3,"This is really generous of you, Sir. Thank you. Now, I still cannot let you in without an invitation.","C’est très généreux de votre part Messire. Merci… Mais sans invitation, je ne peux vous faire rentrer."
+GUARD D3 A1,"I see. It is a shame, this purse could have bought you some quality time.","Je vois. C'est dommage, cette bourse vous aurait permis de vous offrir quelque bon temps."
+GUARD D3 A2,You are unbelievably narrow-minded. Now give me my pouch back.,"Incroyable d'être borné à ce point. Bien, rendez moi ma bourse."
 ,,
-GUARD D4,TODO,"Je ne vois pas de quelle bourse vous voulez parler, Messire."
-GUARD D4 A1,TODO,Qu... Comment ?! Mmh... Je vois.
+GUARD D4,"I do not know what pouch you are talking about, Sir.","Je ne vois pas de quelle bourse vous voulez parler, Messire."
+GUARD D4 A1,W... What ? Mh... I see.,Qu... Comment ?! Mmh... Je vois.
 ,,
-GUARD D5,TODO,"Ce qu'il se passe dans la rue ne me regarde pas, messire."
-GUARD D5 A1,TODO,"C'est un scandale ! Je reviendrai, nous n'en avons pas terminé, vous et moi."
-GUARD D5 A2,TODO,Je suis sûr que quelques florins pourraient changer cet état de fait.
-GUARD D5 A3,TODO,"Je passe, que vous le vouliez ou non !"
+GUARD D5,"I am not concerned by what happens in the street, Sir.","Ce qu'il se passe dans la rue ne me regarde pas, messire."
+GUARD D5 A1,"This is outrageous ! I will be back, this is not over.","C'est un scandale ! Je reviendrai, nous n'en avons pas terminé, vous et moi."
+GUARD D5 A2,I am sure some florins could change that fact.,Je suis sûr que quelques florins pourraient changer cet état de fait.
+GUARD D5 A3,"I'm going in, whether you like it or not !","Je passe, que vous le vouliez ou non !"
 ,,
-GUARD D6,TODO,"Messire, ne m'obligez pas à user de force."
-GUARD D6 A1,TODO,J'aimerai voir ça ! [i]Il force le passage.[/i]
-GUARD D6 A2,TODO,"Très bien, très bien ! Nous n'aurons pas besoin d'en arriver là."
+GUARD D6,"Sir, do not make me hurt you.","Messire, ne m'obligez pas à user de force."
+GUARD D6 A1,I'd like to see that ![i]He muscles in.[/i],J'aimerai voir ça ![i]Il force le passage.[/i]
+GUARD D6 A2,"All right, all right ! It does not have to come to this.","Très bien, très bien ! Nous n'aurons pas besoin d'en arriver là."
 ,,
-GUARD D7,TODO,[i]sèchement.[/i]Je vous déconseille de recommencer ceci.
-GUARD D7 A1,TODO,Mmfh ! Nous n'en resterons pas là !
-GUARD D7 A2,TODO,"Je rentrerai, que vous le vouliez ou non !"
+GUARD D7,[i]curtly.[/i]I would advise against doing something like this again.,[i]sèchement.[/i]Je vous déconseille de recommencer ceci.
+GUARD D7 A1,Mmfh ! I will not have it !,Mmfh ! Nous n'en resterons pas là !
+GUARD D7 A2,I am going to enter in here. Whether you like it or not !,"Je rentrerai, que vous le vouliez ou non !"
 ,,
-GUARD D8,TODO,"Je l'ignore, mais sans invita. . ."
-GUARD D8 A1,TODO,"[i]Il sort une lettre et l'agite devant le visage du garde.[/i][color=#4169E1]Je suis le Duc Lorenzo Da Costa, amant et confident de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence ![/color]"
-GUARD D8 A2,TODO,"Je fais parti des musiciens, triple buse ! Vous m'avez vu rentrer il y a à peine une heure de cela !"
-GUARD D8 A3,TODO,"Je ne suis rien de moins que celui qui ait organisé cette réception. Maintenant, si vous permettez. . ."
+GUARD D8,"I do not know, but without an invita...","Je l'ignore, mais sans invita..."
+GUARD D8 A1,"[i]getting a letter out and waving it under the guard's nose.[/i]I am the Duke Lorenzo Da Costa, lover and confident of this house mistress. Now, get out of my way before I tell her everything about your ineptitude !","[i]sortant une lette, il l'agite devant le visage du garde.[/i]Je suis le Duc Lorenzo Da Costa, amant et confidant de la maîtresse de maison, maintenant ôtez vous de mon chemin avant que je ne l'informe de votre incompétence !"
+GUARD D8 A2,"I am with the musicians, you prize idiot ! You saw me coming in about an hour ago !","Je fais parti des musiciens, triple buse ! Vous m'avez vu rentrer il y a à peine une heure de cela !"
+GUARD D8 A3,"I am nothing short of the instigator of this reception. Now, if I may pass...","Je ne suis rien de moins que celui qui ait organisé cette réception. Maintenant, si vous permettez..."
 ,,
-GUARD D9,TODO,"Vous n'êtes pas le premier nobliau a tenter de rentrer dans la demeure du duc. Maintenant déguerpissez, avant que je ne termine ce que ce voleur a commencé."
-GUARD D9 A1,TODO,Je n'ai pas dit mon dernier mot.
+GUARD D9,"You are not the first lace curtain trying to enter the Duke's house. Now, scarper before I finish what this thug began.","Vous n'êtes pas le premier nobliaud a tenter de rentrer dans la demeure du duc. Maintenant déguerpissez, avant que je ne termine ce que ce voleur a commencé."
+GUARD D9 A1,This is not over yet.,Je n'ai pas dit mon dernier mot.
 ,,
-GUARD D10,TODO,"Je... veuillez m'excuser, un moment d'inattention, sûrement. Passez une excellente soirée."
-GUARD D10 A1,TODO,A la bonne heure !
+GUARD D10,I... please excuse me. I got lost for a moment. Have a nice evening !,"Je... veuillez m'excuser, un moment d'inattention, sûrement. Passez une excellente soirée."
+GUARD D10 A1,Thank goodness !,A la bonne heure !
 ,,
-GUARD D11,TODO,Vous ne devriez pas abuser de ma patien... bons dieux cette bouteille est plus vieille que moi !
-GUARD D11 A1,TODO,"Ahaha, alors à la votre !"
+GUARD D11,You should not try my patien... good gods ! This bottle is older than me!,Vous ne devriez pas abuser de ma patien... bons dieux cette bouteille est plus vieille que moi !
+GUARD D11 A1,"Haha, cheers!","Ahaha, alors à la votre !"
 ,,
-GUARD D12,TODO,Mmh... J'aurai cru qu'elle aurait... qu'elle aurait meilleur... G... goût... [i]Il s'effondre.[/i]
-GUARD D12 A1,TODO,Efficace. J'espère tout de même que cette poudre n'était qu'un simple somnifère.
+GUARD D12,Mmh... I thought it would... taste... better.[i]He falls.[/i],Mmh... J'aurai cru qu'elle aurait... qu'elle aurait meilleur... G... goût... [i]Il s'effondre.[/i]
+GUARD D12 A1,"Potent. I do hope this powder was a sleeping one, though.",Efficace. J'espère tout de même que cette poudre n'était qu'un simple somnifère.
 ,,
-GUARD HAS GOLDPOUCH,TODO,"Bonsoir Messire, votre invitation je vous prie."
-GUARD HAS GOLDPOUCH A1,TODO,Invitation ?
-GUARD HAS GOLDPOUCH A2,TODO,"Est ce vraiment ce que vous espériez devenir ? Un automate écervelé, à la solde du maître le plus offrant ?"
-GUARD HAS GOLDPOUCH A3,TODO,"Ecoutez moi bien, si vous ne me rendez pas mon dû dans la minute, vous vous exposez à de graves conséquences !"
+GUARD HAS GOLDPOUCH,"Good evening, Sir. Can I see you invitation, please?","Bonsoir Messire, votre invitation je vous prie."
+GUARD HAS GOLDPOUCH A1,Invitation ?,Invitation ?
+GUARD HAS GOLDPOUCH A2,Is this really what you are hoping to become ? An empty-headed automaton in the highest bidder pay's?,"Est ce vraiment ce que vous espériez devenir ? Un automate écervelé, à la solde du maître le plus offrant ?"
+GUARD HAS GOLDPOUCH A3,"Listen to me carrefully. If you do not restitute my property this second, you will face terrible consequences.","Ecoutez moi bien, si vous ne me rendez pas mon dû dans la minute, vous vous exposerez à de graves conséquences !"
 ,,
-GUARD D13,TODO,Que voulez-vous dire ?
-GUARD D13 A3,TODO,Je... Je n'hésiterai pas à en référer à votre supérieur une fois que je serai à intérieur ! Car croyez-moi : je rentrerai !
-GUARD D13 A1,TODO,[color=red]Ce genre de conséquences ![/color][i]Il lui abbat la bouteille sur le crâne[/i]
-GUARD D13 A2,TODO,"[color=red]Je n'ai pas de temps à perdre ce soir, navré.[/color][i]Il se jete sur le garde et le poignarde.[/i]"
+GUARD D13,What do you mean?,Que voulez-vous dire ?
+GUARD D13 A3,I... I will refer it to your commanding officer as soon as I will be able to enter! Believe me : I will!,Je... Je n'hésiterai pas à en référer à votre supérieur une fois que je serai à intérieur ! Car croyez-moi : je rentrerai !
+GUARD D13 A1,This kind of consequences ![i]He slams the bottle on the guard's head.[/i],Ce genre de conséquences ![i]Il abbat la bouteille sur le crâne du garde.[/i]
+GUARD D13 A2,I cannot waste my time tonight. Sorry.[i]He rushes to the guard and stabs him.[/i],"Je n'ai pas de temps à perdre ce soir, navré.[i]Il se jete sur le garde et le poignarde.[/i]"
 ,,
-GUARD D14,TODO,"Ou bien je pourrai enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses..."
-GUARD D14 A1,TODO,"Qu... Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
-GUARD D14 A2,TODO,"Je connais Misty. Croyez moi mon brave, elle vaut jusqu'au moindre florin. Mais elle est souvent occupée... Vous feriez mieux de ne pas trainer !"
+GUARD D14,Maybe I could eventually pay for misty. She is a new girl at the Wandering Hands inn...,"Ou bien je pourrais enfin me payer Misty. C'est une nouvelle, à l'auberge des Mains Balladeuses..."
+GUARD D14 A1,"Wha... Yes, of course ! This is worth a small infringement, right ?
+","Qu... Oui, tout à fait ! Cela vaut bien une légère entorse au réglement, vous ne croyez pas ?"
+GUARD D14 A2,"I know Misty. Believe me my good man, she is worth every florin. But she is also busy quite often... You should hurry!","Je connais Misty. Croyez moi mon brave, elle vaut jusqu'au moindre florin. Mais elle est souvent occupée... Vous feriez mieux de ne pas trainer !"
 ,,
-GUARD D15,TODO,"Mmh... Soit. Mais ne dites rien au capitaine. Ou je saurai vous retrouver en dehors du service, tout messire que vous êtes !"
-GUARD D15 A1,TODO,Comptez sur mon silence.
-GUARD D15 A2,TODO,"Evidemment. Inutile, je présume, de vous souhaiter une bonne soirée."
+GUARD D15,"Mmh... So be it. But do not say anything to the captain or I will find you, all sir-ish you might be!","Mmh... Soit. Mais ne dites rien au capitaine. Ou je saurai vous retrouver en dehors du service, tout messire que vous êtes !"
+GUARD D15 A1,I would not say a word.,Comptez sur mon silence.
+GUARD D15 A2,"Of course. You will, I presume, have a good evening no matter what.","Evidemment. Inutile, je présume, de vous souhaiter une bonne soirée."
 ,,
-GUARD D13-2,TODO,Que voulez-vous dire ?
-GUARD D13-2 A1,TODO,"Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
+GUARD D13-2,What do you mean?,Que voulez-vous dire ?
+GUARD D13-2 A1,"Open your eyes, my good man, your life if worth better than this! This pouch might be what you were waiting for, to pursue your dreams, to fulfill you family's desires!","Ouvrez les yeux mon brave, votre vie vaut mieux que çela ! Cette bourse peut être l'occasion pour vous de vivre vos rêves, de combler votre famille !"
 ,,
-PISSED GUARD D1,TODO,Encore vous ?
-PISSED GUARD D1 A1,TODO,"Ecoutez, je pense que nous sommes tous deux partis du mauvais pied. N'y a t-il pas un moyen de..."
-PISSED GUARD D1 A2,TODO,Je vous laisse encore une dernière chance de me laisser passer.
-PISSED GUARD D1 A3,TODO,N'y a t-il aucun moyen de vous faire entendre raison ?
+PISSED GUARD D1,You again?,Encore vous ?
+PISSED GUARD D1 A1,"Listen, I think we started off on the wrong foot. Could we...","Ecoutez, je pense que nous sommes tous deux partis du mauvais pied. N'y a t-il pas un moyen de..."
+PISSED GUARD D1 A2,This is your last chance to let me through.,Je vous laisse encore une dernière chance de me laisser passer.
+PISSED GUARD D1 A3,Is there any way to make you listen to reason?,N'y a t-il aucun moyen de vous faire entendre raison ?
 ,,
-GUARD D16,TODO,Hors de ma vue !
-GUARD D16 A1,TODO,[color=red]Je vous aurai prévenu.[/color][i]Il se jette sur le garde et le poignarde.[/i]
-GUARD D16 A2,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
-GUARD D16 A3,TODO,[color=red]Il est dommage d'en arriver là.[/color][i]Il lui fracasse la bouteille sur le crâne.[/i]
-GUARD D16 A4,TODO,"Là, voyez ! Nul besoin d'hurler, je m'en vais."
+GUARD D16,Out of my sight!,Hors de ma vue !
+GUARD D16 A1,I warned you.[i]He rushes to the guard and stabs him.[/i],Je vous aurai prévenu.[i]Il se jette sur le garde et le poignarde.[/i]
+GUARD D16 A2,It is a shame that I have to resort to such means.[i]He smashes the bottle on the guard's head.[/i],Il est dommage d'en arriver là.[i]Il fracasse la bouteille sur le crâne du garde.[/i]
+GUARD D16 A3,It is a shame that I have to resort to such means.[i]He smashes the bottle on the guard's head.[/i],Il est dommage d'en arriver là.[i]Il fracasse la bouteille sur le crâne du garde.[/i]
+GUARD D16 A4,"Here, see. No need to yell, I'm going.","Là, voyez ! Nul besoin d'hurler, je m'en vais."
 ,,
-GUARD D17,TODO,J'ai bien peur que ma patience ait atteint ses limites. Hors de ma vue !
-GUARD D17 A1,TODO,"Très bien, très bien !"
+GUARD D17,I am afraid I am out of patience. Get out of my sight!,J'ai bien peur que ma patience ait atteint ses limites. Hors de ma vue !
+GUARD D17 A1,"All right, all right!","Très bien, très bien !"
 ,,
 ,,
 ,,
 ,,
-ALMA DEFAULT,TODO,"[i]anxieuse.[/i] Bon... bonsoir Messire. Je vous prie de m'excusez, je ne me sens pas d'humeur à entretenir la conversation."
-ALMA DEFAULT A1,TODO,Vous n'avez pas l'air de beaucoup vous amuser... Un problème ?
-ALMA DEFAULT A2,TODO,"Je ne vous importune pas plus longtemps alors, bonne soirée."
+ALMA DEFAULT,"[i]nervous.[/i] G... Good night sir. Please forgive me, I am not in the mood for entertaining a conversation.","[i]anxieuse.[/i] Bon... bonsoir Messire. Je vous prie de m'excusez, je ne me sens pas d'humeur à entretenir la conversation."
+ALMA DEFAULT A1,You don't look like you are having much fun... Is something the matter?,Vous n'avez pas l'air de beaucoup vous amuser... Un problème ?
+ALMA DEFAULT A2,"I won't bother you any longer, then. Have a good night.","Je ne vous importune pas plus longtemps alors, bonne soirée."
 ,,
-ALMA D1,TODO,"Non, aucun. Mais si vous continuez à m'importuner, je hurle ! Et vous vous expliquerez avec Sire Philippe ! Pour votre gouverne, c'est le Capitaine de la garde, alors si j'étais vous..."
-ALMA D1 A1,TODO,Vous n'aurez pas besoin d'en arriver là. Voyez : je m'en vais !
-ALMA D1 A2,TODO,"Et moi si j'étais vous, je m'écouterais quelques minutes si vous voulez revoir votre précieuse bestiole en vie."
-ALMA D1 A3,,"Mais voyons, Comtesse... Je ne vois personne. Il n'y a que nous. Alors cessez vos menaces puériles et écoutez moi si vous tenez à votre animal."
+ALMA D1,"No... But if you keep bothering me, I'll scream! You will then have to explain yourself to Sire Philip! For your information, he the Captain of the Guards. If I were you...","Non, aucun. Mais si vous continuez à m'importuner, je hurle ! Et vous vous expliquerez avec Sire Philippe ! Pour votre gouverne, c'est le Capitaine de la garde, alors si j'étais vous..."
+ALMA D1 A1,"No need to scream. See, I'm going.",Vous n'aurez pas besoin d'en arriver là. Voyez : je m'en vais !
+ALMA D1 A2,"And if I were you, I would listen to me for a few minutes. At least, if you ever want to see your precious beast alive.","Et moi si j'étais vous, je m'écouterais quelques minutes si vous voulez revoir votre précieuse bestiole en vie."
+ALMA D1 A3,"Countess... I cannot see anyone else. There is just us. Now, cease your threats and listen to me if you want your pet to stay alive.","Mais voyons, Comtesse... Je ne vois personne. Il n'y a que nous. Alors cessez vos menaces puériles et écoutez moi si vous tenez à votre animal."
 ,,
-ALMA D2,TODO,"[i]chuchotant.[/i] Alors c'est vous le monstre qui avez enlevé Sporco ! Vous n'êtes qu'un...qu'un..! Jamais je n'accepterai de céder à vos menaces ! Et si je ne craignais pas autant pour mon pauvre Sporco, je vous aurai dénoncé au Capitaine depuis longtemps !"
-ALMA D2 A1,TODO,"Si vous croyez que cet homme puisse quoi que ce soit pour vous, vous vous trompez."
-ALMA D2 A2,TODO,"J'ai tué sans sourciller un garde un peu trop buté en rentrant, et vous croyez que c'est un vieillard qui m'empêchera de m'en prendre à vous ?"
+ALMA D2,"[i]whispering.[/i]You are the monster who abducted Sporco ! You are just a.. a... ! I will never give way to your threats ! Besides, I would not have been worried sick about Sporco, I would have informed the Captain a long time ago !","[i]chuchotant.[/i] Alors c'est vous le monstre qui avez enlevé Sporco ! Vous n'êtes qu'un...qu'un..! Jamais je n'accepterai de céder à vos menaces ! Et si je ne craignais pas autant pour mon pauvre Sporco, je vous aurai dénoncé au Capitaine depuis longtemps !"
+ALMA D2 A1,Thinking that man could help you would be a mistake.,"Si vous croyez que cet homme puisse quoi que ce soit pour vous, vous vous trompez."
+ALMA D2 A2,I killed a guard without breaking a sweat earlier this evening and you think an old man will prevent me from hurting you?,"J'ai tué sans sourciller un garde un peu trop buté en rentrant, et vous croyez que c'est un vieillard qui m'empêchera de m'en prendre à vous ?"
 ,,
-ALMA D3,TODO,"Dans ce cas, vous n'aurez rien contre le fait que je hurle à plein poumons. Si vous voulez bien m'excuser. [i]Elle fait mine de prendre une grande inspiration.[/i]"
-ALMA D3 A1,TODO,Ca suffit ! Gardez votre souffle ! Je vais revenir. Ne faites rien de stupide si vous tenez à retrouver votre animal en un seul morceau.
+ALMA D3,"In that case, you will not mind if I scream at the top of my lungs. If you will excuse me. [i]She starts taking a deep breath.[/i]","Dans ce cas, vous n'aurez rien contre le fait que je hurle à plein poumons. Si vous voulez bien m'excuser. [i]Elle fait mine de prendre une grande inspiration.[/i]"
+ALMA D3 A1,Enough! Save your breath! I will come back. Do not do anything stupid if you want your pet to remain in one piece.,Ca suffit ! Gardez votre souffle ! Je vais revenir. Ne faites rien de stupide si vous tenez à retrouver votre animal en un seul morceau.
 ,,
-ALMA D4,TODO,Je... Je ne vous crois pas !
-ALMA D4 A1,TODO,"Votre bestiole a mutilé mon ami, là bas. Il me semblerait juste de lui rendre l'appareil. Une patte, une oreille... Sa langue, peut être ?"
+ALMA D4,I... I do not believe you!,Je... Je ne vous crois pas !
+ALMA D4 A1,"Your beast crippled my friend, over there. I was thinking about doing the same to it. A paw, an ear... Maybe its tongue ?","Votre bestiole a mutilé mon ami, là bas. Il me semblerait juste de lui rendre la pareille. Une patte, une oreille... Sa langue, peut être ?"
 ,,
-ALMA NO MORE PROTECTED,TODO,"Je vous prie de m'excuser, mais je n'ai aucune envie de m'entretenir avec vous. Bonne soirée."
-ALMA NO MORE PROTECTED A1,TODO,"Nous allons discuter, maintenant. Que vous le vouliez ou non."
-ALMA NO MORE PROTECTED A2,TODO,Bonne soirée.
+ALMA NO MORE PROTECTED,"If you will excuse me, I do not want to speak with you. Have a good evening.","Je vous prie de m'excuser, mais je n'ai aucune envie de m'entretenir avec vous. Bonne soirée."
+ALMA NO MORE PROTECTED A1,You will speak to me. Now. Whether you want it or not.,"Nous allons discuter, maintenant. Que vous le vouliez ou non."
+ALMA NO MORE PROTECTED A2,Good evening.,Bonne soirée.
 ,,
-ALMA D6,TODO,Vous n'oserez pas vous en prendre à moi en présence de...
-ALMA D6 A1,TODO,"...Sire Philippe ? Le malheureux a du nous fausser compagnie. Désormais vous allez m'écouter, petite peste !"
+ALMA D6,You would not dare coming after me right next to...,Vous n'oserez pas vous en prendre à moi en présence de...
+ALMA D6 A1,"... Sir Philip ? The poor man just left. Now, you will listen to me you little brat!","...Sire Philippe ? Le malheureux a du nous fausser compagnie. Désormais vous allez m'écouter, petite peste !"
 ,,
-ALMA D7,TODO,"[i]recouvrant sa bouche de ses mains, dans un sanglot.[/i]Non..."
-ALMA D7 A1,TODO,Il me faut une arme. Mais les gardes vont fouiller les hommes avant qu'ils n'accèdent à la salle de réception en présence du Duc. Alors voici ce que vous allez faire...
+ALMA D7,[i]covering her mouth with her hands and sobbing.[/i]No...,"[i]recouvrant sa bouche de ses mains, dans un sanglot.[/i]Non..."
+ALMA D7 A1,I need a weapon. The guards are going to search every man before they can access the reception with the Duke. Here is what you are going to do...,Il me faut une arme. Mais les gardes vont fouiller les hommes avant qu'ils n'accèdent à la salle de réception en présence du Duc. Alors voici ce que vous allez faire...
 ,,
-ALMA D8,TODO,Mon pauvre Sporco... Non ! Je... Je vous écoute !
-ALMA D8 A1,TODO,"Vous allez récupérer l'arme que Ruffio vous donnera, entrer dans la salle de réception et me la remettrez une fois à l'intérieur. Est-ce clair ?"
+ALMA D8,Poor Sporco... No! I... I am listening!,Mon pauvre Sporco... Non ! Je... Je vous écoute !
+ALMA D8 A1,"You are going to take the weapon Ruffio will give you, enter in the hall and give the weapon to me once we are both inside. Is that clear?","Vous allez récupérer l'arme que Ruffio vous donnera, entrer dans la salle de réception et me la remettrez une fois à l'intérieur. Est-ce clair ?"
 ,,
-ALMA D9,TODO,Oui.. Oui mais qu'attendez vous de moi ensuite ?
-ALMA D9 A1,TODO,"Je veux que vous distrayez le Duc. Trouvez n'importe quelle raison, mais vous devrez à tout prix occuper son entière attention."
+ALMA D9,Yes... Yes but what am I supposed to do after that?,Oui.. Oui mais qu'attendez vous de moi ensuite ?
+ALMA D9 A1,"I want you to distract the Duke. Find any reason to speak to him, but I need you to fully occupy his attention.","Je veux que vous distrayez le Duc. Trouvez n'importe quelle raison, mais vous devrez à tout prix occuper son entière attention."
 ,,
-ALMA D10,TODO,Mais comment faire ? Je...
-ALMA D10 A1,TODO,"Baissez le ton ! C'est cela, ou retrouver votre Sporco en pièce, avec l'assurance qu'il aura souffert mille mort avant de rendre son dernier souffle. A vous de voir, Comtesse ! Serez-vous à la hauteur ?"
+ALMA D10,But... How do I?...,Mais comment faire ? Je...
+ALMA D10 A1,"Keep your voice down! It is either this or finding your Sporco in little pieces, knowing he suffered a thousand deaths before he took his last breath. Your call, Countess. Will you meet the expectations?","Baissez le ton ! C'est cela, ou retrouver votre Sporco en pièce, avec l'assurance qu'il aura souffert mille mort avant de rendre son dernier souffle. A vous de voir, Comtesse ! Serez-vous à la hauteur ?"
 ,,
-ALMA D11,TODO,[i]sanglotant.[/i]Oui ![i]Elle sort.[/i]
-ALMA D11 A1,TODO,"Cette violence, ces mots glacials... Ils vinrent naturellement. Mes souvenirs ont beau m'échapper, mon âme n'est pas dupe... Qui étais-je, avant ce soir ?"
+ALMA D11,[i]sobbing.[/i]Yes ![/i]She goes out[/i],[i]sanglotant.[/i]Oui ![i]Elle sort.[/i]
+ALMA D11 A1,"I was harsh! These cold words... They came to me naturally. My memories may be slipping away, but my soul knows better... Who was I before tonight?","Cette violence, ces mots glacials... Ils vinrent naturellement. Mes souvenirs ont beau m'échapper, mon âme n'est pas dupe... Qui étais-je, avant ce soir ?"
 ,,
 ,,
 ,,
 ,,
-STROZI DEFAULT,TODO,"[i]se tournant vers %n, il lève un sourcil.[/i] Bonsoir."
-STROZI DEFAULT A1,TODO,"Bien le bonsoir, messire."
+STROZI DEFAULT,[i]turning to %n and raising an eyebrow.[/i] Good evening.,"[i]se tournant vers %n, il lève un sourcil.[/i] Bonsoir."
+STROZI DEFAULT A1,"Good evening, Sir.","Bien le bonsoir, messire."
 ,,
-STROZI D1 ,TODO,"Le bonsoir, la réception est-elle à votre convenance ?"
-STROZI D1 A1,TODO,"Parfaite, je vous remercie. Est-ce vous qui l'organisez ?"
+STROZI D1 ,Is this reception pleasing enough ?,La réception est-elle à votre convenance ?
+STROZI D1 A1,"It is, thank you for asking. Are you the instigator ?","Parfaite, je vous remercie. Est-ce vous qui l'organisez ?"
 ,,
-STROZI D2,TODO,"Non, je la constate, impuissant, engloutir l'argent de la ville... [i]Il tend une main vers %n.[/i]Sire Strozi, comptable du Duc. Votre visage m'est familier, êtes vous un habitué du palais ?"
-STROZI D2 A1,TODO,A vous de me le dire. Mes maux de têtes me tuent et mes souvenirs semblent vouloir s'acharner à fuir mon esprit.
+STROZI D2,"No, I am a witness who cannot do much to prevent it from swallowing the city's money... [i]He holds out his hand.[/i] Sir Strozi, our Duke accountant. Your face seems familiar, are you one of the palace regulars ?","Non, je la constate, impuissant, engloutir l'argent de la ville... [i]Il tend une main vers %n.[/i] Sire Strozi, comptable du Duc. Votre visage m'est familier, êtes vous un habitué du palais ?"
+STROZI D2 A1,You tell me. My headhache is killing me and my memories keep slipping away from me.,A vous de me le dire. Mes maux de têtes me tuent et mes souvenirs semblent vouloir s'acharner à fuir mon esprit.
 ,,
-STROZI D3 ,TODO,"Au prix des bouteilles que vous et les autres invités engloutissez, je veux bien vous croire."
-STROZI D3 A1,TODO,"Mmh. Cela dit, le vin n'est pas la seule chose qui impacte le budget de la ville, n'est-ce pas ?"
-STROZI D3 A2,TODO,Je ferais peut-être mieux de vous laisser apprécier la soirée seul. Messire.
+STROZI D3 ,"Knowing the price tag on the bottles you and the others are guzzling, I must admit that I am not surprised.","Au prix des bouteilles que vous et les autres invités engloutissez, je veux bien vous croire."
+STROZI D3 A1,"Mh. That being said, the wine is not the only thing impacting the city's finances.","Mmh. Cela dit, le vin n'est pas la seule chose qui impacte le budget de la ville, n'est-ce pas ?"
+STROZI D3 A2,Maybe I should leave you alone. Sir.,Je ferais peut-être mieux de vous laisser apprécier la soirée seul. Messire.
 ,,
-STROZI D4,TODO,Qu'être vous en train d'insinuer ?
-STROZI D4 A1,TODO,"Allons, qui n'a jamais abusé de sa position pour se faciliter quelques conquêtes ?"
+STROZI D4,What are you insinuating ?,Qu'être vous en train d'insinuer ?
+STROZI D4 A1,"Come on, who never took advantage of his situation to ease his conquests ?","Allons, qui n'a jamais abusé de sa position pour se faciliter quelques conquêtes ?"
 ,,
-STROZI D5,TODO,"Je... C'est le Duc qui vous envoie, c'est cela ? Qu'êtes vous, son spadassin ? Je connais de dangereuses personnes, moi aussi !"
-STROZI D5 A1,TODO,Il est osé de menacer un homme tenté de révéler une si touchante histoire d'amour. Pensez-vous que le mari de Dame Cesni sera aussi touché que j'ai pu l'être ?
+STROZI D5,I... Is the Duke behind all this ? Are you his swordsman ? I happen to also know some dangerous peoples !,"Je... C'est le Duc qui vous envoie, c'est cela ? Qu'êtes vous, son spadassin ? Je connais de dangereuses personnes, moi aussi !"
+STROZI D5 A1,Are you threatening me ? I am only tempted to reveal a love story so touching. Do you think this will move Lady Cesni's husband the way it moved me ?,Il est osé de menacer un homme tenté de révéler une si touchante histoire d'amour. Pensez-vous que le mari de Dame Cesni sera aussi touché que j'ai pu l'être ?
 ,,
-STROZI D6,TODO,Je vois. A combien estimez vous votre silence ?
-STROZI D6 A1,TODO,Nous n'aurons pas à arriver à ces extrêmités. Contentez- vous de me confier ce que vous savez sur le complot qui se trame.
+STROZI D6,I see. How much for you being quiet ?,Je vois. A combien estimez vous votre silence ?
+STROZI D6 A1,We will not need to come to these extends. I just need you to tell me everything about the plot going on.,Nous n'aurons pas à arriver à ces extrêmités. Contentez- vous de me confier ce que vous savez sur le complot qui se trame.
 ,,
-STROZI D7,TODO,"Ces rumeurs ridicules ? Des bruits de couloir parlent d'anarchistes assoifés de sang lassés par la politique du Duc, et vous y accordez crédit ? Ca n'a aucun sens !"
-STROZI D7 A1,TODO,Probablement. Qui est à la tête de ce complot ?
+STROZI D7,"These ridiculous rumors ? Barely whispers in the night, talking about bloodthirsty anarchists getting tired of the Duke's policy, and you give them credit ? This is nonsense !","Ces rumeurs ridicules ? Des bruits de couloir parlent d'anarchistes assoifés de sang lassés par la politique du Duc, et vous y accordez crédit ? Ca n'a aucun sens !"
+STROZI D7 A1,Probably. Who is behind the plot ?,Probablement. Qui est à la tête de ce complot ?
 ,,
-STROZI D8,TODO,"Il n'y a PAS de complot. Mais les racontars parlent d'un jeune coq, un nobliau de basse exctraction envieux du Duc et outré de sa façon de gouverner, qu'il juge tyrannique. Et... êtes-vous sûr de vous sentir bien ?"
-STROZI D8 A1,TODO,"Je... Oui, ce n'est rien."
+STROZI D8,"There is NO plot. But the gossips are about a young man with barely enough blue blood to call himself a lace curtain, jealous of the Duke and all judgemental about his way of running things. The word is he thinks he is tyrannical and... Are you sure you are feeling okay ?","Il n'y a PAS de complot. Mais les racontars parlent d'un jeune coq, un nobliau de basse exctraction envieux du Duc et outré de sa façon de gouverner, qu'il juge tyrannique. Et... êtes-vous sûr de vous sentir bien ?"
+STROZI D8 A1,"I... Yes, this is nothing.","Je... Oui, ce n'est rien."
 ,,
-STROZI D9,TODO,"Le sang qui teinte vos cheveux semble indiquer le contraire. Bien, est-ce que cela suffira à m'assurer de votre discrétion ?"
-STROZI D9 A1,TODO,"Oui, ne vous en faites pas pour cela."
-STROZI D9 A2,TODO,"Rassurez-vous, vos cachoteries ne regardent que vous."
+STROZI D9,"The blood on your hair tells different. Well, was this enough to make sure you will keep quiet about... you know.","Le sang qui teinte vos cheveux semble indiquer le contraire. Bien, est-ce que cela suffira à m'assurer de votre discrétion ?"
+STROZI D9 A1,Yes. Do not worry about that.,"Oui, ne vous en faites pas pour cela."
+STROZI D9 A2,"Do not worry, you are the only one interested in your dirty little secrets.","Rassurez-vous, vos cachoteries ne regardent que vous."
 ,,
 ,,
-WAITER DEFAULT,TODO,Puis-je vous proposer un rafrâichissment ?
-WAITER DEFAULT A1,TODO,"Un verre, je vous prie."
-WAITER DEFAULT A2,TODO,"Non, merci."
+WAITER DEFAULT,May I offer you a refreshment ?,Puis-je vous proposer un rafrâichissment ?
+WAITER DEFAULT A1,"Yes, please.","Oui, s'il vous plaît."
+WAITER DEFAULT A2,"No, thank you.","Non, merci."
 ,,
-WAITER D1,TODO,"Tout de suite, Messire. Si je puis me permettre, Messire, vous devriez garder à l'oeil l'individu au doigt manquant. Il n'apparaît pas sur la liste des invités."
-WAITER D1 A1,TODO,Je vous demande pardon ? Nous connaissons nous ?
+WAITER D1,"Right away sir. If I may, you should keep an eye on the individual with a missing finger. He does not figure on the guest list.","Tout de suite, Messire. Si je puis me permettre, Messire, vous devriez garder à l'oeil l'individu au doigt manquant. Il n'apparaît pas sur la liste des invités."
+WAITER D1 A1,I beg your pardon? Do we know each other?,Je vous demande pardon ? Nous connaissons nous ?
 ,,
-WAITER D2,TODO,"[i]avec un clin d'oeil complice.[/i] Bien sûr que non Messire. Mais sachez que Sire Philippe attend le nom du complotiste pour nous donner le signal. Bonne soirée, messire. [i]Il sort.[/i]"
-WAITER D2 A1,TODO,Comment ? Attendez !
+WAITER D2,"[i]With a knowing wink.[/i] Of course not, good sir. But you need to know that Sir Philip is waiting for the the plotter's name before he gives us the signal. Good night sir.[i]He goes out.[/i]","[i]avec un clin d'oeil complice.[/i] Bien sûr que non Messire. Mais sachez que Sire Philippe attend le nom du complotiste pour nous donner le signal. Bonne soirée, messire. [i]Il sort.[/i]"
+WAITER D2 A1,What was that? Wait a moment!,Comment ? Attendez !
 ,,
-RUFFIO DEFAULT,TODO,"Te voilà enfin. Je t'ai vu discuter longtemps avec ce garde, je peux savoir ce que tu tramais ?"
-RUFFIO DEFAULT A1,TODO,Rien de bien important. A qui ai-je l'honneur ?
+RUFFIO DEFAULT,I didn't think you would come. I saw you talking with this guard over there. May I know what you are plotting?,"Te voilà enfin. Je t'ai vu discuter longtemps avec ce garde, je peux savoir ce que tu tramais ?"
+RUFFIO DEFAULT A1,Nothing important. Who am I talking to?,Rien de bien important. A qui ai-je l'honneur ?
 ,,
-RUFFIO D1,TODO,"Tu ne te souviens plus du bon Ruffio ? Eh bien quoi, lui voler la vedette ne t'as pas suffit ? Il faudrait en plus que tu le dépossèdes de son nom !"
-RUFFIO D1 A1,TODO,Ruffio ? Alors c'est toi qui t'es chargé d'enlever cet animal ?
+RUFFIO D1,"Do you remember good old Ruffio? Well, I guess overshadowing him wasn't enough for you, you had to steal his name!","Tu ne te souviens plus du bon Ruffio ? Eh bien quoi, lui voler la vedette ne t'as pas suffit ? Il faudrait en plus que tu le dépossèdes de son nom !"
+RUFFIO D1 A1,Ruffio? So you abducted this beast?,Ruffio ? Alors c'est toi qui t'es chargé d'enlever cet animal ?
 ,,
-RUFFIO D2,TODO,"Cette saloperie m'a bequeté le doigt sans crier gare. Mais tu me connais : ""oeil pour oeil""... Je te passe les détails, mais la petite comptesse devrait être disposée à obéïr au moindre de tes désirs."
-RUFFIO D2 A1,TODO,"Oh... Eh bien parfait, je suppose."
+RUFFIO D2,"The next thing I knew, this bitch bit my finger off. But you know me: ""an eye for an eye""... I won't go over the details, but the little countess shoud now be willing to obey your every desires.","Cette saloperie m'a bequeté le doigt sans crier gare. Mais tu me connais : ""oeil pour oeil""... Je te passe les détails, mais la petite comptesse devrait être disposée à obéir au moindre de tes désirs."
+RUFFIO D2 A1,Oh... Well I guess this is perfect.,"Oh... Eh bien parfait, je suppose."
 ,,
-RUFFIO D3,TODO,"Alors c'est le grand soir, hein ?"
-RUFFIO D3 A1,TODO,Que veux tu dire ?
-RUFFIO D3 A2,TODO,"Eh bien... Hum, il semblerait. A quel sujet, exactement ?"
+RUFFIO D3,"So this is the big night, eh?","Alors c'est le grand soir, hein ?"
+RUFFIO D3 A1,What do you mean?,Que veux tu dire ?
+RUFFIO D3 A2,"Well, it would seem so. Big night for what exaclty?","Eh bien... Hum, il semblerait. A quel sujet, exactement ?"
 ,,
-RUFFIO D4,TODO,"Assassiner le Duc, ce privilège me revenait. Mais il a fallu que tu te tordes et que tu rampes autour du Seigneur Vitori et de son maître jusqu'à le convaincre de t'attribuer la mission. A croire que la flatterie est une chose naturelle pour toi."
-RUFFIO D4 A1,TODO,[i]à part soi.[/i] Assassi... Diantre ! Des bribes de souvenirs me reviennent... A propos d'un plan... Mais impossible de les fixer. La peste !
+RUFFIO D4,"I had the honour of assassinating the Duke, but you had to squirm and crawl around Lord Vitori and his master to get the mission. I'm starting to think you've got flattery in your blood.","Assassiner le Duc, ce privilège me revenait. Mais il a fallu que tu te tordes et que tu rampes autour du Seigneur Vitori et de son maître jusqu'à le convaincre de t'attribuer la mission. A croire que la flatterie est une chose naturelle pour toi."
+RUFFIO D4 A1,"[i]to himself.[/i] Assassi... By the Devil! Shards of memories come back to me... A plan... Damn, I can't piece them together!",[i]à part soi.[/i] Assassi... Diantre ! Des bribes de souvenirs me reviennent... A propos d'un plan... Mais impossible de les fixer. La peste !
 ,,
-RUFFIO D5,TODO,"J'entends les invités arriver. Bien, puisque mes méthodes vous paraissent trop ""expéditives"", il va falloir que tu te courbes devant quelques uns d'entre eux, si tu veux créer l'occasion de te débarasser du Duc en toute tranquillité. Mais si je comprends bien, te courber devant les autres, c'est un peu ta spécialité, hein ?"
-RUFFIO D5 A1,TODO,"J'ai peur de comprendre ce que tu sous-entend Ruffio. Gare à ne pas abuser de mon état.[i]Entrent un serveur, Vitori, Strozi, Sire Philippe, Giulia, Claudio, Augurie et Alma.[/i]"
+RUFFIO D5,"I can hear the guests approaching. This may be an opportunity for you to get rid of the Duke quietly. Since you think of my methods as being too... extreme... you'll need to grovel before a few of them to do it. But from what I saw, grovelling is just your thing, am I right?","J'entends les invités arriver. Bien, puisque mes méthodes vous paraissent trop ""expéditives"", il va falloir que tu te courbes devant quelques uns d'entre eux, si tu veux créer l'occasion de te débarasser du Duc en toute tranquillité. Mais si je comprends bien, te courber devant les autres, c'est un peu ta spécialité, hein ?"
+RUFFIO D5 A1,"Frightful things hidden behind your words, Ruffio. Don't think my current state prevents me from thinking.[i]Come in a waiter, Vitori, Strozi, Sir Philip, Giulia, Claudio, Augurie et Alma.[/i]","J'ai peur de comprendre ce que tu sous-entend Ruffio. Gare à ne pas abuser de mon état.[i]Entrent un serveur, Vitori, Strozi, Sire Philippe, Giulia, Claudio, Augurie et Alma.[/i]"
 ,,
 ,,
 ,,
@@ -429,18 +441,18 @@ RUFFIO D5 A1,TODO,"J'ai peur de comprendre ce que tu sous-entend Ruffio. Gare à
 ,,
 ,,
 ,,
-RUFFIO SCENE2DEFAULT ,TODO,"Que fais tu là ? Nous ne devrions pas nous parler, va t-en !"
-RUFFIO SCENE2DEFAULT A1,TODO,Connais tu le serveur qui vient de partir ?
-RUFFIO SCENE2DEFAULT A2,TODO,"Ca va, je m'en vais !"
+RUFFIO SCENE2DEFAULT ,"What are you doing here ? We should not speak, go away !","Que fais tu là ? Nous ne devrions pas nous parler, va t-en !"
+RUFFIO SCENE2DEFAULT A1,Do you know the waiter who just left ?,Connais tu le serveur qui vient de partir ?
+RUFFIO SCENE2DEFAULT A2,"All right, I'm leaving !","Ca va, je m'en vais !"
 ,,
-RUFFIO D6,TODO,"Non, mais il ne m'a pas quitté des yeux. Peut-être devrais-je aller lui apprendre le respect."
-RUFFIO D6 A1,TODO,"Ca ne me paraît pas très sage. Dis-moi, depuis quand connais-tu Sire Vitori ?"
+RUFFIO D6,"No, but he starred at me from the instant I came in. Maybe should I go and teach him some manners.","Non, mais il ne m'a pas quitté des yeux. Peut-être devrais-je aller lui apprendre le respect."
+RUFFIO D6 A1,"It does not seem really wise to me. Tell me, how long have you known Sir Vitori ?","Ca ne me paraît pas très sage. Dis-moi, depuis quand connais-tu Sire Vitori ?"
 ,,
-RUFFIO D7,TODO,"Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'ait confié la mission à toi... Toi qui débarques parmi nous, et parviens à convaincre notre meneur de te confier l'élimination du Tyran... Je ne t'ai jamais fait confiance, %n."
-RUFFIO D7 A1,TODO,Ce qui veut dire que Vitori... je... Je vois. J'imagine que je ferais la même chose à ta place.
+RUFFIO D7,"I have known him for a long time, you know it well. Which makes the fact that he gave you this mission even more incomprehensible... You, who just joined us and managed to convince our leader to  charge you with the Tyrant elimination... I never trusted you, %n.","Depuis longtemps, tu le sais bien. C'est d'autant plus incompréhensible qu'il t'ait confié la mission à toi... Toi qui débarques parmi nous, et parviens à convaincre notre meneur de te confier l'élimination du Tyran... Je ne t'ai jamais fait confiance, %n."
+RUFFIO D7 A1,Which means that Vitori... I... I see. I guess I would do the same if I were you.,Ce qui veut dire que Vitori... je... Je vois. J'imagine que je ferais la même chose à ta place.
 ,,
-RUFFIO D8,TODO,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
-RUFFIO D8 A1,TODO,"Bonne soirée, Ruffio."
+RUFFIO D8,It is too late to gain my sympathies. Now move before they become even more suspicious.,Il est trop tard pour essayer de te rendre sympathique. Maintenant éloigne toi avant d'attirer sur nous encore plus de soupçons.
+RUFFIO D8 A1,"Have a good evening, Ruffio.","Bonne soirée, Ruffio."
 ,,
 ,,
 ,,
@@ -456,216 +468,236 @@ RUFFIO D8 A1,TODO,"Bonne soirée, Ruffio."
 ,,
 ,,
 ,,
-CLAUDIO DEFAULT,TODO,"Mmh, le Capitaine n'a pas l'air dans son assiette, ce soir."
-CLAUDIO DEFAULT A1,TODO,Vous voulez dire que le capitaine de la Garde est présent ?
+CLAUDIO DEFAULT,"Mh, the Captain does not seem very well this evening.
+","Mmh, le Capitaine n'a pas l'air dans son assiette, ce soir."
+CLAUDIO DEFAULT A1,"Do you mean that the Guard's captain is here tonight ?
+",Vous voulez dire que le capitaine de la Garde est présent ?
 ,,
-CLAUDIO D1,TODO,"Oui, Sire Philippe lui-même. C'est le vieil homme à l'allure martiale, adossé contre le muret, là-bas. Le mal qui l'afflige est bien triste."
-CLAUDIO D1 A1,TODO,Que lui arrive t-il ?
+CLAUDIO D1,"Yes, Sir Philip himself. He is this soldierly looking old man, leaning against the low wall over there. His condition is quite saddening.","Oui, Sire Philippe lui-même. C'est le vieil homme à l'allure martiale, adossé contre le muret, là-bas. Le mal qui l'afflige est bien triste."
+CLAUDIO D1 A1,Which condition ?,Que lui arrive t-il ?
 ,,
-CLAUDIO D2,TODO,"Le pauvre souffre apparemment de la goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses. Pour un militaire, quelle tragédie."
-CLAUDIO D2 A1,TODO,Mmh... En effet. Bonne soirée.
+CLAUDIO D2,"The poor man seems to suffer from gout, a disease which spcifically targets people who enjoyed the good things of life. It makes the afflicted one suffer from his joints. Tragic, for a soldier.","Le pauvre souffre apparemment de la goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses. Pour un militaire, quelle tragédie."
+CLAUDIO D2 A1,Mh... For sure. Good evening.,Mmh... En effet. Bonne soirée.
 ,,
-CLAUDIO D3,todo,"Un homme si droit, si juste. Il ne mérite pas ça."
-CLAUDIO D3 A1,todo,Le malheur frappe aveuglément. C'est ainsi.
+CLAUDIO D3,"Such a righteous man! He does not deserve it.
+","Un homme si droit, si juste. Il ne mérite pas ça."
+CLAUDIO D3 A1,"The adversity strikes all of us in different manners.
+",Le malheur frappe aveuglément. C'est ainsi.
 ,,
 ,,
-GIULIA DEFAULT,TODO,"J'ai entendu certaines personnes parler d'une surprise pour les invités ce soir, comme c'est excitant !"
-GIULIA DEFAULT A1,TODO,Une surprise ?
+GIULIA DEFAULT,"I heard people talking about a surprise for the guests, how exciting !","J'ai entendu certaines personnes parler d'une surprise pour les invités ce soir, comme c'est excitant !"
+GIULIA DEFAULT A1,"A surprise ?
+",Une surprise ?
 ,,
-GIULIA D1,TODO,"Comme je vous dis ! Dame Augurie est en charge des festivités, nul doute qu'elle en sait un peu plus. Je me demande bien ce que c'est. Comme je suis excitée !"
-GIULIA D1 A1,TODO,Je partage votre enthousiasme. Bonne soirée.
+GIULIA D1,"As I said ! Lady Augurie is in charge of the festivities, I am sure she knows a bit more. I wonder what it could be. I am so excited !
+","Comme je vous dis ! Dame Augurie est en charge des festivités, nul doute qu'elle en sait un peu plus. Je me demande bien ce que c'est. Comme je suis excitée !"
+GIULIA D1 A1,I share your enthousiasm. Good evening.,Je partage votre enthousiasme. Bonne soirée.
 ,,
 GIULIA D2,,Comme j'ai hâte de voir ce que Dame Augurie nous réserve !
 GIULIA D2 A1,,C'est un sentiment partagé.
  ,,
 ,,
-AUGURIE DEFAULT,TODO,Mmh ? Je peux vous aider ?
-AUGURIE DEFAULT A1,TODO,"Certaines rumeurs font état d'une surprise pour le Duc, êtes vous au courant ?"
-AUGURIE DEFAULT A2,TODO,Euh... Une bien belle soirée n'est ce pas ?
+AUGURIE DEFAULT,"Mh ? May I help you ?
+",Mmh ? Je peux vous aider ?
+AUGURIE DEFAULT A1,"I heard rumors about a surprise for the Duke. Do you know anyhting about it ?
+","Certaines rumeurs font état d'une surprise pour le Duc, êtes vous au courant ?"
+AUGURIE DEFAULT A2,"... What a wonderful evening, don't you think ?
+",Euh... Une bien belle soirée n'est ce pas ?
 ,,
-AUGURIE D1,TODO,"Euh... Eh bien oui. [i]Elle baisse la voix.[/i]Mais qu'est ce qu'il te prend ? Nous ne sommes pas censés nous parler ! Le feu d'artifice aura lieu comme prévu, à ton signal. Maintenant, déguerpis !"
-AUGURIE D1 A1,TODO,Pourquoi devrions nous nous éviter ?
-AUGURIE D1 A2,TODO,Pourquoi un feu d'artifice ?
-AUGURIE D1 A3,TODO,J'ai... euh... oublié quel était le signal.
+AUGURIE D1,"Well... Sure. [i]She lowers her voice.[/i] What are you doing ? We are not supposed to talk to each other ! The firework will happen as planned, once you give me the signal. Now move !","Euh... Eh bien oui. [i]Elle baisse la voix.[/i]Mais qu'est ce qu'il te prend ? Nous ne sommes pas censés nous parler ! Le feu d'artifice aura lieu comme prévu, à ton signal. Maintenant, déguerpis !"
+AUGURIE D1 A1,Why are we supposed to avoid each other ?,Pourquoi devrions nous nous éviter ?
+AUGURIE D1 A2,"A firework ? Why ?
+",Pourquoi un feu d'artifice ?
+AUGURIE D1 A3,I... hem... forgot the signal.,J'ai... euh... oublié quel était le signal.
 ,,
-AUGURIE D2,TODO,"Parce que tu as du travail, idiot ! Sire Philippe attend toujours le nom de celui qui est à la tête du complot. Alors sois attentif."
-AUGURIE D2 A1,TODO,Quel est le signal qui lancera le feu d'artifice ?
-AUGURIE D2 A2,TODO,Pourquoi un feu d'artifice ?
-AUGURIE D2 A3,TODO,"Je le serai, compte sur moi."
+AUGURIE D2,"Because you have a work to do, you idiot ! Sir Philip is still waiting for the name of the plot instigator. Now, pay attention !","Parce que tu as du travail, idiot ! Sire Philippe attend toujours le nom de celui qui est à la tête du complot. Alors sois attentif."
+AUGURIE D2 A1,What is the firework signal ?,Quel est le signal qui lancera le feu d'artifice ?
+AUGURIE D2 A2,"A firework ? Why ?
+",Pourquoi un feu d'artifice ?
+AUGURIE D2 A3,"I will, you can count on me.","Je le serai, compte sur moi."
 ,,
-AUGURIE D3,TODO,"Bien, maintenant que tu es rassuré, du balais ! Nous risquons gros à discuter ainsi.[i]Elle hausse la voix.[/i]J'ignore ce que vous espériez, mais je ne suis pas intéressée Messire ! Bonne soirée."
-AUGURIE D3 A1,TODO,"Bien, bonne soirée !"
+AUGURIE D3,"Good, now that you are reassured, get out ! It is risky for us to talk. [i]She raises her voice[/i] I do not know what you were hoping for, but I am not interested, Sir. Have a good evening.","Bien, maintenant que tu es rassuré, du balais ! Nous risquons gros à discuter ainsi.[i]Elle hausse la voix.[/i]J'ignore ce que vous espériez, mais je ne suis pas intéressée Messire ! Bonne soirée."
+AUGURIE D3 A1,"Well, good evening !
+","Bien, bonne soirée !"
 ,,
-AUGURIE D4,TODO,"C'est une raison parfaite pour rassembler tous les invités sur la terasse. Enfin, c'est ce que tu as présumé."
-AUGURIE D4 A1,TODO,"Oh ? Je... j'ai quelques soucis avec ma mémoire ce soir. Quel est le signal, déjà ?"
-AUGURIE D4 A2,TODO,"Je... Je le savais, je m'assurais que tout était au point, voilà tout. Et pourquoi devons nous éviter ?"
-AUGURIE D4 A3,TODO,Je vois... Parfait.
+AUGURIE D4,"This is perfect to have every guest gathered on the patio. At least, accoridng to you.","C'est une raison parfaite pour rassembler tous les invités sur la terasse. Enfin, c'est ce que tu as présumé."
+AUGURIE D4 A1,Really ? I have some troubles with my memory tonight. What is the signal again?,"Oh ? Je... j'ai quelques soucis avec ma mémoire ce soir. Quel est le signal, déjà ?"
+AUGURIE D4 A2,"I... I knew it. I was just making sure that everything is ready, that is all. Why should we avoid each other, by the way ?","Je... Je le savais, je m'assurais que tout était au point, voilà tout. Et pourquoi devons nous nous éviter ?"
+AUGURIE D4 A3,I see... Perfect.,Je vois... Parfait.
 ,,
-AUGURIE D5,TODO,"Oh, mais quel idiot ! Bien, comme tu me l'as expliqué plusieurs fois, tu es censé me proposer un verre, et moi t'éconduire. Après cela je commencerai à rassembler les invités pendant que tu préviendras Sire Philippe. A moins que ton plan ait encore changé ?"
-AUGURIE D5 A1,TODO,"Non, non. Cela me paraît parfait."
-AUGURIE D5 A2,TODO,"Non, parfait. Mais pourquoi un feu d'artifice ?"
-AUGURIE D5 A3,TODO,"Non, c'est très bien. Mais pourquoi devrions nous nous éviter, déjà ?"
+AUGURIE D5,"What an idiot ! As you explained to me several times, you are supposed to offer me a drink and I am supposed to reject you. After what I will start gathering our guests while you warn Sir Philip. Unless the plan has changed... again ?","Oh, mais quel idiot ! Bien, comme tu me l'as expliqué plusieurs fois, tu es censé me proposer un verre, et moi t'éconduire. Après cela je commencerai à rassembler les invités pendant que tu préviendras Sire Philippe. A moins que ton plan ait encore changé ?"
+AUGURIE D5 A1,"No, no. This seems fine.","Non, non. Cela me paraît parfait."
+AUGURIE D5 A2,"No, this is perfect. But... a firework ? Why ?","Non, parfait. Mais pourquoi un feu d'artifice ?"
+AUGURIE D5 A3,"No, this one is fine. But why should we avoid each other ?","Non, c'est très bien. Mais pourquoi devrions nous nous éviter, déjà ?"
 ,,
-AUGURIE D6,TODO,"[i]froidement.[/i] Magnifique, en effet. Veuillez m'excuser."
-AUGURIE D6 A1,TODO,Je... vous... Bonne soirée.
+AUGURIE D6,"[i]coldly.[/i] Wonderful indeed. Please, excuse me.
+","[i]froidement.[/i] Magnifique, en effet. Veuillez m'excuser."
+AUGURIE D6 A1,I... you... Good evening.,Je... vous... Bonne soirée.
 ,,
-AUGURIE WAITING SIGNAL,TODO,"Encore vous, Messire ?"
-AUGURIE WAITING SIGNAL A1,TODO,"Non, rien."
-AUGURIE WAITING SIGNAL A2,TODO,"Puis-je vous offrir un verre, très chère ?"
+AUGURIE WAITING SIGNAL,"You again, Sir ?","Encore vous, Messire ?"
+AUGURIE WAITING SIGNAL A1,"No. Nothing.
+","Non, rien."
+AUGURIE WAITING SIGNAL A2,"May I offer you a drink, my dear ?
+","Puis-je vous offrir un verre, très chère ?"
 ,,
-AUGURIE D7,TODO,[i]avec un plaisir non dissimulé.[/i]Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
-AUGURIE D7 A1,TODO,"Hum ! Je pense que cela suffit. Bonne soirée, madame."
+AUGURIE D7,"[i]obviously enjoying it.[/i]I would rather die than say yes to anything you may propose. Your face alone makes me nauseous beyond compare. Your...
+",[i]avec un plaisir non dissimulé.[/i]Plutot mourir que d'accepter quoique ce soit de vous. La simple vue de votre visage me cause des hauts le coeur et des vertiges abominables. Votre...
+AUGURIE D7 A1,"Hem ! I think this will be enough. Good evening, mylady.","Hum ! Je pense que cela suffit. Bonne soirée, madame."
 ,,
-AUGURIE D8,TODO,"Qu'y a t-il, encore ? J'ai le signal maintenant. Et toi, tu as encore du travail !"
-AUGURIE D8 A1,TODO,Je m'assurais simplement que les choses soient claire. J'y retourne.
-,,
-,,
-GUEST DEFAULT,,"...et vous mon Duc, qu'en pensez vous ? Incroyable non ?"
-GUEST DEFAULT A1, ,"Mmh ? Oh, oui, merveilleux. Véritablement confondant. Je vous prie de m'excuser."
-,,
-GUEST D1,,"Et c'est... Mh, assurément."
-GUEST D1 A1,,"Difficile d'avoir le coeur à la fête quand celle-ci n'est qu'une vaste mascarade, un piège, ni plus ni moins, pour faire tomber les ennemis qui complotent contre moi ! Et mon %n, qui a dû s'acoquiner de ces gredins, s'en faire des amis dans le but de découvrir qui tirait les ficelles ! Ah, mon sang se glace quand je pense aux risques qu'il encoure. Mon Pulcino... J'ai hâte que tout ceci se termine, que mes bras puissent retrouver les siens ! [i]Des bruits sourds résonnent[/i]"
-,,
-GUEST D2,,"Diantre ! Un feu d'artifice ! Décidément mon Duc, votre réception va de surprise en surprise ! Ne perdons pas de temps et allons admirer cela de plus près !"
-GUEST D2 A1,,Je vous suis.
-,,
-GUARD2 DEFAULT,,"Monseigneur, nous avons un problème."
-GUARD2 DEFAULT A1,,"Eh bien, que se passe t-il ?"
-GUARD2 DEFAULT A2,,"Eh bien, que se passe t-il ?"
-GUARD2 DEFAULT A3,,Pas maintenant !
-GUARD2 DEFAULT A4,,Pas maintenant !
-,,
-GUARD2 D1,,"Giomo, qui surveillait l'entrée, est mort, Monseigneur. Poignardé."
-GUARD2 D1 A1,,Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
-GUARD2 D1 A2,,Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
-,,
-GUARD2 D2,,"Tout de suite ! [i], sort[/i]"
-GUARD2 D2 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-GUARD2 D2 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-,,
-GUARD2 D3,,C'est que... Sire Philippe a quitté précipitemment la réception il y a quelques minutes.
-GUARD2 D3 A1,,"Comment ?! Grands Dieux ! Dans ce cas allez sans plus tarder garder l'entrée, personne ne doit plus rentrer ni sortir !"
-,,
-GUARD2 D4,,"[i], sort[/i]"
-GUARD2 D4 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-GUARD2 D4 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-,,
-GUARD2 D5,,Nous avons retrouvé Giomo ivre mort dans la rue alors qu'il était en charge de surveiller l'entré.
-GUARD2 D5 A1,,Comment ?! Cela veut dire que mon palais est à l'instar d'un moulin ? Ouvert à qui veut ? Allez immédiatement prévenir Sire Philippe !
-GUARD2 D5 A2,,[ALMA IS NO MORE PROTECTED] Comment ?! Cela veut dire que mon palais est à l'instar d'un moulin ? Ouvert à qui veut ? Allez immédiatement prévenir Sire Philippe !
-,,
-GUARD2 D6,,"Tout de suite ! [i], sort[/i]"
-GUARD2 D6 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-GUARD2 D6 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-,,
-GUARD2 D7,,C'est que... Sire Philippe a quitté précipitemment la réception il y a quelques minutes.
-GUARD2 D7 A1,,"Comment ?! Grands Dieux ! Dans ce cas allez sans plus tarder garder l'entrée, personne ne doit plus rentrer ni sortir !"
-,,
-GUARD2 D8,,"[i], sort[/i]"
-GUARD2 D8 A1,,"[COMPLOTIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-GUARD2 D8 A2,,"[LOYALIST QUEST]Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
-,,
-GUARD2 D9,,"Monseigneur, je me dois d'insister. C'est au sujet de votre conseiller."
-GUARD2 D9 A1,,Que se passe t-il ? Qu'y a t-il ? Parlez sans retenue !
-,,
-GUARD2 D10,,Sire Philippe me charge de vous dire qu'il a mené à bien sa mission. Nous connaissons l'instigateur du complot : il s'agit du Sire Vitori.
-GUARD2 D10 A1,,Ah ! Cher %n ! Ce cher %n ! Qu'il soit mille fois remercié ! C'est parfait ! Profitons du fait que les invités soient réunis. Que la Garde se prépare : je veux que tous les fomenteurs soient mis aux arrêts dès maintenant ! Et assurez vous que ce chien de Vitori soit le premier à qui on passe les fers ! Ah ! Glorieuse soirée pour la cité ! [i]Entre %n[/i]
+AUGURIE D8,What now ? I have the signal and you still have work to do !,"Qu'y a t-il, encore ? J'ai le signal maintenant. Et toi, tu as encore du travail !"
+AUGURIE D8 A1,I was just making sure everything is clear. I'm going back in.,Je m'assurais simplement que les choses soient claire. J'y retourne.
 ,,
 ,,
-ALMA2 DEFAULT,,Bon... Bonsoir monseigneur !
-ALMA2 DEFAULT A1,,"Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
-ALMA2 DEFAULT A2,,"Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
+GUEST DEFAULT,"... what about you, my Duke, what do you think about it ? Inbelievable, right ?","...et vous mon Duc, qu'en pensez vous ? Incroyable non ?"
+GUEST DEFAULT A1," Mmh ? Oh yes, wondeful. Absolutely confusing. I apologize.","Mmh ? Oh, oui, merveilleux. Véritablement confondant. Je vous prie de m'excuser."
 ,,
-ALMA2 D1,,"C'est que... Je n'ose vous demander de partager une coupe avec moi, Monseigneur."
-ALMA2 D1 A1,,"Ah ! Ce sera avec plaisir ma jeune et tendre amie, mais plus tard. Le moment est mal choisi, je dois me rendre à..."
+GUEST D1,"And that... Mh, of course.","Et c'est... Mh, assurément."
+GUEST D1 A1,"It is difficult to enjoy the party when it happens to be a farce, even though it is a trap designed for those who plot against me. And my dear %n, who had to blend in and make friends with those scoundrels, in order to find out who is behind all this! Ah, the shivers I have when I think of the many dangers he could face. My Pulcino... I cannot wait for all this to blow over, so that I can find my way back into his arms! [i]Muffled sounds[/i]","Difficile d'avoir le coeur à la fête quand celle-ci n'est qu'une vaste mascarade, un piège, ni plus ni moins, pour faire tomber les ennemis qui complotent contre moi ! Et mon %n, qui a dû s'acoquiner de ces gredins, s'en faire des amis dans le but de découvrir qui tirait les ficelles ! Ah, mon sang se glace quand je pense aux risques qu'il encoure. Mon Pulcino... J'ai hâte que tout ceci se termine, que mes bras puissent retrouver les siens ! [i]Des bruits sourds résonnent[/i]"
+,"
+",
+GUEST D2,"Lord ! A firework ! My Duke, your reception is full of surprises ! Let's not waste any second and go to the patio to enjoy the view !","Diantre ! Un feu d'artifice ! Décidément mon Duc, votre réception va de surprise en surprise ! Ne perdons pas de temps et allons admirer cela de plus près !"
+GUEST D2 A1,"I am right behind you.
+",Je vous suis.
 ,,
-ALMA2 D2,,Je... j'insiste. Au nom du comté d'Alma... Je... Vous semblez m'avoir évitée toute la soirée et...
-ALMA2 D2 A1,,"Ola, ola ! Ne prenez pas ombrage de ma discrétion. Tenez, voilà. Buvons, mais rapidement car des affaires pressantes m'attendent. Au comté d'Alma ! [i]Ils vident leurs verres d'une traite.[/i]"
+GUARD2 DEFAULT,"We have a problem, my lord.","Monseigneur, nous avons un problème."
+GUARD2 DEFAULT A1,What is happening ?,"Eh bien, que se passe t-il ?"
+GUARD2 DEFAULT A2,What is happening ?,"Eh bien, que se passe t-il ?"
+GUARD2 DEFAULT A3,Not now !,Pas maintenant !
+GUARD2 DEFAULT A4,Not now !,Pas maintenant !
 ,,
-ALMA2 D3,,"[i]Regarde le Duc avec anxiété. [/i] Je suis désolé, votre altesse, ils ne m'ont pas laissé pas le choix..."
-ALMA2 D3 A1,,Que voulez vous dire ? Qu'est ce... que... tout cela... signifie ?.. [i]S'écroule.[/i]
+GUARD2 D1,"Giomo who guarded the gates is dead, Sir. He was stabbed.","Giomo, qui surveillait l'entrée, est mort, Monseigneur. Poignardé."
+GUARD2 D1 A1,That was not planned. Warn Sir Philip this instant !,Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
+GUARD2 D1 A2,That was not planned. Warn Sir Philip this instant !,Cela n'était pas prévu. Prévenez immédiatement Sire Philippe !
 ,,
-ALMA2 D4,,"Rien que la brise, je vous rassure..."
-ALMA2 D4 A1,,Doit-on aussi votre teint de cadavre à la brise ?
+GUARD2 D2,Right away ! [i]He goes out.[/i],Tout de suite ! [i]Il sort[/i]
+GUARD2 D2 A1,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D2 A2,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
 ,,
-ALMA2 D5,,"Non, c'est que je dois m'entretenir avec vous..."
-ALMA2 D5 A1,,"Je vous écoute, mon enfant."
+GUARD2 D3,"Well... Sir Philip left the reception in a hurry a few minutes ago.
+",C'est que... Sire Philippe a quitté précipitemment la réception il y a quelques minutes.
+GUARD2 D3 A1,Why ? Oh Gods ! In that case go to the gates and prevent anyone from coming in or getting out !,"Comment ?! Grands Dieux ! Dans ce cas allez sans plus tarder garder l'entrée, personne ne doit plus rentrer ni sortir !"
 ,,
-ALMA2 D6,,"Voyez-vous, c'est assez délicat, Monseigneur... Je.. Oh, dieux tout puissants."
-ALMA2 D6 A1,,Eh bien ?..
+GUARD2 D4,Right away ! [i]He goes out.[/i],Tout de suite ! [i]Il sort[/i]
+GUARD2 D4 A1,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D4 A2,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
 ,,
-ALMA2 D7,,"Si vous étiez contraint de faire une chose horrible, mais que vous n'en avez pas le choix. Est-on tout de même coupable ?"
-ALMA2 D7 A1,,"Vous m'inquiétez, Comtesse. De quoi diable parlez vous ?"
+GUARD2 D5,We found Giormo dead drunk in the street. He was on door keeping duty.,Nous avons retrouvé Giomo ivre mort dans la rue alors qu'il était en charge de surveiller l'entré.
+GUARD2 D5 A1,How ? Does it mean that anyone could waltz in as pleased ? Go and get Sir Philip this instant !,Comment ?! Cela veut dire que mon palais est à l'instar d'un moulin ? Ouvert à qui veut ? Allez immédiatement prévenir Sire Philippe !
+GUARD2 D5 A2,How ? Does it mean that anyone could waltz in as pleased ? Go and get Sir Philip this instant !,Comment ?! Cela veut dire que mon palais est à l'instar d'un moulin ? Ouvert à qui veut ? Allez immédiatement prévenir Sire Philippe !
 ,,
-ALMA2 D8,,"Je suis confuse, Monseigneur, je n'aurai pas dû !"
-ALMA2 D8 A1,,Que... %n ?!
+GUARD2 D6,Right away ! [i]He goes out.[/i],Tout de suite ! [i]Il sort[/i]
+GUARD2 D6 A1,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D6 A2,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+,,
+GUARD2 D7,"Well... Sir Philip left the reception in a hurry a few minutes ago.
+",C'est que... Sire Philippe a quitté précipitemment la réception il y a quelques minutes.
+GUARD2 D7 A1,Why ? Oh Gods ! In that case go to the gates and prevent anyone from coming in or getting out !,"Comment ?! Grands Dieux ! Dans ce cas allez sans plus tarder garder l'entrée, personne ne doit plus rentrer ni sortir !"
+,,
+GUARD2 D8,Right away ! [i]He goes out.[/i],[i]Il sort[/i]
+GUARD2 D8 A1,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+GUARD2 D8 A2,This does not feel right. I should have trusted my instinct and arrested all these traitors while I still could. Before I risked the life of my loved ones. I hope this is worth it.,"Tout cela ne me dit rien qui vaille. J'aurai mieux fait d'écouter mon instinct et d'arrêter tous ces traîtres quand j'en avais l'occasion, avant de risquer la vie de mes proches. J'espère que tout ceci vaut le coup."
+,,
+GUARD2 D9,"My Lord, I must insist. It is about your counsellor.","Monseigneur, je me dois d'insister. C'est au sujet de votre conseiller."
+GUARD2 D9 A1,What is the matter ? What is happening ? Speak right now !,Que se passe t-il ? Qu'y a t-il ? Parlez sans retenue !
+,,
+GUARD2 D10,I am responsible for telling you that Sir Philip succeded in arresting the plot instigator. His name is Sir Vitori.,Sire Philippe me charge de vous dire qu'il a mené à bien sa mission. Nous connaissons l'instigateur du complot : il s'agit du Sire Vitori.
+GUARD2 D10 A1,Ah ! Dear %n ! My dear %n ! May he be thanked a thousand times ! This is perfect ! Let's make the most of having our guests gathered on the terrace. My guard must be prepared: I want every single agitator to be put under arrest right now ! And make sure that dog Vitori is the first one to get the shackles ! Ah ! What a glorious evening for the city ! [i]Come in %n[/i],Ah ! Cher %n ! Ce cher %n ! Qu'il soit mille fois remercié ! C'est parfait ! Profitons du fait que les invités soient réunis. Que la Garde se prépare : je veux que tous les fomenteurs soient mis aux arrêts dès maintenant ! Et assurez vous que ce chien de Vitori soit le premier à qui on passe les fers ! Ah ! Glorieuse soirée pour la cité ! [i]Entre %n[/i]
 ,,
 ,,
-HERO D1,,"Vous avez joué votre rôle à la perfection, Comtesse, vous pouvez disposer."
-HERO D1 A1,,...
+ALMA2 DEFAULT,G... Good evening my lord !,Bon... Bonsoir monseigneur !
+ALMA2 DEFAULT A1,"What now ? Countess, are you shivering ?","Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
+ALMA2 DEFAULT A2,"What now ? Countess, are you shivering ?","Eh bien quoi, encore ? Mais, Comtesse, vous tremblez ?"
 ,,
-HERO D2,,"A nous deux, Duc. Mais avant de procéder, assurons nous que vous ne dissimiliez aucune surprise. [i]Il fouille le Duc, trouve une lettre qu'il déplie et lit.[/i]"
-HERO D2 A1,,...
+ALMA2 D1,It's just that... I'm too shy to ask you to share a cup with me Sir.,"C'est que... Je n'ose vous demander de partager une coupe avec moi, Monseigneur."
+ALMA2 D1 A1,"Ah! It would be with pleasure my young and tender friend, but later. Unfortunately I can't right now, I must go to...","Ah ! Ce sera avec plaisir ma jeune et tendre amie, mais plus tard. Le moment est mal choisi, je dois me rendre à..."
 ,,
-HERO D3,,"Eh bien, voilà une lettre bien passionnée ! Mais... Cette écriture... C'est la mienne ! Je... Ma mémoire me revient ! Dieux, qu'étais-je sur le point de commettre ?! Mon Duc, mio caro !"
-HERO D3 A1,,"... [i] La porte s'ouvre, entrent Alma, Sire Philippe et un garde [/i]"
+ALMA2 D2,I... I insist. In the name of the county of Alma... I... I think you evaded me all night and...,Je... j'insiste. Au nom du comté d'Alma... Je... Vous semblez m'avoir évitée toute la soirée et...
+ALMA2 D2 A1,"Now now! I didn't mean to upset you. Here, take this. Let's drink, but quickly as urgent matters require my attention. To the county of Alma![i]They empty their drinks with one gulp.[/i]","Ola, ola ! Ne prenez pas ombrage de ma discrétion. Tenez, voilà. Buvons, mais rapidement car des affaires pressantes m'attendent. Au comté d'Alma ! [i]Ils vident leurs verres d'une traite.[/i]"
 ,,
-HERO D4,,"La soirée a été quelque peu étrange, mon Duc."
-HERO D4 A1,,"Mais, tu saignes ?! Garde, qu'avez vous fait ?! Allez cherchez de l'aide ! Immédiatement !"
+ALMA2 D3,"[i]Glancing at the Duke nervously. [/i] I am sorry, your highness, they didn't leave me any choice...","[i]Regardant le Duc avec anxiété.[/i] Je suis désolé, votre altesse, ils ne m'ont pas laissé pas le choix..."
+ALMA2 D3 A1,What do you mean? What does all this... mean...?.. [i]He collapses.[/i],Que voulez vous dire ? Qu'est ce... que... tout cela... signifie ?.. [i]Il s'écroule.[/i]
 ,,
-HERO D5,,"Votre garde est occupée, mio caro. Elle fait son devoir envers vous, comme j'ai fais le mien."
-HERO D5 A1, ,"Votre devoir ? Votre devoir est de vivre, Pulcino !"
+ALMA2 D4,"Just the breeze, be reassured...","Rien que la brise, je vous rassure..."
+ALMA2 D4 A1,Do we owe your cadaveric complexion to the breeze too?,Doit-on aussi votre teint de cadavre à la brise ?
 ,,
-HERO D6,,"La mémoire est un organe étrange... Tout le soir, elle a refusé de danser avec moi. Mais la vue de votre visage a su dompter le fauve capricieux. Oui... Maintenant, je me souviens, mon Duc. Comment ai-je pu l'oublier, ne serait-ce qu'un instant ?"
-HERO D6 A1,,"Là, là... Faites silence et gardez vos forces, beau parleur. On prendra tôt soin de vous. GARDES !"
+ALMA2 D5,"No, I must talk to you...","Non, c'est que je dois m'entretenir avec vous..."
+ALMA2 D5 A1,"I'm listening, child.","Je vous écoute, mon enfant."
 ,,
-HERO D7,,"De grâce mio caro, gardez ces larmes qui enlaidissent vos yeux et ne me bercez pas de mensonges : je sens mon heure venir. La passer à vos côtés, vous sachant sauf des manigences qui pesaient sur vous... Je n'aurai pu espérer mieux."
-HERO D7 A1,,... Je...
+ALMA2 D6,"You see, this is quite embarrassing, my Lord... I.. Oh, gods.","Voyez-vous, c'est assez délicat, Monseigneur... Je.. Oh, dieux tout puissants."
+ALMA2 D6 A1,Well?,Eh bien ?..
 ,,
-HERO D8,,"[i]sortant la lettre de sa veste.[/i] J'ai bien reçu votre lettre. Chaque mot, comme chaque instant... m'ont comblé. [i]... il meurt.[/i]"
-HERO D8 A1,,"Sogni d'oro, angelo mio... [i]Embrasse %n.[/i]"
+ALMA2 D7,"If someone was to do something resentful, but was forced to do so, would they still be guilty?","Si vous étiez contraint de faire une chose horrible, mais que vous n'en avez pas le choix. Est-on tout de même coupable ?"
+ALMA2 D7 A1,"You worry me, Countess. What on earth are you talking about?","Vous m'inquiétez, Comtesse. De quoi diable parlez vous ?"
 ,,
-HERO D9,,[i] poignarde le Duc [/i]
-HERO D9 A1,,"%n, Mio Pulcino ? Toi, tu m'assassines ?"
+ALMA2 D8,"Forgive me my Lord, it was a mistake!","Je suis confuse, Monseigneur, je n'aurai pas dû !"
+ALMA2 D8 A1,What... %n ?!,Que... %n ?!
 ,,
-HERO D10,,"Mon Duc ? Ma tête... Mes esprits me reviennent... Oh, mio caro, qu'ai je fait?!"
-HERO D10 A1,,Tes yeux...
 ,,
-HERO D11,,"[i] se précipite près du Duc[/i] Je me souviens, désormais... Oh mon bien-aimé, qu'ai je fait ?!"
-HERO D11 A1,,"Tes yeux implorent le pardon et hurlent leur détresse. Des pierres si précieuses, ne les entache pas de honte, et souris, Pulcino. Accorde moi cela."
+HERO D1,"You played your role perfectly, Countess. You're dismissed now.","Vous avez joué votre rôle à la perfection, Comtesse, vous pouvez disposer."
+HERO D1 A1,...,...
 ,,
-HERO D12,,Tout pour vous mon Duc ! Chaque souvenir qui me revient est comme autant de coups qui me lacèrent...
-HERO D12 A1,,"Là, là... Cesse de t'affliger, mon doux. Je connais mes derniers instants auprès de toi, je pars satisfait."
+HERO D2,Now it's you and me Duke. But before we do anything let's make sure you're not hiding some unwanted surprise. [i]He searches the Duke and finds a letter. He unfolds it and reads it.[/i],"A nous deux, Duc. Mais avant de procéder, assurons nous que vous ne dissimiliez aucune surprise. [i]Il fouille le Duc, trouve une lettre qu'il déplie et lit.[/i]"
+HERO D2 A1,...,...
 ,,
-HERO D13,,"Oh, mio caro... [i]il se penche et l'embrasse[/i]."
-HERO D13 A1,,"As-tu... As-tu reçu ma lettre, Pulcino ?"
+HERO D3,"Now, this is what I call a passionate letter! But... This writing... It's mine! I... My memories come back to me! Gods, what was I about to do?! My Duke, mio caro !","Eh bien, voilà une lettre bien passionnée ! Mais... Cette écriture... C'est la mienne ! Je... Ma mémoire me revient ! Dieux, qu'étais-je sur le point de commettre ?! Mon Duc, mio caro !"
+HERO D3 A1,"... [i]The doors opens, come in Alma, Sir Philip and a guard[/i]","... [i]La porte s'ouvre, entrent Alma, Sire Philippe et un garde [/i]"
 ,,
-HERO D14,,"Oui. Oui... Chaque mot, et chaque instant... m'ont comblé."
-HERO D14 A1,,Bien... Bien. [i]...il meurt.[/i]
+HERO D4,"The night has been most unusual, my Duke.","La soirée a été quelque peu étrange, mon Duc."
+HERO D4 A1,"But, you're bleeding?! Guard, what have you done?! Go fetch some help! Immedialty!","Mais, tu saignes ?! Garde, qu'avez vous fait ?! Allez cherchez de l'aide ! Immédiatement !"
 ,,
-HERO D15,,"Que la nuit est laide ! Que l'air du ciel est infect ! Je ne peux plus respirer... Je ne peux plus respirer, le coeur lesté de peines !"
-HERO D15 A1,,...
+HERO D5,"Your guard is busy, mio caro. She is doing her duty, like I did mine.","Votre garde est occupée, mio caro. Elle fait son devoir envers vous, comme j'ai fais le mien."
+HERO D5 A1,"Your duty, you say? Your duty is to live, Pulcino!","Votre devoir ? Votre devoir est de vivre, Pulcino !"
 ,,
-HERO D16,,"Que le vent du soir est ardent et lourd. O nature immonde,ô éternels tourments..."
-HERO D16 A1,,...
+HERO D6,"Memory is an peculiar organ... All night long, it refused to dance with me. But the mere sight of your face melted away its wild whims. Yes... Now I remember, my Duke. How could I forget, even for a heartbeat?","La mémoire est un organe étrange... Tout le soir, elle a refusé de danser avec moi. Mais la vue de votre visage a su dompter le fauve capricieux. Oui... Maintenant, je me souviens, mon Duc. Comment ai-je pu l'oublier, ne serait-ce qu'un instant ?"
+HERO D6 A1,"Now now... Be quiet and keep your strenght, smooth talker. We're going to take good care of you. GUARDS!","Là, là... Faites silence et gardez vos forces, beau parleur. On prendra tôt soin de vous. GARDES !"
 ,,
-HERO D17,,"[i]au Duc[/i] Viens, partons. [i]Il s'effondre[/i]"
-HERO D17 A1,,...
+HERO D7,"I beg you mio caro, I'd rather see your handsome face without tears on it. And don't you lie to me: I can feel my time coming. Knowing you are here, and safe from the schemes looming over you... I would not hope for a better end.","De grâce mio caro, gardez ces larmes qui enlaidissent vos yeux et ne me bercez pas de mensonges : je sens mon heure venir. La passer à vos côtés, vous sachant sauf des manigences qui pesaient sur vous... Je n'aurai pu espérer mieux."
+HERO D7 A1,... I...,... Je...
 ,,
-HERO D18,,"[i]Claudiquant [/i] J'ai son nom, mon Duc... Vitori... Vous êtes sauf."
-HERO D18 A1,,%n ! Quelle joie de te revoir ! Je me suis tant inquiété !
+HERO D8,"[i]taking the letter out of his jacket.[/i] I have your letter. Every word, like every moment... made me happy. [i]... he dies.[/i]","[i]sortant la lettre de sa veste.[/i] J'ai bien reçu votre lettre. Chaque mot, comme chaque instant... m'ont comblé. [i]... il meurt.[/i]"
+HERO D8 A1,"Sogni d'oro, angelo mio... [i]Kisses %n.[/i]","Sogni d'oro, angelo mio... [i]Embrasse %n.[/i]"
 ,,
-HERO D19,,"La soirée a été quelque peu étrange, mon Duc."
-HERO D19 A1,,"Mais ?! Votre tête ! Vous saignez ?! Parlez, qui a osé porter la main sur vous ? GARDES !"
+HERO D9,"[i],stabbing the Duke.[/i] The tyranny ends tonight.","[i],poignardant le Duc.[/i] La tyrannie se termine ce soir."
+HERO D9 A1,"%n, Mio Pulcino? I can't believe it.","%n, Mio Pulcino ? Toi, tu m'assassines ?"
 ,,
-HERO D20,,"Oh, rien qu'une fâcheuse ... une fâcheuse et douloureuse égratinure. Votre garde est bien occupée mon Duc, et votre place est... argh... à ses côtés, à châtier ceux qui ont osé vous désavouer."
-HERO D20 A1,,"Oh, Pulcino ! Pourquoi es-tu toujours aussi sérieux ? Des jours que nous sommes séparés, et toi tu ne penses qu'au devoir ! Tu as raison, mais tu es un idiot. [i]Il embrasse %n.[/i] A tout à l'heure."
+HERO D10,"My Duke? My head... My memories... Everything is back. Oh, Mio Caro, what have I done?!","Mon Duc ? Ma tête... Mes esprits me reviennent... Oh, Mio Caro, qu'ai je fait?!"
+HERO D10 A1,Your eyes...,Tes yeux...
 ,,
-HERO D21,,"Ce baiser m'a rendu mes derniers fragments de mémoire. Comment... comment ai-je pu vousoublier, rien que pour quelques heures, Mio Caro ?"
-HERO D21 A1,,"M'oublier ? Que palabres-tu donc là, beau parleur ? Allons, assied toi ici et repose toi en m'attendant, tu n'as pas l'air dans ton état normal. Je ne serai long. [i]il sort[/i]"
+HERO D11,"I remember now... Oh, my dear love. What have I done ?","Je me souviens, désormais... Oh mon bien-aimé, qu'ai je fait ?!"
+HERO D11 A1,"Your eyes are begging for forgiveness and screaming their distress. Such precious stones, do not tarnish them with shame and smile, Pulcino. Grant me this.","Tes yeux implorent le pardon et hurlent leur détresse. Des pierres si précieuses, ne les entache pas de honte, et souris, Pulcino. Accorde moi cela."
 ,,
-HERO D22,,"En effet, c'est une nuit bien anormale. [i]Il sort une lettre de sa veste.[/i] Je me souviens désormais. De si jolis mots, auxquels je n'ai pris le temps de répondre. Sans doute est ce le moment."
-HERO D22 A1,,...
+HERO D12,"I would give anything for you, my Duke! Every memory coming back to me is like a lash at my back...",Tout pour vous mon Duc ! Chaque souvenir qui me revient est comme autant de coups qui me lacèrent...
+HERO D12 A1,"Now now... Don't be so upset, my dear. Having you by my side at the end is more than enough for me. I can't think of a more fulfilling departure.","Là, là... Cesse de t'affliger, mon doux. Je connais mes derniers instants auprès de toi, je pars satisfait."
 ,,
-HERO D23,,"[i]Grifonnant sur le verso de la lettre[/i] Chaque mot, comme chaque instant... m'ont comblé. A tout à l'heure, Mio Caro... Ton Pulcino.[i]...il meurt.[/i]"
-HERO D23 A1,,...
+HERO D13,"Oh, mio caro... [i]He bends and kisses him.[/i]","Oh, mio caro... [i]Il se penche et l'embrasse[/i]."
+HERO D13 A1,"Did you... did you receive my letter, Pulcino ?","As-tu... As-tu reçu ma lettre, Pulcino ?"
+,,
+HERO D14,"Yes. Yes... Every word, and every moment... all fulfilling.","Oui. Oui... Chaque mot, et chaque instant... m'ont comblé."
+HERO D14 A1,Good... Good. [i]He dies.[/i],Bien... Bien. [i]Il meurt.[/i]
+,,
+HERO D15,"How ugly is the night! How the air stinks and sticks! I cannot breath... I cannot breath, that is how my heart is laden with sadness.","Que la nuit est laide ! Que l'air du ciel est infect ! Je ne peux plus respirer... Je ne peux plus respirer, le coeur lesté de peines !"
+HERO D15 A1,...,...
+,,
+HERO D16,"I cannot bear this early night wind, so heavy and warm. Oh cruel world, oh endless strives...","Que le vent du soir est ardent et lourd. O nature immonde,ô éternels tourments..."
+HERO D16 A1,...,...
+,,
+HERO D17,"[i]to the Duke[/i] Come, let's leave.[i]He collapses.[/i]","[i]au Duc[/i] Viens, partons. [i]Il s'effondre[/i]"
+HERO D17 A1,...,...
+,,
+HERO D18,"[i]Limping slightly[/i]I have his name, my Duke... Vitori... You are safe.","[i]Claudiquant [/i] J'ai son nom, mon Duc... Vitori... Vous êtes sauf."
+HERO D18 A1,%n ! What a pleasure to see you ! I was worrying so much !,%n ! Quelle joie de te revoir ! Je me suis tant inquiété !
+,,
+HERO D19,"The evening has been quite queer, my Duke.","La soirée a été quelque peu étrange, mon Duc."
+HERO D19 A1,"But ?! Your head ! Are you bleeding ?! Speak, who dared lay hands on you ? GUARDS !","Mais ?! Votre tête ! Vous saignez ?! Parlez, qui a osé porter la main sur vous ? GARDES !"
+,,
+HERO D20,"Oh, nothing but a nasty... a nasty and painful scratch. You guard has his hands full my Duke and your place is at... ugh... at his side. To punish those who dared to abjure you.","Oh, rien qu'une fâcheuse ... une fâcheuse et douloureuse égratinure. Votre garde est bien occupée mon Duc, et votre place est... argh... à ses côtés, à châtier ceux qui ont osé vous désavouer."
+HERO D20 A1,"Oh, Pulcino ! Why do you always have to be so serious ? We have not seen each other for days and all you can think of is your duty ! You are right, but you are a fool.[i]He kisses %n[/i]I will see you later.","Oh, Pulcino ! Pourquoi es-tu toujours aussi sérieux ? Des jours que nous sommes séparés, et toi tu ne penses qu'au devoir ! Tu as raison, mais tu es un idiot. [i]Il embrasse %n.[/i] A tout à l'heure."
+,,
+HERO D21,"This kiss gave bring me back the last pieces of my memory. How... How could i forget you. Even for a few hours, Mio Caro ?","Ce baiser m'a rendu mes derniers fragments de mémoire. Comment... comment ai-je pu vous oublier, rien que pour quelques heures, Mio Caro ?"
+HERO D21 A1,"What is this nonsense about forgetting me, you smooth talker? Sit down over here and rest, you look like you need it. Wait for me, I won't be long. [i]he goes out[/i]","M'oublier ? Que palabres-tu donc là, beau parleur ? Allons, assied toi ici et repose toi en m'attendant, tu n'as pas l'air dans ton état normal. Je ne serai long. [i]il sort[/i]"
+,,
+HERO D22,"Indeed, this is quite an unusual night. [i]He slips a letter out of his jacket.[/i] I remember now. So many sweet words, and I didn't take the time to answer them. Surely it is time.","En effet, c'est une nuit bien anormale. [i]Il sort une lettre de sa veste.[/i] Je me souviens désormais. De si jolis mots, auxquels je n'ai pris le temps de répondre. Sans doute est ce le moment."
+HERO D22 A1,...,...
+,,
+HERO D23,"[i]Scribbling behind the letter other side.[/i]Every word, every moment... they made me happy. I will see you later, Mio Caro ... Your Pulcino.[i]He dies[/i]","[i]Grifonnant sur le verso de la lettre.[/i] Chaque mot, comme chaque instant... m'ont comblé. A tout à l'heure, Mio Caro... Ton Pulcino.[i]Il meurt.[/i]"
+HERO D23 A1,...,...
