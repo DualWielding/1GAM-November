@@ -79,9 +79,10 @@ func say(text, opt):
 		elif option.has("card used") and typeof(option["card used"]) == TYPE_STRING and Player.has_card(option["card used"]):
 			options.append(option)
 		elif option.has("card used") and typeof(option["card used"]) == TYPE_ARRAY:
-			var add = false
+			var add = true
 			for card in option["card used"]:
 				if !Player.has_card(card):
+					add = false
 					break
 			if add:
 				options.append(option)
