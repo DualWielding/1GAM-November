@@ -286,8 +286,8 @@ autoplay = ""
 [node name="StreamPlayer" type="StreamPlayer" parent="."]
 
 stream/stream = ExtResource( 8 )
-stream/play = false
-stream/loop = false
+stream/play = true
+stream/loop = true
 stream/volume_db = -5.0
 stream/autoplay = false
 stream/paused = false

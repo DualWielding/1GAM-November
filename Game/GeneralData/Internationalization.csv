@@ -284,7 +284,7 @@ GUARD D12 A1,"Potent. I do hope this powder was a sleeping one, though.",Efficac
 GUARD HAS GOLDPOUCH,"Good evening, Sir. Can I see you invitation, please?","Bonsoir Messire, votre invitation je vous prie."
 GUARD HAS GOLDPOUCH A1,Invitation ?,Invitation ?
 GUARD HAS GOLDPOUCH A2,Is this really what you are hoping to become ? An empty-headed automaton in the highest bidder pay's?,"Est ce vraiment ce que vous espériez devenir ? Un automate écervelé, à la solde du maître le plus offrant ?"
-GUARD HAS GOLDPOUCH A3,"Listen to me carrefully. If you do not restitute my property this second, you will face terrible consequences.","Ecoutez moi bien, si vous ne me rendez pas mon dû dans la minute, vous vous exposerez à de graves conséquences !"
+GUARD HAS GOLDPOUCH A3,"Listen to me carefully. If you do not restitute my property this second, you will face terrible consequences.","Ecoutez moi bien, si vous ne me rendez pas mon dû dans la minute, vous vous exposerez à de graves conséquences !"
 ,,
 GUARD D13,What do you mean?,Que voulez-vous dire ?
 GUARD D13 A3,I... I will refer it to your commanding officer as soon as I will be able to enter! Believe me: I will!,Je... Je n'hésiterai pas à en référer à votre supérieur une fois que je serai à intérieur ! Car croyez-moi : je rentrerai !
@@ -359,7 +359,7 @@ ALMA D9 A1,"I want you to distract the Duke. Find any reason to speak to him, bu
 ALMA D10,But... How do I?...,Mais comment faire ? Je...
 ALMA D10 A1,"Keep your voice down! It is either this or finding your Sporco in little pieces, knowing he suffered a thousand deaths before he took his last breath. Your call, Countess. Will you meet the expectations?","Baissez le ton ! C'est cela, ou retrouver votre Sporco en pièce, avec l'assurance qu'il aura souffert mille mort avant de rendre son dernier souffle. A vous de voir, Comtesse ! Serez-vous à la hauteur ?"
 ,,
-ALMA D11,[i]sobbing.[/i]Yes ![/i]She goes out[/i],[i]sanglotant.[/i]Oui ![i]Elle sort.[/i]
+ALMA D11,[i]sobbing.[/i]Yes ![i]She goes out[/i],[i]sanglotant.[/i]Oui ![i]Elle sort.[/i]
 ALMA D11 A1,"I was harsh! These cold words... They came to me naturally. My memories may be slipping away, but my soul knows better... Who was I before tonight?","Cette violence, ces mots glacials... Ils vinrent naturellement. Mes souvenirs ont beau m'échapper, mon âme n'est pas dupe... Qui étais-je, avant ce soir ?"
 ,,
 ,,
@@ -381,7 +381,7 @@ STROZI D3 A2,Maybe I should leave you alone. Sir.,Je ferais peut-être mieux de 
 STROZI D4,What are you insinuating ?,Qu'être vous en train d'insinuer ?
 STROZI D4 A1,"Come on, who never took advantage of his situation to ease his conquests ?","Allons, qui n'a jamais abusé de sa position pour se faciliter quelques conquêtes ?"
 ,,
-STROZI D5,I... Is the Duke behind all this ? Are you his swordsman ? I happen to also know some dangerous peoples !,"Je... C'est le Duc qui vous envoie, c'est cela ? Qu'êtes vous, son spadassin ? Je connais de dangereuses personnes, moi aussi !"
+STROZI D5,I... Is the Duke behind all this ? Are you his swordsman ? I happen to also know some dangerous people !,"Je... C'est le Duc qui vous envoie, c'est cela ? Qu'êtes vous, son spadassin ? Je connais de dangereuses personnes, moi aussi !"
 STROZI D5 A1,Are you threatening me ? I am only tempted to reveal a love story so touching. Do you think this will move Lady Cesni's husband the way it moved me ?,Il est osé de menacer un homme tenté de révéler une si touchante histoire d'amour. Pensez-vous que le mari de Dame Cesni sera aussi touché que j'ai pu l'être ?
 ,,
 STROZI D6,I see. How much for you being quiet ?,Je vois. A combien estimez vous votre silence ?
@@ -479,7 +479,7 @@ CLAUDIO DEFAULT A1,"Do you mean that the Guard's captain is here tonight ?
 CLAUDIO D1,"Yes, Sir Philip himself. He is this soldierly looking old man, leaning against the low wall over there. His condition is quite saddening.","Oui, Sire Philippe lui-même. C'est le vieil homme à l'allure martiale, adossé contre le muret, là-bas. Le mal qui l'afflige est bien triste."
 CLAUDIO D1 A1,Which condition ?,Que lui arrive t-il ?
 ,,
-CLAUDIO D2,"The poor man seems to suffer from gout, a disease which spcifically targets people who enjoyed the good things of life. It makes the afflicted one suffer from his joints. Tragic, for a soldier.","Le pauvre souffre apparemment de la goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses. Pour un militaire, quelle tragédie."
+CLAUDIO D2,"The poor man seems to suffer from gout, a disease which specifically targets people who enjoyed the good things of life. It makes the afflicted one suffer from his joints. Tragic, for a soldier.","Le pauvre souffre apparemment de la goutte, une maladie qui frappe les bons vivants. Elle rend les articulations douloureuses. Pour un militaire, quelle tragédie."
 CLAUDIO D2 A1,Mh... For sure. Good evening.,Mmh... En effet. Bonne soirée.
 ,,
 CLAUDIO D3,"Such a righteous man! He does not deserve it.
@@ -496,8 +496,8 @@ GIULIA D1,"As I said ! Lady Augurie is in charge of the festivities, I am sure s
 ","Comme je vous dis ! Dame Augurie est en charge des festivités, nul doute qu'elle en sait un peu plus. Je me demande bien ce que c'est. Comme je suis excitée !"
 GIULIA D1 A1,I share your enthousiasm. Good evening.,Je partage votre enthousiasme. Bonne soirée.
 ,,
-GIULIA D2,,Comme j'ai hâte de voir ce que Dame Augurie nous réserve !
-GIULIA D2 A1,,C'est un sentiment partagé.
+GIULIA D2,I look forward to know what Lady Augurie has planned !,Comme j'ai hâte de voir ce que Dame Augurie nous réserve !
+GIULIA D2 A1,I share the feeling.,C'est un sentiment partagé.
  ,,
 ,,
 AUGURIE DEFAULT,"Mh ? May I help you ?
